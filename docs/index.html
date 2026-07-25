@@ -259,8 +259,9 @@
             <div class="sd-column">
               <h3>没有 microSD 也能运行</h3>
               <p>
-                v1.1.0 已把 78 张正位 JPEG 与蓝底黄星牌背完整内嵌，逆位实时旋转。
-                完整牌意、学习、记忆、体感选牌、牌阵和最近 12 次记录均可使用。
+                v1.1.1 已把 78 张正位 JPEG 与蓝底黄星牌背完整内嵌，逆位实时旋转。
+                全新安装默认启用完整 78 张占卜牌库和完整牌意；学习、记忆、体感选牌、
+                牌阵和最近 12 次记录均可使用。
               </p>
             </div>
             <div class="sd-column">
@@ -277,7 +278,7 @@
       <section class="section" id="install">
         <div class="shell">
           <div class="section-heading reveal">
-            <p class="eyebrow">Firmware v1.1.0 · No-SD</p>
+            <p class="eyebrow">Firmware v1.1.1 · No-SD</p>
             <h2>一个文件即可通过 M5Burner 完整安装。</h2>
             <p>
               固件只适用于 M5Stack Cardputer ADV。下载后先核对
@@ -292,14 +293,14 @@
               <h3>完整合并固件</h3>
               <p>在 M5Burner 中选择这一个文件；不插 SD 也有完整 78 张牌面。</p>
               <ul>
-                <li>文件：<code>ADV-Tarot-Cardputer-ADV-v1.1.0-NoSD-M5Burner.bin</code></li>
+                <li>文件：<code>ADV-Tarot-Cardputer-ADV-v1.1.1-NoSD-M5Burner.bin</code></li>
                 <li>写入地址：<code>0x0</code></li>
                 <li>会清除现有 NVS 设置、学习进度与占卜历史</li>
               </ul>
               <div class="code-block">python3 -m esptool --chip esp32s3 \
   --port PORT --baud 460800 \
   write_flash 0x0 \
-  ADV-Tarot-Cardputer-ADV-v1.1.0-NoSD-M5Burner.bin</div>
+  ADV-Tarot-Cardputer-ADV-v1.1.1-NoSD-M5Burner.bin</div>
             </article>
 
             <article class="install-card reveal">
@@ -307,7 +308,7 @@
               <h3>microSD 高清增强包</h3>
               <p>不影响无卡使用；需要透明 PNG 与长期 JSON 档案时再安装。</p>
               <ul>
-                <li>文件：<code>ADV-Tarot-v1.1.0-Optional-SD-Assets.zip</code></li>
+                <li>文件：<code>ADV-Tarot-v1.1.1-Optional-SD-Assets.zip</code></li>
                 <li>推荐：8–32GB SDHC、Class 10/U1、FAT32</li>
                 <li>解压后复制 <code>tarot</code> 文件夹，不要直接复制 zip</li>
               </ul>
@@ -324,13 +325,13 @@
             <strong>无法连接设备时：</strong>
             将 Cardputer ADV 开关拨到 OFF；按住 G0；插入 USB-C 数据线；松开 G0，
             然后重新执行烧录。请使用数据线，并确认 PORT 是实际设备端口。
-            v1.1.0 改用单应用大分区，必须完整写入 <code>0x0</code>；不要只把应用
+            v1.1.1 使用单应用大分区，必须完整写入 <code>0x0</code>；不要只把应用
             写到旧版 <code>0x10000</code> 分区。
           </div>
 
           <div class="download-panel reveal">
             <div>
-              <h3>下载官方 v1.1.0 No-SD 固件</h3>
+              <h3>下载官方 v1.1.1 No-SD 固件</h3>
               <p>GitHub 自动显示的 “Source code” 压缩包只包含本介绍页面，不包含私有固件源码。</p>
             </div>
             <a

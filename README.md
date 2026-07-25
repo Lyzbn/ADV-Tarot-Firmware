@@ -16,6 +16,7 @@ ADV Tarot 不是“按一下按钮就吐出一张随机牌”。每次占卜开�
 
 - 78 张大、小阿卡纳，156 组独立正逆位内容
 - 简约与完整牌意模式
+- 全新安装默认启用完整 78 张占卜牌库和完整牌意
 - 画面分析、牌义推演、感情、事业、学业、财务、身心、核心提示、行动研读、
   牌组旅程、体系对应与资料来源
 - 大牌、权杖、圣杯、宝剑、星币五类独立学习与记忆测试
@@ -28,7 +29,7 @@ ADV Tarot 不是“按一下按钮就吐出一张随机牌”。每次占卜开�
 
 ### microSD 说明
 
-v1.1.0 是完整的 No-SD 版本，并同时提供可选 SD 资源包。
+v1.1.1 是完整的 No-SD 版本，并同时提供可选 SD 资源包。
 
 - 没有 microSD：78 张正位 JPEG 与牌背全部内嵌，逆位实时旋转；所有学习、
   牌意、体感选牌、牌阵和最近 12 次记录均可使用。
@@ -41,9 +42,9 @@ v1.1.0 是完整的 No-SD 版本，并同时提供可选 SD 资源包。
 请从 [最新 Release](https://github.com/Lyzbn/ADV-Tarot-Firmware/releases/latest)
 下载：
 
-- `ADV-Tarot-Cardputer-ADV-v1.1.0-NoSD-M5Burner.bin`：完整合并镜像，
+- `ADV-Tarot-Cardputer-ADV-v1.1.1-NoSD-M5Burner.bin`：完整合并镜像，
   可直接用于 M5Burner，写入地址 `0x0`；会清除原有设置、学习进度和占卜记录。
-- `ADV-Tarot-v1.1.0-Optional-SD-Assets.zip`：可选透明 PNG/JPEG 资源包；
+- `ADV-Tarot-v1.1.1-Optional-SD-Assets.zip`：可选透明 PNG/JPEG 资源包；
   解压后把 `tarot` 文件夹复制到 FAT32 microSD 根目录。
 - `SHA256SUMS.txt`：文件完整性校验。
 
@@ -63,6 +64,7 @@ cards leave the ring and the remaining deck is not rerolled.
 
 - All 78 Major and Minor Arcana cards, with 156 distinct upright/reversed entries
 - Concise and complete interpretation modes
+- Fresh installations default to the full 78-card reading deck and complete interpretations
 - Visual analysis, interpretive development, relationships, career, study,
   finances, wellbeing, core guidance, practical reflection, deck journey,
   correspondences, and referenced sources
@@ -77,7 +79,7 @@ cards leave the ring and the remaining deck is not rerolled.
 
 ### microSD
 
-v1.1.0 is a complete No-SD build and also offers an optional SD asset pack.
+v1.1.1 is a complete No-SD build and also offers an optional SD asset pack.
 
 - Without microSD: all 78 upright JPEG faces and the card back are embedded;
   reversed cards are rotated at render time. Study, interpretations, motion
@@ -91,10 +93,10 @@ v1.1.0 is a complete No-SD build and also offers an optional SD asset pack.
 Download the files from the
 [latest Release](https://github.com/Lyzbn/ADV-Tarot-Firmware/releases/latest):
 
-- `ADV-Tarot-Cardputer-ADV-v1.1.0-NoSD-M5Burner.bin`: complete merged image for
+- `ADV-Tarot-Cardputer-ADV-v1.1.1-NoSD-M5Burner.bin`: complete merged image for
   M5Burner or flashing at `0x0`; existing settings, learning progress, and
   reading history are erased.
-- `ADV-Tarot-v1.1.0-Optional-SD-Assets.zip`: optional transparent PNG/JPEG
+- `ADV-Tarot-v1.1.1-Optional-SD-Assets.zip`: optional transparent PNG/JPEG
   assets; extract the `tarot` folder to the root of a FAT32 microSD card.
 - `SHA256SUMS.txt`: file integrity checks.
 

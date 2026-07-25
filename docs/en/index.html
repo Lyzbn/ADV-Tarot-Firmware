@@ -281,9 +281,10 @@
             <div class="sd-column">
               <h3>Functional without microSD</h3>
               <p>
-                v1.1.0 embeds all 78 upright JPEG faces and the blue/gold card back;
-                reversed cards rotate at render time. Meanings, study, recall,
-                motion selection, spreads, and the latest 12 readings remain available.
+                v1.1.1 embeds all 78 upright JPEG faces and the blue/gold card back;
+                reversed cards rotate at render time. Fresh installations default
+                to the full 78-card reading deck and complete interpretations.
+                Study, recall, motion selection, spreads, and the latest 12 readings remain available.
               </p>
             </div>
             <div class="sd-column">
@@ -301,7 +302,7 @@
       <section class="section" id="install">
         <div class="shell">
           <div class="section-heading reveal">
-            <p class="eyebrow">Firmware v1.1.0 · No-SD</p>
+            <p class="eyebrow">Firmware v1.1.1 · No-SD</p>
             <h2>One merged file installs the complete deck through M5Burner.</h2>
             <p>
               This firmware targets M5Stack Cardputer ADV only. Verify it against
@@ -316,14 +317,14 @@
               <h3>Complete merged firmware</h3>
               <p>Select this single file in M5Burner; all 78 faces work without SD.</p>
               <ul>
-                <li>File: <code>ADV-Tarot-Cardputer-ADV-v1.1.0-NoSD-M5Burner.bin</code></li>
+                <li>File: <code>ADV-Tarot-Cardputer-ADV-v1.1.1-NoSD-M5Burner.bin</code></li>
                 <li>Flash offset: <code>0x0</code></li>
                 <li>Erases existing NVS settings, learning progress, and reading history</li>
               </ul>
               <div class="code-block">python3 -m esptool --chip esp32s3 \
   --port PORT --baud 460800 \
   write_flash 0x0 \
-  ADV-Tarot-Cardputer-ADV-v1.1.0-NoSD-M5Burner.bin</div>
+  ADV-Tarot-Cardputer-ADV-v1.1.1-NoSD-M5Burner.bin</div>
             </article>
 
             <article class="install-card reveal">
@@ -331,7 +332,7 @@
               <h3>microSD high-quality asset pack</h3>
               <p>Install only when you want transparent PNG art and long-term JSON archives.</p>
               <ul>
-                <li>File: <code>ADV-Tarot-v1.1.0-Optional-SD-Assets.zip</code></li>
+                <li>File: <code>ADV-Tarot-v1.1.1-Optional-SD-Assets.zip</code></li>
                 <li>Recommended: 8–32GB SDHC, Class 10/U1, FAT32</li>
                 <li>Extract and copy the <code>tarot</code> folder—not the zip itself</li>
               </ul>
@@ -348,14 +349,14 @@
             <strong>If the device cannot be detected:</strong>
             switch Cardputer ADV off, hold G0, connect a USB-C data cable, then
             release G0 and retry. Make sure PORT is the actual device port.
-            v1.1.0 uses a single large application partition and must be fully
+            v1.1.1 uses a single large application partition and must be fully
             flashed at <code>0x0</code>; do not write only its app into the old
             <code>0x10000</code> layout.
           </div>
 
           <div class="download-panel reveal">
             <div>
-              <h3>Download the official v1.1.0 No-SD firmware</h3>
+              <h3>Download the official v1.1.1 No-SD firmware</h3>
               <p>
                 GitHub’s automatic “Source code” archives contain this public
                 presentation site only—not the private firmware source.
