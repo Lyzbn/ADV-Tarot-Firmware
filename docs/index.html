@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#07101c">
+    <meta
+      name="description"
+      content="ADV Tarot：面向 M5Stack Cardputer ADV 的离线 78 张塔罗学习、记忆与体感选牌固件。不是简单随机，而是一副由你亲手停下来的牌。"
+    >
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="ADV Tarot — 把一副牌真正交到你手里">
+    <meta
+      property="og:description"
+      content="完整 78 张牌意、IMU 体感牌环、2.5D 翻牌、离线学习与占卜回顾。"
+    >
+    <meta property="og:image" content="assets/motion-features.jpg">
+    <meta property="og:locale" content="zh_CN">
+    <link rel="alternate" hreflang="zh-CN" href="../">
+    <link rel="alternate" hreflang="en" href="en/">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="site.js"></script>
+    <title>ADV Tarot — Cardputer ADV 离线塔罗学习与体感选牌</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="shell nav-wrap">
+        <a class="brand" href="#top" aria-label="ADV Tarot 首页">
+          <span class="brand-mark" aria-hidden="true"></span>
+          ADV <em>TAROT</em>
+        </a>
+        <nav class="site-nav" aria-label="主导航">
+          <a href="#selection">抽牌体验</a>
+          <a href="#meanings">完整牌意</a>
+          <a href="#features">功能</a>
+          <a href="#install">安装</a>
+          <a class="lang-switch" href="en/" lang="en">EN</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero shell">
+        <div class="hero-copy">
+          <p class="eyebrow">Cardputer ADV · Offline Tarot System</p>
+          <h1>
+            不是按一下按钮得到答案，
+            <span>而是亲手让一副牌停下来。</span>
+          </h1>
+          <p class="hero-lede">
+            ADV Tarot 把完整 78 张塔罗学习、体感选牌和离线占卜回顾装进一台
+            Cardputer ADV。倾斜设备，让整副牌沿环形牌阵流动；你的动作决定方向、
+            速度与停点，按下确认的那一刻，才锁定屏幕中央的牌。
+          </p>
+          <div class="actions">
+            <a
+              class="button primary"
+              href="https://github.com/Lyzbn/ADV-Tarot-Firmware/releases/latest"
+            >下载最新固件</a>
+            <a class="button" href="#selection">它如何选牌</a>
+          </div>
+          <div class="hero-meta" aria-label="产品特点">
+            <span>78 张完整牌组</span>
+            <span>硬件随机洗牌</span>
+            <span>全程离线</span>
+            <span>适配 Cardputer ADV</span>
+          </div>
+        </div>
+
+        <div class="deck-stage" aria-label="体感环形牌组选牌示意">
+          <div class="deck-orbit" aria-hidden="true"></div>
+          <div class="deck-card card-far" aria-hidden="true">
+            <img src="assets/card-17.png" alt="">
+          </div>
+          <div class="deck-card card-left" aria-hidden="true">
+            <img src="assets/card-00.png" alt="">
+          </div>
+          <div class="deck-card card-right" aria-hidden="true">
+            <img src="assets/card-21.png" alt="">
+          </div>
+          <div class="deck-card card-back">
+            <img src="assets/card-back.png" alt="ADV Tarot 蓝底黄星牌背">
+          </div>
+          <div class="focus-brackets" aria-hidden="true"></div>
+          <div class="stage-label">TILT TO MOVE · ENTER TO CHOOSE</div>
+        </div>
+      </section>
+
+      <section class="section" id="selection">
+        <div class="shell">
+          <div class="section-heading reveal">
+            <p class="eyebrow">A fixed deck, a physical choice</p>
+            <h2>不是每按一次键，就重新生成一个随机答案。</h2>
+            <p>
+              它更接近真实洗牌：牌序先形成，之后真正发生的是你在这副牌中的移动与选择。
+              倾斜不会偷偷改变牌序，确认时也不会重新抽签。
+            </p>
+          </div>
+
+          <div class="process">
+            <article class="process-card reveal">
+              <div class="step-number">01 · SHUFFLE</div>
+              <h3>一次完成整副洗牌</h3>
+              <p>
+                进入占卜时，ESP32-S3 硬件随机源通过 Fisher–Yates
+                生成 22 或 78 张牌的完整、不重复环形顺序。
+              </p>
+            </article>
+            <article class="process-card reveal">
+              <div class="step-number">02 · ORIENTATION</div>
+              <h3>每张牌独立确定正逆位</h3>
+              <p>
+                每张牌使用独立硬件随机值确定正位或逆位。顺序与方向在第一次选择前已经固定。
+              </p>
+            </article>
+            <article class="process-card reveal">
+              <div class="step-number">03 · MOTION</div>
+              <h3>倾斜只移动既有牌环</h3>
+              <p>
+                左右角度控制滚动方向与速度，五段平滑曲线保留小角度微调，也支持大角度快速浏览。
+              </p>
+            </article>
+            <article class="process-card reveal">
+              <div class="step-number">04 · CONFIRM</div>
+              <h3>确认才锁定中央牌</h3>
+              <p>
+                选中的牌从环中移除，剩余牌保持原有关系。三张牌不会重复，选择时不重新读取随机源。
+              </p>
+            </article>
+          </div>
+
+          <div class="technical-note reveal">
+            <strong>可验证的随机边界：</strong>
+            22 张模式建立牌环需要 43 个硬件随机值；78 张模式需要 155 个。
+            此后 IMU 只改变视野中的位置与速度。确认不是“再随机一次”，而是从既有牌环中取走中央牌。
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="meanings">
+        <div class="shell split">
+          <aside class="meaning-index reveal">
+            <div class="big-number">156</div>
+            <div class="big-label">78 张牌 × 独立正逆位内容</div>
+            <div class="meaning-tabs" aria-label="牌意栏目">
+              <span>画面细节</span>
+              <span>牌义推演</span>
+              <span>感情关系</span>
+              <span>事业工作</span>
+              <span>学业成长</span>
+              <span>财务资源</span>
+              <span>身心状态</span>
+              <span>核心提示</span>
+              <span>行动研读</span>
+              <span>牌组旅程</span>
+              <span>体系对应</span>
+              <span>逐牌来源</span>
+            </div>
+          </aside>
+
+          <div>
+            <div class="section-heading reveal">
+              <p class="eyebrow">Depth before fortune-telling</p>
+              <h2>牌意不止几个关键词，也不把同一句话换标题重复。</h2>
+              <p>
+                ADV Tarot 为 22 张大牌和 56 张小牌分别整理正逆位内容。
+                完整模式从画面证据、牌组阶段和现实应用逐层展开；简约模式则保留适合快速查阅的核心内容。
+              </p>
+            </div>
+
+            <div class="feature-grid">
+              <article class="feature-card reveal">
+                <div class="feature-icon">IMG</div>
+                <h3>从画面开始，而不是直接下结论</h3>
+                <p>
+                  人物、方向、颜色、物件、距离与构图先被识别，再说明这些线索如何支持当前解读。
+                </p>
+              </article>
+              <article class="feature-card reveal">
+                <div class="feature-icon">5×</div>
+                <h3>五类现实领域各自成段</h3>
+                <p>
+                  感情、事业、学业、财务与身心不会挤成一段，也不会用模糊吉凶替代具体观察。
+                </p>
+              </article>
+              <article class="feature-card reveal">
+                <div class="feature-icon">R↕</div>
+                <h3>逆位不是正位前加一个“不”</h3>
+                <p>
+                  逆位会分别检查受阻、内化、过度、延迟、重新审视与恢复，而不是机械翻转好坏。
+                </p>
+              </article>
+              <article class="feature-card reveal">
+                <div class="feature-icon">SRC</div>
+                <h3>多来源研读，保留边界</h3>
+                <p>
+                  参考 Waite 公版原典、Book T 与逐牌资料，并把星象、元素和数字作为比较坐标而非确定预言。
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="features">
+        <div class="shell">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Made for a 240 × 135 device</p>
+            <h2>小屏幕，也要有真实拿牌、停牌和揭牌的质感。</h2>
+            <p>
+              所有动画都围绕 Cardputer ADV 的实际屏幕和无 PSRAM 条件设计：
+              中心牌更近更大，两侧逐渐缩小；确认后水平翻开，牌面继续随握姿产生 2.5D 视差。
+            </p>
+          </div>
+
+          <div class="spec-grid">
+            <div class="spec-card reveal">
+              <span class="spec-value">78</span>
+              <span class="spec-label">大、小阿卡纳完整牌组</span>
+            </div>
+            <div class="spec-card reveal">
+              <span class="spec-value">2.5D</span>
+              <span class="spec-label">四角投影、软阴影与动态高光</span>
+            </div>
+            <div class="spec-card reveal">
+              <span class="spec-value">5</span>
+              <span class="spec-label">大牌及四组小牌独立学习</span>
+            </div>
+            <div class="spec-card reveal">
+              <span class="spec-value">12</span>
+              <span class="spec-label">本机最近占卜记录与回顾</span>
+            </div>
+          </div>
+
+          <div class="media-pair">
+            <figure class="media-card reveal">
+              <img
+                src="assets/motion-features.jpg"
+                alt="Cardputer ADV 上的环形牌组、倾斜选牌和水平翻牌示意"
+                loading="lazy"
+              >
+              <figcaption>
+                体感牌环：角度控制速度，左右倾斜换向，中央牌确认，正逆位独立确定。
+              </figcaption>
+            </figure>
+            <figure class="media-card reveal">
+              <img
+                src="assets/learning-features.jpg"
+                alt="Cardputer ADV 上的 78 张牌学习、完整牌意和记忆测试示意"
+                loading="lazy"
+              >
+              <figcaption>
+                学习系统：五类牌组、简约/完整牌意、记忆测试、横向高清看牌与占卜回顾。
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="sd-notice reveal">
+            <div class="sd-column">
+              <h3>没有 microSD 也能运行</h3>
+              <p>
+                完整牌意、学习、记忆、体感选牌、牌阵和最近 12 次记录均可使用。
+                蓝底黄星牌背与 22 张大牌已内嵌；56 张小牌缺图时显示安全占位牌。
+              </p>
+            </div>
+            <div class="sd-column">
+              <h3>microSD 提供完整视觉与归档</h3>
+              <p>
+                配齐资源后优先显示全部 78 张正逆位透明 PNG 牌面，并将完整占卜记录长期归档为 JSON。
+                当前首版公开 Release 只包含固件，暂不附带 SD 图片资源包。
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="install">
+        <div class="shell">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Firmware v1.0.0</p>
+            <h2>选择首次安装或保留数据升级。</h2>
+            <p>
+              两个文件都只适用于 M5Stack Cardputer ADV。下载后先核对
+              <code>SHA256SUMS.txt</code>，再根据设备当前状态选择写入方式。
+            </p>
+          </div>
+
+          <div class="install-grid">
+            <article class="install-card recommended reveal">
+              <div class="tag">First install</div>
+              <h3>首次安装 · Factory</h3>
+              <p>包含启动程序、分区表和应用，适合新设备或完整重装。</p>
+              <ul>
+                <li>文件：<code>ADV-Tarot-Cardputer-ADV-v1.0.0-factory.bin</code></li>
+                <li>写入地址：<code>0x0</code></li>
+                <li>会清除现有 NVS 设置、学习进度与占卜历史</li>
+              </ul>
+              <div class="code-block">python3 -m esptool --chip esp32s3 \
+  --port PORT --baud 460800 \
+  write_flash 0x0 \
+  ADV-Tarot-Cardputer-ADV-v1.0.0-factory.bin</div>
+            </article>
+
+            <article class="install-card reveal">
+              <div class="tag">Existing ADV Tarot</div>
+              <h3>保留数据升级 · Update</h3>
+              <p>只写入应用分区，仅适用于已经运行 ADV Tarot 的设备。</p>
+              <ul>
+                <li>文件：<code>ADV-Tarot-Cardputer-ADV-v1.0.0-update.bin</code></li>
+                <li>写入地址：<code>0x10000</code></li>
+                <li>通常保留 NVS 设置、学习进度与最近占卜记录</li>
+              </ul>
+              <div class="code-block">python3 -m esptool --chip esp32s3 \
+  --port PORT --baud 460800 \
+  write_flash 0x10000 \
+  ADV-Tarot-Cardputer-ADV-v1.0.0-update.bin</div>
+            </article>
+          </div>
+
+          <div class="warning reveal">
+            <strong>无法连接设备时：</strong>
+            将 Cardputer ADV 开关拨到 OFF；按住 G0；插入 USB-C 数据线；松开 G0，
+            然后重新执行烧录。请使用数据线，并确认 PORT 是实际设备端口。
+            不要把 Factory 文件写到 <code>0x10000</code>，也不要把 Update 文件写到
+            <code>0x0</code>。
+          </div>
+
+          <div class="download-panel reveal">
+            <div>
+              <h3>下载官方 v1.0.0 固件</h3>
+              <p>GitHub 自动显示的 “Source code” 压缩包只包含本介绍页面，不包含私有固件源码。</p>
+            </div>
+            <a
+              class="button primary"
+              href="https://github.com/Lyzbn/ADV-Tarot-Firmware/releases/latest"
+            >前往 GitHub Release</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="shell footer-row">
+        <div>
+          © <span data-year>2026</span> Lyzbn · ADV Tarot proprietary firmware.<br>
+          用于学习、记录与个人反思，不构成医疗、法律、财务或其他专业建议。
+        </div>
+        <div class="footer-links">
+          <a href="https://github.com/Lyzbn/ADV-Tarot-Firmware">GitHub</a>
+          <a href="https://github.com/Lyzbn/ADV-Tarot-Firmware/blob/main/LICENSE-FIRMWARE.md">固件授权</a>
+          <a href="https://github.com/Lyzbn/ADV-Tarot-Firmware/blob/main/THIRD_PARTY_NOTICES.md">第三方声明</a>
+          <a href="en/" lang="en">English</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+

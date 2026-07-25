@@ -1,0 +1,388 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#07101c">
+    <meta
+      name="description"
+      content="ADV Tarot is offline 78-card tarot study, recall, and motion-driven selection firmware for M5Stack Cardputer ADV. A fixed deck you physically bring to a stop—not a fresh random result on every click."
+    >
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="ADV Tarot — A full deck in your hands">
+    <meta
+      property="og:description"
+      content="Deep 78-card meanings, an IMU-driven card ring, 2.5D reveals, offline study, and reading review."
+    >
+    <meta property="og:image" content="../assets/motion-features.jpg">
+    <meta property="og:locale" content="en_US">
+    <link rel="alternate" hreflang="zh-CN" href="../">
+    <link rel="alternate" hreflang="en" href="./">
+    <link rel="stylesheet" href="../styles.css">
+    <script defer src="../site.js"></script>
+    <title>ADV Tarot — Offline study and motion-driven selection for Cardputer ADV</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="shell nav-wrap">
+        <a class="brand" href="#top" aria-label="ADV Tarot home">
+          <span class="brand-mark" aria-hidden="true"></span>
+          ADV <em>TAROT</em>
+        </a>
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a href="#selection">Selection</a>
+          <a href="#meanings">Meanings</a>
+          <a href="#features">Features</a>
+          <a href="#install">Install</a>
+          <a class="lang-switch" href="../" lang="zh-CN">中文</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero shell">
+        <div class="hero-copy">
+          <p class="eyebrow">Cardputer ADV · Offline Tarot System</p>
+          <h1>
+            Not a button that spits out an answer.
+            <span>A full deck you physically bring to a stop.</span>
+          </h1>
+          <p class="hero-lede">
+            ADV Tarot brings deep 78-card study, motion-driven selection, and
+            private reading review to Cardputer ADV. Tilt the device to move the
+            deck around a ring. Your movement controls direction, speed, and
+            resting point; the centered card is locked only when you confirm.
+          </p>
+          <div class="actions">
+            <a
+              class="button primary"
+              href="https://github.com/Lyzbn/ADV-Tarot-Firmware/releases/latest"
+            >Download firmware</a>
+            <a class="button" href="#selection">How selection works</a>
+          </div>
+          <div class="hero-meta" aria-label="Product highlights">
+            <span>Complete 78-card deck</span>
+            <span>Hardware-random shuffle</span>
+            <span>Fully offline</span>
+            <span>Built for Cardputer ADV</span>
+          </div>
+        </div>
+
+        <div class="deck-stage" aria-label="Motion-driven card-ring illustration">
+          <div class="deck-orbit" aria-hidden="true"></div>
+          <div class="deck-card card-far" aria-hidden="true">
+            <img src="../assets/card-17.png" alt="">
+          </div>
+          <div class="deck-card card-left" aria-hidden="true">
+            <img src="../assets/card-00.png" alt="">
+          </div>
+          <div class="deck-card card-right" aria-hidden="true">
+            <img src="../assets/card-21.png" alt="">
+          </div>
+          <div class="deck-card card-back">
+            <img src="../assets/card-back.png" alt="ADV Tarot blue-and-yellow star card back">
+          </div>
+          <div class="focus-brackets" aria-hidden="true"></div>
+          <div class="stage-label">TILT TO MOVE · ENTER TO CHOOSE</div>
+        </div>
+      </section>
+
+      <section class="section" id="selection">
+        <div class="shell">
+          <div class="section-heading reveal">
+            <p class="eyebrow">A fixed deck, a physical choice</p>
+            <h2>It does not generate a fresh random answer every time you press a key.</h2>
+            <p>
+              It behaves more like a physical shuffle: the deck order is
+              established first, then you move through and choose from that
+              deck. Tilting never secretly changes its order, and confirmation
+              does not trigger another draw.
+            </p>
+          </div>
+
+          <div class="process">
+            <article class="process-card reveal">
+              <div class="step-number">01 · SHUFFLE</div>
+              <h3>One complete deck shuffle</h3>
+              <p>
+                On entering a reading, the ESP32-S3 hardware random source uses
+                Fisher–Yates to create a complete, non-repeating 22- or 78-card ring.
+              </p>
+            </article>
+            <article class="process-card reveal">
+              <div class="step-number">02 · ORIENTATION</div>
+              <h3>Independent upright or reversed state</h3>
+              <p>
+                Every card receives its own hardware-random orientation. Order
+                and orientation are fixed before the first selection.
+              </p>
+            </article>
+            <article class="process-card reveal">
+              <div class="step-number">03 · MOTION</div>
+              <h3>Tilt moves the existing ring</h3>
+              <p>
+                Lateral angle controls direction and speed. A smooth five-stage
+                response keeps fine control near center and accelerates naturally.
+              </p>
+            </article>
+            <article class="process-card reveal">
+              <div class="step-number">04 · CONFIRM</div>
+              <h3>Confirmation locks the centered card</h3>
+              <p>
+                The selected card leaves the ring while the remaining order stays
+                intact. Three selections cannot repeat, and confirmation reads no
+                new random value.
+              </p>
+            </article>
+          </div>
+
+          <div class="technical-note reveal">
+            <strong>A testable randomness boundary:</strong>
+            preparing a 22-card ring consumes 43 hardware-random values; a
+            78-card ring consumes 155. From there, the IMU changes only position
+            and velocity. Confirming selects the center of the existing ring—it
+            is not another roll of the dice.
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="meanings">
+        <div class="shell split">
+          <aside class="meaning-index reveal">
+            <div class="big-number">156</div>
+            <div class="big-label">78 cards × distinct upright/reversed entries</div>
+            <div class="meaning-tabs" aria-label="Interpretation sections">
+              <span>Visual details</span>
+              <span>Interpretive development</span>
+              <span>Relationships</span>
+              <span>Career</span>
+              <span>Study</span>
+              <span>Finances</span>
+              <span>Wellbeing</span>
+              <span>Core guidance</span>
+              <span>Practical reflection</span>
+              <span>Deck journey</span>
+              <span>Correspondences</span>
+              <span>Card-level sources</span>
+            </div>
+          </aside>
+
+          <div>
+            <div class="section-heading reveal">
+              <p class="eyebrow">Depth before fortune-telling</p>
+              <h2>More than a few keywords—and no padding by repeating the same paragraph.</h2>
+              <p>
+                ADV Tarot provides separate upright and reversed material for all
+                22 Major and 56 Minor Arcana cards. Complete mode develops an
+                interpretation from visual evidence, deck position, and practical
+                application; concise mode keeps the essential reading close at hand.
+              </p>
+            </div>
+
+            <div class="feature-grid">
+              <article class="feature-card reveal">
+                <div class="feature-icon">IMG</div>
+                <h3>Start with the image, not the verdict</h3>
+                <p>
+                  Figures, direction, color, objects, distance, and composition
+                  are identified before explaining how they support a reading.
+                </p>
+              </article>
+              <article class="feature-card reveal">
+                <div class="feature-icon">5×</div>
+                <h3>Five practical areas stay distinct</h3>
+                <p>
+                  Relationships, career, study, finances, and wellbeing each have
+                  their own section instead of collapsing into vague good or bad luck.
+                </p>
+              </article>
+              <article class="feature-card reveal">
+                <div class="feature-icon">R↕</div>
+                <h3>Reversed does not mean “upright, but no”</h3>
+                <p>
+                  Reversals separately examine blockage, internalization, excess,
+                  delay, reconsideration, and recovery rather than mechanically
+                  swapping positive and negative.
+                </p>
+              </article>
+              <article class="feature-card reveal">
+                <div class="feature-icon">SRC</div>
+                <h3>Multi-source study with clear limits</h3>
+                <p>
+                  Material is informed by Waite’s public-domain text, Book T, and
+                  card-specific references. Astrology, elements, and number are
+                  comparison frameworks—not guarantees of an event.
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="features">
+        <div class="shell">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Made for a 240 × 135 device</p>
+            <h2>A small screen can still make stopping and revealing a card feel physical.</h2>
+            <p>
+              Every effect is designed around the real Cardputer ADV display and
+              its no-PSRAM constraints. The centered card appears larger and
+              closer; cards recede toward the sides. After confirmation, the back
+              folds into a horizontal reveal and the face continues to respond to
+              your grip in 2.5D.
+            </p>
+          </div>
+
+          <div class="spec-grid">
+            <div class="spec-card reveal">
+              <span class="spec-value">78</span>
+              <span class="spec-label">Complete Major and Minor Arcana deck</span>
+            </div>
+            <div class="spec-card reveal">
+              <span class="spec-value">2.5D</span>
+              <span class="spec-label">Corner projection, soft shadows, and moving highlights</span>
+            </div>
+            <div class="spec-card reveal">
+              <span class="spec-value">5</span>
+              <span class="spec-label">Independent Major and suit study paths</span>
+            </div>
+            <div class="spec-card reveal">
+              <span class="spec-value">12</span>
+              <span class="spec-label">Recent on-device readings with review</span>
+            </div>
+          </div>
+
+          <div class="media-pair">
+            <figure class="media-card reveal">
+              <img
+                src="../assets/motion-features.jpg"
+                alt="Card ring, tilt selection, and horizontal reveal on Cardputer ADV"
+                loading="lazy"
+              >
+              <figcaption>
+                Motion ring: angle controls speed, tilt changes direction, the
+                center card is confirmed, and orientation is independently set.
+              </figcaption>
+            </figure>
+            <figure class="media-card reveal">
+              <img
+                src="../assets/learning-features.jpg"
+                alt="78-card study, complete meanings, and recall on Cardputer ADV"
+                loading="lazy"
+              >
+              <figcaption>
+                Study system: five deck groups, concise/complete meanings, recall,
+                landscape card view, and saved-reading review.
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="sd-notice reveal">
+            <div class="sd-column">
+              <h3>Functional without microSD</h3>
+              <p>
+                Meanings, study, recall, motion selection, spreads, and the latest
+                12 readings remain available. The star card back and all 22 Major
+                Arcana faces are embedded; missing Minor Arcana art uses safe placeholders.
+              </p>
+            </div>
+            <div class="sd-column">
+              <h3>microSD adds the complete visual library</h3>
+              <p>
+                With the full asset set, all 78 upright/reversed transparent PNG
+                faces are used and completed readings are archived as JSON. This
+                first public Release contains firmware only and does not include
+                the SD artwork pack.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="install">
+        <div class="shell">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Firmware v1.0.0</p>
+            <h2>Choose a first installation or a data-preserving update.</h2>
+            <p>
+              Both files target M5Stack Cardputer ADV only. Verify the download
+              against <code>SHA256SUMS.txt</code>, then use the path that matches
+              the device’s current state.
+            </p>
+          </div>
+
+          <div class="install-grid">
+            <article class="install-card recommended reveal">
+              <div class="tag">First install</div>
+              <h3>Factory installation</h3>
+              <p>Includes bootloader, partition table, and application for a clean install.</p>
+              <ul>
+                <li>File: <code>ADV-Tarot-Cardputer-ADV-v1.0.0-factory.bin</code></li>
+                <li>Flash offset: <code>0x0</code></li>
+                <li>Erases existing NVS settings, learning progress, and reading history</li>
+              </ul>
+              <div class="code-block">python3 -m esptool --chip esp32s3 \
+  --port PORT --baud 460800 \
+  write_flash 0x0 \
+  ADV-Tarot-Cardputer-ADV-v1.0.0-factory.bin</div>
+            </article>
+
+            <article class="install-card reveal">
+              <div class="tag">Existing ADV Tarot</div>
+              <h3>Data-preserving update</h3>
+              <p>Writes only the application partition on a device already running ADV Tarot.</p>
+              <ul>
+                <li>File: <code>ADV-Tarot-Cardputer-ADV-v1.0.0-update.bin</code></li>
+                <li>Flash offset: <code>0x10000</code></li>
+                <li>Normally preserves NVS settings, learning progress, and recent readings</li>
+              </ul>
+              <div class="code-block">python3 -m esptool --chip esp32s3 \
+  --port PORT --baud 460800 \
+  write_flash 0x10000 \
+  ADV-Tarot-Cardputer-ADV-v1.0.0-update.bin</div>
+            </article>
+          </div>
+
+          <div class="warning reveal">
+            <strong>If the device cannot be detected:</strong>
+            switch Cardputer ADV off, hold G0, connect a USB-C data cable, then
+            release G0 and retry. Make sure PORT is the actual device port.
+            Never flash the Factory file at <code>0x10000</code>, and never flash
+            the Update file at <code>0x0</code>.
+          </div>
+
+          <div class="download-panel reveal">
+            <div>
+              <h3>Download the official v1.0.0 firmware</h3>
+              <p>
+                GitHub’s automatic “Source code” archives contain this public
+                presentation site only—not the private firmware source.
+              </p>
+            </div>
+            <a
+              class="button primary"
+              href="https://github.com/Lyzbn/ADV-Tarot-Firmware/releases/latest"
+            >Open GitHub Release</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="shell footer-row">
+        <div>
+          © <span data-year>2026</span> Lyzbn · ADV Tarot proprietary firmware.<br>
+          For study, journaling, and personal reflection—not medical, legal,
+          financial, or other professional advice.
+        </div>
+        <div class="footer-links">
+          <a href="https://github.com/Lyzbn/ADV-Tarot-Firmware">GitHub</a>
+          <a href="https://github.com/Lyzbn/ADV-Tarot-Firmware/blob/main/LICENSE-FIRMWARE.md">Firmware license</a>
+          <a href="https://github.com/Lyzbn/ADV-Tarot-Firmware/blob/main/THIRD_PARTY_NOTICES.md">Third-party notices</a>
+          <a href="../" lang="zh-CN">中文</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+
