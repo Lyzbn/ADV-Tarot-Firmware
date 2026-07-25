@@ -28,22 +28,23 @@ ADV Tarot 不是“按一下按钮就吐出一张随机牌”。每次占卜开�
 
 ### microSD 说明
 
-当前公开版只发布固件，不包含 microSD 图片资源包。
+v1.1.0 是完整的 No-SD 版本，并同时提供可选 SD 资源包。
 
-- 没有 microSD：所有学习、牌意、体感选牌和占卜功能均可运行；牌背与 22 张
-  大牌使用固件内嵌图片，56 张小牌使用安全占位牌。
-- 使用完整 microSD 资源：可显示全部 78 张正逆位透明 PNG 高清牌面，并把完整
+- 没有 microSD：78 张正位 JPEG 与牌背全部内嵌，逆位实时旋转；所有学习、
+  牌意、体感选牌、牌阵和最近 12 次记录均可使用。
+- 使用可选 microSD 资源：自动优先显示全部 78 张正逆位透明 PNG，并把完整
   占卜记录长期归档为 JSON。
+- 推荐 microSD：8GB–32GB SDHC、Class 10/U1、FAT32、MBR 单分区。
 
 ### 安装
 
 请从 [最新 Release](https://github.com/Lyzbn/ADV-Tarot-Firmware/releases/latest)
 下载：
 
-- `ADV-Tarot-Cardputer-ADV-v1.0.0-factory.bin`：首次安装，写入地址 `0x0`；
-  会清除原有设置和占卜记录。
-- `ADV-Tarot-Cardputer-ADV-v1.0.0-update.bin`：仅用于已经安装 ADV Tarot
-  的设备，写入地址 `0x10000`，通常保留 NVS 设置与历史。
+- `ADV-Tarot-Cardputer-ADV-v1.1.0-NoSD-M5Burner.bin`：完整合并镜像，
+  可直接用于 M5Burner，写入地址 `0x0`；会清除原有设置、学习进度和占卜记录。
+- `ADV-Tarot-v1.1.0-Optional-SD-Assets.zip`：可选透明 PNG/JPEG 资源包；
+  解压后把 `tarot` 文件夹复制到 FAT32 microSD 根目录。
 - `SHA256SUMS.txt`：文件完整性校验。
 
 安装命令和进入下载模式的方法见
@@ -76,24 +77,25 @@ cards leave the ring and the remaining deck is not rerolled.
 
 ### microSD
 
-This initial public release contains firmware only and does not include the
-microSD artwork pack.
+v1.1.0 is a complete No-SD build and also offers an optional SD asset pack.
 
-- Without microSD: study, interpretations, motion selection, and readings remain
-  functional. The card back and 22 Major Arcana faces are embedded; the 56 Minor
-  Arcana cards use safe placeholders.
-- With the complete microSD assets: all 78 upright/reversed transparent PNG card
-  faces are available, and completed readings can be archived as JSON.
+- Without microSD: all 78 upright JPEG faces and the card back are embedded;
+  reversed cards are rotated at render time. Study, interpretations, motion
+  selection, spreads, and the latest 12 readings remain available.
+- With the optional microSD assets: all 78 upright/reversed transparent PNG
+  faces are preferred, and completed readings can be archived as JSON.
+- Recommended card: 8–32GB SDHC, Class 10/U1, FAT32, single MBR partition.
 
 ### Installation
 
 Download the files from the
 [latest Release](https://github.com/Lyzbn/ADV-Tarot-Firmware/releases/latest):
 
-- `ADV-Tarot-Cardputer-ADV-v1.0.0-factory.bin`: first installation at `0x0`;
-  existing settings and reading history are erased.
-- `ADV-Tarot-Cardputer-ADV-v1.0.0-update.bin`: for devices already running
-  ADV Tarot, written at `0x10000`; NVS settings and history are normally preserved.
+- `ADV-Tarot-Cardputer-ADV-v1.1.0-NoSD-M5Burner.bin`: complete merged image for
+  M5Burner or flashing at `0x0`; existing settings, learning progress, and
+  reading history are erased.
+- `ADV-Tarot-v1.1.0-Optional-SD-Assets.zip`: optional transparent PNG/JPEG
+  assets; extract the `tarot` folder to the root of a FAT32 microSD card.
 - `SHA256SUMS.txt`: file integrity checks.
 
 See the [English installation guide](https://lyzbn.github.io/ADV-Tarot-Firmware/en/#install).
@@ -109,4 +111,3 @@ See the [English installation guide](https://lyzbn.github.io/ADV-Tarot-Firmware/
   [LICENSE-FIRMWARE.md](LICENSE-FIRMWARE.md).
 - Third-party components and public-domain artwork remain under their respective
   terms. See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
-

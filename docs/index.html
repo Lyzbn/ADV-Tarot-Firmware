@@ -259,15 +259,15 @@
             <div class="sd-column">
               <h3>没有 microSD 也能运行</h3>
               <p>
+                v1.1.0 已把 78 张正位 JPEG 与蓝底黄星牌背完整内嵌，逆位实时旋转。
                 完整牌意、学习、记忆、体感选牌、牌阵和最近 12 次记录均可使用。
-                蓝底黄星牌背与 22 张大牌已内嵌；56 张小牌缺图时显示安全占位牌。
               </p>
             </div>
             <div class="sd-column">
-              <h3>microSD 提供完整视觉与归档</h3>
+              <h3>microSD 是可选增强</h3>
               <p>
-                配齐资源后优先显示全部 78 张正逆位透明 PNG 牌面，并将完整占卜记录长期归档为 JSON。
-                当前首版公开 Release 只包含固件，暂不附带 SD 图片资源包。
+                可选资源包会启用全部 78 张正逆位透明 PNG，并将完整占卜长期归档为 JSON。
+                推荐 8–32GB SDHC、Class 10/U1、FAT32、MBR 单分区。
               </p>
             </div>
           </div>
@@ -277,43 +277,46 @@
       <section class="section" id="install">
         <div class="shell">
           <div class="section-heading reveal">
-            <p class="eyebrow">Firmware v1.0.0</p>
-            <h2>选择首次安装或保留数据升级。</h2>
+            <p class="eyebrow">Firmware v1.1.0 · No-SD</p>
+            <h2>一个文件即可通过 M5Burner 完整安装。</h2>
             <p>
-              两个文件都只适用于 M5Stack Cardputer ADV。下载后先核对
-              <code>SHA256SUMS.txt</code>，再根据设备当前状态选择写入方式。
+              固件只适用于 M5Stack Cardputer ADV。下载后先核对
+              <code>SHA256SUMS.txt</code>；合并镜像已经包含 bootloader、分区表、
+              应用与 78 张牌面。
             </p>
           </div>
 
           <div class="install-grid">
             <article class="install-card recommended reveal">
-              <div class="tag">First install</div>
-              <h3>首次安装 · Factory</h3>
-              <p>包含启动程序、分区表和应用，适合新设备或完整重装。</p>
+              <div class="tag">M5Burner · No-SD</div>
+              <h3>完整合并固件</h3>
+              <p>在 M5Burner 中选择这一个文件；不插 SD 也有完整 78 张牌面。</p>
               <ul>
-                <li>文件：<code>ADV-Tarot-Cardputer-ADV-v1.0.0-factory.bin</code></li>
+                <li>文件：<code>ADV-Tarot-Cardputer-ADV-v1.1.0-NoSD-M5Burner.bin</code></li>
                 <li>写入地址：<code>0x0</code></li>
                 <li>会清除现有 NVS 设置、学习进度与占卜历史</li>
               </ul>
               <div class="code-block">python3 -m esptool --chip esp32s3 \
   --port PORT --baud 460800 \
   write_flash 0x0 \
-  ADV-Tarot-Cardputer-ADV-v1.0.0-factory.bin</div>
+  ADV-Tarot-Cardputer-ADV-v1.1.0-NoSD-M5Burner.bin</div>
             </article>
 
             <article class="install-card reveal">
-              <div class="tag">Existing ADV Tarot</div>
-              <h3>保留数据升级 · Update</h3>
-              <p>只写入应用分区，仅适用于已经运行 ADV Tarot 的设备。</p>
+              <div class="tag">Optional</div>
+              <h3>microSD 高清增强包</h3>
+              <p>不影响无卡使用；需要透明 PNG 与长期 JSON 档案时再安装。</p>
               <ul>
-                <li>文件：<code>ADV-Tarot-Cardputer-ADV-v1.0.0-update.bin</code></li>
-                <li>写入地址：<code>0x10000</code></li>
-                <li>通常保留 NVS 设置、学习进度与最近占卜记录</li>
+                <li>文件：<code>ADV-Tarot-v1.1.0-Optional-SD-Assets.zip</code></li>
+                <li>推荐：8–32GB SDHC、Class 10/U1、FAT32</li>
+                <li>解压后复制 <code>tarot</code> 文件夹，不要直接复制 zip</li>
               </ul>
-              <div class="code-block">python3 -m esptool --chip esp32s3 \
-  --port PORT --baud 460800 \
-  write_flash 0x10000 \
-  ADV-Tarot-Cardputer-ADV-v1.0.0-update.bin</div>
+              <div class="code-block">microSD root
+└── tarot
+    ├── cards
+    │   ├── 00.png … 77r.png
+    │   └── back.png
+    └── readings</div>
             </article>
           </div>
 
@@ -321,13 +324,13 @@
             <strong>无法连接设备时：</strong>
             将 Cardputer ADV 开关拨到 OFF；按住 G0；插入 USB-C 数据线；松开 G0，
             然后重新执行烧录。请使用数据线，并确认 PORT 是实际设备端口。
-            不要把 Factory 文件写到 <code>0x10000</code>，也不要把 Update 文件写到
-            <code>0x0</code>。
+            v1.1.0 改用单应用大分区，必须完整写入 <code>0x0</code>；不要只把应用
+            写到旧版 <code>0x10000</code> 分区。
           </div>
 
           <div class="download-panel reveal">
             <div>
-              <h3>下载官方 v1.0.0 固件</h3>
+              <h3>下载官方 v1.1.0 No-SD 固件</h3>
               <p>GitHub 自动显示的 “Source code” 压缩包只包含本介绍页面，不包含私有固件源码。</p>
             </div>
             <a
@@ -355,4 +358,3 @@
     </footer>
   </body>
 </html>
-
