@@ -67,8 +67,8 @@ A copy of the PolyForm Noncommercial License 1.0.0 is included in `licenses/`.
 
 ## Rider–Waite–Smith artwork
 
-The v1.1.1 No-SD firmware and optional microSD asset pack include technically
-resized copies of all 78 Major and Minor Arcana cards from the original 1909
+The No-SD firmware and optional microSD asset pack include technically resized
+copies of all 78 Major and Minor Arcana cards from the original 1909
 Rider–Waite–Smith deck:
 
 - Artist: Pamela Colman Smith (1878–1951)
