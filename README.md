@@ -7,6 +7,11 @@
 
 ## 中文
 
+**v1.1.3 修复发布镜像的 DIO 启动头。** 如旧版烧录成功后黑屏，请下载新版，
+以 `0x0` 完整烧录；如需选择 Flash mode，使用 DIO。合并镜像会清除 NVS
+设置与记录。本轮已通过构建和镜像校验，USB/电池冷启动实机验证仍待完成。
+详见 [更新说明](RELEASE_NOTES_v1.1.3.md)。
+
 ADV Tarot 不是“按一下按钮就吐出一张随机牌”。每次占卜开始时，ESP32-S3
 硬件随机源会先完成一副 22 或 78 张牌的完整不重复洗牌，并为每张牌独立确定
 正逆位。之后，设备倾斜只会移动这副已经形成的环形牌序；按下确认时才锁定
@@ -29,7 +34,7 @@ ADV Tarot 不是“按一下按钮就吐出一张随机牌”。每次占卜开�
 
 ### microSD 说明
 
-v1.1.2 是完整的 No-SD 版本，并同时提供可选 SD 资源包。
+v1.1.3 是完整的 No-SD 版本，并同时提供可选 SD 资源包。
 
 - 没有 microSD：78 张正位 JPEG 与牌背全部内嵌，逆位实时旋转；所有学习、
   牌意、体感选牌、牌阵和最近 12 次记录均可使用。
@@ -42,9 +47,9 @@ v1.1.2 是完整的 No-SD 版本，并同时提供可选 SD 资源包。
 请从 [最新 Release](https://github.com/Lyzbn/ADV-Tarot-Firmware/releases/latest)
 下载：
 
-- `ADV-Tarot-Cardputer-ADV-v1.1.2-NoSD-M5Burner.bin`：完整合并镜像，
+- `ADV-Tarot-Cardputer-ADV-v1.1.3-NoSD-M5Burner.bin`：完整合并镜像，
   可直接用于 M5Burner，写入地址 `0x0`；会清除原有设置、学习进度和占卜记录。
-- `ADV-Tarot-v1.1.2-Optional-SD-Assets.zip`：可选透明 PNG/JPEG 资源包；
+- `ADV-Tarot-v1.1.3-Optional-SD-Assets.zip`：可选透明 PNG/JPEG 资源包；
   解压后把 `tarot` 文件夹复制到 FAT32 microSD 根目录。
 - `SHA256SUMS.txt`：文件完整性校验。
 
@@ -52,6 +57,11 @@ v1.1.2 是完整的 No-SD 版本，并同时提供可选 SD 资源包。
 [中文安装说明](https://lyzbn.github.io/ADV-Tarot-Firmware/#install)。
 
 ## English
+
+**v1.1.3 fixes the merged image's DIO boot header.** If an older release flashes
+but does not boot, flash the new image at `0x0` using DIO if a mode is requested.
+This clears NVS settings and history. Build and image checks passed; USB/battery
+cold-boot hardware verification is pending. See [release notes](RELEASE_NOTES_v1.1.3.md).
 
 ADV Tarot is not a button that simply returns a newly randomized card. At the
 start of a reading, the ESP32-S3 hardware random source shuffles the selected
@@ -79,7 +89,7 @@ cards leave the ring and the remaining deck is not rerolled.
 
 ### microSD
 
-v1.1.2 is a complete No-SD build and also offers an optional SD asset pack.
+v1.1.3 is a complete No-SD build and also offers an optional SD asset pack.
 
 - Without microSD: all 78 upright JPEG faces and the card back are embedded;
   reversed cards are rotated at render time. Study, interpretations, motion
@@ -93,10 +103,10 @@ v1.1.2 is a complete No-SD build and also offers an optional SD asset pack.
 Download the files from the
 [latest Release](https://github.com/Lyzbn/ADV-Tarot-Firmware/releases/latest):
 
-- `ADV-Tarot-Cardputer-ADV-v1.1.2-NoSD-M5Burner.bin`: complete merged image for
+- `ADV-Tarot-Cardputer-ADV-v1.1.3-NoSD-M5Burner.bin`: complete merged image for
   M5Burner or flashing at `0x0`; existing settings, learning progress, and
   reading history are erased.
-- `ADV-Tarot-v1.1.2-Optional-SD-Assets.zip`: optional transparent PNG/JPEG
+- `ADV-Tarot-v1.1.3-Optional-SD-Assets.zip`: optional transparent PNG/JPEG
   assets; extract the `tarot` folder to the root of a FAT32 microSD card.
 - `SHA256SUMS.txt`: file integrity checks.
 
