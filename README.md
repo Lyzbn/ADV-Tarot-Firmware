@@ -12,6 +12,8 @@
 设置与记录。本轮已通过构建和镜像校验，USB/电池冷启动实机验证仍待完成。
 详见 [更新说明](RELEASE_NOTES_v1.1.3.md)。
 
+实机验收项目、当前结果和 M5Burner 分发核对步骤见 [发布与验收记录](VALIDATION.md)。
+
 ADV Tarot 不是“按一下按钮就吐出一张随机牌”。每次占卜开始时，ESP32-S3
 硬件随机源会先完成一副 22 或 78 张牌的完整不重复洗牌，并为每张牌独立确定
 正逆位。之后，设备倾斜只会移动这副已经形成的环形牌序；按下确认时才锁定
@@ -62,6 +64,8 @@ v1.1.3 是完整的 No-SD 版本，并同时提供可选 SD 资源包。
 but does not boot, flash the new image at `0x0` using DIO if a mode is requested.
 This clears NVS settings and history. Build and image checks passed; USB/battery
 cold-boot hardware verification is pending. See [release notes](RELEASE_NOTES_v1.1.3.md).
+
+The [release validation checklist](VALIDATION.md) tracks device checks and the separate M5Burner distribution verification. A successful build or website deployment does not complete those checks.
 
 ADV Tarot is not a button that simply returns a newly randomized card. At the
 start of a reading, the ESP32-S3 hardware random source shuffles the selected
