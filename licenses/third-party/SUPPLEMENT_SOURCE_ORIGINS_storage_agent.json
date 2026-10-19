@@ -1,0 +1,956 @@
+{
+  "schema_version": 1,
+  "checked_at_utc": "2026-10-16T19:08:37.709469+00:00",
+  "scope": "Additional official TLSF, FreeModbus and LittleFS notices for the existing SDK package; no firmware/application source is included.",
+  "kit_root": "relink-draft",
+  "framework_package": {
+    "path": "framework/package.json",
+    "sha256": "f35415c75f6f43755df92bbbf7ef10c9e65c2edb2569d512636a0477be64d5bf",
+    "metadata": {
+      "name": "framework-arduinoespressif32",
+      "version": "3.20017.241212+sha.dcc1105b",
+      "description": "Arduino Wiring-based Framework for the Espressif ESP32, ESP32-S and ESP32-C series of SoCs",
+      "keywords": [
+        "framework",
+        "arduino",
+        "espressif",
+        "esp32"
+      ],
+      "license": "LGPL-2.1-or-later",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/espressif/arduino-esp32"
+      }
+    }
+  },
+  "records": [
+    {
+      "component": "tlsf",
+      "applicable_kit_paths": [
+        "framework/tools/sdk/esp32s3/lib/libheap.a"
+      ],
+      "official_sdk_binary_match": {
+        "arduino_commit": "dcc1105b0cf1322a437b354c336f2abf72b7e512",
+        "url": "https://raw.githubusercontent.com/espressif/arduino-esp32/dcc1105b0cf1322a437b354c336f2abf72b7e512/tools/sdk/esp32s3/lib/libheap.a",
+        "kit_path": "framework/tools/sdk/esp32s3/lib/libheap.a",
+        "bytes": 557948,
+        "local_sha256": "8108f23266178230dc27c03ac62b538a990a2a90d638503e3a1f3c482ea41513",
+        "upstream_sha256": "8108f23266178230dc27c03ac62b538a990a2a90d638503e3a1f3c482ea41513",
+        "byte_identical": true
+      },
+      "source_declaration": {
+        "url": "https://github.com/espressif/arduino-esp32/pull/9339",
+        "api_url": "https://api.github.com/repos/espressif/arduino-esp32/pulls/9339",
+        "api_response_sha256": "4e1f904167f4e7f7da9ebf00b81ae41de2e613a272a94e86767fd41bb08feb84",
+        "body": "esp-idf: v4.4.7 38eeba213a\r\nesp-dl: master 0632d24\r\nesp-rainmaker: master d8e9345\r\nesp32-camera: master f0bb429\r\nesp_littlefs: master 41873c2\r\nespressif__esp-dsp: master 9b4a8b4\r\ntinyusb: master a0e5626bc\r\n",
+        "merged_at": "2024-03-05T13:03:51Z",
+        "sdk_update_commit": "fd49a0abca2385a3c074c6ca5b8ad60f8b8c273d"
+      },
+      "licenses": [
+        {
+          "saved_license_path": "tlsf/TLSF-BSD-3-Clause-NOTICE.txt",
+          "license_spdx": "BSD-3-Clause",
+          "download_url": "https://raw.githubusercontent.com/espressif/esp-idf/38eeba213aa695aabfd6d89aa9f5078dbe5a94c3/components/heap/heap_tlsf.h",
+          "upstream_path": "components/heap/heap_tlsf.h",
+          "upstream_commit": "38eeba213aa695aabfd6d89aa9f5078dbe5a94c3",
+          "download_sha256": "b667cbfa79dc6105fca895b6afa8f41dff052a53132a4bd6609b734459b35698",
+          "saved_sha256": "ed6fb03d1f60749069487729e2570f47042b1ec235375e0382f1a97757dc57f1",
+          "saved_bytes": 1912,
+          "extraction": "Complete first comment containing original copyright, conditions and disclaimer; source bytes 0 through first */ inclusive, followed by newline.",
+          "upstream_git_blob_sha1": "0937ee711cda71c9eca913b2750ddd2e6b2561c6"
+        }
+      ],
+      "version_match_evidence": [
+        {
+          "kit_path": "framework/tools/sdk/esp32s3/include/heap/include/esp_heap_caps.h",
+          "idf_path": "components/heap/include/esp_heap_caps.h",
+          "local_sha256": "db03e9981ce2053228fa4e1ed97abe949a30d01531159bfc6d55638c25232dee",
+          "local_git_blob_sha1": "2832b101b5e1abd784624f0bd6cd9fabceb8b6aa",
+          "frozen_idf_git_blob_sha1": "2832b101b5e1abd784624f0bd6cd9fabceb8b6aa",
+          "byte_identical_by_git_blob": true
+        },
+        {
+          "kit_path": "framework/tools/sdk/esp32s3/include/heap/include/esp_heap_caps_init.h",
+          "idf_path": "components/heap/include/esp_heap_caps_init.h",
+          "local_sha256": "43f786d3446f6654e7cd0bdc9896305d7617a3a88118d7b5e7b13ca4470ab7d2",
+          "local_git_blob_sha1": "74e8cb9016f0ba16292a7211a2233c098b39a6e2",
+          "frozen_idf_git_blob_sha1": "74e8cb9016f0ba16292a7211a2233c098b39a6e2",
+          "byte_identical_by_git_blob": true
+        },
+        {
+          "kit_path": "framework/tools/sdk/esp32s3/include/heap/include/esp_heap_task_info.h",
+          "idf_path": "components/heap/include/esp_heap_task_info.h",
+          "local_sha256": "cc17b8a20582fcbdd305ef90bdfcd5fbf8747e02f605dad8aa8d29e57cc79d0c",
+          "local_git_blob_sha1": "fca9a43ba66693a702a4a86fe233183472a43bda",
+          "frozen_idf_git_blob_sha1": "fca9a43ba66693a702a4a86fe233183472a43bda",
+          "byte_identical_by_git_blob": true
+        },
+        {
+          "kit_path": "framework/tools/sdk/esp32s3/include/heap/include/esp_heap_trace.h",
+          "idf_path": "components/heap/include/esp_heap_trace.h",
+          "local_sha256": "ad67f185a0a8c524dbded3fb0d58bbbbe65662fe28d59010005bc8a314ebb189",
+          "local_git_blob_sha1": "a71f96362c1eeb97ceebd4211f906f65077f53d2",
+          "frozen_idf_git_blob_sha1": "a71f96362c1eeb97ceebd4211f906f65077f53d2",
+          "byte_identical_by_git_blob": true
+        },
+        {
+          "kit_path": "framework/tools/sdk/esp32s3/include/heap/include/heap_memory_layout.h",
+          "idf_path": "components/heap/include/heap_memory_layout.h",
+          "local_sha256": "a25d63ba4e98eb37e498fcfffce2b07458807da7670bca0e68129137bee72c25",
+          "local_git_blob_sha1": "5ad5ad853128a068f7267c35f162fc8e13f158b2",
+          "frozen_idf_git_blob_sha1": "5ad5ad853128a068f7267c35f162fc8e13f158b2",
+          "byte_identical_by_git_blob": true
+        },
+        {
+          "kit_path": "framework/tools/sdk/esp32s3/include/heap/include/multi_heap.h",
+          "idf_path": "components/heap/include/multi_heap.h",
+          "local_sha256": "65d176e656aa2fb745dc2a28f4bb157ce9a255d7ab5c1628d0f5b566177dee91",
+          "local_git_blob_sha1": "622191fe0cc480861dfffa981e1763be28f0eb1b",
+          "frozen_idf_git_blob_sha1": "622191fe0cc480861dfffa981e1763be28f0eb1b",
+          "byte_identical_by_git_blob": true
+        },
+        {
+          "kit_path": "framework/tools/sdk/esp32s3/include/heap/include/soc/soc_memory_layout.h",
+          "idf_path": "components/heap/include/soc/soc_memory_layout.h",
+          "local_sha256": "e4d4d6bd6f0dd5c2a83c467badafe03f8fa165256b5e5a1fd2e9241cb17a42ef",
+          "local_git_blob_sha1": "189cf60222adc4e5e93b59204cf39e7dfcca0125",
+          "frozen_idf_git_blob_sha1": "189cf60222adc4e5e93b59204cf39e7dfcca0125",
+          "byte_identical_by_git_blob": true
+        }
+      ],
+      "remaining": [
+        "This verifies the distributed SDK archive against the official Arduino commit and the stated source provenance; it is not an independent reproduction of the SDK build or proof that this component is used by every final firmware.",
+        "The private heap_tlsf.h implementation header is not distributed in this SDK include tree; the notice was retrieved from the SDK update declared ESP-IDF commit and its blob checked against the frozen IDF tree."
+      ],
+      "upstream_repository": "https://github.com/espressif/esp-idf",
+      "upstream_commit": "38eeba213aa695aabfd6d89aa9f5078dbe5a94c3"
+    },
+    {
+      "component": "freemodbus",
+      "applicable_kit_paths": [
+        "framework/tools/sdk/esp32s3/lib/libfreemodbus.a"
+      ],
+      "official_sdk_binary_match": {
+        "arduino_commit": "dcc1105b0cf1322a437b354c336f2abf72b7e512",
+        "url": "https://raw.githubusercontent.com/espressif/arduino-esp32/dcc1105b0cf1322a437b354c336f2abf72b7e512/tools/sdk/esp32s3/lib/libfreemodbus.a",
+        "kit_path": "framework/tools/sdk/esp32s3/lib/libfreemodbus.a",
+        "bytes": 2197636,
+        "local_sha256": "0ff02a3a3d10461786abaa9b9a9f5bd9c0b48ae2214a029d7732bb66431c3d0b",
+        "upstream_sha256": "0ff02a3a3d10461786abaa9b9a9f5bd9c0b48ae2214a029d7732bb66431c3d0b",
+        "byte_identical": true
+      },
+      "source_declaration": {
+        "url": "https://github.com/espressif/arduino-esp32/pull/9339",
+        "api_url": "https://api.github.com/repos/espressif/arduino-esp32/pulls/9339",
+        "api_response_sha256": "4e1f904167f4e7f7da9ebf00b81ae41de2e613a272a94e86767fd41bb08feb84",
+        "body": "esp-idf: v4.4.7 38eeba213a\r\nesp-dl: master 0632d24\r\nesp-rainmaker: master d8e9345\r\nesp32-camera: master f0bb429\r\nesp_littlefs: master 41873c2\r\nespressif__esp-dsp: master 9b4a8b4\r\ntinyusb: master a0e5626bc\r\n",
+        "merged_at": "2024-03-05T13:03:51Z",
+        "sdk_update_commit": "fd49a0abca2385a3c074c6ca5b8ad60f8b8c273d"
+      },
+      "licenses": [
+        {
+          "saved_license_path": "freemodbus/modbus_ascii_mbascii.c-BSD-NOTICE.txt",
+          "license_spdx": "BSD-3-Clause",
+          "download_url": "https://raw.githubusercontent.com/espressif/esp-idf/38eeba213aa695aabfd6d89aa9f5078dbe5a94c3/components/freemodbus/freemodbus/modbus/ascii/mbascii.c",
+          "upstream_path": "components/freemodbus/freemodbus/modbus/ascii/mbascii.c",
+          "upstream_commit": "38eeba213aa695aabfd6d89aa9f5078dbe5a94c3",
+          "download_sha256": "4854a4c05b74679432568456dd912bcdf70e472813bbc64b51472c4a1b9739ac",
+          "saved_sha256": "f7f98680fb9c46ab79078cd5000023851f48183e8c50612300d3439234a44ca5",
+          "saved_bytes": 1885,
+          "extraction": "Verbatim leading source comments through the license disclaimer; includes original copyright and SPDX information where present.",
+          "upstream_git_blob_sha1": "3650d53d31cbeac3c93492409236dcbbed63bb92",
+          "also_in_source_paths": [
+            "components/freemodbus/freemodbus/modbus/functions/mbfunccoils.c",
+            "components/freemodbus/freemodbus/modbus/functions/mbfuncholding.c",
+            "components/freemodbus/freemodbus/modbus/functions/mbfuncinput.c",
+            "components/freemodbus/freemodbus/modbus/functions/mbutils.c",
+            "components/freemodbus/freemodbus/modbus/functions/mbfuncother.c",
+            "components/freemodbus/freemodbus/modbus/rtu/mbrtu.c",
+            "components/freemodbus/freemodbus/modbus/mb.c"
+          ]
+        },
+        {
+          "saved_license_path": "freemodbus/modbus_ascii_mbascii_m.c-BSD-NOTICE.txt",
+          "license_spdx": "BSD-3-Clause",
+          "download_url": "https://raw.githubusercontent.com/espressif/esp-idf/38eeba213aa695aabfd6d89aa9f5078dbe5a94c3/components/freemodbus/freemodbus/modbus/ascii/mbascii_m.c",
+          "upstream_path": "components/freemodbus/freemodbus/modbus/ascii/mbascii_m.c",
+          "upstream_commit": "38eeba213aa695aabfd6d89aa9f5078dbe5a94c3",
+          "download_sha256": "46ef667444e2c4ac6cf7a5e819c0f064e28c069bdec4b105bb15b09d3cfb627f",
+          "saved_sha256": "d67ebbcf0e80099d7594742371eee9ebe2e52e18d395c5a827cece32a8212827",
+          "saved_bytes": 1833,
+          "extraction": "Verbatim leading source comments through the license disclaimer; includes original copyright and SPDX information where present.",
+          "upstream_git_blob_sha1": "2e1656788be59ed6760803657e86659722837ffe",
+          "also_in_source_paths": []
+        },
+        {
+          "saved_license_path": "freemodbus/modbus_ascii_mbascii.h-BSD-NOTICE.txt",
+          "license_spdx": "BSD-3-Clause",
+          "download_url": "https://raw.githubusercontent.com/espressif/esp-idf/38eeba213aa695aabfd6d89aa9f5078dbe5a94c3/components/freemodbus/freemodbus/modbus/ascii/mbascii.h",
+          "upstream_path": "components/freemodbus/freemodbus/modbus/ascii/mbascii.h",
+          "upstream_commit": "38eeba213aa695aabfd6d89aa9f5078dbe5a94c3",
+          "download_sha256": "d820cfc6e9dab2d39a44701bbe83f322f2e03b7bfe7e65e9328c61985803de37",
+          "saved_sha256": "d988d82c06a060bae7b44695b4a1eab732802b1849ac7ec2800095b35b92aedb",
+          "saved_bytes": 1803,
+          "extraction": "Verbatim leading source comments through the license disclaimer; includes original copyright and SPDX information where present.",
+          "upstream_git_blob_sha1": "e4a2c6a50813bb2d0b5aa486759e5224ab79c825",
+          "also_in_source_paths": [
+            "components/freemodbus/freemodbus/modbus/functions/mbfuncdiag.c",
+            "components/freemodbus/freemodbus/modbus/include/mb.h",
+            "components/freemodbus/freemodbus/modbus/include/mbconfig.h",
+            "components/freemodbus/freemodbus/modbus/include/mbfunc.h",
+            "components/freemodbus/freemodbus/modbus/include/mbproto.h",
+            "components/freemodbus/freemodbus/modbus/include/mbframe.h",
+            "components/freemodbus/freemodbus/modbus/include/mbutils.h",
+            "components/freemodbus/freemodbus/modbus/rtu/mbcrc.h",
+            "components/freemodbus/freemodbus/modbus/rtu/mbrtu.h",
+            "components/freemodbus/freemodbus/modbus/tcp/mbtcp.h"
+          ]
+        },
+        {
+          "saved_license_path": "freemodbus/modbus_functions_mbfuncdisc.c-BSD-NOTICE.txt",
+          "license_spdx": "BSD-3-Clause",
+          "download_url": "https://raw.githubusercontent.com/espressif/esp-idf/38eeba213aa695aabfd6d89aa9f5078dbe5a94c3/components/freemodbus/freemodbus/modbus/functions/mbfuncdisc.c",
+          "upstream_path": "components/freemodbus/freemodbus/modbus/functions/mbfuncdisc.c",
+          "upstream_commit": "38eeba213aa695aabfd6d89aa9f5078dbe5a94c3",
+          "download_sha256": "5c96815f16f5fafe3168cfbce8a00d8f307bc30c20f6069e6592b384cc86ebc3",
+          "saved_sha256": "33b2e443cafc81ee1523b9dcec5ba6fdbb1680adaae2d942d98b2682b10f5d37",
+          "saved_bytes": 1854,
+          "extraction": "Verbatim leading source comments through the license disclaimer; includes original copyright and SPDX information where present.",
+          "upstream_git_blob_sha1": "1ff743d4c378d91e9dde6049d128e21cd94d6a0e",
+          "also_in_source_paths": []
+        },
+        {
+          "saved_license_path": "freemodbus/modbus_functions_mbfunccoils_m.c-BSD-NOTICE.txt",
+          "license_spdx": "BSD-3-Clause",
+          "download_url": "https://raw.githubusercontent.com/espressif/esp-idf/38eeba213aa695aabfd6d89aa9f5078dbe5a94c3/components/freemodbus/freemodbus/modbus/functions/mbfunccoils_m.c",
+          "upstream_path": "components/freemodbus/freemodbus/modbus/functions/mbfunccoils_m.c",
+          "upstream_commit": "38eeba213aa695aabfd6d89aa9f5078dbe5a94c3",
+          "download_sha256": "bb79bdbf239ef102db517e786787279ba28d79a828041236f1ebeceee05f1751",
+          "saved_sha256": "668c11f21b13bdae0ea77adbdb8596e8c57ff64468eb3a952b2534b5c685fe9f",
+          "saved_bytes": 1895,
+          "extraction": "Verbatim leading source comments through the license disclaimer; includes original copyright and SPDX information where present.",
+          "upstream_git_blob_sha1": "cbd5e3c3cd0df3dcb25fef9cfaec2b85b291f97d",
+          "also_in_source_paths": [
+            "components/freemodbus/freemodbus/modbus/functions/mbfuncdisc_m.c",
+            "components/freemodbus/freemodbus/modbus/functions/mbfuncinput_m.c",
+            "components/freemodbus/freemodbus/modbus/functions/mbfuncholding_m.c",
+            "components/freemodbus/freemodbus/modbus/mb_m.c"
+          ]
+        },
+        {
+          "saved_license_path": "freemodbus/modbus_include_mb_m.h-BSD-NOTICE.txt",
+          "license_spdx": "BSD-3-Clause",
+          "download_url": "https://raw.githubusercontent.com/espressif/esp-idf/38eeba213aa695aabfd6d89aa9f5078dbe5a94c3/components/freemodbus/freemodbus/modbus/include/mb_m.h",
+          "upstream_path": "components/freemodbus/freemodbus/modbus/include/mb_m.h",
+          "upstream_commit": "38eeba213aa695aabfd6d89aa9f5078dbe5a94c3",
+          "download_sha256": "9aad7154639f9a733c56d1c3ca8ae7b5366434c7ad6bb91618ab26ffa4f32e06",
+          "saved_sha256": "ffb23e98944325231497eb5edcfdd483d0723aa3bbc23fd1406c466d468a9bd7",
+          "saved_bytes": 1807,
+          "extraction": "Verbatim leading source comments through the license disclaimer; includes original copyright and SPDX information where present.",
+          "upstream_git_blob_sha1": "0b720a44a66050877e4e969fd9d38e17331cee43",
+          "also_in_source_paths": []
+        },
+        {
+          "saved_license_path": "freemodbus/modbus_include_mbport.h-BSD-NOTICE.txt",
+          "license_spdx": "BSD-3-Clause",
+          "download_url": "https://raw.githubusercontent.com/espressif/esp-idf/38eeba213aa695aabfd6d89aa9f5078dbe5a94c3/components/freemodbus/freemodbus/modbus/include/mbport.h",
+          "upstream_path": "components/freemodbus/freemodbus/modbus/include/mbport.h",
+          "upstream_commit": "38eeba213aa695aabfd6d89aa9f5078dbe5a94c3",
+          "download_sha256": "64a9e314f869551e842d89459b2a89b6efa66050fea2ba0bb8f1709d7c344e95",
+          "saved_sha256": "787e15917993652ae7d40c77416d3ef514cb5887761cfb539e186ce14f9a9f3b",
+          "saved_bytes": 1803,
+          "extraction": "Verbatim leading source comments through the license disclaimer; includes original copyright and SPDX information where present.",
+          "upstream_git_blob_sha1": "4b072d571d5e633e1bfb6c57a4d57838155b4496",
+          "also_in_source_paths": []
+        },
+        {
+          "saved_license_path": "freemodbus/modbus_rtu_mbcrc.c-BSD-NOTICE.txt",
+          "license_spdx": "BSD-3-Clause",
+          "download_url": "https://raw.githubusercontent.com/espressif/esp-idf/38eeba213aa695aabfd6d89aa9f5078dbe5a94c3/components/freemodbus/freemodbus/modbus/rtu/mbcrc.c",
+          "upstream_path": "components/freemodbus/freemodbus/modbus/rtu/mbcrc.c",
+          "upstream_commit": "38eeba213aa695aabfd6d89aa9f5078dbe5a94c3",
+          "download_sha256": "e8e12a77fcb4638803d30e05d6de244f3f8199bbdcbcd73890d74230363ea8b8",
+          "saved_sha256": "efd99dcd160b7179add3adefa9dfd5a404b0c22a2400066e9f5332e7068e7c9d",
+          "saved_bytes": 1882,
+          "extraction": "Verbatim leading source comments through the license disclaimer; includes original copyright and SPDX information where present.",
+          "upstream_git_blob_sha1": "f4134534929d61d5e6e44377cb7f49fa7ae82069",
+          "also_in_source_paths": []
+        },
+        {
+          "saved_license_path": "freemodbus/modbus_tcp_mbtcp_m.c-BSD-NOTICE.txt",
+          "license_spdx": "BSD-3-Clause",
+          "download_url": "https://raw.githubusercontent.com/espressif/esp-idf/38eeba213aa695aabfd6d89aa9f5078dbe5a94c3/components/freemodbus/freemodbus/modbus/tcp/mbtcp_m.c",
+          "upstream_path": "components/freemodbus/freemodbus/modbus/tcp/mbtcp_m.c",
+          "upstream_commit": "38eeba213aa695aabfd6d89aa9f5078dbe5a94c3",
+          "download_sha256": "a41c77faae1a83c7d0fb9fa5a61cdc3a733615b60fd59cb1777da1f3c4012320",
+          "saved_sha256": "b2659e1ec80ecce619003d18bcf68ee665ef8f1cfee290218180fde3a6d9b493",
+          "saved_bytes": 1882,
+          "extraction": "Verbatim leading source comments through the license disclaimer; includes original copyright and SPDX information where present.",
+          "upstream_git_blob_sha1": "4a9fc013958e738f13de262db7d266452872f976",
+          "also_in_source_paths": [
+            "components/freemodbus/freemodbus/modbus/tcp/mbtcp.c"
+          ]
+        },
+        {
+          "saved_license_path": "freemodbus/modbus_rtu_mbrtu_m.c-BSD-NOTICE.txt",
+          "license_spdx": "BSD-3-Clause",
+          "download_url": "https://raw.githubusercontent.com/espressif/esp-idf/38eeba213aa695aabfd6d89aa9f5078dbe5a94c3/components/freemodbus/freemodbus/modbus/rtu/mbrtu_m.c",
+          "upstream_path": "components/freemodbus/freemodbus/modbus/rtu/mbrtu_m.c",
+          "upstream_commit": "38eeba213aa695aabfd6d89aa9f5078dbe5a94c3",
+          "download_sha256": "600eb1b2ef477036538319673b2da25188f731ec6aa719e2f76acd48be8a8db9",
+          "saved_sha256": "fe33c62d6eeab7157a6914bac2a74439ed78956474278a717ecb76a17224152e",
+          "saved_bytes": 1905,
+          "extraction": "Verbatim leading source comments through the license disclaimer; includes original copyright and SPDX information where present.",
+          "upstream_git_blob_sha1": "85b19809b4c92a2738045d525ecb142f5ae3e2fe",
+          "also_in_source_paths": []
+        },
+        {
+          "saved_license_path": "freemodbus/modbus_tcp_mbtcp_m.h-BSD-NOTICE.txt",
+          "license_spdx": "BSD-3-Clause",
+          "download_url": "https://raw.githubusercontent.com/espressif/esp-idf/38eeba213aa695aabfd6d89aa9f5078dbe5a94c3/components/freemodbus/freemodbus/modbus/tcp/mbtcp_m.h",
+          "upstream_path": "components/freemodbus/freemodbus/modbus/tcp/mbtcp_m.h",
+          "upstream_commit": "38eeba213aa695aabfd6d89aa9f5078dbe5a94c3",
+          "download_sha256": "53da810b9ae42057e78c12f48bb16e0e0d4a5dbe3b2258a437cdd5188c6b8920",
+          "saved_sha256": "4961fb79d998fa7a7eec6106983032466ed30d54a608e1cdcc463315c315222c",
+          "saved_bytes": 1749,
+          "extraction": "Verbatim leading source comments through the license disclaimer; includes original copyright and SPDX information where present.",
+          "upstream_git_blob_sha1": "901cd0e790ec7d43103d54bd92a529304815bf25",
+          "also_in_source_paths": []
+        },
+        {
+          "saved_license_path": "freemodbus/port_port.c-BSD-NOTICE.txt",
+          "license_spdx": "BSD-3-Clause",
+          "download_url": "https://raw.githubusercontent.com/espressif/esp-idf/38eeba213aa695aabfd6d89aa9f5078dbe5a94c3/components/freemodbus/freemodbus/port/port.c",
+          "upstream_path": "components/freemodbus/freemodbus/port/port.c",
+          "upstream_commit": "38eeba213aa695aabfd6d89aa9f5078dbe5a94c3",
+          "download_sha256": "c0e216ef4aa9b1f0dc2b94a6cbff2dff083af1f3b3b85c72da256da4f257f467",
+          "saved_sha256": "7fa83c998a7bf4b6692f5513f00a8d7ee5035f1e881ac2ddbe794df5a68ca904",
+          "saved_bytes": 1873,
+          "extraction": "Verbatim leading source comments through the license disclaimer; includes original copyright and SPDX information where present.",
+          "upstream_git_blob_sha1": "ca8eb5bcac57333145bc2e9e526459c096376488",
+          "also_in_source_paths": []
+        },
+        {
+          "saved_license_path": "freemodbus/port_port.h-BSD-NOTICE.txt",
+          "license_spdx": "BSD-3-Clause",
+          "download_url": "https://raw.githubusercontent.com/espressif/esp-idf/38eeba213aa695aabfd6d89aa9f5078dbe5a94c3/components/freemodbus/freemodbus/port/port.h",
+          "upstream_path": "components/freemodbus/freemodbus/port/port.h",
+          "upstream_commit": "38eeba213aa695aabfd6d89aa9f5078dbe5a94c3",
+          "download_sha256": "521db7893b929fa580c9ebb8b0352879033c30a96a8153c8f62d2d8d1d586d36",
+          "saved_sha256": "ab753df78164ffa99fbedb1cf2d565610740fcb1efc05eba4ec4eff329d21de7",
+          "saved_bytes": 1745,
+          "extraction": "Verbatim leading source comments through the license disclaimer; includes original copyright and SPDX information where present.",
+          "upstream_git_blob_sha1": "b5d88583b80f50d680f4c351084b004e16eea756",
+          "also_in_source_paths": [
+            "components/freemodbus/freemodbus/port/portserial.c"
+          ]
+        },
+        {
+          "saved_license_path": "freemodbus/port_portevent.c-BSD-NOTICE.txt",
+          "license_spdx": "BSD-3-Clause",
+          "download_url": "https://raw.githubusercontent.com/espressif/esp-idf/38eeba213aa695aabfd6d89aa9f5078dbe5a94c3/components/freemodbus/freemodbus/port/portevent.c",
+          "upstream_path": "components/freemodbus/freemodbus/port/portevent.c",
+          "upstream_commit": "38eeba213aa695aabfd6d89aa9f5078dbe5a94c3",
+          "download_sha256": "9097786d7b679c74ffc4548bf58f7d0c773f80a874aa645f0e647c35b58d1e5c",
+          "saved_sha256": "586726633c0909cb95dc4fa751782751659395ec63795d8ccdbad26b91637f46",
+          "saved_bytes": 1851,
+          "extraction": "Verbatim leading source comments through the license disclaimer; includes original copyright and SPDX information where present.",
+          "upstream_git_blob_sha1": "229635bc530207bc70c677b670f5d3b57c92a447",
+          "also_in_source_paths": []
+        },
+        {
+          "saved_license_path": "freemodbus/port_portother.c-BSD-NOTICE.txt",
+          "license_spdx": "BSD-3-Clause",
+          "download_url": "https://raw.githubusercontent.com/espressif/esp-idf/38eeba213aa695aabfd6d89aa9f5078dbe5a94c3/components/freemodbus/freemodbus/port/portother.c",
+          "upstream_path": "components/freemodbus/freemodbus/port/portother.c",
+          "upstream_commit": "38eeba213aa695aabfd6d89aa9f5078dbe5a94c3",
+          "download_sha256": "669b85371d1b36530f829673ece658304c5215c2bbc2b702b090418a5a717950",
+          "saved_sha256": "b1695248333e23bfd73a115e6c277ea0c163a9f786390a7da575fdd74152f1a7",
+          "saved_bytes": 1846,
+          "extraction": "Verbatim leading source comments through the license disclaimer; includes original copyright and SPDX information where present.",
+          "upstream_git_blob_sha1": "180de5ba6cca2062b3644beab2788700ac778fbe",
+          "also_in_source_paths": []
+        },
+        {
+          "saved_license_path": "freemodbus/port_portevent_m.c-BSD-NOTICE.txt",
+          "license_spdx": "BSD-3-Clause",
+          "download_url": "https://raw.githubusercontent.com/espressif/esp-idf/38eeba213aa695aabfd6d89aa9f5078dbe5a94c3/components/freemodbus/freemodbus/port/portevent_m.c",
+          "upstream_path": "components/freemodbus/freemodbus/port/portevent_m.c",
+          "upstream_commit": "38eeba213aa695aabfd6d89aa9f5078dbe5a94c3",
+          "download_sha256": "2ce5cb01e7003ae4277cf81236baaaae817d76328de51f5095582737e9210dd6",
+          "saved_sha256": "766469d27a556f80a93c1efbaf5eea23db6b90cc2e1db457ba6acae59890c5de",
+          "saved_bytes": 1820,
+          "extraction": "Verbatim leading source comments through the license disclaimer; includes original copyright and SPDX information where present.",
+          "upstream_git_blob_sha1": "0f680be887aab529c03eb7c289ab33c594a95981",
+          "also_in_source_paths": []
+        },
+        {
+          "saved_license_path": "freemodbus/port_portother_m.c-BSD-NOTICE.txt",
+          "license_spdx": "BSD-3-Clause",
+          "download_url": "https://raw.githubusercontent.com/espressif/esp-idf/38eeba213aa695aabfd6d89aa9f5078dbe5a94c3/components/freemodbus/freemodbus/port/portother_m.c",
+          "upstream_path": "components/freemodbus/freemodbus/port/portother_m.c",
+          "upstream_commit": "38eeba213aa695aabfd6d89aa9f5078dbe5a94c3",
+          "download_sha256": "0605ad006dcf7b4efb913a5794db1e0f9ba42e249520dd6dd8b2e32bb31bff8d",
+          "saved_sha256": "f7e2973db9c75691f923eaa1261224308aa10d4677f71eb4a6b747bf6e452077",
+          "saved_bytes": 1854,
+          "extraction": "Verbatim leading source comments through the license disclaimer; includes original copyright and SPDX information where present.",
+          "upstream_git_blob_sha1": "fa2d4219980624c0f7bc6ad7d10cf7be0ac839bf",
+          "also_in_source_paths": []
+        },
+        {
+          "saved_license_path": "freemodbus/port_porttimer.c-BSD-NOTICE.txt",
+          "license_spdx": "BSD-3-Clause",
+          "download_url": "https://raw.githubusercontent.com/espressif/esp-idf/38eeba213aa695aabfd6d89aa9f5078dbe5a94c3/components/freemodbus/freemodbus/port/porttimer.c",
+          "upstream_path": "components/freemodbus/freemodbus/port/porttimer.c",
+          "upstream_commit": "38eeba213aa695aabfd6d89aa9f5078dbe5a94c3",
+          "download_sha256": "b74c5c2944036b0a84be1cb07a5552f45ecd9187edde6766864ad96f950bb437",
+          "saved_sha256": "22f68a0a33de1837c8ad412dabb7e8ec5febeef39dc264187911edbfce1687de",
+          "saved_bytes": 1850,
+          "extraction": "Verbatim leading source comments through the license disclaimer; includes original copyright and SPDX information where present.",
+          "upstream_git_blob_sha1": "4fbfbfda7130ae243d7f784ace431ceff4c8feb0",
+          "also_in_source_paths": []
+        },
+        {
+          "saved_license_path": "freemodbus/port_porttimer_m.c-BSD-NOTICE.txt",
+          "license_spdx": "BSD-3-Clause",
+          "download_url": "https://raw.githubusercontent.com/espressif/esp-idf/38eeba213aa695aabfd6d89aa9f5078dbe5a94c3/components/freemodbus/freemodbus/port/porttimer_m.c",
+          "upstream_path": "components/freemodbus/freemodbus/port/porttimer_m.c",
+          "upstream_commit": "38eeba213aa695aabfd6d89aa9f5078dbe5a94c3",
+          "download_sha256": "221e33a5d1a5be18130f5a98be0b93600d644a75652b77291fbe3147004f166a",
+          "saved_sha256": "c754c2dbe50d60213a579a4de368a5d186aaf1427d7636697b951f692b3bd09e",
+          "saved_bytes": 1822,
+          "extraction": "Verbatim leading source comments through the license disclaimer; includes original copyright and SPDX information where present.",
+          "upstream_git_blob_sha1": "f1595a6a2716e5f6e5a7ee136b131b4f389c7161",
+          "also_in_source_paths": []
+        },
+        {
+          "saved_license_path": "freemodbus/serial_master_port_port_serial_master.h-BSD-NOTICE.txt",
+          "license_spdx": "BSD-3-Clause",
+          "download_url": "https://raw.githubusercontent.com/espressif/esp-idf/38eeba213aa695aabfd6d89aa9f5078dbe5a94c3/components/freemodbus/freemodbus/serial_master/port/port_serial_master.h",
+          "upstream_path": "components/freemodbus/freemodbus/serial_master/port/port_serial_master.h",
+          "upstream_commit": "38eeba213aa695aabfd6d89aa9f5078dbe5a94c3",
+          "download_sha256": "ce1d2871204abfe5fa9f0ce0ea55fe9ba7fc0b633fd3da9f11cce9150eefe5a8",
+          "saved_sha256": "39156cf465b14409f8aca5c88115d5a3d488d8388eceab7d9badb29fb6440a69",
+          "saved_bytes": 1770,
+          "extraction": "Verbatim leading source comments through the license disclaimer; includes original copyright and SPDX information where present.",
+          "upstream_git_blob_sha1": "e389b8198c83cb45a1207f09417e30fa8f4d5a4f",
+          "also_in_source_paths": [
+            "components/freemodbus/freemodbus/serial_slave/port/port_serial_slave.h"
+          ]
+        },
+        {
+          "saved_license_path": "freemodbus/port_portserial_m.c-BSD-NOTICE.txt",
+          "license_spdx": "BSD-3-Clause",
+          "download_url": "https://raw.githubusercontent.com/espressif/esp-idf/38eeba213aa695aabfd6d89aa9f5078dbe5a94c3/components/freemodbus/freemodbus/port/portserial_m.c",
+          "upstream_path": "components/freemodbus/freemodbus/port/portserial_m.c",
+          "upstream_commit": "38eeba213aa695aabfd6d89aa9f5078dbe5a94c3",
+          "download_sha256": "f0e6205e4bab4a4a66fcf9e6936d5daa53773149ceb9cedd114d956555a3e5fc",
+          "saved_sha256": "56664d6bb1107eea299d8b6668318209aefd5b4aefa03b4410cc880461da756b",
+          "saved_bytes": 1741,
+          "extraction": "Verbatim leading source comments through the license disclaimer; includes original copyright and SPDX information where present.",
+          "upstream_git_blob_sha1": "cc37f510dcec3155a4284901add487e3f42dcf39",
+          "also_in_source_paths": []
+        },
+        {
+          "saved_license_path": "freemodbus/tcp_master_port_port_tcp_master.h-BSD-NOTICE.txt",
+          "license_spdx": "BSD-3-Clause",
+          "download_url": "https://raw.githubusercontent.com/espressif/esp-idf/38eeba213aa695aabfd6d89aa9f5078dbe5a94c3/components/freemodbus/freemodbus/tcp_master/port/port_tcp_master.h",
+          "upstream_path": "components/freemodbus/freemodbus/tcp_master/port/port_tcp_master.h",
+          "upstream_commit": "38eeba213aa695aabfd6d89aa9f5078dbe5a94c3",
+          "download_sha256": "706c3f8122196b62ca455008bda290bc3bf19be0d04382caf66bb2254d1c50bf",
+          "saved_sha256": "335ff7c8b66205309e7d7bc4f3c56623a1a2a7cf7fe76baf9f4fc6425791bfd2",
+          "saved_bytes": 1797,
+          "extraction": "Verbatim leading source comments through the license disclaimer; includes original copyright and SPDX information where present.",
+          "upstream_git_blob_sha1": "9867beef56f72dde05bbb36155d49919d065a2de",
+          "also_in_source_paths": [
+            "components/freemodbus/freemodbus/tcp_slave/port/port_tcp_slave.h"
+          ]
+        },
+        {
+          "saved_license_path": "freemodbus/tcp_master_port_port_tcp_master.c-BSD-NOTICE.txt",
+          "license_spdx": "BSD-3-Clause",
+          "download_url": "https://raw.githubusercontent.com/espressif/esp-idf/38eeba213aa695aabfd6d89aa9f5078dbe5a94c3/components/freemodbus/freemodbus/tcp_master/port/port_tcp_master.c",
+          "upstream_path": "components/freemodbus/freemodbus/tcp_master/port/port_tcp_master.c",
+          "upstream_commit": "38eeba213aa695aabfd6d89aa9f5078dbe5a94c3",
+          "download_sha256": "d54d0aebfb8bb255029d3639bd63ea63f3077fbd09bdb015ecada2829f0fa8e2",
+          "saved_sha256": "3d400ec356760a6a86e45f3040d4208026019b431ba685af8d9b29c866380692",
+          "saved_bytes": 1878,
+          "extraction": "Verbatim leading source comments through the license disclaimer; includes original copyright and SPDX information where present.",
+          "upstream_git_blob_sha1": "390026d5b71383a2bc10cc8cef221e1035d6ebdf",
+          "also_in_source_paths": [
+            "components/freemodbus/freemodbus/tcp_slave/port/port_tcp_slave.c"
+          ]
+        }
+      ],
+      "version_match_evidence": [
+        {
+          "kit_path": "framework/tools/sdk/esp32s3/include/freemodbus/freemodbus/common/include/esp_modbus_common.h",
+          "idf_path": "components/freemodbus/freemodbus/common/include/esp_modbus_common.h",
+          "local_sha256": "8928d6b8f6321e9d3c741f8adad1429e2c8b26d53cda312c624ca9af8dcd92c3",
+          "local_git_blob_sha1": "f443286ae87916e6eb52a01541aca803e7a780f7",
+          "frozen_idf_git_blob_sha1": "f443286ae87916e6eb52a01541aca803e7a780f7",
+          "byte_identical_by_git_blob": true
+        },
+        {
+          "kit_path": "framework/tools/sdk/esp32s3/include/freemodbus/freemodbus/common/include/esp_modbus_master.h",
+          "idf_path": "components/freemodbus/freemodbus/common/include/esp_modbus_master.h",
+          "local_sha256": "230a1fd3c25d7a7115d8fbb3eb4f9d7f33f1b2fe47ac1febbae794a3f9527cda",
+          "local_git_blob_sha1": "d11ade7a4d8daed70cbb4d7f2b8f623d81c1bb05",
+          "frozen_idf_git_blob_sha1": "d11ade7a4d8daed70cbb4d7f2b8f623d81c1bb05",
+          "byte_identical_by_git_blob": true
+        },
+        {
+          "kit_path": "framework/tools/sdk/esp32s3/include/freemodbus/freemodbus/common/include/esp_modbus_slave.h",
+          "idf_path": "components/freemodbus/freemodbus/common/include/esp_modbus_slave.h",
+          "local_sha256": "0ba7a1e68eb237e2178f93f6f01afc71c6e22d9d509befc5c3c2b2f2399bab7b",
+          "local_git_blob_sha1": "7d79b513a67d9aeb177f270c43818c284a461ada",
+          "frozen_idf_git_blob_sha1": "7d79b513a67d9aeb177f270c43818c284a461ada",
+          "byte_identical_by_git_blob": true
+        },
+        {
+          "kit_path": "framework/tools/sdk/esp32s3/include/freemodbus/freemodbus/common/include/mbcontroller.h",
+          "idf_path": "components/freemodbus/freemodbus/common/include/mbcontroller.h",
+          "local_sha256": "820f125fb24540121359768878c9a45361941ae23c760b5c2729350fc99b950e",
+          "local_git_blob_sha1": "10205f8951a854dae573b8d1cbc46bd89c0b28f7",
+          "frozen_idf_git_blob_sha1": "10205f8951a854dae573b8d1cbc46bd89c0b28f7",
+          "byte_identical_by_git_blob": true
+        }
+      ],
+      "remaining": [
+        "This verifies the distributed SDK archive against the official Arduino commit and the stated source provenance; it is not an independent reproduction of the SDK build or proof that this component is used by every final firmware.",
+        "The existing Apache-2.0 components/freemodbus/LICENSE applies to Espressif portions; these BSD notices supplement rather than replace it. Additional source-file-specific notices are retained separately."
+      ],
+      "upstream_repository": "https://github.com/espressif/esp-idf",
+      "upstream_commit": "38eeba213aa695aabfd6d89aa9f5078dbe5a94c3",
+      "checked_source_files": [
+        {
+          "path": "components/freemodbus/freemodbus/common/esp_modbus_callbacks.h",
+          "git_blob_sha1": "6bcd15f43c7cb7c35eff3a9f1066cc5010bcd2c6",
+          "sha256": "950147d32540420148b7dc5e252b33ae2ad5116e05ddcec7701b9ea4488c3fd2"
+        },
+        {
+          "path": "components/freemodbus/freemodbus/common/esp_modbus_master.c",
+          "git_blob_sha1": "e3015818f99a692f0e835a3909e5d14db5d6b9a6",
+          "sha256": "7d9b294204860155e4021f206ffb522ba8824d372be8e5a0b89f981df8c3fe01"
+        },
+        {
+          "path": "components/freemodbus/freemodbus/common/esp_modbus_master_serial.c",
+          "git_blob_sha1": "9ea355bbfbb059328db98e21ac7ebce451864630",
+          "sha256": "da180f0736119637dce9d0a069c1a4f86655523f27bfec39432cc1a671de7a27"
+        },
+        {
+          "path": "components/freemodbus/freemodbus/common/esp_modbus_master_tcp.c",
+          "git_blob_sha1": "8350f732550d4bb60cdee4331f80822a7e088895",
+          "sha256": "85f8c777aad82523670dcbf83ca9c6d05667bd581589ae4e03ccf42c316df525"
+        },
+        {
+          "path": "components/freemodbus/freemodbus/common/esp_modbus_slave_serial.c",
+          "git_blob_sha1": "eb08dfdc062f8b3d577d33c66e5545130e84423d",
+          "sha256": "8dcfe823ed3ceb8879afe1dff53413c38341cdc94a826c50f811f27363f60ec8"
+        },
+        {
+          "path": "components/freemodbus/freemodbus/common/esp_modbus_slave.c",
+          "git_blob_sha1": "24e2c59c0eeab13901a8a8eb1676511fd258096b",
+          "sha256": "010ef31769d27c503e90ffb92df33f535a71d322f73ea3320c59d35686926703"
+        },
+        {
+          "path": "components/freemodbus/freemodbus/common/esp_modbus_slave_tcp.c",
+          "git_blob_sha1": "c3b3ee6fcd13bd5bde9678d2b9128ef279d7348b",
+          "sha256": "930858400f44caf10aea5ab80fd6ef9c1ef45448374f2a0625d43c7a7cafc865"
+        },
+        {
+          "path": "components/freemodbus/freemodbus/common/include/esp_modbus_common.h",
+          "git_blob_sha1": "f443286ae87916e6eb52a01541aca803e7a780f7",
+          "sha256": "8928d6b8f6321e9d3c741f8adad1429e2c8b26d53cda312c624ca9af8dcd92c3"
+        },
+        {
+          "path": "components/freemodbus/freemodbus/common/include/mbcontroller.h",
+          "git_blob_sha1": "10205f8951a854dae573b8d1cbc46bd89c0b28f7",
+          "sha256": "820f125fb24540121359768878c9a45361941ae23c760b5c2729350fc99b950e"
+        },
+        {
+          "path": "components/freemodbus/freemodbus/common/include/esp_modbus_slave.h",
+          "git_blob_sha1": "7d79b513a67d9aeb177f270c43818c284a461ada",
+          "sha256": "0ba7a1e68eb237e2178f93f6f01afc71c6e22d9d509befc5c3c2b2f2399bab7b"
+        },
+        {
+          "path": "components/freemodbus/freemodbus/common/include/esp_modbus_master.h",
+          "git_blob_sha1": "d11ade7a4d8daed70cbb4d7f2b8f623d81c1bb05",
+          "sha256": "230a1fd3c25d7a7115d8fbb3eb4f9d7f33f1b2fe47ac1febbae794a3f9527cda"
+        },
+        {
+          "path": "components/freemodbus/freemodbus/common/mbc_master.h",
+          "git_blob_sha1": "4ffe4ffcec4f4aa1dd47b43e82fae0c75cf1283a",
+          "sha256": "eab8cbaa850ddd2a1a431e2fb095d7d99f1a53e146804bb4fcce89d2645a0a40"
+        },
+        {
+          "path": "components/freemodbus/freemodbus/common/mbc_slave.h",
+          "git_blob_sha1": "5b54038d1df76fdea7c7bd68df23bcb68ee21df4",
+          "sha256": "b62e20e6269596d6eb712a1a6e7a52a3f442c4785a21fbacb79bfd2e3d6490f4"
+        },
+        {
+          "path": "components/freemodbus/freemodbus/modbus/ascii/mbascii.c",
+          "git_blob_sha1": "3650d53d31cbeac3c93492409236dcbbed63bb92",
+          "sha256": "4854a4c05b74679432568456dd912bcdf70e472813bbc64b51472c4a1b9739ac"
+        },
+        {
+          "path": "components/freemodbus/freemodbus/modbus/ascii/mbascii_m.c",
+          "git_blob_sha1": "2e1656788be59ed6760803657e86659722837ffe",
+          "sha256": "46ef667444e2c4ac6cf7a5e819c0f064e28c069bdec4b105bb15b09d3cfb627f"
+        },
+        {
+          "path": "components/freemodbus/freemodbus/modbus/ascii/mbascii.h",
+          "git_blob_sha1": "e4a2c6a50813bb2d0b5aa486759e5224ab79c825",
+          "sha256": "d820cfc6e9dab2d39a44701bbe83f322f2e03b7bfe7e65e9328c61985803de37"
+        },
+        {
+          "path": "components/freemodbus/freemodbus/modbus/functions/mbfuncdisc.c",
+          "git_blob_sha1": "1ff743d4c378d91e9dde6049d128e21cd94d6a0e",
+          "sha256": "5c96815f16f5fafe3168cfbce8a00d8f307bc30c20f6069e6592b384cc86ebc3"
+        },
+        {
+          "path": "components/freemodbus/freemodbus/modbus/functions/mbfunccoils_m.c",
+          "git_blob_sha1": "cbd5e3c3cd0df3dcb25fef9cfaec2b85b291f97d",
+          "sha256": "bb79bdbf239ef102db517e786787279ba28d79a828041236f1ebeceee05f1751"
+        },
+        {
+          "path": "components/freemodbus/freemodbus/modbus/functions/mbfunccoils.c",
+          "git_blob_sha1": "600c7564d186258e338082b1227cb86870ec7d15",
+          "sha256": "a6e47b9ebf953b139375e7dc775b5756d6d89d6d7b65e6635decbaeb7d80ef99"
+        },
+        {
+          "path": "components/freemodbus/freemodbus/modbus/functions/mbfuncdiag.c",
+          "git_blob_sha1": "b988cb8daf10d2278a5a84fb098012d328654306",
+          "sha256": "39e41134faa7a8736c8a3f153a7b0f5a3a76f3ee0c6246a34439812d028a57f9"
+        },
+        {
+          "path": "components/freemodbus/freemodbus/modbus/functions/mbfuncdisc_m.c",
+          "git_blob_sha1": "3a079ba33977dbd936824f54724b0c8aa999c2f5",
+          "sha256": "a5888fd387d911749ecc1417e5c2279139efc200b0b60a82d47dbc937a369bfe"
+        },
+        {
+          "path": "components/freemodbus/freemodbus/modbus/functions/mbfuncholding.c",
+          "git_blob_sha1": "723ba1a17af3028d9337caaa599395fbade77751",
+          "sha256": "d6599d792c1e18348fdd15395e08a230bfa6906ddcfa175d2c37715f5c8e1c91"
+        },
+        {
+          "path": "components/freemodbus/freemodbus/modbus/functions/mbfuncinput_m.c",
+          "git_blob_sha1": "2db16d62972be736e5ed731020fd11b020e3348c",
+          "sha256": "cece8ba95c6a5e437b90e60ee7c1cf1668f2f291c32bea266f09a9eb27b31f7c"
+        },
+        {
+          "path": "components/freemodbus/freemodbus/modbus/functions/mbfuncinput.c",
+          "git_blob_sha1": "2880bd95bc0dde363d1d0a878e59323154e6fdec",
+          "sha256": "674fe5a265b95991a1957f443151de3dddd55bbd58462ec62d21951eaf59ef8c"
+        },
+        {
+          "path": "components/freemodbus/freemodbus/modbus/functions/mbfuncholding_m.c",
+          "git_blob_sha1": "48b7c7b95756db12c3422eb3116281100d20db2f",
+          "sha256": "b47d772b041be7a5c8124fc1824368c00430b1311d42686044a8b322bde1a1bb"
+        },
+        {
+          "path": "components/freemodbus/freemodbus/modbus/functions/mbutils.c",
+          "git_blob_sha1": "1332c02d0b3476f3699ce38a49d1807dac2c1947",
+          "sha256": "49dab483df77a144596a477260f7d28ec5ff838374dd09d852f2f6fff50f1dcb"
+        },
+        {
+          "path": "components/freemodbus/freemodbus/modbus/include/mb.h",
+          "git_blob_sha1": "964e3e167ef75d68c705f5a396429ce540ba9bd8",
+          "sha256": "802d84a761d22f7d4d9dc72f66fd71e64921421208b73a65751330559105cca5"
+        },
+        {
+          "path": "components/freemodbus/freemodbus/modbus/functions/mbfuncother.c",
+          "git_blob_sha1": "59d6bdab31b86caaa7fd911f1e083338225241c1",
+          "sha256": "ec63cb40129e1409d7a6c50a993470691679dc798707a7ab47a971770d1eb0ea"
+        },
+        {
+          "path": "components/freemodbus/freemodbus/modbus/include/mbconfig.h",
+          "git_blob_sha1": "268b748244bf663d3048b0e27ea1d08aaec0f539",
+          "sha256": "643a54205bc213ceffef2b4acb3a074422c3ba01680307a79be63a25f0159bcf"
+        },
+        {
+          "path": "components/freemodbus/freemodbus/modbus/include/mb_m.h",
+          "git_blob_sha1": "0b720a44a66050877e4e969fd9d38e17331cee43",
+          "sha256": "9aad7154639f9a733c56d1c3ca8ae7b5366434c7ad6bb91618ab26ffa4f32e06"
+        },
+        {
+          "path": "components/freemodbus/freemodbus/modbus/include/mbfunc.h",
+          "git_blob_sha1": "fcb88bbc990e3248f7a690b7c02d6e7e74bb13f6",
+          "sha256": "608ec32a1f9629edade0e925f2913a84b55908605cf14c4187be80799249569d"
+        },
+        {
+          "path": "components/freemodbus/freemodbus/modbus/include/mbport.h",
+          "git_blob_sha1": "4b072d571d5e633e1bfb6c57a4d57838155b4496",
+          "sha256": "64a9e314f869551e842d89459b2a89b6efa66050fea2ba0bb8f1709d7c344e95"
+        },
+        {
+          "path": "components/freemodbus/freemodbus/modbus/include/mbproto.h",
+          "git_blob_sha1": "da303a6fc5b25f00f50ee187f5786efe5cde6fd8",
+          "sha256": "2482ae563d875a1ff485d41f3c5cb0a54d8b252b22f97976239de609b7891064"
+        },
+        {
+          "path": "components/freemodbus/freemodbus/modbus/include/mbframe.h",
+          "git_blob_sha1": "9df0b1dc20235eebebcb08576b3eb77d53f0346b",
+          "sha256": "7231b328a6dc9730759f6af7a9f231c97a0df262e696f62d494ee80e16051339"
+        },
+        {
+          "path": "components/freemodbus/freemodbus/modbus/include/mbutils.h",
+          "git_blob_sha1": "de64c4a96492db5c63db13d316bf6915c43e8e67",
+          "sha256": "18018461c29ab3f4a30dea4ba63cbd4484c09d68c56b65b562cd74bb2f43a90b"
+        },
+        {
+          "path": "components/freemodbus/freemodbus/modbus/mb_m.c",
+          "git_blob_sha1": "5bfad5621a55d08560c1eb655fa917b4277251cb",
+          "sha256": "f55df3a407551853a5aa8b686f4618e4211477813544586044c5144d9c871f55"
+        },
+        {
+          "path": "components/freemodbus/freemodbus/modbus/rtu/mbcrc.h",
+          "git_blob_sha1": "d74d9eb3a6cb46d3647248c11e594e87cd25301d",
+          "sha256": "1fbcf25630268b4c92a147ad4312101334a8193a277b308aedae17da328a6493"
+        },
+        {
+          "path": "components/freemodbus/freemodbus/modbus/rtu/mbcrc.c",
+          "git_blob_sha1": "f4134534929d61d5e6e44377cb7f49fa7ae82069",
+          "sha256": "e8e12a77fcb4638803d30e05d6de244f3f8199bbdcbcd73890d74230363ea8b8"
+        },
+        {
+          "path": "components/freemodbus/freemodbus/modbus/rtu/mbrtu.c",
+          "git_blob_sha1": "77a2c2f48ed996aa344746eb0a8d975a2c3babfd",
+          "sha256": "3fdbb11c60978ffa4c03d1bddaa1d19c0299bc49d05a71b42b743579789f5060"
+        },
+        {
+          "path": "components/freemodbus/freemodbus/modbus/mb.c",
+          "git_blob_sha1": "60ba538ec241c9ef6495e8ef5c2489c98b51ae74",
+          "sha256": "08382bd1eb94a79a75ebcbb0c1e9012a782355e78d458a00ce4d33c81d7ac939"
+        },
+        {
+          "path": "components/freemodbus/freemodbus/modbus/rtu/mbrtu.h",
+          "git_blob_sha1": "69e0f4535f0c24782ef41b7bc8305a653f0bc396",
+          "sha256": "12b97c34f2a4f664aa931bec3f42c2dc49b49c4543dfb55a3081c2d0188e80d0"
+        },
+        {
+          "path": "components/freemodbus/freemodbus/modbus/tcp/mbtcp.h",
+          "git_blob_sha1": "842ce19e54576443ea6bc87bb054d2b45f486aac",
+          "sha256": "e6f69bcd8181826d201689ad2e91a7759da9b35f07f5d89937cedeb4d21523ea"
+        },
+        {
+          "path": "components/freemodbus/freemodbus/modbus/tcp/mbtcp_m.c",
+          "git_blob_sha1": "4a9fc013958e738f13de262db7d266452872f976",
+          "sha256": "a41c77faae1a83c7d0fb9fa5a61cdc3a733615b60fd59cb1777da1f3c4012320"
+        },
+        {
+          "path": "components/freemodbus/freemodbus/modbus/rtu/mbrtu_m.c",
+          "git_blob_sha1": "85b19809b4c92a2738045d525ecb142f5ae3e2fe",
+          "sha256": "600eb1b2ef477036538319673b2da25188f731ec6aa719e2f76acd48be8a8db9"
+        },
+        {
+          "path": "components/freemodbus/freemodbus/modbus/tcp/mbtcp_m.h",
+          "git_blob_sha1": "901cd0e790ec7d43103d54bd92a529304815bf25",
+          "sha256": "53da810b9ae42057e78c12f48bb16e0e0d4a5dbe3b2258a437cdd5188c6b8920"
+        },
+        {
+          "path": "components/freemodbus/freemodbus/port/port.c",
+          "git_blob_sha1": "ca8eb5bcac57333145bc2e9e526459c096376488",
+          "sha256": "c0e216ef4aa9b1f0dc2b94a6cbff2dff083af1f3b3b85c72da256da4f257f467"
+        },
+        {
+          "path": "components/freemodbus/freemodbus/modbus/tcp/mbtcp.c",
+          "git_blob_sha1": "3502454eb8485ce17a91760814c506f446d8c37e",
+          "sha256": "4d6c218b4a8d7702a6eb921d268ae1596ef269861740b509c4a784cf1b5c9464"
+        },
+        {
+          "path": "components/freemodbus/freemodbus/port/port.h",
+          "git_blob_sha1": "b5d88583b80f50d680f4c351084b004e16eea756",
+          "sha256": "521db7893b929fa580c9ebb8b0352879033c30a96a8153c8f62d2d8d1d586d36"
+        },
+        {
+          "path": "components/freemodbus/freemodbus/port/portevent.c",
+          "git_blob_sha1": "229635bc530207bc70c677b670f5d3b57c92a447",
+          "sha256": "9097786d7b679c74ffc4548bf58f7d0c773f80a874aa645f0e647c35b58d1e5c"
+        },
+        {
+          "path": "components/freemodbus/freemodbus/port/portother.c",
+          "git_blob_sha1": "180de5ba6cca2062b3644beab2788700ac778fbe",
+          "sha256": "669b85371d1b36530f829673ece658304c5215c2bbc2b702b090418a5a717950"
+        },
+        {
+          "path": "components/freemodbus/freemodbus/port/portevent_m.c",
+          "git_blob_sha1": "0f680be887aab529c03eb7c289ab33c594a95981",
+          "sha256": "2ce5cb01e7003ae4277cf81236baaaae817d76328de51f5095582737e9210dd6"
+        },
+        {
+          "path": "components/freemodbus/freemodbus/port/portother_m.c",
+          "git_blob_sha1": "fa2d4219980624c0f7bc6ad7d10cf7be0ac839bf",
+          "sha256": "0605ad006dcf7b4efb913a5794db1e0f9ba42e249520dd6dd8b2e32bb31bff8d"
+        },
+        {
+          "path": "components/freemodbus/freemodbus/port/portserial.c",
+          "git_blob_sha1": "dbc148d75b83b9a093ea309c7505c38d4fb7b2ec",
+          "sha256": "e73583a72ee8894a0a62fd57fb9fe3590d4741365468303a4f772280895231d2"
+        },
+        {
+          "path": "components/freemodbus/freemodbus/port/porttimer.c",
+          "git_blob_sha1": "4fbfbfda7130ae243d7f784ace431ceff4c8feb0",
+          "sha256": "b74c5c2944036b0a84be1cb07a5552f45ecd9187edde6766864ad96f950bb437"
+        },
+        {
+          "path": "components/freemodbus/freemodbus/port/porttimer_m.c",
+          "git_blob_sha1": "f1595a6a2716e5f6e5a7ee136b131b4f389c7161",
+          "sha256": "221e33a5d1a5be18130f5a98be0b93600d644a75652b77291fbe3147004f166a"
+        },
+        {
+          "path": "components/freemodbus/freemodbus/serial_master/modbus_controller/mbc_serial_master.c",
+          "git_blob_sha1": "94bec3fcd5104faffae788734268ec83b9f08705",
+          "sha256": "a7aa76d45b5a379b200506b349e55958a84ba1634df0c87370dc2b227f93e150"
+        },
+        {
+          "path": "components/freemodbus/freemodbus/serial_master/port/port_serial_master.h",
+          "git_blob_sha1": "e389b8198c83cb45a1207f09417e30fa8f4d5a4f",
+          "sha256": "ce1d2871204abfe5fa9f0ce0ea55fe9ba7fc0b633fd3da9f11cce9150eefe5a8"
+        },
+        {
+          "path": "components/freemodbus/freemodbus/serial_master/modbus_controller/mbc_serial_master.h",
+          "git_blob_sha1": "28aec539c799bfdee3c0678407c0984bb6068be5",
+          "sha256": "812388e066fab0ccf4c2ba64b5ac70abf0507f4af8521f7ed7baee0c9a307b82"
+        },
+        {
+          "path": "components/freemodbus/freemodbus/serial_slave/modbus_controller/mbc_serial_slave.c",
+          "git_blob_sha1": "cae13616cd42f7c4504119affe67eba877390067",
+          "sha256": "600ed345b61c840f904fb65017ffac8555a4c54558cbb34157cb96cc25122627"
+        },
+        {
+          "path": "components/freemodbus/freemodbus/port/portserial_m.c",
+          "git_blob_sha1": "cc37f510dcec3155a4284901add487e3f42dcf39",
+          "sha256": "f0e6205e4bab4a4a66fcf9e6936d5daa53773149ceb9cedd114d956555a3e5fc"
+        },
+        {
+          "path": "components/freemodbus/freemodbus/serial_slave/modbus_controller/mbc_serial_slave.h",
+          "git_blob_sha1": "9a515bac400549dd4f4c372c3f11abb7b9ade297",
+          "sha256": "1275ae84d4ffd7ca8abb6d656b3a8ce0dc2f4351d0df011f1a4cf83cdf58b7ba"
+        },
+        {
+          "path": "components/freemodbus/freemodbus/serial_slave/port/port_serial_slave.h",
+          "git_blob_sha1": "880876c11d5e13c20f2e7f5faaec331a32989c39",
+          "sha256": "e8e1e338c8be6cee65bd1253300c2989a423619e1ff3893100fb744243548c39"
+        },
+        {
+          "path": "components/freemodbus/freemodbus/tcp_master/modbus_controller/mbc_tcp_master.h",
+          "git_blob_sha1": "b0731dfdf3f72f38d9823a9299826eb5b040d8ba",
+          "sha256": "a5f383f16230246344f879c0df4afff471a816559af7aa865dfbcf029cd586c0"
+        },
+        {
+          "path": "components/freemodbus/freemodbus/tcp_master/modbus_controller/mbc_tcp_master.c",
+          "git_blob_sha1": "279caad629cf6bff136cd162aa1045104f814146",
+          "sha256": "8862656de79380151069b5b1844a101b392665d8791e4a329087e27e19eb2d89"
+        },
+        {
+          "path": "components/freemodbus/freemodbus/tcp_master/port/port_tcp_master.h",
+          "git_blob_sha1": "9867beef56f72dde05bbb36155d49919d065a2de",
+          "sha256": "706c3f8122196b62ca455008bda290bc3bf19be0d04382caf66bb2254d1c50bf"
+        },
+        {
+          "path": "components/freemodbus/freemodbus/tcp_master/port/port_tcp_master.c",
+          "git_blob_sha1": "390026d5b71383a2bc10cc8cef221e1035d6ebdf",
+          "sha256": "d54d0aebfb8bb255029d3639bd63ea63f3077fbd09bdb015ecada2829f0fa8e2"
+        },
+        {
+          "path": "components/freemodbus/freemodbus/tcp_slave/modbus_controller/mbc_tcp_slave.c",
+          "git_blob_sha1": "45078b4bc4bd99abd85f0770e4049b1d66d60803",
+          "sha256": "f86fd4a111e0aa26160f7eee4c7e6f2961b57d2c7e348432a352f53c39d7c27c"
+        },
+        {
+          "path": "components/freemodbus/freemodbus/tcp_slave/port/port_tcp_slave.c",
+          "git_blob_sha1": "c6485f47d74dbbb1d5707fd9dbb9f4106b6be953",
+          "sha256": "f9d3e5b4f327a865e98e6c38664107ab08d4e1cffc9cd0b82777dd63c12be534"
+        },
+        {
+          "path": "components/freemodbus/freemodbus/tcp_slave/modbus_controller/mbc_tcp_slave.h",
+          "git_blob_sha1": "56ece0d97d9d37049e4301c2e25069202063c471",
+          "sha256": "9a0650271228fc391476a29e5f40f93fdf40d2c33a7b0190990fa4755cc473a1"
+        },
+        {
+          "path": "components/freemodbus/freemodbus/tcp_slave/port/port_tcp_slave.h",
+          "git_blob_sha1": "efac0fb514f3df8dec081fda24b8d2c1a44af59b",
+          "sha256": "f4d4f3ab31f8cc0055629c905faf526e70733f1912fa040914547895c0ad7f3d"
+        }
+      ]
+    },
+    {
+      "component": "littlefs",
+      "applicable_kit_paths": [
+        "framework/tools/sdk/esp32s3/lib/libesp_littlefs.a"
+      ],
+      "official_sdk_binary_match": {
+        "arduino_commit": "dcc1105b0cf1322a437b354c336f2abf72b7e512",
+        "url": "https://raw.githubusercontent.com/espressif/arduino-esp32/dcc1105b0cf1322a437b354c336f2abf72b7e512/tools/sdk/esp32s3/lib/libesp_littlefs.a",
+        "kit_path": "framework/tools/sdk/esp32s3/lib/libesp_littlefs.a",
+        "bytes": 793140,
+        "local_sha256": "74c97ecd4b9f2763d7a888b1947638b9188c7310b3815641fcf16fd548342199",
+        "upstream_sha256": "74c97ecd4b9f2763d7a888b1947638b9188c7310b3815641fcf16fd548342199",
+        "byte_identical": true
+      },
+      "source_declaration": {
+        "url": "https://github.com/espressif/arduino-esp32/pull/9339",
+        "api_url": "https://api.github.com/repos/espressif/arduino-esp32/pulls/9339",
+        "api_response_sha256": "4e1f904167f4e7f7da9ebf00b81ae41de2e613a272a94e86767fd41bb08feb84",
+        "body": "esp-idf: v4.4.7 38eeba213a\r\nesp-dl: master 0632d24\r\nesp-rainmaker: master d8e9345\r\nesp32-camera: master f0bb429\r\nesp_littlefs: master 41873c2\r\nespressif__esp-dsp: master 9b4a8b4\r\ntinyusb: master a0e5626bc\r\n",
+        "merged_at": "2024-03-05T13:03:51Z",
+        "sdk_update_commit": "fd49a0abca2385a3c074c6ca5b8ad60f8b8c273d"
+      },
+      "licenses": [
+        {
+          "saved_license_path": "littlefs/esp_littlefs-MIT-LICENSE.txt",
+          "license_spdx": "MIT",
+          "download_url": "https://raw.githubusercontent.com/joltwallet/esp_littlefs/41873c20fb5cdbcf28d7d6cc04e4bcb4a1305317/LICENSE",
+          "upstream_path": "LICENSE",
+          "upstream_commit": "41873c20fb5cdbcf28d7d6cc04e4bcb4a1305317",
+          "download_sha256": "b6bbf3bd17c2b5532bc25a7acf1760faac0b995d6e0ad8bec29435166727d4c5",
+          "saved_sha256": "b6bbf3bd17c2b5532bc25a7acf1760faac0b995d6e0ad8bec29435166727d4c5",
+          "saved_bytes": 1057
+        },
+        {
+          "saved_license_path": "littlefs/littlefs-BSD-3-Clause-LICENSE.md",
+          "license_spdx": "BSD-3-Clause",
+          "download_url": "https://raw.githubusercontent.com/littlefs-project/littlefs/f53a0cc961a8acac85f868b431d2f3e58e447ba3/LICENSE.md",
+          "upstream_path": "LICENSE.md",
+          "upstream_commit": "f53a0cc961a8acac85f868b431d2f3e58e447ba3",
+          "download_sha256": "0cb4ff1daf5fdc1359c6a6ee3116092f08fc100c9d58b1b77ab17bfd801f856d",
+          "saved_sha256": "0cb4ff1daf5fdc1359c6a6ee3116092f08fc100c9d58b1b77ab17bfd801f856d",
+          "saved_bytes": 1523
+        }
+      ],
+      "version_match_evidence": [
+        {
+          "kit_path": "framework/tools/sdk/esp32s3/include/esp_littlefs/include/esp_littlefs.h",
+          "upstream_url": "https://raw.githubusercontent.com/joltwallet/esp_littlefs/41873c20fb5cdbcf28d7d6cc04e4bcb4a1305317/include/esp_littlefs.h",
+          "local_sha256": "f321f41845da8cc68f6c15a860311afe37a52ad57abb95949b820a92e9e8d9ad",
+          "upstream_sha256": "f321f41845da8cc68f6c15a860311afe37a52ad57abb95949b820a92e9e8d9ad",
+          "byte_identical": true,
+          "declared_version": "1.14.1"
+        }
+      ],
+      "remaining": [
+        "This verifies the distributed SDK archive against the official Arduino commit and the stated source provenance; it is not an independent reproduction of the SDK build or proof that this component is used by every final firmware."
+      ],
+      "upstream_repository": "https://github.com/joltwallet/esp_littlefs",
+      "upstream_commit": "41873c20fb5cdbcf28d7d6cc04e4bcb4a1305317",
+      "component_tag": "v1.14.1",
+      "littlefs_submodule": {
+        "upstream_repository": "https://github.com/littlefs-project/littlefs",
+        "upstream_commit": "f53a0cc961a8acac85f868b431d2f3e58e447ba3",
+        "path": "src/littlefs",
+        "gitmodules_url": "https://raw.githubusercontent.com/joltwallet/esp_littlefs/41873c20fb5cdbcf28d7d6cc04e4bcb4a1305317/.gitmodules",
+        "gitmodules_sha256": "5b0034485733a64bc3376d8f398fbd6eaa7dca00f936fe82a1d060d210b609cf",
+        "gitmodules_text": "[submodule \"main/littlefs\"]\n\tpath = src/littlefs\n\turl = https://github.com/littlefs-project/littlefs.git\n",
+        "tree_api_url": "https://api.github.com/repos/joltwallet/esp_littlefs/git/trees/41873c20fb5cdbcf28d7d6cc04e4bcb4a1305317?recursive=1",
+        "tree_api_sha256": "0d2e745196bd0e20adcf6154a22ebf2611918387baa2f7bd15650ffad1f9c799",
+        "gitlink": {
+          "path": "src/littlefs",
+          "mode": "160000",
+          "type": "commit",
+          "sha": "f53a0cc961a8acac85f868b431d2f3e58e447ba3"
+        }
+      }
+    }
+  ]
+}

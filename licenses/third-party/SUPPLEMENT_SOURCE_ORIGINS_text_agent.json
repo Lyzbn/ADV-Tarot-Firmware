@@ -1,0 +1,863 @@
+{
+  "schema_version": 1,
+  "checked_at_utc": "2026-10-16T18:57:54.939132+00:00",
+  "scope": "Official license originals for three pinned ESP-IDF 4.4.7 submodules, with file-level checks against the existing relink-draft SDK. This is not certification that the old kit matches firmware 1.1.0.",
+  "kit_root": "relink-draft",
+  "records": [
+    {
+      "component": "libsodium",
+      "license_spdx": "ISC",
+      "upstream_repository": "https://github.com/jedisct1/libsodium",
+      "upstream_commit": "4f5e89fa84ce1d178a6765b8b46f2b6f91216677",
+      "idf_submodule_path": "components/libsodium/libsodium",
+      "idf_tree_sha": "38eeba213aa695aabfd6d89aa9f5078dbe5a94c3",
+      "license_upstream_path": "LICENSE",
+      "download_url": "https://raw.githubusercontent.com/jedisct1/libsodium/4f5e89fa84ce1d178a6765b8b46f2b6f91216677/LICENSE",
+      "download_sha256": "dea1855c9809f3faf22aa4a1fba20ec8af5a5587f23115012e5b98279cedc4af",
+      "download_bytes": 823,
+      "saved_license_path": "submodules/libsodium/LICENSE",
+      "applicable_kit_paths": [
+        "framework/tools/sdk/esp32s3/include/libsodium/libsodium"
+      ],
+      "precompiled_archives": [
+        {
+          "kit_path": "framework/tools/sdk/esp32s3/lib/liblibsodium.a",
+          "sha256": "4066d3e07b4c4e9c481c01ba1bf64c52a373e019fe315a58cf88717842289513"
+        }
+      ],
+      "header_comparison_archive_url": "https://codeload.github.com/jedisct1/libsodium/tar.gz/4f5e89fa84ce1d178a6765b8b46f2b6f91216677",
+      "header_comparison_archive_sha256": "1d379507ba2edd210f99dccf6cfa2a648e89b7d01305f1fc84d336692e5ee8d4",
+      "version_match_evidence": [
+        {
+          "kit_path": "framework/tools/sdk/esp32s3/include/libsodium/libsodium/src/libsodium/include/sodium/core.h",
+          "upstream_path": "src/libsodium/include/sodium/core.h",
+          "upstream_url": "https://raw.githubusercontent.com/jedisct1/libsodium/4f5e89fa84ce1d178a6765b8b46f2b6f91216677/src/libsodium/include/sodium/core.h",
+          "local_sha256": "692c9a03eb49591a3ccacbef293f473c619cc86ef5dd4776a6e2e4321426fb07",
+          "upstream_sha256": "692c9a03eb49591a3ccacbef293f473c619cc86ef5dd4776a6e2e4321426fb07",
+          "byte_identical": true,
+          "bytes": 391
+        },
+        {
+          "kit_path": "framework/tools/sdk/esp32s3/include/libsodium/libsodium/src/libsodium/include/sodium/crypto_aead_aes256gcm.h",
+          "upstream_path": "src/libsodium/include/sodium/crypto_aead_aes256gcm.h",
+          "upstream_url": "https://raw.githubusercontent.com/jedisct1/libsodium/4f5e89fa84ce1d178a6765b8b46f2b6f91216677/src/libsodium/include/sodium/crypto_aead_aes256gcm.h",
+          "local_sha256": "b9d20e820519211b0cdbc37ccfad2195ccf1b0009965840ea87865054b7aab4e",
+          "upstream_sha256": "b9d20e820519211b0cdbc37ccfad2195ccf1b0009965840ea87865054b7aab4e",
+          "byte_identical": true,
+          "bytes": 7980
+        },
+        {
+          "kit_path": "framework/tools/sdk/esp32s3/include/libsodium/libsodium/src/libsodium/include/sodium/crypto_aead_chacha20poly1305.h",
+          "upstream_path": "src/libsodium/include/sodium/crypto_aead_chacha20poly1305.h",
+          "upstream_url": "https://raw.githubusercontent.com/jedisct1/libsodium/4f5e89fa84ce1d178a6765b8b46f2b6f91216677/src/libsodium/include/sodium/crypto_aead_chacha20poly1305.h",
+          "local_sha256": "829054e89c68f98c660c5f5cc65318e2fda345a888a0c337534a338bc96ee757",
+          "upstream_sha256": "829054e89c68f98c660c5f5cc65318e2fda345a888a0c337534a338bc96ee757",
+          "byte_identical": true,
+          "bytes": 8782
+        },
+        {
+          "kit_path": "framework/tools/sdk/esp32s3/include/libsodium/libsodium/src/libsodium/include/sodium/crypto_aead_xchacha20poly1305.h",
+          "upstream_path": "src/libsodium/include/sodium/crypto_aead_xchacha20poly1305.h",
+          "upstream_url": "https://raw.githubusercontent.com/jedisct1/libsodium/4f5e89fa84ce1d178a6765b8b46f2b6f91216677/src/libsodium/include/sodium/crypto_aead_xchacha20poly1305.h",
+          "local_sha256": "be76cd253ee5ba929156186ff6b21477dac7f5e8d23da881b5a7babc3c2eba39",
+          "upstream_sha256": "be76cd253ee5ba929156186ff6b21477dac7f5e8d23da881b5a7babc3c2eba39",
+          "byte_identical": true,
+          "bytes": 4848
+        },
+        {
+          "kit_path": "framework/tools/sdk/esp32s3/include/libsodium/libsodium/src/libsodium/include/sodium/crypto_auth.h",
+          "upstream_path": "src/libsodium/include/sodium/crypto_auth.h",
+          "upstream_url": "https://raw.githubusercontent.com/jedisct1/libsodium/4f5e89fa84ce1d178a6765b8b46f2b6f91216677/src/libsodium/include/sodium/crypto_auth.h",
+          "local_sha256": "6728e121bde1e328687d7222fe29e0eb5f95fecc982f179f2788735369da8fa2",
+          "upstream_sha256": "6728e121bde1e328687d7222fe29e0eb5f95fecc982f179f2788735369da8fa2",
+          "byte_identical": true,
+          "bytes": 1143
+        },
+        {
+          "kit_path": "framework/tools/sdk/esp32s3/include/libsodium/libsodium/src/libsodium/include/sodium/crypto_auth_hmacsha256.h",
+          "upstream_path": "src/libsodium/include/sodium/crypto_auth_hmacsha256.h",
+          "upstream_url": "https://raw.githubusercontent.com/jedisct1/libsodium/4f5e89fa84ce1d178a6765b8b46f2b6f91216677/src/libsodium/include/sodium/crypto_auth_hmacsha256.h",
+          "local_sha256": "c4de9221fb19f47478680839d3c5157363c8806c8c36b9a3ffa624a6500fff0c",
+          "upstream_sha256": "c4de9221fb19f47478680839d3c5157363c8806c8c36b9a3ffa624a6500fff0c",
+          "byte_identical": true,
+          "bytes": 2136
+        },
+        {
+          "kit_path": "framework/tools/sdk/esp32s3/include/libsodium/libsodium/src/libsodium/include/sodium/crypto_auth_hmacsha512.h",
+          "upstream_path": "src/libsodium/include/sodium/crypto_auth_hmacsha512.h",
+          "upstream_url": "https://raw.githubusercontent.com/jedisct1/libsodium/4f5e89fa84ce1d178a6765b8b46f2b6f91216677/src/libsodium/include/sodium/crypto_auth_hmacsha512.h",
+          "local_sha256": "53415ff29ec0578a631a04794e0486ffee8b9d90b790eee593e35a7d32ff0ec1",
+          "upstream_sha256": "53415ff29ec0578a631a04794e0486ffee8b9d90b790eee593e35a7d32ff0ec1",
+          "byte_identical": true,
+          "bytes": 2123
+        },
+        {
+          "kit_path": "framework/tools/sdk/esp32s3/include/libsodium/libsodium/src/libsodium/include/sodium/crypto_auth_hmacsha512256.h",
+          "upstream_path": "src/libsodium/include/sodium/crypto_auth_hmacsha512256.h",
+          "upstream_url": "https://raw.githubusercontent.com/jedisct1/libsodium/4f5e89fa84ce1d178a6765b8b46f2b6f91216677/src/libsodium/include/sodium/crypto_auth_hmacsha512256.h",
+          "local_sha256": "a30f9c02e3b60842200523c062e2da1a29c9cc61a3cae10203a468a70fd41816",
+          "upstream_sha256": "a30f9c02e3b60842200523c062e2da1a29c9cc61a3cae10203a468a70fd41816",
+          "byte_identical": true,
+          "bytes": 2133
+        },
+        {
+          "kit_path": "framework/tools/sdk/esp32s3/include/libsodium/libsodium/src/libsodium/include/sodium/crypto_box.h",
+          "upstream_path": "src/libsodium/include/sodium/crypto_box.h",
+          "upstream_url": "https://raw.githubusercontent.com/jedisct1/libsodium/4f5e89fa84ce1d178a6765b8b46f2b6f91216677/src/libsodium/include/sodium/crypto_box.h",
+          "local_sha256": "400153ce5d5c5da3513738b3e5b34c39f99fb9839a5ba5a01684d7e6ecfe1026",
+          "upstream_sha256": "400153ce5d5c5da3513738b3e5b34c39f99fb9839a5ba5a01684d7e6ecfe1026",
+          "byte_identical": true,
+          "bytes": 6838
+        },
+        {
+          "kit_path": "framework/tools/sdk/esp32s3/include/libsodium/libsodium/src/libsodium/include/sodium/crypto_box_curve25519xchacha20poly1305.h",
+          "upstream_path": "src/libsodium/include/sodium/crypto_box_curve25519xchacha20poly1305.h",
+          "upstream_url": "https://raw.githubusercontent.com/jedisct1/libsodium/4f5e89fa84ce1d178a6765b8b46f2b6f91216677/src/libsodium/include/sodium/crypto_box_curve25519xchacha20poly1305.h",
+          "local_sha256": "fd18828324c974159902e1fb21813b9c0be04da96ccb96f261bf989ddd7fd87a",
+          "upstream_sha256": "fd18828324c974159902e1fb21813b9c0be04da96ccb96f261bf989ddd7fd87a",
+          "byte_identical": true,
+          "bytes": 7957
+        },
+        {
+          "kit_path": "framework/tools/sdk/esp32s3/include/libsodium/libsodium/src/libsodium/include/sodium/crypto_box_curve25519xsalsa20poly1305.h",
+          "upstream_path": "src/libsodium/include/sodium/crypto_box_curve25519xsalsa20poly1305.h",
+          "upstream_url": "https://raw.githubusercontent.com/jedisct1/libsodium/4f5e89fa84ce1d178a6765b8b46f2b6f91216677/src/libsodium/include/sodium/crypto_box_curve25519xsalsa20poly1305.h",
+          "local_sha256": "069ca8e79bcc8d316ef614f73383644b5490d22391283e1dfc9a9b3cdc6baf31",
+          "upstream_sha256": "069ca8e79bcc8d316ef614f73383644b5490d22391283e1dfc9a9b3cdc6baf31",
+          "byte_identical": true,
+          "bytes": 4697
+        },
+        {
+          "kit_path": "framework/tools/sdk/esp32s3/include/libsodium/libsodium/src/libsodium/include/sodium/crypto_core_ed25519.h",
+          "upstream_path": "src/libsodium/include/sodium/crypto_core_ed25519.h",
+          "upstream_url": "https://raw.githubusercontent.com/jedisct1/libsodium/4f5e89fa84ce1d178a6765b8b46f2b6f91216677/src/libsodium/include/sodium/crypto_core_ed25519.h",
+          "local_sha256": "ac47a76c87f08a96f475b2e0b05a7a12a61ee7a99e0258cc63967c7fb585a3c6",
+          "upstream_sha256": "ac47a76c87f08a96f475b2e0b05a7a12a61ee7a99e0258cc63967c7fb585a3c6",
+          "byte_identical": true,
+          "bytes": 2898
+        },
+        {
+          "kit_path": "framework/tools/sdk/esp32s3/include/libsodium/libsodium/src/libsodium/include/sodium/crypto_core_hchacha20.h",
+          "upstream_path": "src/libsodium/include/sodium/crypto_core_hchacha20.h",
+          "upstream_url": "https://raw.githubusercontent.com/jedisct1/libsodium/4f5e89fa84ce1d178a6765b8b46f2b6f91216677/src/libsodium/include/sodium/crypto_core_hchacha20.h",
+          "local_sha256": "d2a265946fab3fddb8ee4b7ee6b3fb34b6526efa6ba45c6609c7e395ed302fc1",
+          "upstream_sha256": "d2a265946fab3fddb8ee4b7ee6b3fb34b6526efa6ba45c6609c7e395ed302fc1",
+          "byte_identical": true,
+          "bytes": 816
+        },
+        {
+          "kit_path": "framework/tools/sdk/esp32s3/include/libsodium/libsodium/src/libsodium/include/sodium/crypto_core_hsalsa20.h",
+          "upstream_path": "src/libsodium/include/sodium/crypto_core_hsalsa20.h",
+          "upstream_url": "https://raw.githubusercontent.com/jedisct1/libsodium/4f5e89fa84ce1d178a6765b8b46f2b6f91216677/src/libsodium/include/sodium/crypto_core_hsalsa20.h",
+          "local_sha256": "5f9d48c0cdfcb8ce86a0e65cfa490cac0e9cacbca4aa864926593c691f69be63",
+          "upstream_sha256": "5f9d48c0cdfcb8ce86a0e65cfa490cac0e9cacbca4aa864926593c691f69be63",
+          "byte_identical": true,
+          "bytes": 804
+        },
+        {
+          "kit_path": "framework/tools/sdk/esp32s3/include/libsodium/libsodium/src/libsodium/include/sodium/crypto_core_ristretto255.h",
+          "upstream_path": "src/libsodium/include/sodium/crypto_core_ristretto255.h",
+          "upstream_url": "https://raw.githubusercontent.com/jedisct1/libsodium/4f5e89fa84ce1d178a6765b8b46f2b6f91216677/src/libsodium/include/sodium/crypto_core_ristretto255.h",
+          "local_sha256": "cd421515c472fff15b22f5aa27a42f97c0fa5d438c28b9ea7d5908077ffd2099",
+          "upstream_sha256": "cd421515c472fff15b22f5aa27a42f97c0fa5d438c28b9ea7d5908077ffd2099",
+          "byte_identical": true,
+          "bytes": 3140
+        },
+        {
+          "kit_path": "framework/tools/sdk/esp32s3/include/libsodium/libsodium/src/libsodium/include/sodium/crypto_core_salsa20.h",
+          "upstream_path": "src/libsodium/include/sodium/crypto_core_salsa20.h",
+          "upstream_url": "https://raw.githubusercontent.com/jedisct1/libsodium/4f5e89fa84ce1d178a6765b8b46f2b6f91216677/src/libsodium/include/sodium/crypto_core_salsa20.h",
+          "local_sha256": "614992c472e5c2bad2ba8d90a4b6d9023db3774847e3541d5c87ad4cb59d69d0",
+          "upstream_sha256": "614992c472e5c2bad2ba8d90a4b6d9023db3774847e3541d5c87ad4cb59d69d0",
+          "byte_identical": true,
+          "bytes": 792
+        },
+        {
+          "kit_path": "framework/tools/sdk/esp32s3/include/libsodium/libsodium/src/libsodium/include/sodium/crypto_core_salsa2012.h",
+          "upstream_path": "src/libsodium/include/sodium/crypto_core_salsa2012.h",
+          "upstream_url": "https://raw.githubusercontent.com/jedisct1/libsodium/4f5e89fa84ce1d178a6765b8b46f2b6f91216677/src/libsodium/include/sodium/crypto_core_salsa2012.h",
+          "local_sha256": "1fce6f1b2a28c7764ba7ed99fefabefa2cbca688ce86e2574cc08ae235c8c3fd",
+          "upstream_sha256": "1fce6f1b2a28c7764ba7ed99fefabefa2cbca688ce86e2574cc08ae235c8c3fd",
+          "byte_identical": true,
+          "bytes": 816
+        },
+        {
+          "kit_path": "framework/tools/sdk/esp32s3/include/libsodium/libsodium/src/libsodium/include/sodium/crypto_core_salsa208.h",
+          "upstream_path": "src/libsodium/include/sodium/crypto_core_salsa208.h",
+          "upstream_url": "https://raw.githubusercontent.com/jedisct1/libsodium/4f5e89fa84ce1d178a6765b8b46f2b6f91216677/src/libsodium/include/sodium/crypto_core_salsa208.h",
+          "local_sha256": "f5f40276f7f06f3478750037c56b8e29b1717588b75bd1a3769ccc54f73a709a",
+          "upstream_sha256": "f5f40276f7f06f3478750037c56b8e29b1717588b75bd1a3769ccc54f73a709a",
+          "byte_identical": true,
+          "bytes": 968
+        },
+        {
+          "kit_path": "framework/tools/sdk/esp32s3/include/libsodium/libsodium/src/libsodium/include/sodium/crypto_generichash.h",
+          "upstream_path": "src/libsodium/include/sodium/crypto_generichash.h",
+          "upstream_url": "https://raw.githubusercontent.com/jedisct1/libsodium/4f5e89fa84ce1d178a6765b8b46f2b6f91216677/src/libsodium/include/sodium/crypto_generichash.h",
+          "local_sha256": "df7e3590c86db50c6aa7329ecce967bab09004d71c23f458e557a07d734f944d",
+          "upstream_sha256": "df7e3590c86db50c6aa7329ecce967bab09004d71c23f458e557a07d734f944d",
+          "byte_identical": true,
+          "bytes": 2495
+        },
+        {
+          "kit_path": "framework/tools/sdk/esp32s3/include/libsodium/libsodium/src/libsodium/include/sodium/crypto_generichash_blake2b.h",
+          "upstream_path": "src/libsodium/include/sodium/crypto_generichash_blake2b.h",
+          "upstream_url": "https://raw.githubusercontent.com/jedisct1/libsodium/4f5e89fa84ce1d178a6765b8b46f2b6f91216677/src/libsodium/include/sodium/crypto_generichash_blake2b.h",
+          "local_sha256": "da19eef8f229b8c5964972295f22e46c11bf964534816aea4bde31d7727afd20",
+          "upstream_sha256": "da19eef8f229b8c5964972295f22e46c11bf964534816aea4bde31d7727afd20",
+          "byte_identical": true,
+          "bytes": 3963
+        },
+        {
+          "kit_path": "framework/tools/sdk/esp32s3/include/libsodium/libsodium/src/libsodium/include/sodium/crypto_hash.h",
+          "upstream_path": "src/libsodium/include/sodium/crypto_hash.h",
+          "upstream_url": "https://raw.githubusercontent.com/jedisct1/libsodium/4f5e89fa84ce1d178a6765b8b46f2b6f91216677/src/libsodium/include/sodium/crypto_hash.h",
+          "local_sha256": "5720698bd0072074ee163d8d89adaa5b6ade064bf38871afe3b814d4418487c1",
+          "upstream_sha256": "5720698bd0072074ee163d8d89adaa5b6ade064bf38871afe3b814d4418487c1",
+          "byte_identical": true,
+          "bytes": 901
+        },
+        {
+          "kit_path": "framework/tools/sdk/esp32s3/include/libsodium/libsodium/src/libsodium/include/sodium/crypto_hash_sha256.h",
+          "upstream_path": "src/libsodium/include/sodium/crypto_hash_sha256.h",
+          "upstream_url": "https://raw.githubusercontent.com/jedisct1/libsodium/4f5e89fa84ce1d178a6765b8b46f2b6f91216677/src/libsodium/include/sodium/crypto_hash_sha256.h",
+          "local_sha256": "121d63b8749770b67b45eac983c5d602b9ca5d6dda02c11b88cdf888f17914ab",
+          "upstream_sha256": "121d63b8749770b67b45eac983c5d602b9ca5d6dda02c11b88cdf888f17914ab",
+          "byte_identical": true,
+          "bytes": 1492
+        },
+        {
+          "kit_path": "framework/tools/sdk/esp32s3/include/libsodium/libsodium/src/libsodium/include/sodium/crypto_hash_sha512.h",
+          "upstream_path": "src/libsodium/include/sodium/crypto_hash_sha512.h",
+          "upstream_url": "https://raw.githubusercontent.com/jedisct1/libsodium/4f5e89fa84ce1d178a6765b8b46f2b6f91216677/src/libsodium/include/sodium/crypto_hash_sha512.h",
+          "local_sha256": "a4c3976041ca76a28960bcb265e6de55ab2b876f9e2f1b3427a39888314de044",
+          "upstream_sha256": "a4c3976041ca76a28960bcb265e6de55ab2b876f9e2f1b3427a39888314de044",
+          "byte_identical": true,
+          "bytes": 1496
+        },
+        {
+          "kit_path": "framework/tools/sdk/esp32s3/include/libsodium/libsodium/src/libsodium/include/sodium/crypto_kdf.h",
+          "upstream_path": "src/libsodium/include/sodium/crypto_kdf.h",
+          "upstream_url": "https://raw.githubusercontent.com/jedisct1/libsodium/4f5e89fa84ce1d178a6765b8b46f2b6f91216677/src/libsodium/include/sodium/crypto_kdf.h",
+          "local_sha256": "09901e619b1909e1802ace8f1e8b9ceb2218fd49c4ee430126802df7ff402525",
+          "upstream_sha256": "09901e619b1909e1802ace8f1e8b9ceb2218fd49c4ee430126802df7ff402525",
+          "byte_identical": true,
+          "bytes": 1308
+        },
+        {
+          "kit_path": "framework/tools/sdk/esp32s3/include/libsodium/libsodium/src/libsodium/include/sodium/crypto_kdf_blake2b.h",
+          "upstream_path": "src/libsodium/include/sodium/crypto_kdf_blake2b.h",
+          "upstream_url": "https://raw.githubusercontent.com/jedisct1/libsodium/4f5e89fa84ce1d178a6765b8b46f2b6f91216677/src/libsodium/include/sodium/crypto_kdf_blake2b.h",
+          "local_sha256": "2f0739ea610fb5c9ad8c453d84fac1d09e187f67096c70887f22c32a750e922b",
+          "upstream_sha256": "2f0739ea610fb5c9ad8c453d84fac1d09e187f67096c70887f22c32a750e922b",
+          "byte_identical": true,
+          "bytes": 1071
+        },
+        {
+          "kit_path": "framework/tools/sdk/esp32s3/include/libsodium/libsodium/src/libsodium/include/sodium/crypto_kx.h",
+          "upstream_path": "src/libsodium/include/sodium/crypto_kx.h",
+          "upstream_url": "https://raw.githubusercontent.com/jedisct1/libsodium/4f5e89fa84ce1d178a6765b8b46f2b6f91216677/src/libsodium/include/sodium/crypto_kx.h",
+          "local_sha256": "b590d661674331aba7dade467ee902e1b61d0fe875bfc3780bd41b9e91dce316",
+          "upstream_sha256": "b590d661674331aba7dade467ee902e1b61d0fe875bfc3780bd41b9e91dce316",
+          "byte_identical": true,
+          "bytes": 2201
+        },
+        {
+          "kit_path": "framework/tools/sdk/esp32s3/include/libsodium/libsodium/src/libsodium/include/sodium/crypto_onetimeauth.h",
+          "upstream_path": "src/libsodium/include/sodium/crypto_onetimeauth.h",
+          "upstream_url": "https://raw.githubusercontent.com/jedisct1/libsodium/4f5e89fa84ce1d178a6765b8b46f2b6f91216677/src/libsodium/include/sodium/crypto_onetimeauth.h",
+          "local_sha256": "4d07e9033ba62f556ceb3a7412226e0d74481014026953d6815cb5c4d9955891",
+          "upstream_sha256": "4d07e9033ba62f556ceb3a7412226e0d74481014026953d6815cb5c4d9955891",
+          "byte_identical": true,
+          "bytes": 1912
+        },
+        {
+          "kit_path": "framework/tools/sdk/esp32s3/include/libsodium/libsodium/src/libsodium/include/sodium/crypto_onetimeauth_poly1305.h",
+          "upstream_path": "src/libsodium/include/sodium/crypto_onetimeauth_poly1305.h",
+          "upstream_url": "https://raw.githubusercontent.com/jedisct1/libsodium/4f5e89fa84ce1d178a6765b8b46f2b6f91216677/src/libsodium/include/sodium/crypto_onetimeauth_poly1305.h",
+          "local_sha256": "bed2ea5e07ffa89264413e2cf1d7730b0fd3c56d42399c86a36ccfef52f27296",
+          "upstream_sha256": "bed2ea5e07ffa89264413e2cf1d7730b0fd3c56d42399c86a36ccfef52f27296",
+          "byte_identical": true,
+          "bytes": 2198
+        },
+        {
+          "kit_path": "framework/tools/sdk/esp32s3/include/libsodium/libsodium/src/libsodium/include/sodium/crypto_pwhash.h",
+          "upstream_path": "src/libsodium/include/sodium/crypto_pwhash.h",
+          "upstream_url": "https://raw.githubusercontent.com/jedisct1/libsodium/4f5e89fa84ce1d178a6765b8b46f2b6f91216677/src/libsodium/include/sodium/crypto_pwhash.h",
+          "local_sha256": "e529cb84849008caf0dd2f3f1bac6808a0be9c963f9d2814f59badeda85d0c5b",
+          "upstream_sha256": "e529cb84849008caf0dd2f3f1bac6808a0be9c963f9d2814f59badeda85d0c5b",
+          "byte_identical": true,
+          "bytes": 4966
+        },
+        {
+          "kit_path": "framework/tools/sdk/esp32s3/include/libsodium/libsodium/src/libsodium/include/sodium/crypto_pwhash_argon2i.h",
+          "upstream_path": "src/libsodium/include/sodium/crypto_pwhash_argon2i.h",
+          "upstream_url": "https://raw.githubusercontent.com/jedisct1/libsodium/4f5e89fa84ce1d178a6765b8b46f2b6f91216677/src/libsodium/include/sodium/crypto_pwhash_argon2i.h",
+          "local_sha256": "50a6b40ea240dd5f3b01198437ab56afabd050733ffa4d3dae5a90367e2e30ca",
+          "upstream_sha256": "50a6b40ea240dd5f3b01198437ab56afabd050733ffa4d3dae5a90367e2e30ca",
+          "byte_identical": true,
+          "bytes": 3919
+        },
+        {
+          "kit_path": "framework/tools/sdk/esp32s3/include/libsodium/libsodium/src/libsodium/include/sodium/crypto_pwhash_argon2id.h",
+          "upstream_path": "src/libsodium/include/sodium/crypto_pwhash_argon2id.h",
+          "upstream_url": "https://raw.githubusercontent.com/jedisct1/libsodium/4f5e89fa84ce1d178a6765b8b46f2b6f91216677/src/libsodium/include/sodium/crypto_pwhash_argon2id.h",
+          "local_sha256": "15fe59b3b5b7ef6562b446f39d28ec4d97de06c662005f0d9aad6788d61b8155",
+          "upstream_sha256": "15fe59b3b5b7ef6562b446f39d28ec4d97de06c662005f0d9aad6788d61b8155",
+          "byte_identical": true,
+          "bytes": 3981
+        },
+        {
+          "kit_path": "framework/tools/sdk/esp32s3/include/libsodium/libsodium/src/libsodium/include/sodium/crypto_pwhash_scryptsalsa208sha256.h",
+          "upstream_path": "src/libsodium/include/sodium/crypto_pwhash_scryptsalsa208sha256.h",
+          "upstream_url": "https://raw.githubusercontent.com/jedisct1/libsodium/4f5e89fa84ce1d178a6765b8b46f2b6f91216677/src/libsodium/include/sodium/crypto_pwhash_scryptsalsa208sha256.h",
+          "local_sha256": "5104ba3a227b676f0f8d3f0978d882b9d7ac683bf43c1d8995d6003e2ffe8e1f",
+          "upstream_sha256": "5104ba3a227b676f0f8d3f0978d882b9d7ac683bf43c1d8995d6003e2ffe8e1f",
+          "byte_identical": true,
+          "bytes": 4688
+        },
+        {
+          "kit_path": "framework/tools/sdk/esp32s3/include/libsodium/libsodium/src/libsodium/include/sodium/crypto_scalarmult.h",
+          "upstream_path": "src/libsodium/include/sodium/crypto_scalarmult.h",
+          "upstream_url": "https://raw.githubusercontent.com/jedisct1/libsodium/4f5e89fa84ce1d178a6765b8b46f2b6f91216677/src/libsodium/include/sodium/crypto_scalarmult.h",
+          "local_sha256": "80202693f962c5c5c69dab8e3398ee1e58c4422e21f110301ddfc6d137dd545b",
+          "upstream_sha256": "80202693f962c5c5c69dab8e3398ee1e58c4422e21f110301ddfc6d137dd545b",
+          "byte_identical": true,
+          "bytes": 1184
+        },
+        {
+          "kit_path": "framework/tools/sdk/esp32s3/include/libsodium/libsodium/src/libsodium/include/sodium/crypto_scalarmult_curve25519.h",
+          "upstream_path": "src/libsodium/include/sodium/crypto_scalarmult_curve25519.h",
+          "upstream_url": "https://raw.githubusercontent.com/jedisct1/libsodium/4f5e89fa84ce1d178a6765b8b46f2b6f91216677/src/libsodium/include/sodium/crypto_scalarmult_curve25519.h",
+          "local_sha256": "3122574b81d8365961aeef5e984c9ac33dfcc6f2767ef70e8622ceb20f81dbd8",
+          "upstream_sha256": "3122574b81d8365961aeef5e984c9ac33dfcc6f2767ef70e8622ceb20f81dbd8",
+          "byte_identical": true,
+          "bytes": 1098
+        },
+        {
+          "kit_path": "framework/tools/sdk/esp32s3/include/libsodium/libsodium/src/libsodium/include/sodium/crypto_scalarmult_ed25519.h",
+          "upstream_path": "src/libsodium/include/sodium/crypto_scalarmult_ed25519.h",
+          "upstream_url": "https://raw.githubusercontent.com/jedisct1/libsodium/4f5e89fa84ce1d178a6765b8b46f2b6f91216677/src/libsodium/include/sodium/crypto_scalarmult_ed25519.h",
+          "local_sha256": "d1e92c568dc731b0770bada45ee23d970a17534c41f4e5a15f44e1210e002f16",
+          "upstream_sha256": "d1e92c568dc731b0770bada45ee23d970a17534c41f4e5a15f44e1210e002f16",
+          "byte_identical": true,
+          "bytes": 1406
+        },
+        {
+          "kit_path": "framework/tools/sdk/esp32s3/include/libsodium/libsodium/src/libsodium/include/sodium/crypto_scalarmult_ristretto255.h",
+          "upstream_path": "src/libsodium/include/sodium/crypto_scalarmult_ristretto255.h",
+          "upstream_url": "https://raw.githubusercontent.com/jedisct1/libsodium/4f5e89fa84ce1d178a6765b8b46f2b6f91216677/src/libsodium/include/sodium/crypto_scalarmult_ristretto255.h",
+          "local_sha256": "cfd5cb3642ee1186adfd4f4752b7cf93215f0991aaf6a2af9a93d35733d07f42",
+          "upstream_sha256": "cfd5cb3642ee1186adfd4f4752b7cf93215f0991aaf6a2af9a93d35733d07f42",
+          "byte_identical": true,
+          "bytes": 1119
+        },
+        {
+          "kit_path": "framework/tools/sdk/esp32s3/include/libsodium/libsodium/src/libsodium/include/sodium/crypto_secretbox.h",
+          "upstream_path": "src/libsodium/include/sodium/crypto_secretbox.h",
+          "upstream_url": "https://raw.githubusercontent.com/jedisct1/libsodium/4f5e89fa84ce1d178a6765b8b46f2b6f91216677/src/libsodium/include/sodium/crypto_secretbox.h",
+          "local_sha256": "49655e9cf0302539ffa7de8d025f598fea330481575e767c134c5e06a2ac1f55",
+          "upstream_sha256": "49655e9cf0302539ffa7de8d025f598fea330481575e767c134c5e06a2ac1f55",
+          "byte_identical": true,
+          "bytes": 3316
+        },
+        {
+          "kit_path": "framework/tools/sdk/esp32s3/include/libsodium/libsodium/src/libsodium/include/sodium/crypto_secretbox_xchacha20poly1305.h",
+          "upstream_path": "src/libsodium/include/sodium/crypto_secretbox_xchacha20poly1305.h",
+          "upstream_url": "https://raw.githubusercontent.com/jedisct1/libsodium/4f5e89fa84ce1d178a6765b8b46f2b6f91216677/src/libsodium/include/sodium/crypto_secretbox_xchacha20poly1305.h",
+          "local_sha256": "dbbe1bf02d5abd16ad0604b9ff976f028340eac0eecd3ea5dd3512e29cfdd9b6",
+          "upstream_sha256": "dbbe1bf02d5abd16ad0604b9ff976f028340eac0eecd3ea5dd3512e29cfdd9b6",
+          "byte_identical": true,
+          "bytes": 2853
+        },
+        {
+          "kit_path": "framework/tools/sdk/esp32s3/include/libsodium/libsodium/src/libsodium/include/sodium/crypto_secretbox_xsalsa20poly1305.h",
+          "upstream_path": "src/libsodium/include/sodium/crypto_secretbox_xsalsa20poly1305.h",
+          "upstream_url": "https://raw.githubusercontent.com/jedisct1/libsodium/4f5e89fa84ce1d178a6765b8b46f2b6f91216677/src/libsodium/include/sodium/crypto_secretbox_xsalsa20poly1305.h",
+          "local_sha256": "c03da9bf0c12555ba39a86ba9bf8e923272f5721530de69d658b477d2da27321",
+          "upstream_sha256": "c03da9bf0c12555ba39a86ba9bf8e923272f5721530de69d658b477d2da27321",
+          "byte_identical": true,
+          "bytes": 2419
+        },
+        {
+          "kit_path": "framework/tools/sdk/esp32s3/include/libsodium/libsodium/src/libsodium/include/sodium/crypto_secretstream_xchacha20poly1305.h",
+          "upstream_path": "src/libsodium/include/sodium/crypto_secretstream_xchacha20poly1305.h",
+          "upstream_url": "https://raw.githubusercontent.com/jedisct1/libsodium/4f5e89fa84ce1d178a6765b8b46f2b6f91216677/src/libsodium/include/sodium/crypto_secretstream_xchacha20poly1305.h",
+          "local_sha256": "84f514317b7feb33b644b2c3fc45b9f012dd5cbda98aeb8086ec8f6d7029851f",
+          "upstream_sha256": "84f514317b7feb33b644b2c3fc45b9f012dd5cbda98aeb8086ec8f6d7029851f",
+          "byte_identical": true,
+          "bytes": 3832
+        },
+        {
+          "kit_path": "framework/tools/sdk/esp32s3/include/libsodium/libsodium/src/libsodium/include/sodium/crypto_shorthash.h",
+          "upstream_path": "src/libsodium/include/sodium/crypto_shorthash.h",
+          "upstream_url": "https://raw.githubusercontent.com/jedisct1/libsodium/4f5e89fa84ce1d178a6765b8b46f2b6f91216677/src/libsodium/include/sodium/crypto_shorthash.h",
+          "local_sha256": "f085c63bff21b6917dfe4e7415d4db740ef49f177abaf25a747e9878830c067f",
+          "upstream_sha256": "f085c63bff21b6917dfe4e7415d4db740ef49f177abaf25a747e9878830c067f",
+          "byte_identical": true,
+          "bytes": 960
+        },
+        {
+          "kit_path": "framework/tools/sdk/esp32s3/include/libsodium/libsodium/src/libsodium/include/sodium/crypto_shorthash_siphash24.h",
+          "upstream_path": "src/libsodium/include/sodium/crypto_shorthash_siphash24.h",
+          "upstream_url": "https://raw.githubusercontent.com/jedisct1/libsodium/4f5e89fa84ce1d178a6765b8b46f2b6f91216677/src/libsodium/include/sodium/crypto_shorthash_siphash24.h",
+          "local_sha256": "69b5ed9869b8b5da63991ad3426bf5bd56449827d87073202cbbe2ee7635d83e",
+          "upstream_sha256": "69b5ed9869b8b5da63991ad3426bf5bd56449827d87073202cbbe2ee7635d83e",
+          "byte_identical": true,
+          "bytes": 1236
+        },
+        {
+          "kit_path": "framework/tools/sdk/esp32s3/include/libsodium/libsodium/src/libsodium/include/sodium/crypto_sign.h",
+          "upstream_path": "src/libsodium/include/sodium/crypto_sign.h",
+          "upstream_url": "https://raw.githubusercontent.com/jedisct1/libsodium/4f5e89fa84ce1d178a6765b8b46f2b6f91216677/src/libsodium/include/sodium/crypto_sign.h",
+          "local_sha256": "9631e38d8c9d0f338628cf3942a27500ef5bbe06f7d34b4c3c4bbbd74f1ffb0c",
+          "upstream_sha256": "9631e38d8c9d0f338628cf3942a27500ef5bbe06f7d34b4c3c4bbbd74f1ffb0c",
+          "byte_identical": true,
+          "bytes": 3353
+        },
+        {
+          "kit_path": "framework/tools/sdk/esp32s3/include/libsodium/libsodium/src/libsodium/include/sodium/crypto_sign_ed25519.h",
+          "upstream_path": "src/libsodium/include/sodium/crypto_sign_ed25519.h",
+          "upstream_url": "https://raw.githubusercontent.com/jedisct1/libsodium/4f5e89fa84ce1d178a6765b8b46f2b6f91216677/src/libsodium/include/sodium/crypto_sign_ed25519.h",
+          "local_sha256": "c86e5a3ee60ee0140b5aef3b91bf59de809c6f8fec596663d96304f4280dcf19",
+          "upstream_sha256": "c86e5a3ee60ee0140b5aef3b91bf59de809c6f8fec596663d96304f4280dcf19",
+          "byte_identical": true,
+          "bytes": 4341
+        },
+        {
+          "kit_path": "framework/tools/sdk/esp32s3/include/libsodium/libsodium/src/libsodium/include/sodium/crypto_sign_edwards25519sha512batch.h",
+          "upstream_path": "src/libsodium/include/sodium/crypto_sign_edwards25519sha512batch.h",
+          "upstream_url": "https://raw.githubusercontent.com/jedisct1/libsodium/4f5e89fa84ce1d178a6765b8b46f2b6f91216677/src/libsodium/include/sodium/crypto_sign_edwards25519sha512batch.h",
+          "local_sha256": "958060430c84e0a2ca4c036214e8b92220f9d5d41ac76903266e122f8e89d594",
+          "upstream_sha256": "958060430c84e0a2ca4c036214e8b92220f9d5d41ac76903266e122f8e89d594",
+          "byte_identical": true,
+          "bytes": 2053
+        },
+        {
+          "kit_path": "framework/tools/sdk/esp32s3/include/libsodium/libsodium/src/libsodium/include/sodium/crypto_stream.h",
+          "upstream_path": "src/libsodium/include/sodium/crypto_stream.h",
+          "upstream_url": "https://raw.githubusercontent.com/jedisct1/libsodium/4f5e89fa84ce1d178a6765b8b46f2b6f91216677/src/libsodium/include/sodium/crypto_stream.h",
+          "local_sha256": "ae8d27cabc066b6e369e0a4d04f0aea1aced45145d8e176a21bdcf359c4001a0",
+          "upstream_sha256": "ae8d27cabc066b6e369e0a4d04f0aea1aced45145d8e176a21bdcf359c4001a0",
+          "byte_identical": true,
+          "bytes": 1606
+        },
+        {
+          "kit_path": "framework/tools/sdk/esp32s3/include/libsodium/libsodium/src/libsodium/include/sodium/crypto_stream_chacha20.h",
+          "upstream_path": "src/libsodium/include/sodium/crypto_stream_chacha20.h",
+          "upstream_url": "https://raw.githubusercontent.com/jedisct1/libsodium/4f5e89fa84ce1d178a6765b8b46f2b6f91216677/src/libsodium/include/sodium/crypto_stream_chacha20.h",
+          "local_sha256": "e6f0ef6cb1199bac25096f715fd9290e073c8a9e0fc03066699fed0fb800612b",
+          "upstream_sha256": "e6f0ef6cb1199bac25096f715fd9290e073c8a9e0fc03066699fed0fb800612b",
+          "byte_identical": true,
+          "bytes": 3672
+        },
+        {
+          "kit_path": "framework/tools/sdk/esp32s3/include/libsodium/libsodium/src/libsodium/include/sodium/crypto_stream_salsa20.h",
+          "upstream_path": "src/libsodium/include/sodium/crypto_stream_salsa20.h",
+          "upstream_url": "https://raw.githubusercontent.com/jedisct1/libsodium/4f5e89fa84ce1d178a6765b8b46f2b6f91216677/src/libsodium/include/sodium/crypto_stream_salsa20.h",
+          "local_sha256": "cf1c051d837eaea3b102c63683394e415d2d9ee2f885ba105312af7e13db03b8",
+          "upstream_sha256": "cf1c051d837eaea3b102c63683394e415d2d9ee2f885ba105312af7e13db03b8",
+          "byte_identical": true,
+          "bytes": 1836
+        },
+        {
+          "kit_path": "framework/tools/sdk/esp32s3/include/libsodium/libsodium/src/libsodium/include/sodium/crypto_stream_salsa2012.h",
+          "upstream_path": "src/libsodium/include/sodium/crypto_stream_salsa2012.h",
+          "upstream_url": "https://raw.githubusercontent.com/jedisct1/libsodium/4f5e89fa84ce1d178a6765b8b46f2b6f91216677/src/libsodium/include/sodium/crypto_stream_salsa2012.h",
+          "local_sha256": "bc65adc00270a7e18bd5acf3141c252bddb82a4628388299349ab94f9784bd8e",
+          "upstream_sha256": "bc65adc00270a7e18bd5acf3141c252bddb82a4628388299349ab94f9784bd8e",
+          "byte_identical": true,
+          "bytes": 1532
+        },
+        {
+          "kit_path": "framework/tools/sdk/esp32s3/include/libsodium/libsodium/src/libsodium/include/sodium/crypto_stream_salsa208.h",
+          "upstream_path": "src/libsodium/include/sodium/crypto_stream_salsa208.h",
+          "upstream_url": "https://raw.githubusercontent.com/jedisct1/libsodium/4f5e89fa84ce1d178a6765b8b46f2b6f91216677/src/libsodium/include/sodium/crypto_stream_salsa208.h",
+          "local_sha256": "5430b7f5a934a75ee4f5c8e9ed9ddc3cec7dd1032ac8bec35c7188da5d738fa2",
+          "upstream_sha256": "5430b7f5a934a75ee4f5c8e9ed9ddc3cec7dd1032ac8bec35c7188da5d738fa2",
+          "byte_identical": true,
+          "bytes": 1731
+        },
+        {
+          "kit_path": "framework/tools/sdk/esp32s3/include/libsodium/libsodium/src/libsodium/include/sodium/crypto_stream_xchacha20.h",
+          "upstream_path": "src/libsodium/include/sodium/crypto_stream_xchacha20.h",
+          "upstream_url": "https://raw.githubusercontent.com/jedisct1/libsodium/4f5e89fa84ce1d178a6765b8b46f2b6f91216677/src/libsodium/include/sodium/crypto_stream_xchacha20.h",
+          "local_sha256": "dcaafd5679d02460b24fe877946458ff454f4e9d35c8e1f8f1f1b48d54c96698",
+          "upstream_sha256": "dcaafd5679d02460b24fe877946458ff454f4e9d35c8e1f8f1f1b48d54c96698",
+          "byte_identical": true,
+          "bytes": 1875
+        },
+        {
+          "kit_path": "framework/tools/sdk/esp32s3/include/libsodium/libsodium/src/libsodium/include/sodium/crypto_stream_xsalsa20.h",
+          "upstream_path": "src/libsodium/include/sodium/crypto_stream_xsalsa20.h",
+          "upstream_url": "https://raw.githubusercontent.com/jedisct1/libsodium/4f5e89fa84ce1d178a6765b8b46f2b6f91216677/src/libsodium/include/sodium/crypto_stream_xsalsa20.h",
+          "local_sha256": "de812c7463a2ca0f4db6c6edb671277777f0aaccff85d86a471c7da932a09b0c",
+          "upstream_sha256": "de812c7463a2ca0f4db6c6edb671277777f0aaccff85d86a471c7da932a09b0c",
+          "byte_identical": true,
+          "bytes": 1856
+        },
+        {
+          "kit_path": "framework/tools/sdk/esp32s3/include/libsodium/libsodium/src/libsodium/include/sodium/crypto_verify_16.h",
+          "upstream_path": "src/libsodium/include/sodium/crypto_verify_16.h",
+          "upstream_url": "https://raw.githubusercontent.com/jedisct1/libsodium/4f5e89fa84ce1d178a6765b8b46f2b6f91216677/src/libsodium/include/sodium/crypto_verify_16.h",
+          "local_sha256": "d3b4fbea4b6d2bf23a9a079939a181625be76a006af129732af86bf4b544456c",
+          "upstream_sha256": "d3b4fbea4b6d2bf23a9a079939a181625be76a006af129732af86bf4b544456c",
+          "byte_identical": true,
+          "bytes": 419
+        },
+        {
+          "kit_path": "framework/tools/sdk/esp32s3/include/libsodium/libsodium/src/libsodium/include/sodium/crypto_verify_32.h",
+          "upstream_path": "src/libsodium/include/sodium/crypto_verify_32.h",
+          "upstream_url": "https://raw.githubusercontent.com/jedisct1/libsodium/4f5e89fa84ce1d178a6765b8b46f2b6f91216677/src/libsodium/include/sodium/crypto_verify_32.h",
+          "local_sha256": "6ea1ea855b691a2b08510afe74f893d4ff44e40b14501d774d1a73dd79ad4e73",
+          "upstream_sha256": "6ea1ea855b691a2b08510afe74f893d4ff44e40b14501d774d1a73dd79ad4e73",
+          "byte_identical": true,
+          "bytes": 419
+        },
+        {
+          "kit_path": "framework/tools/sdk/esp32s3/include/libsodium/libsodium/src/libsodium/include/sodium/crypto_verify_64.h",
+          "upstream_path": "src/libsodium/include/sodium/crypto_verify_64.h",
+          "upstream_url": "https://raw.githubusercontent.com/jedisct1/libsodium/4f5e89fa84ce1d178a6765b8b46f2b6f91216677/src/libsodium/include/sodium/crypto_verify_64.h",
+          "local_sha256": "9736126e6d38864b7c2aa0edf0075e3f6b1fe485a060067ce8c06afb340171a8",
+          "upstream_sha256": "9736126e6d38864b7c2aa0edf0075e3f6b1fe485a060067ce8c06afb340171a8",
+          "byte_identical": true,
+          "bytes": 419
+        },
+        {
+          "kit_path": "framework/tools/sdk/esp32s3/include/libsodium/libsodium/src/libsodium/include/sodium/export.h",
+          "upstream_path": "src/libsodium/include/sodium/export.h",
+          "upstream_url": "https://raw.githubusercontent.com/jedisct1/libsodium/4f5e89fa84ce1d178a6765b8b46f2b6f91216677/src/libsodium/include/sodium/export.h",
+          "local_sha256": "acc6ee537f831d535b0607be90f05150103765b7ca82170fd61a85bd5e6f73ff",
+          "upstream_sha256": "acc6ee537f831d535b0607be90f05150103765b7ca82170fd61a85bd5e6f73ff",
+          "byte_identical": true,
+          "bytes": 1347
+        },
+        {
+          "kit_path": "framework/tools/sdk/esp32s3/include/libsodium/libsodium/src/libsodium/include/sodium/private/chacha20_ietf_ext.h",
+          "upstream_path": "src/libsodium/include/sodium/private/chacha20_ietf_ext.h",
+          "upstream_url": "https://raw.githubusercontent.com/jedisct1/libsodium/4f5e89fa84ce1d178a6765b8b46f2b6f91216677/src/libsodium/include/sodium/private/chacha20_ietf_ext.h",
+          "local_sha256": "116e6f97313959c5c45eadeb1722b52f5ec0f38ad57ef1177b3eae4d57d3fa3f",
+          "upstream_sha256": "116e6f97313959c5c45eadeb1722b52f5ec0f38ad57ef1177b3eae4d57d3fa3f",
+          "byte_identical": true,
+          "bytes": 632
+        },
+        {
+          "kit_path": "framework/tools/sdk/esp32s3/include/libsodium/libsodium/src/libsodium/include/sodium/private/common.h",
+          "upstream_path": "src/libsodium/include/sodium/private/common.h",
+          "upstream_url": "https://raw.githubusercontent.com/jedisct1/libsodium/4f5e89fa84ce1d178a6765b8b46f2b6f91216677/src/libsodium/include/sodium/private/common.h",
+          "local_sha256": "aab3513a1486fa2b32187a8431a80144c5053549188af4a620913840ae34a9f9",
+          "upstream_sha256": "aab3513a1486fa2b32187a8431a80144c5053549188af4a620913840ae34a9f9",
+          "byte_identical": true,
+          "bytes": 6224
+        },
+        {
+          "kit_path": "framework/tools/sdk/esp32s3/include/libsodium/libsodium/src/libsodium/include/sodium/private/ed25519_ref10.h",
+          "upstream_path": "src/libsodium/include/sodium/private/ed25519_ref10.h",
+          "upstream_url": "https://raw.githubusercontent.com/jedisct1/libsodium/4f5e89fa84ce1d178a6765b8b46f2b6f91216677/src/libsodium/include/sodium/private/ed25519_ref10.h",
+          "local_sha256": "0acea90b49b5e8a0b83fe1757ef95f55c6b9c78fc63e8cc94e42ab5f6f222a14",
+          "upstream_sha256": "0acea90b49b5e8a0b83fe1757ef95f55c6b9c78fc63e8cc94e42ab5f6f222a14",
+          "byte_identical": true,
+          "bytes": 3535
+        },
+        {
+          "kit_path": "framework/tools/sdk/esp32s3/include/libsodium/libsodium/src/libsodium/include/sodium/private/ed25519_ref10_fe_25_5.h",
+          "upstream_path": "src/libsodium/include/sodium/private/ed25519_ref10_fe_25_5.h",
+          "upstream_url": "https://raw.githubusercontent.com/jedisct1/libsodium/4f5e89fa84ce1d178a6765b8b46f2b6f91216677/src/libsodium/include/sodium/private/ed25519_ref10_fe_25_5.h",
+          "local_sha256": "7f1522d3286253add4d09c61df2fb4e96d4b4b8bc50db57c5ecadc0c10dae36a",
+          "upstream_sha256": "7f1522d3286253add4d09c61df2fb4e96d4b4b8bc50db57c5ecadc0c10dae36a",
+          "byte_identical": true,
+          "bytes": 30154
+        },
+        {
+          "kit_path": "framework/tools/sdk/esp32s3/include/libsodium/libsodium/src/libsodium/include/sodium/private/ed25519_ref10_fe_51.h",
+          "upstream_path": "src/libsodium/include/sodium/private/ed25519_ref10_fe_51.h",
+          "upstream_url": "https://raw.githubusercontent.com/jedisct1/libsodium/4f5e89fa84ce1d178a6765b8b46f2b6f91216677/src/libsodium/include/sodium/private/ed25519_ref10_fe_51.h",
+          "local_sha256": "4b9c0513603135de0f8f9a64632bb71f9dd4cb6a0cdf82907c8bcdc9e3398ed4",
+          "upstream_sha256": "4b9c0513603135de0f8f9a64632bb71f9dd4cb6a0cdf82907c8bcdc9e3398ed4",
+          "byte_identical": true,
+          "bytes": 10968
+        },
+        {
+          "kit_path": "framework/tools/sdk/esp32s3/include/libsodium/libsodium/src/libsodium/include/sodium/private/implementations.h",
+          "upstream_path": "src/libsodium/include/sodium/private/implementations.h",
+          "upstream_url": "https://raw.githubusercontent.com/jedisct1/libsodium/4f5e89fa84ce1d178a6765b8b46f2b6f91216677/src/libsodium/include/sodium/private/implementations.h",
+          "local_sha256": "c97f3bed15f648a925023527d25d4130774d0a15354cfb5184b20dbc5f7e328c",
+          "upstream_sha256": "c97f3bed15f648a925023527d25d4130774d0a15354cfb5184b20dbc5f7e328c",
+          "byte_identical": true,
+          "bytes": 433
+        },
+        {
+          "kit_path": "framework/tools/sdk/esp32s3/include/libsodium/libsodium/src/libsodium/include/sodium/private/mutex.h",
+          "upstream_path": "src/libsodium/include/sodium/private/mutex.h",
+          "upstream_url": "https://raw.githubusercontent.com/jedisct1/libsodium/4f5e89fa84ce1d178a6765b8b46f2b6f91216677/src/libsodium/include/sodium/private/mutex.h",
+          "local_sha256": "ee045978cbd074c695e8e0b4ec074b84e768c9557c8b4d69ebccc0710bbc422c",
+          "upstream_sha256": "ee045978cbd074c695e8e0b4ec074b84e768c9557c8b4d69ebccc0710bbc422c",
+          "byte_identical": true,
+          "bytes": 115
+        },
+        {
+          "kit_path": "framework/tools/sdk/esp32s3/include/libsodium/libsodium/src/libsodium/include/sodium/private/sse2_64_32.h",
+          "upstream_path": "src/libsodium/include/sodium/private/sse2_64_32.h",
+          "upstream_url": "https://raw.githubusercontent.com/jedisct1/libsodium/4f5e89fa84ce1d178a6765b8b46f2b6f91216677/src/libsodium/include/sodium/private/sse2_64_32.h",
+          "local_sha256": "cb456bfe3b22c8bf1062a8e579ed1f15bdff724a23c8313531a1a46dd2a2843b",
+          "upstream_sha256": "cb456bfe3b22c8bf1062a8e579ed1f15bdff724a23c8313531a1a46dd2a2843b",
+          "byte_identical": true,
+          "bytes": 1119
+        },
+        {
+          "kit_path": "framework/tools/sdk/esp32s3/include/libsodium/libsodium/src/libsodium/include/sodium/randombytes.h",
+          "upstream_path": "src/libsodium/include/sodium/randombytes.h",
+          "upstream_url": "https://raw.githubusercontent.com/jedisct1/libsodium/4f5e89fa84ce1d178a6765b8b46f2b6f91216677/src/libsodium/include/sodium/randombytes.h",
+          "local_sha256": "41bf6745f8343b39a48861e9128bbff39ddd7f784d3e8c59a8fcbc55c6511c05",
+          "upstream_sha256": "41bf6745f8343b39a48861e9128bbff39ddd7f784d3e8c59a8fcbc55c6511c05",
+          "byte_identical": true,
+          "bytes": 1847
+        },
+        {
+          "kit_path": "framework/tools/sdk/esp32s3/include/libsodium/libsodium/src/libsodium/include/sodium/randombytes_internal_random.h",
+          "upstream_path": "src/libsodium/include/sodium/randombytes_internal_random.h",
+          "upstream_url": "https://raw.githubusercontent.com/jedisct1/libsodium/4f5e89fa84ce1d178a6765b8b46f2b6f91216677/src/libsodium/include/sodium/randombytes_internal_random.h",
+          "local_sha256": "9909eaf527e325d69d08c55db2f76de379fd4de338ff82e72a1da5a206fa3b6b",
+          "upstream_sha256": "9909eaf527e325d69d08c55db2f76de379fd4de338ff82e72a1da5a206fa3b6b",
+          "byte_identical": true,
+          "bytes": 427
+        },
+        {
+          "kit_path": "framework/tools/sdk/esp32s3/include/libsodium/libsodium/src/libsodium/include/sodium/randombytes_sysrandom.h",
+          "upstream_path": "src/libsodium/include/sodium/randombytes_sysrandom.h",
+          "upstream_url": "https://raw.githubusercontent.com/jedisct1/libsodium/4f5e89fa84ce1d178a6765b8b46f2b6f91216677/src/libsodium/include/sodium/randombytes_sysrandom.h",
+          "local_sha256": "cdcc193ee76bb69626b7cb63b105db2f83796b7c365c9f4e42193fa9e654bfb6",
+          "upstream_sha256": "cdcc193ee76bb69626b7cb63b105db2f83796b7c365c9f4e42193fa9e654bfb6",
+          "byte_identical": true,
+          "bytes": 282
+        },
+        {
+          "kit_path": "framework/tools/sdk/esp32s3/include/libsodium/libsodium/src/libsodium/include/sodium/runtime.h",
+          "upstream_path": "src/libsodium/include/sodium/runtime.h",
+          "upstream_url": "https://raw.githubusercontent.com/jedisct1/libsodium/4f5e89fa84ce1d178a6765b8b46f2b6f91216677/src/libsodium/include/sodium/runtime.h",
+          "local_sha256": "5f618794bfa316c338bc166ffd21f00e5711a0ebf94aaa19440c88b0c94be023",
+          "upstream_sha256": "5f618794bfa316c338bc166ffd21f00e5711a0ebf94aaa19440c88b0c94be023",
+          "byte_identical": true,
+          "bytes": 889
+        },
+        {
+          "kit_path": "framework/tools/sdk/esp32s3/include/libsodium/libsodium/src/libsodium/include/sodium/utils.h",
+          "upstream_path": "src/libsodium/include/sodium/utils.h",
+          "upstream_url": "https://raw.githubusercontent.com/jedisct1/libsodium/4f5e89fa84ce1d178a6765b8b46f2b6f91216677/src/libsodium/include/sodium/utils.h",
+          "local_sha256": "9e1edab33653155e3d4773963234b9eb0af9b1983b1ef3dc1f248c46e44dcae1",
+          "upstream_sha256": "9e1edab33653155e3d4773963234b9eb0af9b1983b1ef3dc1f248c46e44dcae1",
+          "byte_identical": true,
+          "bytes": 6149
+        },
+        {
+          "kit_path": "framework/tools/sdk/esp32s3/include/libsodium/libsodium/src/libsodium/include/sodium.h",
+          "upstream_path": "src/libsodium/include/sodium.h",
+          "upstream_url": "https://raw.githubusercontent.com/jedisct1/libsodium/4f5e89fa84ce1d178a6765b8b46f2b6f91216677/src/libsodium/include/sodium.h",
+          "local_sha256": "510bd520da2545bc9cfe3060230f4dffb345f1e96ccf25b53e4b8a3d73d1984b",
+          "upstream_sha256": "510bd520da2545bc9cfe3060230f4dffb345f1e96ccf25b53e4b8a3d73d1984b",
+          "byte_identical": true,
+          "bytes": 2529
+        }
+      ],
+      "remaining": [
+        "Header or wrapper equality does not prove the precompiled archive was built entirely from this commit, nor that the component is linked into a particular final firmware. Final release-kit and binary provenance must be checked separately."
+      ]
+    },
+    {
+      "component": "expat",
+      "license_spdx": "MIT",
+      "upstream_repository": "https://github.com/libexpat/libexpat",
+      "upstream_commit": "454c6105bc2d0ea2521b8f8f7a5161c2abd8c386",
+      "idf_submodule_path": "components/expat/expat",
+      "idf_tree_sha": "38eeba213aa695aabfd6d89aa9f5078dbe5a94c3",
+      "license_upstream_path": "expat/COPYING",
+      "download_url": "https://raw.githubusercontent.com/libexpat/libexpat/454c6105bc2d0ea2521b8f8f7a5161c2abd8c386/expat/COPYING",
+      "download_sha256": "122f2c27000472a201d337b9b31f7eb2b52d091b02857061a8880371612d9534",
+      "download_bytes": 1144,
+      "saved_license_path": "submodules/expat/COPYING",
+      "applicable_kit_paths": [
+        "framework/tools/sdk/esp32s3/include/expat/expat"
+      ],
+      "precompiled_archives": [
+        {
+          "kit_path": "framework/tools/sdk/esp32s3/lib/libexpat.a",
+          "sha256": "8a7e04a3aebb639ad7297948fd1de2de1db9c89708739e014ffcceeb8ef2b651"
+        }
+      ],
+      "header_comparison_archive_url": "https://codeload.github.com/libexpat/libexpat/tar.gz/454c6105bc2d0ea2521b8f8f7a5161c2abd8c386",
+      "header_comparison_archive_sha256": "94981f1868c34f63104ea04a9d5fdd2704820a3b6044881786a7fc55567ec472",
+      "version_match_evidence": [
+        {
+          "kit_path": "framework/tools/sdk/esp32s3/include/expat/expat/expat/lib/ascii.h",
+          "upstream_path": "expat/lib/ascii.h",
+          "upstream_url": "https://raw.githubusercontent.com/libexpat/libexpat/454c6105bc2d0ea2521b8f8f7a5161c2abd8c386/expat/lib/ascii.h",
+          "local_sha256": "42f8b392c70366743eacbc60ce021389ccaa333598dd49eef6ee5c93698ca205",
+          "upstream_sha256": "42f8b392c70366743eacbc60ce021389ccaa333598dd49eef6ee5c93698ca205",
+          "byte_identical": true,
+          "bytes": 3682
+        },
+        {
+          "kit_path": "framework/tools/sdk/esp32s3/include/expat/expat/expat/lib/asciitab.h",
+          "upstream_path": "expat/lib/asciitab.h",
+          "upstream_url": "https://raw.githubusercontent.com/libexpat/libexpat/454c6105bc2d0ea2521b8f8f7a5161c2abd8c386/expat/lib/asciitab.h",
+          "local_sha256": "1cc0ae749019fc0e488cd1cf245f6beaa6d4f7c55a1fc797e5aa40a408bc266b",
+          "upstream_sha256": "1cc0ae749019fc0e488cd1cf245f6beaa6d4f7c55a1fc797e5aa40a408bc266b",
+          "byte_identical": true,
+          "bytes": 3520
+        },
+        {
+          "kit_path": "framework/tools/sdk/esp32s3/include/expat/expat/expat/lib/expat.h",
+          "upstream_path": "expat/lib/expat.h",
+          "upstream_url": "https://raw.githubusercontent.com/libexpat/libexpat/454c6105bc2d0ea2521b8f8f7a5161c2abd8c386/expat/lib/expat.h",
+          "local_sha256": "f521acdad222644365b0e81a33bcd6939a98c91b225c47582cc84bd73d96febc",
+          "upstream_sha256": "f521acdad222644365b0e81a33bcd6939a98c91b225c47582cc84bd73d96febc",
+          "byte_identical": true,
+          "bytes": 43535
+        },
+        {
+          "kit_path": "framework/tools/sdk/esp32s3/include/expat/expat/expat/lib/expat_external.h",
+          "upstream_path": "expat/lib/expat_external.h",
+          "upstream_url": "https://raw.githubusercontent.com/libexpat/libexpat/454c6105bc2d0ea2521b8f8f7a5161c2abd8c386/expat/lib/expat_external.h",
+          "local_sha256": "7ca9ed28dd5e08eac425931894fabd4c876db8f4be26f9b9a33c2e4f70a0d6c3",
+          "upstream_sha256": "7ca9ed28dd5e08eac425931894fabd4c876db8f4be26f9b9a33c2e4f70a0d6c3",
+          "byte_identical": true,
+          "bytes": 6029
+        },
+        {
+          "kit_path": "framework/tools/sdk/esp32s3/include/expat/expat/expat/lib/iasciitab.h",
+          "upstream_path": "expat/lib/iasciitab.h",
+          "upstream_url": "https://raw.githubusercontent.com/libexpat/libexpat/454c6105bc2d0ea2521b8f8f7a5161c2abd8c386/expat/lib/iasciitab.h",
+          "local_sha256": "ad8b01e9f323cc4208bcd22241df383d7e8641fe3c8b3415aa513de82531f89f",
+          "upstream_sha256": "ad8b01e9f323cc4208bcd22241df383d7e8641fe3c8b3415aa513de82531f89f",
+          "byte_identical": true,
+          "bytes": 3590
+        },
+        {
+          "kit_path": "framework/tools/sdk/esp32s3/include/expat/expat/expat/lib/internal.h",
+          "upstream_path": "expat/lib/internal.h",
+          "upstream_url": "https://raw.githubusercontent.com/libexpat/libexpat/454c6105bc2d0ea2521b8f8f7a5161c2abd8c386/expat/lib/internal.h",
+          "local_sha256": "d2efe5a1018449968a689f444cca432e3d5875aba6ad08ee18ca235d64f41bb9",
+          "upstream_sha256": "d2efe5a1018449968a689f444cca432e3d5875aba6ad08ee18ca235d64f41bb9",
+          "byte_identical": true,
+          "bytes": 5963
+        },
+        {
+          "kit_path": "framework/tools/sdk/esp32s3/include/expat/expat/expat/lib/latin1tab.h",
+          "upstream_path": "expat/lib/latin1tab.h",
+          "upstream_url": "https://raw.githubusercontent.com/libexpat/libexpat/454c6105bc2d0ea2521b8f8f7a5161c2abd8c386/expat/lib/latin1tab.h",
+          "local_sha256": "eab66226da100372e01e42e1cbcd8ac2bbbb5c1b5f95d735289cc85c7a8fc2ba",
+          "upstream_sha256": "eab66226da100372e01e42e1cbcd8ac2bbbb5c1b5f95d735289cc85c7a8fc2ba",
+          "byte_identical": true,
+          "bytes": 3573
+        },
+        {
+          "kit_path": "framework/tools/sdk/esp32s3/include/expat/expat/expat/lib/nametab.h",
+          "upstream_path": "expat/lib/nametab.h",
+          "upstream_url": "https://raw.githubusercontent.com/libexpat/libexpat/454c6105bc2d0ea2521b8f8f7a5161c2abd8c386/expat/lib/nametab.h",
+          "local_sha256": "67dcf415d37a4b692a6a8bb46f990c02d83f2ef3d01a65cd61c8594a084246f2",
+          "upstream_sha256": "67dcf415d37a4b692a6a8bb46f990c02d83f2ef3d01a65cd61c8594a084246f2",
+          "byte_identical": true,
+          "bytes": 9044
+        },
+        {
+          "kit_path": "framework/tools/sdk/esp32s3/include/expat/expat/expat/lib/siphash.h",
+          "upstream_path": "expat/lib/siphash.h",
+          "upstream_url": "https://raw.githubusercontent.com/libexpat/libexpat/454c6105bc2d0ea2521b8f8f7a5161c2abd8c386/expat/lib/siphash.h",
+          "local_sha256": "fbce56cd680e690043bbf572188cc2d0a25dbfc0d47ac8cb98eb3de768d4e694",
+          "upstream_sha256": "fbce56cd680e690043bbf572188cc2d0a25dbfc0d47ac8cb98eb3de768d4e694",
+          "byte_identical": true,
+          "bytes": 13076
+        },
+        {
+          "kit_path": "framework/tools/sdk/esp32s3/include/expat/expat/expat/lib/utf8tab.h",
+          "upstream_path": "expat/lib/utf8tab.h",
+          "upstream_url": "https://raw.githubusercontent.com/libexpat/libexpat/454c6105bc2d0ea2521b8f8f7a5161c2abd8c386/expat/lib/utf8tab.h",
+          "local_sha256": "8cd26bd461d334d5e1caedb3af4518d401749f2fc66d56208542b29085159c18",
+          "upstream_sha256": "8cd26bd461d334d5e1caedb3af4518d401749f2fc66d56208542b29085159c18",
+          "byte_identical": true,
+          "bytes": 3522
+        },
+        {
+          "kit_path": "framework/tools/sdk/esp32s3/include/expat/expat/expat/lib/winconfig.h",
+          "upstream_path": "expat/lib/winconfig.h",
+          "upstream_url": "https://raw.githubusercontent.com/libexpat/libexpat/454c6105bc2d0ea2521b8f8f7a5161c2abd8c386/expat/lib/winconfig.h",
+          "local_sha256": "3c71cea9a6174718542331971a35db317902b2433be9d8dd1cb24239b635c0cc",
+          "upstream_sha256": "3c71cea9a6174718542331971a35db317902b2433be9d8dd1cb24239b635c0cc",
+          "byte_identical": true,
+          "bytes": 1931
+        },
+        {
+          "kit_path": "framework/tools/sdk/esp32s3/include/expat/expat/expat/lib/xmlrole.h",
+          "upstream_path": "expat/lib/xmlrole.h",
+          "upstream_url": "https://raw.githubusercontent.com/libexpat/libexpat/454c6105bc2d0ea2521b8f8f7a5161c2abd8c386/expat/lib/xmlrole.h",
+          "local_sha256": "2b5d674be6ef20c7e3f69295176d75e68c5616e4dfce0a186fdd5e2ed8315f7a",
+          "upstream_sha256": "2b5d674be6ef20c7e3f69295176d75e68c5616e4dfce0a186fdd5e2ed8315f7a",
+          "byte_identical": true,
+          "bytes": 4669
+        },
+        {
+          "kit_path": "framework/tools/sdk/esp32s3/include/expat/expat/expat/lib/xmltok.h",
+          "upstream_path": "expat/lib/xmltok.h",
+          "upstream_url": "https://raw.githubusercontent.com/libexpat/libexpat/454c6105bc2d0ea2521b8f8f7a5161c2abd8c386/expat/lib/xmltok.h",
+          "local_sha256": "4299a03828b98bfe47ec6809f6e279252954a9a911dc7e0f19551bd74e3af971",
+          "upstream_sha256": "4299a03828b98bfe47ec6809f6e279252954a9a911dc7e0f19551bd74e3af971",
+          "byte_identical": true,
+          "bytes": 12838
+        },
+        {
+          "kit_path": "framework/tools/sdk/esp32s3/include/expat/expat/expat/lib/xmltok_impl.h",
+          "upstream_path": "expat/lib/xmltok_impl.h",
+          "upstream_url": "https://raw.githubusercontent.com/libexpat/libexpat/454c6105bc2d0ea2521b8f8f7a5161c2abd8c386/expat/lib/xmltok_impl.h",
+          "local_sha256": "f05ad4fe5e98429a7349ff04f57192cac58c324601f2a2e5e697ab0bc05d36d5",
+          "upstream_sha256": "f05ad4fe5e98429a7349ff04f57192cac58c324601f2a2e5e697ab0bc05d36d5",
+          "byte_identical": true,
+          "bytes": 3430
+        }
+      ],
+      "remaining": [
+        "Header or wrapper equality does not prove the precompiled archive was built entirely from this commit, nor that the component is linked into a particular final firmware. Final release-kit and binary provenance must be checked separately."
+      ]
+    },
+    {
+      "component": "tinycbor",
+      "license_spdx": "MIT",
+      "upstream_repository": "https://github.com/intel/tinycbor",
+      "upstream_commit": "7c349dbb6b8d76db39383b226d3ebdf59b8ab37d",
+      "idf_submodule_path": "components/cbor/tinycbor",
+      "idf_tree_sha": "38eeba213aa695aabfd6d89aa9f5078dbe5a94c3",
+      "license_upstream_path": "LICENSE",
+      "download_url": "https://raw.githubusercontent.com/intel/tinycbor/7c349dbb6b8d76db39383b226d3ebdf59b8ab37d/LICENSE",
+      "download_sha256": "3c6ba0b5bfa7830505301ffb336a17b0748e0d61c4d34216e9dc98f10e40395e",
+      "download_bytes": 1074,
+      "saved_license_path": "submodules/tinycbor/LICENSE",
+      "applicable_kit_paths": [
+        "framework/tools/sdk/esp32s3/include/cbor/port/include/cbor.h"
+      ],
+      "precompiled_archives": [
+        {
+          "kit_path": "framework/tools/sdk/esp32s3/lib/libcbor.a",
+          "sha256": "4189c645c727e82447e03a2a2ae0733f11f78710fffb306df3fd29cd343454eb"
+        }
+      ],
+      "header_comparison_archive_url": null,
+      "header_comparison_archive_sha256": null,
+      "version_match_evidence": [
+        {
+          "kind": "idf_wrapper_git_blob",
+          "kit_path": "framework/tools/sdk/esp32s3/include/cbor/port/include/cbor.h",
+          "idf_path": "components/cbor/port/include/cbor.h",
+          "idf_tree_sha": "38eeba213aa695aabfd6d89aa9f5078dbe5a94c3",
+          "local_sha256": "505b30b15291d037a6f81d8f9566cf4341eb95506d04edf950fd4118ad34705d",
+          "local_git_blob_sha1": "c8e6ccf48320a9f6b66c36b08af667e527ef6518",
+          "frozen_tree_git_blob_sha1": "c8e6ccf48320a9f6b66c36b08af667e527ef6518",
+          "byte_identical_by_git_blob": true,
+          "note": "This two-line wrapper references ../../tinycbor/src/cbor.h and cborjson.h; both referenced upstream headers are absent from this kit. It does not identify the compiled TinyCBOR version."
+        }
+      ],
+      "remaining": [
+        "No TinyCBOR upstream implementation/header is present in the old kit for direct same-commit comparison. The fixed IDF tree pins this candidate upstream commit, but the actual prebuilt libcbor.a source revision remains unproven by this check.",
+        "Header or wrapper equality does not prove the precompiled archive was built entirely from this commit, nor that the component is linked into a particular final firmware. Final release-kit and binary provenance must be checked separately."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1909 @@
+[
+  {
+    "component": "spiffs",
+    "repository": "https://github.com/pellepl/spiffs",
+    "commit": "0dbb3f71c5f6fae3747a9d935372773762baf852",
+    "idf_parent_commit": "38eeba213aa695aabfd6d89aa9f5078dbe5a94c3",
+    "idf_submodule_path": "components/spiffs/spiffs",
+    "license": "MIT",
+    "files": [
+      {
+        "path": "submodules/spiffs/LICENSE",
+        "upstream_url": "https://raw.githubusercontent.com/pellepl/spiffs/0dbb3f71c5f6fae3747a9d935372773762baf852/LICENSE",
+        "sha256": "d19257540156a51ed50c2378e7159066415d8bbbe147779f8deb0d3e73f1b0a7",
+        "bytes": 1117
+      }
+    ],
+    "applicable_paths": [
+      "framework/tools/sdk/esp32s3/lib/libspiffs.a"
+    ],
+    "header_checks": [],
+    "scope_note": "Pinned ESP-IDF gitlink establishes the license source. Header checks establish only the checked files, not a reproducible build of the archive."
+  },
+  {
+    "component": "unity",
+    "repository": "https://github.com/ThrowTheSwitch/Unity",
+    "commit": "7d2bf62b7e6afaf38153041a9d53c21aeeca9a25",
+    "idf_parent_commit": "38eeba213aa695aabfd6d89aa9f5078dbe5a94c3",
+    "idf_submodule_path": "components/unity/unity",
+    "license": "MIT",
+    "files": [
+      {
+        "path": "submodules/unity/docs/license.txt",
+        "upstream_url": "https://raw.githubusercontent.com/ThrowTheSwitch/Unity/7d2bf62b7e6afaf38153041a9d53c21aeeca9a25/docs/license.txt",
+        "sha256": "3ed9b51da86f52c729c96cc99fdde6444b2297c788a9cf4ad1d3649dc34c4985",
+        "bytes": 1123
+      }
+    ],
+    "applicable_paths": [
+      "framework/tools/sdk/esp32s3/lib/libunity.a"
+    ],
+    "header_checks": [
+      {
+        "upstream_path": "src/unity.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/unity/unity/src/unity.h",
+        "sha256": "82e67184d30733afcf81e09d8c8679fe38e90dd077d121ef833c81e79ad462a2",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/unity_internals.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/unity/unity/src/unity_internals.h",
+        "sha256": "d45c0f1d07b6b81db902fc79a22be9717cbc112d07a3125d867b2c1885309390",
+        "exact": true
+      }
+    ],
+    "scope_note": "Pinned ESP-IDF gitlink establishes the license source. Header checks establish only the checked files, not a reproducible build of the archive."
+  },
+  {
+    "component": "cmock",
+    "repository": "https://github.com/ThrowTheSwitch/CMock",
+    "commit": "eeecc49ce8af123cf8ad40efdb9673e37b56230f",
+    "idf_parent_commit": "38eeba213aa695aabfd6d89aa9f5078dbe5a94c3",
+    "idf_submodule_path": "components/cmock/CMock",
+    "license": "MIT",
+    "files": [
+      {
+        "path": "submodules/cmock/LICENSE.txt",
+        "upstream_url": "https://raw.githubusercontent.com/ThrowTheSwitch/CMock/eeecc49ce8af123cf8ad40efdb9673e37b56230f/LICENSE.txt",
+        "sha256": "a228c2871b9a779a6542a49470c5b567f2806dddcbcf90af861bb4d39291626c",
+        "bytes": 1092
+      }
+    ],
+    "applicable_paths": [
+      "framework/tools/sdk/esp32s3/lib/libcmock.a"
+    ],
+    "header_checks": [
+      {
+        "upstream_path": "src/cmock.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/cmock/CMock/src/cmock.h",
+        "sha256": "fb386d093680f1f82fa493d29959e3cc6b195c2738c07fc36a3c33868881a5b2",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/cmock_internals.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/cmock/CMock/src/cmock_internals.h",
+        "sha256": "33176ace775e36ea3aaee1041d5df0967e5f120170f17f68be1ebc54c91f3027",
+        "exact": true
+      }
+    ],
+    "scope_note": "Pinned ESP-IDF gitlink establishes the license source. Header checks establish only the checked files, not a reproducible build of the archive."
+  },
+  {
+    "component": "lwip",
+    "repository": "https://github.com/espressif/esp-lwip",
+    "commit": "a45be9e438f6cf9c54ec150581819c3b95d5af6b",
+    "idf_parent_commit": "38eeba213aa695aabfd6d89aa9f5078dbe5a94c3",
+    "idf_submodule_path": "components/lwip/lwip",
+    "license": "BSD-3-Clause and file-specific notices",
+    "files": [
+      {
+        "path": "submodules/lwip/COPYING",
+        "upstream_url": "https://raw.githubusercontent.com/espressif/esp-lwip/a45be9e438f6cf9c54ec150581819c3b95d5af6b/COPYING",
+        "sha256": "8fb15ebdb19eb669e1d37fcd8e57a44c477fcc0e93a9ab0d181760965f94d5ed",
+        "bytes": 1611
+      }
+    ],
+    "applicable_paths": [
+      "framework/tools/sdk/esp32s3/lib/liblwip.a"
+    ],
+    "header_checks": [
+      {
+        "upstream_path": "src/include/compat/posix/arpa/inet.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/compat/posix/arpa/inet.h",
+        "sha256": "8b3edc25121de40cd1c3338d5d68be93091f0713ee8a23eba9789f14d41e0f6d",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/compat/posix/net/if.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/compat/posix/net/if.h",
+        "sha256": "959824b6148b88cd19334b2e9a55b0ce3a5e27633e4ef23014d576ece1afbe82",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/compat/posix/netdb.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/compat/posix/netdb.h",
+        "sha256": "ec3cb99596ef6bf11b39870541bf6607a7cff6011cfef99bf5d53f2abed05948",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/compat/posix/sys/socket.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/compat/posix/sys/socket.h",
+        "sha256": "8b3edc25121de40cd1c3338d5d68be93091f0713ee8a23eba9789f14d41e0f6d",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/compat/stdc/errno.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/compat/stdc/errno.h",
+        "sha256": "9fdac7c52c9fe0cfdf50f96eae29c5f341a9afde5a56166d21500c656a8a0728",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/lwip/altcp.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/altcp.h",
+        "sha256": "6086d952391823fb22cbda72734383adceeb3717d0eb328056cd02d3c3bd784d",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/lwip/altcp_tcp.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/altcp_tcp.h",
+        "sha256": "6f9dc7980ddae21919af20ace2a55bb6031f8e50bd025c45abc14082c099aabd",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/lwip/altcp_tls.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/altcp_tls.h",
+        "sha256": "78a12d5453b71ed0373c360d32db2f73f66841a5632daf42964634f56cd7f903",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/lwip/api.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/api.h",
+        "sha256": "1c1a0c2c8aa3d745c2e2d9af69f712b29bb1336e14a09b6506e3fad594d21a4a",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/lwip/apps/altcp_proxyconnect.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/apps/altcp_proxyconnect.h",
+        "sha256": "c4b47d012ce46a6aa25d4038ecfe0844b0f3cdfe40e6234d622de298aa48ab13",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/lwip/apps/altcp_tls_mbedtls_opts.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/apps/altcp_tls_mbedtls_opts.h",
+        "sha256": "13e6bb261635895c2c6b300fead1313bda9c84c9328d2df00050d99f3b458713",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/lwip/apps/fs.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/apps/fs.h",
+        "sha256": "78affa57845b484a28a6a42b1165e1ed2d6a0aac6a2ddfcc61aa8b3fdea2a9fd",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/lwip/apps/http_client.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/apps/http_client.h",
+        "sha256": "5e8ed15fbb99f6924cffcc82784bcdeb15a7bea19cdd436f588f59be9ed57570",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/lwip/apps/httpd.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/apps/httpd.h",
+        "sha256": "4a5c1213fe0fd2082a8aed3084f4d282b8c51c3c464d140306cdce0f21c30b9e",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/lwip/apps/httpd_opts.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/apps/httpd_opts.h",
+        "sha256": "d48790f7ea3e034f3726ba88d1b0729c195b7f3de98876426c7a7f9d099946b1",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/lwip/apps/lwiperf.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/apps/lwiperf.h",
+        "sha256": "ac35572131e102c96feffba4bf2788b841f0d162cde1af3d9b7914e11540b9b9",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/lwip/apps/mdns.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/apps/mdns.h",
+        "sha256": "b6da4c7c19cb41c992cef008fcb18172013e3c48cc9626d1935f30ce4c3670e6",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/lwip/apps/mdns_opts.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/apps/mdns_opts.h",
+        "sha256": "fce75c794c78180f5569140a177c450b685662d8e9c8486e6f1cdda9faaeac20",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/lwip/apps/mdns_priv.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/apps/mdns_priv.h",
+        "sha256": "57f3e8cbca3d403e47121621d74f6933ad8e9778d9df7d0a9ea1ee95bddf67fb",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/lwip/apps/mqtt.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/apps/mqtt.h",
+        "sha256": "b8082ebcd0583c7744772f088a8c676d70802da603c436c6e77d032cf5cee9e5",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/lwip/apps/mqtt_opts.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/apps/mqtt_opts.h",
+        "sha256": "b8bb920a04472488f3fa1371cbb9c934bfead7cc8ba7f06316da4bdb2e354feb",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/lwip/apps/mqtt_priv.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/apps/mqtt_priv.h",
+        "sha256": "e4903b34c12c941650045977e2629d41b1ca8407e48dc28d9ba36382825bb2d9",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/lwip/apps/netbiosns.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/apps/netbiosns.h",
+        "sha256": "438a8e5cb80794959e0ebb0989a8d0615dc8d2d737fa97c231b10d4040e8f715",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/lwip/apps/netbiosns_opts.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/apps/netbiosns_opts.h",
+        "sha256": "c4dcff3906dc65cbe88d4fd6488f24a4eb1659d11fc7ec8cf7eef7eb3599b82c",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/lwip/apps/smtp.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/apps/smtp.h",
+        "sha256": "61d670c0c914cc4d39f6c9e4661a1ac5e2b3cdfc45bb972b35cbf7ad3ea3d569",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/lwip/apps/smtp_opts.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/apps/smtp_opts.h",
+        "sha256": "fea7b6a8acfbd22add46be89bbad1e42ea4c41b255b21c576c7e519642b02275",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/lwip/apps/snmp.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/apps/snmp.h",
+        "sha256": "dfe74dba15aee1f70c9268e981b901ba9985b56104c4d4af778771d7bfaae8c5",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/lwip/apps/snmp_core.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/apps/snmp_core.h",
+        "sha256": "5f2f6c31d324406c2e3cc69a5d8262cb578065e70320f6dbb4046a9c34dcd8e7",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/lwip/apps/snmp_mib2.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/apps/snmp_mib2.h",
+        "sha256": "dbc21ede7c6c4ac282b845aaf40961993a94b3ddb80a85e8aea66c9f6c5cae03",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/lwip/apps/snmp_opts.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/apps/snmp_opts.h",
+        "sha256": "fcd7d37a9418f6b25fc367ad1252c193a62915099b5bbc9f6693f0526d915bd4",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/lwip/apps/snmp_scalar.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/apps/snmp_scalar.h",
+        "sha256": "f88ed96f2010bb383af723c50f8e0b93a9a5d566599ef0f35c11102124805c09",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/lwip/apps/snmp_snmpv2_framework.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/apps/snmp_snmpv2_framework.h",
+        "sha256": "8397074e6d74aceb6430e077537eff4330f6c712d00647a13f2832093a7f9eeb",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/lwip/apps/snmp_snmpv2_usm.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/apps/snmp_snmpv2_usm.h",
+        "sha256": "ddd777bac19a3f0c6823854f121e52e1c16a9f788540e1f172920b45a01713bc",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/lwip/apps/snmp_table.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/apps/snmp_table.h",
+        "sha256": "1d0ef0508b2a00f55e6a90c27d484e526a2db5cde41c13b2aafcc6f2c8d7e25b",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/lwip/apps/snmp_threadsync.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/apps/snmp_threadsync.h",
+        "sha256": "cca3712f8a796bc481ca8be54c61407f5be5661acc10c95234ba4c31ef6a4996",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/lwip/apps/snmpv3.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/apps/snmpv3.h",
+        "sha256": "7d1be4c7469ae8108d3657433f965c8884e66475178fee2a474fbbf01aee3fe0",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/lwip/apps/sntp.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/apps/sntp.h",
+        "sha256": "6061cc0bc00e976d55d5bde9b098105ff2984e1fa3355cc622f807e5e6e1e1ea",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/lwip/apps/sntp_opts.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/apps/sntp_opts.h",
+        "sha256": "e19e34bbe7f97d3f626b5975d1182771683cec15957b3415d4d674ef9489ada8",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/lwip/apps/tftp_opts.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/apps/tftp_opts.h",
+        "sha256": "bc24f308f5d9b28afdfdcf1bc0e5d3f35a43029adf10325e866f6465b3bcfd10",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/lwip/apps/tftp_server.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/apps/tftp_server.h",
+        "sha256": "9c3a52627aa8ef6980d244017c41d3a2d81ffafbba3cd3c71dfe649ccd953d31",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/lwip/arch.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/arch.h",
+        "sha256": "38399a8b01aea37e087b73cc34d14199de6e50a62db45aa4e7172b6cc814f165",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/lwip/autoip.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/autoip.h",
+        "sha256": "92960cb246d41791ac2e9fee69055b406b9dae0c011614ab001ddf49466190db",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/lwip/debug.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/debug.h",
+        "sha256": "23a140dd9efdf8ddb8fa3e97697f09670d8d23ea2f1b58f1b45ca639e0f6f515",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/lwip/def.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/def.h",
+        "sha256": "45174abaf6f7af5417185dee90954f1954c80278c2bb240b513d25cebf064826",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/lwip/dhcp.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/dhcp.h",
+        "sha256": "1a44ff328bbe27d4654e61557ceb12dfa249d83e42d3c715992b403f91cf615b",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/lwip/dhcp6.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/dhcp6.h",
+        "sha256": "dbac3f610e3e76547691af73a667bd5fd6564a7fbfa5ac382ef77604938d4afa",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/lwip/dns.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/dns.h",
+        "sha256": "4abe18ca59bad2872d029fdcd92d18bd3252e78996e8035674f0682dcca359b1",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/lwip/err.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/err.h",
+        "sha256": "af26b573fc5c6a31877fdcde35e15382ac0c8b01f35af3f5a4429f9cf5dd323d",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/lwip/errno.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/errno.h",
+        "sha256": "79dc6e03887ccf301e01a5129d1a732e21fb05308a8e38f04ada44e0928c075a",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/lwip/etharp.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/etharp.h",
+        "sha256": "46d1ff043f32c22597100d6d294a3f687586422dc65fba648b0b65b4f2135bd3",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/lwip/ethip6.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/ethip6.h",
+        "sha256": "7a7e744ae373a720261be3651adaa0f35ff00ebb1bcf38e5330e371ddfd162b7",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/lwip/icmp.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/icmp.h",
+        "sha256": "84f63c9fbc6f6d66ef437f834279c25c20bfa78834eb0ee347c70377f7f8d8c8",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/lwip/icmp6.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/icmp6.h",
+        "sha256": "f790cd444ecbe2e605b2f1a1deab3e6e9662ba6e87fd47b401912c5a118ee836",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/lwip/if_api.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/if_api.h",
+        "sha256": "ce286c1bc917e2ec184d7d9bbe423a98d16377994fa01a585979a7f92f8de861",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/lwip/igmp.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/igmp.h",
+        "sha256": "de409719975a9e81349d90ed6e09a8d832f12c216d6b9e42de580be9ff546daa",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/lwip/inet.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/inet.h",
+        "sha256": "8504b019db37c6767f443b3e13006792129b8ac6dcce93658d439c8155369a6c",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/lwip/inet_chksum.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/inet_chksum.h",
+        "sha256": "4f99b8325be79c66937a496576ee3ede1f67a44132be35b33582bf15dbb91207",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/lwip/init.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/init.h",
+        "sha256": "09efc5237bedc861dd66d3c357568eb3da0a9e9c4e5ac580502514a30cd0bfb4",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/lwip/ip.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/ip.h",
+        "sha256": "9589862a8cd3d22ad06ac291231d4b0335cb15e2d0e5bcbd1f870808d9f85828",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/lwip/ip4.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/ip4.h",
+        "sha256": "d15ed11a5551d6968d536f5bba63d53c95214668002b12342e6bcf3b840e612e",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/lwip/ip4_addr.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/ip4_addr.h",
+        "sha256": "373faa87a644cedd25874acfbaeea0349b34448fc2dafa5d0853d945e46a6fe8",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/lwip/ip4_frag.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/ip4_frag.h",
+        "sha256": "8b0bb67655cba6da8cddc360e655c711553ad35e6306dbae618637e80be9911c",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/lwip/ip4_napt.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/ip4_napt.h",
+        "sha256": "7a3744222aebfd18b36e9bceb0bdf49a5280ae782dc2641fbff4a5e90dc86ea6",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/lwip/ip6.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/ip6.h",
+        "sha256": "7681c2948f700aa565c387ca20654f7322991ca15de7fd4e8f342a8ce44abe57",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/lwip/ip6_addr.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/ip6_addr.h",
+        "sha256": "1dbc5e8ddd4c379303d4a3416f628063f0814814d365cc20dad5d89e0baa4070",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/lwip/ip6_frag.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/ip6_frag.h",
+        "sha256": "3ab1bdb9220a3c87c8187fb26b1150cd03c4401b0a0c6db2ea4a22674141dd3b",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/lwip/ip6_zone.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/ip6_zone.h",
+        "sha256": "951a5aeae08562dfc4a3bcc72de9952ac0045126a1cef9eedf9c6881ecb91a03",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/lwip/ip_addr.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/ip_addr.h",
+        "sha256": "70be5a78d31852105e5e7d38ca944793e91564a01614294ef2ff79a0d27d7f0d",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/lwip/lwip_napt.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/lwip_napt.h",
+        "sha256": "947ac5688521928b32dedcfbdba05a552997757e2b2247eacb70f3cacb965fd1",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/lwip/mem.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/mem.h",
+        "sha256": "416f961f338a0cba460494ebfe2527b7cc1fc5c18f489711e66af7dd76b7a223",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/lwip/memp.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/memp.h",
+        "sha256": "79dfd019219330cf08deb1360483eb7d1da7a1a7a304034ef65ad52feefba1ef",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/lwip/mld6.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/mld6.h",
+        "sha256": "00c0404c74f162df93ceadc13a49897bc6124f4ae6a9fe251969b45df7f8fe23",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/lwip/nd6.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/nd6.h",
+        "sha256": "968645ab92a5060e42f222f7d9878ba8803e8cfef4b66c9879a2c717b12bf79d",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/lwip/netbuf.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/netbuf.h",
+        "sha256": "1aa92014d8919c5073b5123c92881e00b0c507ca485667ccdebbf31afa214ff3",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/lwip/netdb.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/netdb.h",
+        "sha256": "cad279a2fec53f6b4c11c7fcd0744aae7b0ad3a70bbab0cfbb5ff31598e0594a",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/lwip/netif.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/netif.h",
+        "sha256": "9b89682d0b7d3b6086177ab33daa456883f8ae35263a2276100a266368b124c7",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/lwip/netifapi.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/netifapi.h",
+        "sha256": "2c087eac81246ac74e3ba2c3922de0612890587f0cca7c1360f379a57ab45518",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/lwip/opt.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/opt.h",
+        "sha256": "36cc38fc02d2fa6807f1f23b0327066d891a96f740f7dd1a20732d18466d2ee1",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/lwip/pbuf.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/pbuf.h",
+        "sha256": "8a5a4664f02dd285cc1181f4af22f281b01f59d21a9757699b9c935cbcddd2f8",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/lwip/priv/altcp_priv.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/priv/altcp_priv.h",
+        "sha256": "6ce0af146e7e6777f6cac44c7a90f84a5d8d3b864e1189f6fcffa03302b059e1",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/lwip/priv/api_msg.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/priv/api_msg.h",
+        "sha256": "772956f81d5df1026edf1027e82450eeb05e06b358974d9dc99345ff36cc567a",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/lwip/priv/mem_priv.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/priv/mem_priv.h",
+        "sha256": "c90c9b64c8ea95c05d5b8b10d706acb53b6cc124166e8dd85b397698679f7920",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/lwip/priv/memp_priv.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/priv/memp_priv.h",
+        "sha256": "37aff2894bbe25f1888e43b96be80f4c1a43a24867c0fc9aceb4093328682937",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/lwip/priv/memp_std.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/priv/memp_std.h",
+        "sha256": "86cdf1d80f2716a07011dc763e5fa614cd2b555382cb7d6750176116def67a0f",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/lwip/priv/nd6_priv.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/priv/nd6_priv.h",
+        "sha256": "0cd4756c17109d6d01c07ef35cbc527954a1cd926065432a715578590b8dfddb",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/lwip/priv/raw_priv.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/priv/raw_priv.h",
+        "sha256": "0b2b019a55fab8eed89d668f13402778835117fe472464046472cd04b93c2bb2",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/lwip/priv/sockets_priv.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/priv/sockets_priv.h",
+        "sha256": "5deb199408ccc7979cd59ba21d15b1365ed18174a8b399c335a9482b6dbdba44",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/lwip/priv/tcp_priv.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/priv/tcp_priv.h",
+        "sha256": "880bed9da0bb6eedc3d7c32307b99eedc78c06259274588c0292bf593661fc20",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/lwip/priv/tcpip_priv.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/priv/tcpip_priv.h",
+        "sha256": "aeb6e4ed4cb0833ca8007ef35c2dbfa75969bfbb6042df50ad698a7a56b12a16",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/lwip/prot/autoip.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/prot/autoip.h",
+        "sha256": "d723fc0fe92ebb63ed6964c8ac47c8b14ffe2344e48013213b31117e6fa81d2f",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/lwip/prot/dhcp.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/prot/dhcp.h",
+        "sha256": "3b5de2b4d223809db3f668680bdddfd4895efbf75a7493c32727b80492a6f9dd",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/lwip/prot/dhcp6.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/prot/dhcp6.h",
+        "sha256": "72c645a6153694229ca535f044af2d1520ebc7860baa98121747218a08c2b74b",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/lwip/prot/dns.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/prot/dns.h",
+        "sha256": "34049c0f7f489aaec12d0589dc51ecfb24408dba422f605d8deb207c44d02b8f",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/lwip/prot/etharp.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/prot/etharp.h",
+        "sha256": "55164c0d047f1279982fef9681491c8811f8482976aff7fab9b63a9a589ded76",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/lwip/prot/ethernet.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/prot/ethernet.h",
+        "sha256": "42fbc05a563d3ad242663b7d82601bbae6c6d9c16a6da5b35b51a02799206303",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/lwip/prot/iana.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/prot/iana.h",
+        "sha256": "745c2d70a5d4839e3df5a34f7e37b83bcc7fe58f39eba1d2f5e238242d74c878",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/lwip/prot/icmp.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/prot/icmp.h",
+        "sha256": "931d46a3e775efcd6076263e23eb564b612913b7c11f7b5d009e94fefeb20f28",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/lwip/prot/icmp6.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/prot/icmp6.h",
+        "sha256": "a3fdc254460b9e2c45cbfb1ad2402c055b34b907a09fb5337a0f26e068302074",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/lwip/prot/ieee.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/prot/ieee.h",
+        "sha256": "3cabc795b2c2e02b4ff44e130497f19b372348598f9ac6d5127ab1888370e187",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/lwip/prot/igmp.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/prot/igmp.h",
+        "sha256": "9adb3a0b03feff302b057020aa860fd958f6ef4528225014c104bd4175ebdff7",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/lwip/prot/ip.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/prot/ip.h",
+        "sha256": "eb5371e5ac58467253d813bc58726e317f91abadb10336497de0d64645ec01cd",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/lwip/prot/ip4.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/prot/ip4.h",
+        "sha256": "033570c0b7657f5475959f7b74d9e23c6f8e81498495d5b23d8c2eeb0640d7a7",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/lwip/prot/ip6.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/prot/ip6.h",
+        "sha256": "c0514e97f153f2e5cf514e6f1f4350fd2cbcb7073ebc05495b436c638bd32109",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/lwip/prot/mld6.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/prot/mld6.h",
+        "sha256": "9601cee67b48c4b7cadb75caf3d83c05f5409d367341af70af7e7e4f46f173f8",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/lwip/prot/nd6.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/prot/nd6.h",
+        "sha256": "50cff239fdb433defe12f7e35c4f2964e42ad7bfeab15d3b274a59142c4d558e",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/lwip/prot/tcp.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/prot/tcp.h",
+        "sha256": "db67bb5ea0517a8cd9e30ebf655743f69ce05e77ca6e4a113e8c60e69bd7c48a",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/lwip/prot/udp.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/prot/udp.h",
+        "sha256": "b56daa8ff1e8e52cdd4f720297f07af2a96feea254db86768e20e157d7ce2784",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/lwip/raw.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/raw.h",
+        "sha256": "4485e6dddc930401193e380852ea7af121339fcc340114ba11b18b1e51c3440b",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/lwip/sio.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/sio.h",
+        "sha256": "b6555ae90164d0b66e2772ec3444ebba0133927e4f47b512b570819b66912ce3",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/lwip/snmp.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/snmp.h",
+        "sha256": "1f90da65829c29545e9562ce5355d1799ea36cd901ed8ea9faa8e1ef3d7c2ece",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/lwip/sockets.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/sockets.h",
+        "sha256": "bfe5bc86a5074b5e0347c21f49c3c8c21e90b524a7a2f7d1e4cba3470835545d",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/lwip/stats.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/stats.h",
+        "sha256": "4ed225b9c0b020f702dff8e6c1fbeaaa4e83f1c7f9b87b86d2a21871c2f587db",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/lwip/sys.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/sys.h",
+        "sha256": "3dda24f061b2e0cf3bff24d5e33bb0f7d396f62b35f8d281ca77efa8d2b9adbd",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/lwip/tcp.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/tcp.h",
+        "sha256": "30fe24a5176042850cd083c53b11021838c86d47bb26d550866aa3424c263d47",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/lwip/tcpbase.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/tcpbase.h",
+        "sha256": "cc99fcf9a85b548157dc0631922edf5ebac82c431d463683d10bfc584971a42e",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/lwip/tcpip.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/tcpip.h",
+        "sha256": "0106c89a8ba1f1cb56019e395d5681bf5a37121885a1b3218e3bf547a1266aa4",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/lwip/timeouts.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/timeouts.h",
+        "sha256": "f8db5c160d8587a39b9bb8a44603e20e6452f1b6926f65ff2eff1e4d25ba21af",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/lwip/udp.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/udp.h",
+        "sha256": "843a5f8a6c1831396400f71d34089f3a85e8d9791a7fb7b52ac63f070f465c82",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/netif/bridgeif.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/netif/bridgeif.h",
+        "sha256": "39d409d880187e2a7b372ddae2b1cfc004b88a0dd786dbe9070945420b8e42c8",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/netif/bridgeif_opts.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/netif/bridgeif_opts.h",
+        "sha256": "bc6e5f0677c621a5a8adb315e1cdb06210e1391efea6d308684103fd38edfe66",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/netif/etharp.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/netif/etharp.h",
+        "sha256": "2e1ab81eced65420cdee5940d2e547cae7b0fa70088f452692363676ecfc66dc",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/netif/ethernet.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/netif/ethernet.h",
+        "sha256": "1dd88263e583593e47f7c891680d67838287160551b8c06562c9feca1ddee443",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/netif/ieee802154.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/netif/ieee802154.h",
+        "sha256": "02f21d8b3e143fa77d8fa3f0d3db9ac1683507436ab441a61d5012ddb6037699",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/netif/lowpan6.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/netif/lowpan6.h",
+        "sha256": "538ac2429cedf9193b6538998f3ba5bdd003fbf0840fd03b46d4ad5bcfaa4c20",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/netif/lowpan6_ble.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/netif/lowpan6_ble.h",
+        "sha256": "fdc9f64632ec32ee2a577048d1ae5f64b1ffcb705e8ee505aefdb9232d8af4c9",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/netif/lowpan6_common.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/netif/lowpan6_common.h",
+        "sha256": "eed0a8f45ea6e62ba4238d6bc139a1bef5fe625ec7527b52856fbf885c12f8ba",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/netif/lowpan6_opts.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/netif/lowpan6_opts.h",
+        "sha256": "8dc0426b3e382cc2d64cd7cb325c77180b9dd5c90508894674a4c6cb25614198",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/netif/ppp/ccp.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/netif/ppp/ccp.h",
+        "sha256": "b6e681ffe6855a6772c6d0a9077f144676c30db0c9ec0ea461e816f7647d6d43",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/netif/ppp/chap-md5.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/netif/ppp/chap-md5.h",
+        "sha256": "f67cd93664262575ded862c17bac7c1003e2eb690224b89ba2b0cdd221c2f725",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/netif/ppp/chap-new.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/netif/ppp/chap-new.h",
+        "sha256": "f7bfb4e194fedcd1e6d499320826ecca7f14add5170c8fb7d4832b8e831bc2ac",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/netif/ppp/chap_ms.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/netif/ppp/chap_ms.h",
+        "sha256": "77316bd6366248a0d0715e19e231667c1564f3ef081dc3ba839cd673a5d4984e",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/netif/ppp/eap.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/netif/ppp/eap.h",
+        "sha256": "42589e98b4ff8470c0e9a1cecc45fa30e79e2c1c3452fc46e2a88b6ac617dfe8",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/netif/ppp/ecp.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/netif/ppp/ecp.h",
+        "sha256": "4936fccc29a900ced5b67906f97f192ea634642b6a003605dc1cb40d65d011f6",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/netif/ppp/eui64.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/netif/ppp/eui64.h",
+        "sha256": "fc79081c31fd7333b0e2b3cf61c870727a3b066d82482c894b02c81cdbf464c7",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/netif/ppp/fsm.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/netif/ppp/fsm.h",
+        "sha256": "8751104f5cdeb3ace720744016431ee2d704983e8a94de7add0830e63dfdef0e",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/netif/ppp/ipcp.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/netif/ppp/ipcp.h",
+        "sha256": "60bb47d15951954c865393be49b64f6daecc966f7146aeee187530a111d9008a",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/netif/ppp/ipv6cp.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/netif/ppp/ipv6cp.h",
+        "sha256": "69de1cc233f9ec05312a6cd4d5b558d91d04e39626ad6f9e0fbc4ee61a5709d0",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/netif/ppp/lcp.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/netif/ppp/lcp.h",
+        "sha256": "0278457347c50aeaa4636124d0265fb8064511f461de2b3ff7fa51e3dacb0345",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/netif/ppp/magic.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/netif/ppp/magic.h",
+        "sha256": "b19a254f135449982830685df31b948e0d5c7e44ac5875efc8d1a3ef20a3aff7",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/netif/ppp/mppe.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/netif/ppp/mppe.h",
+        "sha256": "8dd28c994f67ca45b11586ecc195fabedd5d51efa0bd99872336d82886477c9f",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/netif/ppp/polarssl/arc4.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/netif/ppp/polarssl/arc4.h",
+        "sha256": "970bc9075bf7aef36f4a225ba8a3dcb89c16a1948016f3521ca4a7609b7ba284",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/netif/ppp/polarssl/des.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/netif/ppp/polarssl/des.h",
+        "sha256": "f0a3ea812ead16f7d8fba08115429b5bd7deed1d9ffc6dddf66ec44b1d95ef0a",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/netif/ppp/polarssl/md4.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/netif/ppp/polarssl/md4.h",
+        "sha256": "d1982ff627c1176d03c60fa8ae307af09626a2655e08525a146019276edb9058",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/netif/ppp/polarssl/md5.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/netif/ppp/polarssl/md5.h",
+        "sha256": "1962ff0d88f8a7efbb6c8592eb13154129cfc7012c8cc22be7981df35e3c8ba4",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/netif/ppp/polarssl/sha1.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/netif/ppp/polarssl/sha1.h",
+        "sha256": "2951ad6ae5b5797112ae1899cd814536c445334bf59cbd91bf5414db0613980d",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/netif/ppp/ppp.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/netif/ppp/ppp.h",
+        "sha256": "58175d5f9fda4d88bdaab4f1da12da692dd9e732ee0c51d94319b3461edd01c2",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/netif/ppp/ppp_impl.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/netif/ppp/ppp_impl.h",
+        "sha256": "9a216f46049edfb333551cb4e7213ad537b0570c3211f0029b32bcd0c39cf62e",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/netif/ppp/ppp_opts.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/netif/ppp/ppp_opts.h",
+        "sha256": "ea99faa10a07d3e414696465ca06ba420c585cb9a683e20e8f3f24f80e03fe5c",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/netif/ppp/pppapi.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/netif/ppp/pppapi.h",
+        "sha256": "e4f451ac45f17be845e5ef71db7ee0ebfbea0082a9fd9f7b8de9dab5d606c2f2",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/netif/ppp/pppcrypt.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/netif/ppp/pppcrypt.h",
+        "sha256": "954943c6c1286c707c0f1182428eb514dc8cf87a704a4e8f26a926553f260d58",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/netif/ppp/pppdebug.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/netif/ppp/pppdebug.h",
+        "sha256": "fab025981023c13721fac50978c5416ce2c9a0f40db200ef78ce4cd36d3b9b63",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/netif/ppp/pppoe.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/netif/ppp/pppoe.h",
+        "sha256": "fb57591c5679950f4af58b17427271aa3554b9f8e49cc59d913f79de0bf07363",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/netif/ppp/pppol2tp.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/netif/ppp/pppol2tp.h",
+        "sha256": "ae9a819aaf816ae4ff25c35bddaf7c10654a54b95451b247fd5d2824229d3cf7",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/netif/ppp/pppos.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/netif/ppp/pppos.h",
+        "sha256": "c225fffa8f85bc170992cef05d8d7350c86d2b3ae3d55951d71e35c9fcc2390d",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/netif/ppp/upap.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/netif/ppp/upap.h",
+        "sha256": "7cf555545ed20e7d7897ed935c6333e77d629b1862e4e2136df87ebebfcb3907",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/netif/ppp/vj.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/netif/ppp/vj.h",
+        "sha256": "d6c9da89224974d8486dfa0082ecca0d487715df65a37088db55e7e51c745a14",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/netif/slipif.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/netif/slipif.h",
+        "sha256": "abd68f98455683a96feeb1d7b2f83aa62acbba23b63d7974bef26382342909e3",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/include/netif/zepif.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/lwip/lwip/src/include/netif/zepif.h",
+        "sha256": "7b3a4c9094483c14eb3c4da651874aca325e3927fde02eb28e226040deef4714",
+        "exact": true
+      }
+    ],
+    "scope_note": "Pinned ESP-IDF gitlink establishes the license source. Header checks establish only the checked files, not a reproducible build of the archive."
+  },
+  {
+    "component": "protobuf-c",
+    "repository": "https://github.com/protobuf-c/protobuf-c",
+    "commit": "abc67a11c6db271bedbb9f58be85d6f4e2ea8389",
+    "idf_parent_commit": "38eeba213aa695aabfd6d89aa9f5078dbe5a94c3",
+    "idf_submodule_path": "components/protobuf-c/protobuf-c",
+    "license": "BSD-2-Clause",
+    "files": [
+      {
+        "path": "submodules/protobuf-c/LICENSE",
+        "upstream_url": "https://raw.githubusercontent.com/protobuf-c/protobuf-c/abc67a11c6db271bedbb9f58be85d6f4e2ea8389/LICENSE",
+        "sha256": "b8999cb392cc5bbe8cd679de59584ad8d2f26033123e76f1d662fa14b9d4f287",
+        "bytes": 1613
+      }
+    ],
+    "applicable_paths": [
+      "framework/tools/sdk/esp32s3/lib/libprotobuf-c.a"
+    ],
+    "header_checks": [
+      {
+        "upstream_path": "protobuf-c/protobuf-c.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/protobuf-c/protobuf-c/protobuf-c/protobuf-c.h",
+        "sha256": "e1c6306390090e4468472dbed3928e6983d1be3306d2006ea3fa49696aef6946",
+        "exact": true
+      }
+    ],
+    "scope_note": "Pinned ESP-IDF gitlink establishes the license source. Header checks establish only the checked files, not a reproducible build of the archive."
+  },
+  {
+    "component": "cjson",
+    "repository": "https://github.com/DaveGamble/cJSON",
+    "commit": "87d8f0961a01bf09bef98ff89bae9fdec42181ee",
+    "idf_parent_commit": "38eeba213aa695aabfd6d89aa9f5078dbe5a94c3",
+    "idf_submodule_path": "components/json/cJSON",
+    "license": "MIT",
+    "files": [
+      {
+        "path": "submodules/cjson/LICENSE",
+        "upstream_url": "https://raw.githubusercontent.com/DaveGamble/cJSON/87d8f0961a01bf09bef98ff89bae9fdec42181ee/LICENSE",
+        "sha256": "a36dda207c36db5818729c54e7ad4e8b0c6fba847491ba64f372c1a2037b6d5c",
+        "bytes": 1084
+      }
+    ],
+    "applicable_paths": [
+      "framework/tools/sdk/esp32s3/lib/libjson.a"
+    ],
+    "header_checks": [
+      {
+        "upstream_path": "cJSON.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/json/cJSON/cJSON.h",
+        "sha256": "c01a8ca5609bb2c956dd1ae836d5d926ec68153ecebc5a75ea0febc2e076da8d",
+        "exact": true
+      },
+      {
+        "upstream_path": "cJSON_Utils.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/json/cJSON/cJSON_Utils.h",
+        "sha256": "1050a7cce8ffe352c509e0c1faad505b9b8a09cac3a1c45c544447868e05f3b5",
+        "exact": true
+      },
+      {
+        "upstream_path": "tests/common.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/json/cJSON/tests/common.h",
+        "sha256": "c1f106726a5865965aad9597687df8c7ba43b587a495fa5e17c23231a99ddaa2",
+        "exact": true
+      },
+      {
+        "upstream_path": "tests/unity/examples/example_1/src/ProductionCode.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/json/cJSON/tests/unity/examples/example_1/src/ProductionCode.h",
+        "sha256": "25cfcc42b79140f4c399363e0ef10a6e518a1831e10c61cc138d6d9a230425ce",
+        "exact": true
+      },
+      {
+        "upstream_path": "tests/unity/examples/example_1/src/ProductionCode2.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/json/cJSON/tests/unity/examples/example_1/src/ProductionCode2.h",
+        "sha256": "d4db1a4eea2bee3d668a203d4953f415f23be64a826c5a73059ef221f61b3882",
+        "exact": true
+      },
+      {
+        "upstream_path": "tests/unity/examples/example_2/src/ProductionCode.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/json/cJSON/tests/unity/examples/example_2/src/ProductionCode.h",
+        "sha256": "25cfcc42b79140f4c399363e0ef10a6e518a1831e10c61cc138d6d9a230425ce",
+        "exact": true
+      },
+      {
+        "upstream_path": "tests/unity/examples/example_2/src/ProductionCode2.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/json/cJSON/tests/unity/examples/example_2/src/ProductionCode2.h",
+        "sha256": "d4db1a4eea2bee3d668a203d4953f415f23be64a826c5a73059ef221f61b3882",
+        "exact": true
+      },
+      {
+        "upstream_path": "tests/unity/examples/example_3/helper/UnityHelper.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/json/cJSON/tests/unity/examples/example_3/helper/UnityHelper.h",
+        "sha256": "a95bb6d3704c51637bb0855787236b41229e3836601ba97e88768f95779f3d4d",
+        "exact": true
+      },
+      {
+        "upstream_path": "tests/unity/examples/example_3/src/ProductionCode.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/json/cJSON/tests/unity/examples/example_3/src/ProductionCode.h",
+        "sha256": "25cfcc42b79140f4c399363e0ef10a6e518a1831e10c61cc138d6d9a230425ce",
+        "exact": true
+      },
+      {
+        "upstream_path": "tests/unity/examples/example_3/src/ProductionCode2.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/json/cJSON/tests/unity/examples/example_3/src/ProductionCode2.h",
+        "sha256": "d4db1a4eea2bee3d668a203d4953f415f23be64a826c5a73059ef221f61b3882",
+        "exact": true
+      },
+      {
+        "upstream_path": "tests/unity/examples/unity_config.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/json/cJSON/tests/unity/examples/unity_config.h",
+        "sha256": "c3d7d8f48c9dfb38a4cbaabc2d30a0a5335d2bdd8b454fd70326876e90133299",
+        "exact": true
+      },
+      {
+        "upstream_path": "tests/unity/extras/fixture/src/unity_fixture.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/json/cJSON/tests/unity/extras/fixture/src/unity_fixture.h",
+        "sha256": "d99045365d5fc89535b283b9608631883bf5aa35d41665889f25c9bfcb925b29",
+        "exact": true
+      },
+      {
+        "upstream_path": "tests/unity/extras/fixture/src/unity_fixture_internals.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/json/cJSON/tests/unity/extras/fixture/src/unity_fixture_internals.h",
+        "sha256": "fbdafda4dd395e08ff7503180022c074947d622f4e83256256297ce05c154e73",
+        "exact": true
+      },
+      {
+        "upstream_path": "tests/unity/extras/fixture/src/unity_fixture_malloc_overrides.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/json/cJSON/tests/unity/extras/fixture/src/unity_fixture_malloc_overrides.h",
+        "sha256": "446d4a58dd88ce0bceba6e095ac4f26a4c55898e67265d688450fa3aacc7741c",
+        "exact": true
+      },
+      {
+        "upstream_path": "tests/unity/extras/fixture/test/unity_output_Spy.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/json/cJSON/tests/unity/extras/fixture/test/unity_output_Spy.h",
+        "sha256": "b5adfe4f07d3c1c4b7cb0178344ccf608c60a08713d768c8b3e073c6f030dde5",
+        "exact": true
+      },
+      {
+        "upstream_path": "tests/unity/src/unity.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/json/cJSON/tests/unity/src/unity.h",
+        "sha256": "2d356dcffe0f8d887ece0ad8d5cd0d388aeef5482800a7b8fea6d415be8bcf1f",
+        "exact": true
+      },
+      {
+        "upstream_path": "tests/unity/src/unity_internals.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/json/cJSON/tests/unity/src/unity_internals.h",
+        "sha256": "874c2af0bcebead08d0f609f77e2306a735ba55205b7776d937120cb616d4304",
+        "exact": true
+      },
+      {
+        "upstream_path": "tests/unity/test/expectdata/testsample_head1.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/json/cJSON/tests/unity/test/expectdata/testsample_head1.h",
+        "sha256": "fc279a298e45f70a559d05132ae888973c8f5aad913c0b2d6d8425ccbde5c998",
+        "exact": true
+      },
+      {
+        "upstream_path": "tests/unity/test/expectdata/testsample_mock_head1.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/json/cJSON/tests/unity/test/expectdata/testsample_mock_head1.h",
+        "sha256": "9cb779d98b40e5dfcf70db57f7d3deae6310cac80547140c972ecde585f56c18",
+        "exact": true
+      },
+      {
+        "upstream_path": "tests/unity/test/testdata/CException.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/json/cJSON/tests/unity/test/testdata/CException.h",
+        "sha256": "3d791048e28a3a83580dc5cb7a03d918323247128bde97b055e1037924a4a3a0",
+        "exact": true
+      },
+      {
+        "upstream_path": "tests/unity/test/testdata/Defs.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/json/cJSON/tests/unity/test/testdata/Defs.h",
+        "sha256": "309f8524e59399b7e9e5f2a02ab7a1a4e21d6f808bdb05730ad41366412b72ea",
+        "exact": true
+      },
+      {
+        "upstream_path": "tests/unity/test/testdata/cmock.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/json/cJSON/tests/unity/test/testdata/cmock.h",
+        "sha256": "f600e74488bfc56862df2daedce1a3525eaad43ed72c6706817f6629b180a1ec",
+        "exact": true
+      },
+      {
+        "upstream_path": "tests/unity/test/testdata/mockMock.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/json/cJSON/tests/unity/test/testdata/mockMock.h",
+        "sha256": "f198c43bad6e541c08b5e32c204d894be499ff005032c3ffa25e7ed7ba176001",
+        "exact": true
+      }
+    ],
+    "scope_note": "Pinned ESP-IDF gitlink establishes the license source. Header checks establish only the checked files, not a reproducible build of the archive."
+  },
+  {
+    "component": "mbedtls",
+    "repository": "https://github.com/espressif/mbedtls",
+    "commit": "2b8e772fc1cb0732cda3bae7d1e9d6f4cfaf63d9",
+    "idf_parent_commit": "38eeba213aa695aabfd6d89aa9f5078dbe5a94c3",
+    "idf_submodule_path": "components/mbedtls/mbedtls",
+    "license": "Apache-2.0",
+    "files": [
+      {
+        "path": "submodules/mbedtls/LICENSE",
+        "upstream_url": "https://raw.githubusercontent.com/espressif/mbedtls/2b8e772fc1cb0732cda3bae7d1e9d6f4cfaf63d9/LICENSE",
+        "sha256": "9b405ef4c89342f5eae1dd828882f931747f71001cfba7d114801039b52ad09b",
+        "bytes": 29852
+      }
+    ],
+    "applicable_paths": [
+      "framework/tools/sdk/esp32s3/lib/libmbed*.a"
+    ],
+    "header_checks": [
+      {
+        "upstream_path": "include/mbedtls/aes.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/mbedtls/aes.h",
+        "sha256": "cdadaa287185b4ed689b8190c3e82f2e2bdb20bdaeb1afa1849797a40d4226ee",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/mbedtls/aesni.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/mbedtls/aesni.h",
+        "sha256": "eafbf804daa73bd2916bd87f6fe4744d61a9260161f03db7fdb6b102424b7cbc",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/mbedtls/arc4.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/mbedtls/arc4.h",
+        "sha256": "d66d70b8dfc0b53452c7617fe07bff4f57c8f9f1994924361443f632bbb867c5",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/mbedtls/aria.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/mbedtls/aria.h",
+        "sha256": "20664462c7aa9d3607fa5b517ed0acc2cddf9b73ca1a7d25c5ece2f751e9648d",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/mbedtls/asn1.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/mbedtls/asn1.h",
+        "sha256": "833a64871d59694686e23bd85e655c0bcbb004f0775bb5b91a9068ce54e8eeea",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/mbedtls/asn1write.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/mbedtls/asn1write.h",
+        "sha256": "9cf3e48c2ca600d45360df23c97f66074661df52bfeecb635494ad52effb20b0",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/mbedtls/base64.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/mbedtls/base64.h",
+        "sha256": "dc7ef7c15b67e935cd01ceee229aa45ef0381c4e16999b9961c4f2c0024e8a30",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/mbedtls/bignum.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/mbedtls/bignum.h",
+        "sha256": "59ea32a8c664599aeeab535814e0ef396702e5d6dff4b89f0faa3fd978607418",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/mbedtls/blowfish.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/mbedtls/blowfish.h",
+        "sha256": "d21f1b322d233db8cddc2c486a0d075be4adc106a477bff2de42d98ca0e1934b",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/mbedtls/bn_mul.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/mbedtls/bn_mul.h",
+        "sha256": "268324971674f7187be79de77d1e711ce1df112f328ab104d3eec456ba77787d",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/mbedtls/camellia.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/mbedtls/camellia.h",
+        "sha256": "367b12fc0a88e140f33c9048c4e2fa2d80b8b6fa2628a6e83dc1d54641601fe9",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/mbedtls/ccm.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/mbedtls/ccm.h",
+        "sha256": "b8f5d5163cfa884d038c53db38d5466d484080bd76728a1b1656d03b9c96f969",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/mbedtls/certs.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/mbedtls/certs.h",
+        "sha256": "f3750cf0092afc527c9cf18cdf0f3db63a6f37e1031416b22862cb4ad5524742",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/mbedtls/chacha20.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/mbedtls/chacha20.h",
+        "sha256": "c30b39f660fed23d810072271da7b398686b52af01fe9f34a61022cc90c20e0d",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/mbedtls/chachapoly.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/mbedtls/chachapoly.h",
+        "sha256": "8da9cde93f46936690b869e7810531e610b37b514ac92ca29300ab2a9e800f7c",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/mbedtls/check_config.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/mbedtls/check_config.h",
+        "sha256": "7896c05cd6f28fda00548e6dc2ff70434e6db8f660dc70f6117a8602c52bcb8a",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/mbedtls/cipher.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/mbedtls/cipher.h",
+        "sha256": "58fcbbcc35638a6ad1a71232f406441f1530ab15c25704643665524d4d74d991",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/mbedtls/cipher_internal.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/mbedtls/cipher_internal.h",
+        "sha256": "a2f3b2fb6347c613ba9eff1b5e16e2ccfe0b921874051a38430e47280b2936b9",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/mbedtls/cmac.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/mbedtls/cmac.h",
+        "sha256": "a20ad14a7b8bf5c8277461d60725103b4fb3fef9ce51f0c8876256219c4f5896",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/mbedtls/compat-1.3.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/mbedtls/compat-1.3.h",
+        "sha256": "c07c960a741dbca73cc8150e9d54dbe46a8f8f0497501686fde87d83172d1bab",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/mbedtls/config.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/mbedtls/config.h",
+        "sha256": "a328e8499691efc8aa6dc9396644c3cff5187b39e6b11d674b77f8a4d2c0c6de",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/mbedtls/config_psa.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/mbedtls/config_psa.h",
+        "sha256": "52c260c3883770d2fff61ec760f936d3b20e584afbeb85e0c133ec73434f05a0",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/mbedtls/constant_time.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/mbedtls/constant_time.h",
+        "sha256": "0e4eb0021fe1f271edb21a2fc80bad0c3e25bc48000b789e5986bea7fe5c3ecf",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/mbedtls/ctr_drbg.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/mbedtls/ctr_drbg.h",
+        "sha256": "39dd6377a415897d0e26e81ca6bf1f70f1de5898d5528a73a94f9e15d3645566",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/mbedtls/debug.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/mbedtls/debug.h",
+        "sha256": "59c8ff36f615ea83b2ed8dd08dbf23bd09a49fcf1db9dbc2e549aad5112efe18",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/mbedtls/des.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/mbedtls/des.h",
+        "sha256": "e07f525daf3202097429a26b447973e3968b4b98a9542ce606681678b162c47f",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/mbedtls/dhm.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/mbedtls/dhm.h",
+        "sha256": "921f8e3a67cc086a370a40365a9f488e0f4d324ff4fba4bbfe79737af3e07e0c",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/mbedtls/ecdh.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/mbedtls/ecdh.h",
+        "sha256": "65d567eab928d8c4e1a2c12e26b6286bf714386a4e80ed1aa4d42c66a8f2389a",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/mbedtls/ecdsa.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/mbedtls/ecdsa.h",
+        "sha256": "5c22ee08205080719e393c118280d0288536f9b43f188fc2637fe730f5b54fda",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/mbedtls/ecjpake.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/mbedtls/ecjpake.h",
+        "sha256": "62573e94df6094c534fb188f0fb682a781333f317b891aabf70e7a54305e871f",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/mbedtls/ecp.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/mbedtls/ecp.h",
+        "sha256": "f20a1e54bec7655d929197a200814334c880828306342bfcc535a9b0a6437cce",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/mbedtls/ecp_internal.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/mbedtls/ecp_internal.h",
+        "sha256": "e79a64631c42af80e1599bff624af355f2f4561502e5066e20c3d6aa32424ad8",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/mbedtls/entropy.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/mbedtls/entropy.h",
+        "sha256": "5a1ecc06141f24233e58f90876a94e3c098e720dcad23eb2e722f71cfb0c2695",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/mbedtls/entropy_poll.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/mbedtls/entropy_poll.h",
+        "sha256": "82def6b820fa4127de1274e04c7e5deb344187acbc3d2bc7efbb5c98c2752448",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/mbedtls/error.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/mbedtls/error.h",
+        "sha256": "bd3a690cd3afa396fd2b93ebfb54f12b4c1cb223f2420845ce5f93970d5e935e",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/mbedtls/gcm.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/mbedtls/gcm.h",
+        "sha256": "e93997d4ff73e7c6ef88662258151f879dc6a964e8a044944c9f83efd2b65b20",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/mbedtls/havege.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/mbedtls/havege.h",
+        "sha256": "13a8f93d9b584e280e0a7dbc776c4efba7353e97e33ba5214bc0493048bfa35c",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/mbedtls/hkdf.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/mbedtls/hkdf.h",
+        "sha256": "016506fdf197da7a9c4ce57b25b99fe6a29641465b016b1bdffad9bd90137c43",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/mbedtls/hmac_drbg.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/mbedtls/hmac_drbg.h",
+        "sha256": "85dc82afc930356a7968d7aea28f218901249c75c13752664861c405984d259b",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/mbedtls/md.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/mbedtls/md.h",
+        "sha256": "ba0908c955d51666a7f33fe7516d86a95a9da3111ea7662ae291a7a71a297002",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/mbedtls/md2.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/mbedtls/md2.h",
+        "sha256": "ded322073931b9f0c827175e6ac70a39d438b087fcd8036494252713ac8c37bd",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/mbedtls/md4.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/mbedtls/md4.h",
+        "sha256": "bd114fd3569ddef8a1315fc875d7f9ec0a892f64599e6c9809f6772e1544fc06",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/mbedtls/md5.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/mbedtls/md5.h",
+        "sha256": "fdadc3084d2546ee762574785767de6f184ea1009b23f8f96ae470cba9d5aa88",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/mbedtls/md_internal.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/mbedtls/md_internal.h",
+        "sha256": "c9051fb71de46a292711465b8f7f07b1182a4f81e0cdc0a02943641b6e236816",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/mbedtls/memory_buffer_alloc.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/mbedtls/memory_buffer_alloc.h",
+        "sha256": "2bc3925a3b48b69cdc45ed02dab9ae1703c7124e74587f2c861715525c4bc1d4",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/mbedtls/net.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/mbedtls/net.h",
+        "sha256": "02c9a6ed25f9361bd5b3ee2df5a82a85848d45b1e603a396c5f7e99602571e57",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/mbedtls/net_sockets.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/mbedtls/net_sockets.h",
+        "sha256": "731199c70a34d3093b4b123b3518bc51a7aeba865a438790aaa5a3147ce54f8f",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/mbedtls/nist_kw.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/mbedtls/nist_kw.h",
+        "sha256": "88a1baa5dd216669e4f5168a71000b84816a66105c3a96a62957c2e5fdab40df",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/mbedtls/oid.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/mbedtls/oid.h",
+        "sha256": "6af5d886c61c8198ef342bc232fe83b90db55a6af761c7071bde4c0f202497cf",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/mbedtls/padlock.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/mbedtls/padlock.h",
+        "sha256": "eb32a3f10c7d91c645a886df6dca2dfa5744cb6c87d1e5d287b0a498e87a2164",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/mbedtls/pem.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/mbedtls/pem.h",
+        "sha256": "8d54e34ef957972033a1abd75dc17c25f77c08d3e65ef246bf43df5f03a264e5",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/mbedtls/pk.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/mbedtls/pk.h",
+        "sha256": "ab7b0f79d604afa30a954fbaf4bd305c6357084f6561922187f26a49239ace57",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/mbedtls/pk_internal.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/mbedtls/pk_internal.h",
+        "sha256": "bd7634c7ab54b3ebff780d1a1f4c01ea9458daed2fb968cc9ccfead9ca6c6344",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/mbedtls/pkcs11.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/mbedtls/pkcs11.h",
+        "sha256": "4a34d3c73e35d5fd09347265e31629eec8323418ccfaf8d5f2f7207e42f74e38",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/mbedtls/pkcs12.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/mbedtls/pkcs12.h",
+        "sha256": "305d9a6e9bb507bf9a97eb38061ce2b04de39d97b17ff9a3d54b0146a1e52329",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/mbedtls/pkcs5.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/mbedtls/pkcs5.h",
+        "sha256": "7632ee435d1e85ad295cf747741bd1f6d98c17fa6d569ac0c8bc01030d62cca5",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/mbedtls/platform.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/mbedtls/platform.h",
+        "sha256": "adc84f13022ee0b0da587ed138e0f08d6830faf2914cefc7e12d7dc61189eed5",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/mbedtls/platform_time.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/mbedtls/platform_time.h",
+        "sha256": "5c73695337557d898c3c5014c5b5e03e1d9c2690f7adae7d92b9dd63c3a15a7f",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/mbedtls/platform_util.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/mbedtls/platform_util.h",
+        "sha256": "7cc9a00e3443a44973da917368991a379218512e9afde165c953c69edacdad86",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/mbedtls/poly1305.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/mbedtls/poly1305.h",
+        "sha256": "7dac57b3bddf49fcbfaa55bba14a78737c877d60d2b58c322f703e2932753064",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/mbedtls/psa_util.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/mbedtls/psa_util.h",
+        "sha256": "c02b46611ab4e4884a833ef94e22afe8e35805883717811bbf0070f85d244d81",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/mbedtls/ripemd160.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/mbedtls/ripemd160.h",
+        "sha256": "dd5cc42ad26a18e6e5683e486cd1316b065aa05a910194c7a4d0486c21769f05",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/mbedtls/rsa.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/mbedtls/rsa.h",
+        "sha256": "7aab8d900de6c8e4fdf16b49e384ca7277f7c71b651217de3cb22927ea39d9e2",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/mbedtls/rsa_internal.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/mbedtls/rsa_internal.h",
+        "sha256": "786ee057f43a42792071a314003ad2ace2eee79c4d9c1ab2d03cee26adf34905",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/mbedtls/sha1.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/mbedtls/sha1.h",
+        "sha256": "782636cb30e6bc0f3d00d0d9ffbe2e47139485faca9325f5a64c953573f297b7",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/mbedtls/sha256.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/mbedtls/sha256.h",
+        "sha256": "a8cade472b56f564fe7d900281f91da06faa92773abac4a8223730e9956cd910",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/mbedtls/sha512.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/mbedtls/sha512.h",
+        "sha256": "170faee8d2af747ae34b78f1c16bfe85e8cf1f04e6ba8cf38a3a409edd437282",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/mbedtls/ssl.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/mbedtls/ssl.h",
+        "sha256": "4b81aba9e46b5fe0895c2de8d8b011c2a53a6437be049e7db6986da3b022ae84",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/mbedtls/ssl_cache.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/mbedtls/ssl_cache.h",
+        "sha256": "04c66158fa8b87adde2d59743e72b05055f40ebcfcd940c00186d000f65414a7",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/mbedtls/ssl_ciphersuites.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/mbedtls/ssl_ciphersuites.h",
+        "sha256": "3dc73651ad65d07500a7689479ab9a0337600f905b31c4ab54a1a2f2a84908a9",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/mbedtls/ssl_cookie.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/mbedtls/ssl_cookie.h",
+        "sha256": "7a0f2bdcc4e55edcaaacf526526bacab964d81bc2b4110a066fa5d3472dcecb7",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/mbedtls/ssl_internal.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/mbedtls/ssl_internal.h",
+        "sha256": "6fdd0b02ce7d87eebe47833238a57a5a5dbe521c8c47f6f0f04e4a862c347de3",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/mbedtls/ssl_ticket.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/mbedtls/ssl_ticket.h",
+        "sha256": "87665c490b39d00c7fd67ed31ffce59cf1a7557c3326b8fef4010cc0cc25e990",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/mbedtls/threading.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/mbedtls/threading.h",
+        "sha256": "c53a2728f80af1c783f5061d9e4958cdc744ecb8a30d3520cdcff3ceb5c074a6",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/mbedtls/timing.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/mbedtls/timing.h",
+        "sha256": "11d73b940fcb964991057bd2f3233c46b05e9b49650d42a9e2acdcab909b1f69",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/mbedtls/version.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/mbedtls/version.h",
+        "sha256": "d63dd5253dc2f4cae6abddf8358346c76abb244be820bdaebd00765f04e049d9",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/mbedtls/x509.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/mbedtls/x509.h",
+        "sha256": "691a2ba4cdf4255260db54b30d1cf50d407cf844b2b534f0b6b39132a63c9be4",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/mbedtls/x509_crl.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/mbedtls/x509_crl.h",
+        "sha256": "d1a390c9fd2b3d909437fdda1bdd09565254a0f09bbcde1a4cbcacb432bd0ddd",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/mbedtls/x509_crt.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/mbedtls/x509_crt.h",
+        "sha256": "ab9e4e58771ebe02c3911c6ea4ed3543d92ea4444ca27f1dada4769b1aba3fab",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/mbedtls/x509_csr.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/mbedtls/x509_csr.h",
+        "sha256": "c3687f536d6e5821703e10f776c5555fecac7a91c96eedcefcfbf415eb4018a0",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/mbedtls/xtea.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/mbedtls/xtea.h",
+        "sha256": "10ccf07a7f92ee43b9f0b294ea441d4bdcdb685f4125f9d5c74e047688c1deda",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/psa/crypto.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/psa/crypto.h",
+        "sha256": "60a6848c8c6df8a37df553afa3757adc3dcccd325205a6257a212c1122a2e6bd",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/psa/crypto_builtin_composites.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/psa/crypto_builtin_composites.h",
+        "sha256": "746811c98fecaa1ce48d4bd59b8c7c89862365215c114e89cd28e98cc469dbaa",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/psa/crypto_builtin_primitives.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/psa/crypto_builtin_primitives.h",
+        "sha256": "e14cbc77e87d93fcbe18e3bd366dc20daa6cae01af5778159b57be78c7d1e07e",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/psa/crypto_compat.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/psa/crypto_compat.h",
+        "sha256": "6df4bab8a88d16ba8f3b1cb820accd05728da3385913275b9da93e2eda921508",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/psa/crypto_config.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/psa/crypto_config.h",
+        "sha256": "55ae1f20d9a5fbff261941d97227709bf08bae78998715c950d3c5ec7acc1505",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/psa/crypto_driver_common.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/psa/crypto_driver_common.h",
+        "sha256": "25207d12a91fc8c0670370596c3306c256ec054b4d6a6d1dd9b5bbb7d5bbe35b",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/psa/crypto_driver_contexts_composites.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/psa/crypto_driver_contexts_composites.h",
+        "sha256": "4a094ec47522726ff3c8b13afdc16fecc11ca38bc105a44e077e444aa8d6f8b2",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/psa/crypto_driver_contexts_primitives.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/psa/crypto_driver_contexts_primitives.h",
+        "sha256": "a126b77de80a268a18d6ec52b5d30300791181976208ed7c39cdd4e151c9e4cf",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/psa/crypto_extra.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/psa/crypto_extra.h",
+        "sha256": "638a6b1249db30ded4959a94c579f31fa08d6a9c14f6df206ffefb073a3f981e",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/psa/crypto_platform.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/psa/crypto_platform.h",
+        "sha256": "caa2737bef963137fa897dd77fa1eebdaaf246f5ef6b79808d8d778511bb98bd",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/psa/crypto_se_driver.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/psa/crypto_se_driver.h",
+        "sha256": "6fa22c2966bb546fd38d397ba54f333c63a9a5d31c27801e33f740bb57fb389a",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/psa/crypto_sizes.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/psa/crypto_sizes.h",
+        "sha256": "fddf78f1a969278c91e3f1453c36ad6f5d9e02468622ad13bf9be54cf4af8357",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/psa/crypto_struct.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/psa/crypto_struct.h",
+        "sha256": "eb0fee7b58a733a8606b018e49a1fcd6d6adb8cd608755ecaf83446db8295a6e",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/psa/crypto_types.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/psa/crypto_types.h",
+        "sha256": "3c3d5dcdb0d002a65656fba1523e39099af71c46dee52aaf4de7ce6477ec0598",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/psa/crypto_values.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/psa/crypto_values.h",
+        "sha256": "2a4f974b9071360966ace7c7929001e981eb5eb9a7d11e8dc41b767ee22c0da1",
+        "exact": true
+      }
+    ],
+    "scope_note": "Pinned ESP-IDF gitlink establishes the license source. Header checks establish only the checked files, not a reproducible build of the archive."
+  },
+  {
+    "component": "esp-mqtt",
+    "repository": "https://github.com/espressif/esp-mqtt",
+    "commit": "bb9c8af9d552b608dd3aabf9617bde757a538ebe",
+    "idf_parent_commit": "38eeba213aa695aabfd6d89aa9f5078dbe5a94c3",
+    "idf_submodule_path": "components/mqtt/esp-mqtt",
+    "license": "Apache-2.0",
+    "files": [
+      {
+        "path": "submodules/esp-mqtt/LICENSE",
+        "upstream_url": "https://raw.githubusercontent.com/espressif/esp-mqtt/bb9c8af9d552b608dd3aabf9617bde757a538ebe/LICENSE",
+        "sha256": "20ed622a5f1a273258b415097609f6a236fb2f23f8c593c63e29e6cc77de0032",
+        "bytes": 11339
+      }
+    ],
+    "applicable_paths": [
+      "framework/tools/sdk/esp32s3/lib/libmqtt.a"
+    ],
+    "header_checks": [
+      {
+        "upstream_path": "include/mqtt_client.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/mqtt/esp-mqtt/include/mqtt_client.h",
+        "sha256": "4ebeb9bc03357ebe9f1569072ec5ed6e091141622d5e376c3524dbead61268c0",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/mqtt_supported_features.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/mqtt/esp-mqtt/include/mqtt_supported_features.h",
+        "sha256": "4638cd1026d3b7ccd27a097fd1c8431c3a5b88863d1717d8e43925e647c7d2b7",
+        "exact": true
+      }
+    ],
+    "scope_note": "Pinned ESP-IDF gitlink establishes the license source. Header checks establish only the checked files, not a reproducible build of the archive."
+  },
+  {
+    "component": "esp32-bt-lib",
+    "repository": "https://github.com/espressif/esp32c3-bt-lib",
+    "commit": "e5c0f7256ecf5b5f8eb28c1793051a6b88f95124",
+    "idf_parent_commit": "38eeba213aa695aabfd6d89aa9f5078dbe5a94c3",
+    "idf_submodule_path": "components/bt/controller/lib_esp32c3_family",
+    "license": "Apache-2.0",
+    "files": [
+      {
+        "path": "submodules/esp32-bt-lib/LICENSE",
+        "upstream_url": "https://raw.githubusercontent.com/espressif/esp32c3-bt-lib/e5c0f7256ecf5b5f8eb28c1793051a6b88f95124/LICENSE",
+        "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+        "bytes": 11358
+      }
+    ],
+    "applicable_paths": [
+      "framework/tools/sdk/esp32s3/ld/libbtdm_app.a"
+    ],
+    "header_checks": [],
+    "archive_checks": [
+      {
+        "upstream_path": "esp32s3/libbtdm_app.a",
+        "sha256": "3a766cbdf78cde3d2d0eee40bf601c09be88c6589a629815e8d59b91b271d1dc",
+        "exact": true
+      }
+    ],
+    "scope_note": "Pinned ESP-IDF gitlink establishes the license source. Header checks establish only the checked files, not a reproducible build of the archive."
+  }
+]

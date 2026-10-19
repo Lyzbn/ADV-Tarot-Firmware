@@ -1,0 +1,73 @@
+{
+  "schema": "adv-tarot-public-release/v1",
+  "release": "v1.1.4",
+  "release_date": "2026-10-20",
+  "source_commit": "a2580940eedf43ed539a94f9d8fc66ba77820b1e",
+  "source_tree": "19d9ef93daa7ec541af7eb3dc1f9588fe59a1094",
+  "build_origin": "Original clean local macOS build archived on 2026-10-16; not a CI-produced binary.",
+  "original_archive_created_at": "2026-10-16T14:58:44.306088+00:00",
+  "original_archive_sha256": "545d6e515c8a24796c4636165e7371793a515ca3a33167dae0f1c640e83970cc",
+  "firmware_recompiled_for_release": false,
+  "segments": {
+    "bootloader.bin": {
+      "offset": "0x0",
+      "bytes": 15104,
+      "sha256": "1776e4dd896a69d0a5c2e79957b0e2a88aa4129b1381d6478683515a1f6af343"
+    },
+    "partitions.bin": {
+      "offset": "0x8000",
+      "bytes": 3072,
+      "sha256": "a806f40e13878f3d52c7f64138f559a33dc513b4cf48327ac12b0b56947dd5a7"
+    },
+    "boot_app0.bin": {
+      "offset": "0xe000",
+      "bytes": 8192,
+      "sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0"
+    },
+    "firmware.bin": {
+      "offset": "0x10000",
+      "bytes": 3590832,
+      "sha256": "e8f5846a60f9a971ad7e5ae4e1e3466dc26f7f556862ff3207fbe22f6ec7cb1a"
+    }
+  },
+  "full_image": {
+    "bytes": 3656368,
+    "sha256": "8f6ed1e7c2a3d9caafa9c1a4a26a3efa47275520c7e19f218137d2846be63fc8",
+    "flash_offset": "0x0",
+    "flash_mode": "dio",
+    "erases_nvs": true
+  },
+  "accepted_application_sha256": "e8f5846a60f9a971ad7e5ae4e1e3466dc26f7f556862ff3207fbe22f6ec7cb1a",
+  "acceptance_date": "2026-10-16",
+  "hardware_validation_method": "The four corresponding segments were flashed separately, preserving NVS; full merged-image fresh installation was not separately hardware-tested.",
+  "user_confirmed": [
+    "ordinary three-card reveal, readable result and exactly one new history entry",
+    "choice/core-guidance simultaneous reveal, complete flow and exactly one new history entry",
+    "no-SD USB cold boot, learning card faces and retained new history",
+    "no-SD battery cold boot, learning card faces and retained new history"
+  ],
+  "same_source_ci": {
+    "run_id": 38920175813,
+    "source_head": "a2580940eedf43ed539a94f9d8fc66ba77820b1e",
+    "result": "success",
+    "relationship": "Source validation only; the CI artifact is not the selected hardware-tested binary."
+  },
+  "remaining_checks": [
+    "full merged-image installation into reset NVS",
+    "long-duration stress and all settings/deletion/learning-persistence combinations",
+    "M5Burner platform distribution verification"
+  ],
+  "product_version_policy": "v1.1.4 is the distribution label for these unchanged accepted bytes; no application version bytes were patched.",
+  "relink_materials": {
+    "asset": "ADV-Tarot-v1.1.4-Relink.zip",
+    "sha256": "3219b0d8d5ad7f3d9ffbd8fa64c88d18f4fa92f6a88b68a7b6bc15d89b067989",
+    "bytes": 105112450,
+    "original_object_link_exact": true,
+    "private_application_source_included": false,
+    "private_application_debug_removed": true,
+    "public_relink_app_sha256": "657ba94f0816083fe52440e7c12644ba2e006a6eea3c89e2bb2f650838a9753c",
+    "differences_from_accepted_app": "129 bytes: 32 embedded ELF digest, 64 discarded duplicate exception-frame record bytes, 33 image integrity bytes. Executable and writable data bytes unchanged. See kit VALIDATION.json.",
+    "library_modification_rebuild_validation": "54 public translation units and six archives rebuilt; inserted nop verified in final disassembly; published sources restored.",
+    "relinked_image_hardware_tested": false
+  }
+}

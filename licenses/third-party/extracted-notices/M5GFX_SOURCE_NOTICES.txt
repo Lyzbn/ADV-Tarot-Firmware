@@ -1,0 +1,477 @@
+Copyright and license comments copied without changing their text from the supplied m5gfx dependency files.
+Files sharing an identical comment are grouped. Per-file notices remain in the supplied source/headers.
+These are declarations, not application implementation source.
+
+========================================================================
+Source paths:
+  src/M5GFX.cpp
+  src/M5GFX.h
+  src/picture_frame/frame_image_M5Dial.h
+  src/picture_frame/frame_image_M5Stack.h
+  src/picture_frame/frame_image_M5StackCore2.h
+  src/picture_frame/frame_image_M5StackCoreInk.h
+  src/picture_frame/frame_image_M5StackCoreS3.h
+  src/picture_frame/frame_image_M5StickCPlus.h
+  src/picture_frame/frame_image_M5StickCPlus2.h
+  src/picture_frame/frame_image_M5Tab5.h
+  src/picture_frame/picture_frame.h
+
+// Copyright (c) M5Stack. All rights reserved.
+// Licensed under the MIT license. See LICENSE file in the project root for full license information.
+
+
+========================================================================
+Source paths:
+  src/lgfx/Fonts/GFXFF/TomThumb.h
+
+/**
+** The original 3x5 font is licensed under the 3-clause BSD license:
+**
+** Copyright 1999 Brian J. Swetland
+** Copyright 1999 Vassilii Khachaturov
+** Portions (of vt100.c/vt100.h) copyright Dan Marks
+** 
+** All rights reserved.
+**
+** Redistribution and use in source and binary forms, with or without
+** modification, are permitted provided that the following conditions
+** are met:
+** 1. Redistributions of source code must retain the above copyright
+**    notice, this list of conditions, and the following disclaimer.
+** 2. Redistributions in binary form must reproduce the above copyright
+**    notice, this list of conditions, and the following disclaimer in the
+**    documentation and/or other materials provided with the distribution.
+** 3. The name of the authors may not be used to endorse or promote products
+**    derived from this software without specific prior written permission.
+**
+** THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR
+** IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+** OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
+** IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT,
+** INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
+** NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+** DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+** THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+** (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
+** THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+** 
+** Modifications to Tom Thumb for improved readability are from Robey Pointer, 
+** see:
+** http://robey.lag.net/2010/01/23/tiny-monospace-font.html
+** 
+** The original author does not have any objection to relicensing of Robey 
+** Pointer's modifications (in this file) in a more permissive license.  See 
+** the discussion at the above blog, and also here:
+** http://opengameart.org/forumtopic/how-to-submit-art-using-the-3-clause-bsd-license
+**
+** Feb 21, 2016: Conversion from Linux BDF --> Adafruit GFX font,
+** with the help of this Python script:
+** https://gist.github.com/skelliam/322d421f028545f16f6d
+** William Skellenger (williamj@skellenger.net)
+** Twitter: @skelliam
+** 
+*/
+
+========================================================================
+Source paths:
+  src/lgfx/Fonts/GFXFF/TomThumb.h
+  src/lgfx/Fonts/GFXFF/TomThumb.h
+
+/* 0xA9 copyright */
+
+========================================================================
+Source paths:
+  src/lgfx/Fonts/IPA/lgfx_font_japan.c
+
+/*
+  Fontname: -FreeType-IPAexGothic-Medium-R-Normal--12-120-72-72-P-103-ISO10646-1
+  Copyright: Copyright(c) Information-technology Promotion Agency, Japan (IPA), 2003-2019. You must accept 
+  Glyphs: 4427/11691
+  BBX Build Mode: 0
+*/
+
+========================================================================
+Source paths:
+  src/lgfx/Fonts/efont/lgfx_efont_cn.c
+
+/*
+  Fontname: -Efont-Biwidth-Medium-R-Normal--10-100-75-75-P-50-ISO10646-1
+  Copyright: (c) Copyright 2000-2003 /efont/ The Electronic Font Open Laboratory.
+  Glyphs: 7545/22818
+  BBX Build Mode: 0
+*/
+
+========================================================================
+Source paths:
+  src/lgfx/Fonts/efont/lgfx_efont_ja.c
+
+/*
+  Fontname: -Efont-Biwidth-Medium-R-Normal--10-100-75-75-P-50-ISO10646-1
+  Copyright: (c) Copyright 2000-2003 /efont/ The Electronic Font Open Laboratory.
+  Glyphs: 10838/22818
+  BBX Build Mode: 0
+*/
+
+========================================================================
+Source paths:
+  src/lgfx/Fonts/efont/lgfx_efont_kr.c
+
+/*
+  Fontname: -Efont-Biwidth-Medium-R-Normal--10-100-75-75-P-50-ISO10646-1
+  Copyright: (c) Copyright 2000-2003 /efont/ The Electronic Font Open Laboratory.
+  Glyphs: 8321/22818
+  BBX Build Mode: 0
+*/
+
+========================================================================
+Source paths:
+  src/lgfx/Fonts/efont/lgfx_efont_tw.c
+
+/*
+  Fontname: -Efont-Biwidth-Medium-R-Normal--10-100-75-75-P-50-ISO10646-1
+  Copyright: (c) Copyright 2000-2003 /efont/ The Electronic Font Open Laboratory.
+  Glyphs: 13557/22818
+  BBX Build Mode: 0
+*/
+
+========================================================================
+Source paths:
+  src/lgfx/Fonts/glcdfont.h
+
+/*
+Software License Agreement (BSD License)
+
+Copyright (c) 2012 Adafruit Industries.  All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+
+- Redistributions of source code must retain the above copyright notice,
+  this list of conditions and the following disclaimer.
+- Redistributions in binary form must reproduce the above copyright notice,
+  this list of conditions and the following disclaimer in the documentation
+  and/or other materials provided with the distribution.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
+LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGE.
+*/
+
+========================================================================
+Source paths:
+  src/lgfx/utility/lgfx_miniz.c
+
+/* miniz.c v1.15 - public domain deflate/inflate, zlib-subset, ZIP reading/writing/appending, PNG writing
+   See "unlicense" statement at the end of this file.
+   Rich Geldreich <richgel99@gmail.com>, last updated Oct. 13, 2013
+   Implements RFC 1950: http://www.ietf.org/rfc/rfc1950.txt and RFC 1951: http://www.ietf.org/rfc/rfc1951.txt
+
+   Most API's defined in miniz.c are optional. For example, to disable the archive related functions just define
+   MINIZ_NO_ARCHIVE_APIS, or to get rid of all stdio usage define MINIZ_NO_STDIO (see the list below for more macros).
+
+   * Change History
+     10/13/13 v1.15 r4 - Interim bugfix release while I work on the next major release with Zip64 support (almost there!):
+       - Critical fix for the MZ_ZIP_FLAG_DO_NOT_SORT_CENTRAL_DIRECTORY bug (thanks kahmyong.moon@hp.com) which could cause locate files to not find files. This bug
+        would only have occured in earlier versions if you explicitly used this flag, OR if you used lgfx_mz_zip_extract_archive_file_to_heap() or lgfx_mz_zip_add_mem_to_archive_file_in_place()
+        (which used this flag). If you can't switch to v1.15 but want to fix this bug, just remove the uses of this flag from both helper funcs (and of course don't use the flag).
+       - Bugfix in lgfx_mz_zip_reader_extract_to_mem_no_alloc() from kymoon when pUser_read_buf is not NULL and compressed size is > uncompressed size
+       - Fixing lgfx_mz_zip_reader_extract_*() funcs so they don't try to extract compressed data from directory entries, to account for weird zipfiles which contain zero-size compressed data on dir entries.
+         Hopefully this fix won't cause any issues on weird zip archives, because it assumes the low 16-bits of zip external attributes are DOS attributes (which I believe they always are in practice).
+       - Fixing lgfx_mz_zip_reader_is_file_a_directory() so it doesn't check the internal attributes, just the filename and external attributes
+       - lgfx_mz_zip_reader_init_file() - missing MZ_FCLOSE() call if the seek failed
+       - Added cmake support for Linux builds which builds all the examples, tested with clang v3.3 and gcc v4.6.
+       - Clang fix for tdefl_write_image_to_png_file_in_memory() from toffaletti
+       - Merged MZ_FORCEINLINE fix from hdeanclark
+       - Fix <time.h> include before config #ifdef, thanks emil.brink
+       - Added tdefl_write_image_to_png_file_in_memory_ex(): supports Y flipping (super useful for OpenGL apps), and explicit control over the compression level (so you can
+        set it to 1 for real-time compression).
+       - Merged in some compiler fixes from paulharris's github repro.
+       - Retested this build under Windows (VS 2010, including static analysis), tcc  0.9.26, gcc v4.6 and clang v3.3.
+       - Added example6.c, which dumps an image of the mandelbrot set to a PNG file.
+       - Modified example2 to help test the MZ_ZIP_FLAG_DO_NOT_SORT_CENTRAL_DIRECTORY flag more.
+       - In r3: Bugfix to lgfx_mz_zip_writer_add_file() found during merge: Fix possible src file fclose() leak if alignment bytes+local header file write faiiled
+		 - In r4: Minor bugfix to lgfx_mz_zip_writer_add_from_zip_reader(): Was pushing the wrong central dir header offset, appears harmless in this release, but it became a problem in the zip64 branch
+     5/20/12 v1.14 - MinGW32/64 GCC 4.6.1 compiler fixes: added MZ_FORCEINLINE, #include <time.h> (thanks fermtect).
+     5/19/12 v1.13 - From jason@cornsyrup.org and kelwert@mtu.edu - Fix lgfx_mz_crc32() so it doesn't compute the wrong CRC-32's when lgfx_mz_ulong is 64-bit.
+       - Temporarily/locally slammed in "typedef unsigned long lgfx_mz_ulong" and re-ran a randomized regression test on ~500k files.
+       - Eliminated a bunch of warnings when compiling with GCC 32-bit/64.
+       - Ran all examples, miniz.c, and tinfl.c through MSVC 2008's /analyze (static analysis) option and fixed all warnings (except for the silly
+        "Use of the comma-operator in a tested expression.." analysis warning, which I purposely use to work around a MSVC compiler warning).
+       - Created 32-bit and 64-bit Codeblocks projects/workspace. Built and tested Linux executables. The codeblocks workspace is compatible with Linux+Win32/x64.
+       - Added miniz_tester solution/project, which is a useful little app derived from LZHAM's tester app that I use as part of the regression test.
+       - Ran miniz.c and tinfl.c through another series of regression testing on ~500,000 files and archives.
+       - Modified example5.c so it purposely disables a bunch of high-level functionality (MINIZ_NO_STDIO, etc.). (Thanks to corysama for the MINIZ_NO_STDIO bug report.)
+       - Fix ftell() usage in examples so they exit with an error on files which are too large (a limitation of the examples, not miniz itself).
+     4/12/12 v1.12 - More comments, added low-level example5.c, fixed a couple minor level_and_flags issues in the archive API's.
+      level_and_flags can now be set to MZ_DEFAULT_COMPRESSION. Thanks to Bruce Dawson <bruced@valvesoftware.com> for the feedback/bug report.
+     5/28/11 v1.11 - Added statement from unlicense.org
+     5/27/11 v1.10 - Substantial compressor optimizations:
+      - Level 1 is now ~4x faster than before. The L1 compressor's throughput now varies between 70-110MB/sec. on a
+      - Core i7 (actual throughput varies depending on the type of data, and x64 vs. x86).
+      - Improved baseline L2-L9 compression perf. Also, greatly improved compression perf. issues on some file types.
+      - Refactored the compression code for better readability and maintainability.
+      - Added level 10 compression level (L10 has slightly better ratio than level 9, but could have a potentially large
+       drop in throughput on some files).
+     5/15/11 v1.09 - Initial stable release.
+
+   * Low-level Deflate/Inflate implementation notes:
+
+     Compression: Use the "tdefl" API's. The compressor supports raw, static, and dynamic blocks, lazy or
+     greedy parsing, match length filtering, RLE-only, and Huffman-only streams. It performs and compresses
+     approximately as well as zlib.
+
+     Decompression: Use the "tinfl" API's. The entire decompressor is implemented as a single function
+     coroutine: see lgfx_tinfl_decompress(). It supports decompression into a 32KB (or larger power of 2) wrapping buffer, or into a memory
+     block large enough to hold the entire file.
+
+     The low-level tdefl/tinfl API's do not make any use of dynamic memory allocation.
+
+   * zlib-style API notes:
+
+     miniz.c implements a fairly large subset of zlib. There's enough functionality present for it to be a drop-in
+     zlib replacement in many apps:
+        The z_stream struct, optional memory allocation callbacks
+        deflateInit/deflateInit2/deflate/deflateReset/deflateEnd/deflateBound
+        inflateInit/inflateInit2/inflate/inflateEnd
+        compress, compress2, compressBound, uncompress
+        CRC-32, Adler-32 - Using modern, minimal code size, CPU cache friendly routines.
+        Supports raw deflate streams or standard zlib streams with adler-32 checking.
+
+     Limitations:
+      The callback API's are not implemented yet. No support for gzip headers or zlib static dictionaries.
+      I've tried to closely emulate zlib's various flavors of stream flushing and return status codes, but
+      there are no guarantees that miniz.c pulls this off perfectly.
+
+   * PNG writing: See the tdefl_write_image_to_png_file_in_memory() function, originally written by
+     Alex Evans. Supports 1-4 bytes/pixel images.
+
+   * ZIP archive API notes:
+
+     The ZIP archive API's where designed with simplicity and efficiency in mind, with just enough abstraction to
+     get the job done with minimal fuss. There are simple API's to retrieve file information, read files from
+     existing archives, create new archives, append new files to existing archives, or clone archive data from
+     one archive to another. It supports archives located in memory or the heap, on disk (using stdio.h),
+     or you can specify custom file read/write callbacks.
+
+     - Archive reading: Just call this function to read a single file from a disk archive:
+
+      void *lgfx_mz_zip_extract_archive_file_to_heap(const char *pZip_filename, const char *pArchive_name,
+        size_t *pSize, lgfx_mz_uint zip_flags);
+
+     For more complex cases, use the "lgfx_mz_zip_reader" functions. Upon opening an archive, the entire central
+     directory is located and read as-is into memory, and subsequent file access only occurs when reading individual files.
+
+     - Archives file scanning: The simple way is to use this function to scan a loaded archive for a specific file:
+
+     int lgfx_mz_zip_reader_locate_file(lgfx_mz_zip_archive *pZip, const char *pName, const char *pComment, lgfx_mz_uint flags);
+
+     The locate operation can optionally check file comments too, which (as one example) can be used to identify
+     multiple versions of the same file in an archive. This function uses a simple linear search through the central
+     directory, so it's not very fast.
+
+     Alternately, you can iterate through all the files in an archive (using lgfx_mz_zip_reader_get_num_files()) and
+     retrieve detailed info on each file by calling lgfx_mz_zip_reader_file_stat().
+
+     - Archive creation: Use the "lgfx_mz_zip_writer" functions. The ZIP writer immediately writes compressed file data
+     to disk and builds an exact image of the central directory in memory. The central directory image is written
+     all at once at the end of the archive file when the archive is finalized.
+
+     The archive writer can optionally align each file's local header and file data to any power of 2 alignment,
+     which can be useful when the archive will be read from optical media. Also, the writer supports placing
+     arbitrary data blobs at the very beginning of ZIP archives. Archives written using either feature are still
+     readable by any ZIP tool.
+
+     - Archive appending: The simple way to add a single file to an archive is to call this function:
+
+      lgfx_mz_bool lgfx_mz_zip_add_mem_to_archive_file_in_place(const char *pZip_filename, const char *pArchive_name,
+        const void *pBuf, size_t buf_size, const void *pComment, lgfx_mz_uint16 comment_size, lgfx_mz_uint level_and_flags);
+
+     The archive will be created if it doesn't already exist, otherwise it'll be appended to.
+     Note the appending is done in-place and is not an atomic operation, so if something goes wrong
+     during the operation it's possible the archive could be left without a central directory (although the local
+     file headers and file data will be fine, so the archive will be recoverable).
+
+     For more complex archive modification scenarios:
+     1. The safest way is to use a lgfx_mz_zip_reader to read the existing archive, cloning only those bits you want to
+     preserve into a new archive using using the lgfx_mz_zip_writer_add_from_zip_reader() function (which compiles the
+     compressed file data as-is). When you're done, delete the old archive and rename the newly written archive, and
+     you're done. This is safe but requires a bunch of temporary disk space or heap memory.
+
+     2. Or, you can convert an lgfx_mz_zip_reader in-place to an lgfx_mz_zip_writer using lgfx_mz_zip_writer_init_from_reader(),
+     append new files as needed, then finalize the archive which will write an updated central directory to the
+     original archive. (This is basically what lgfx_mz_zip_add_mem_to_archive_file_in_place() does.) There's a
+     possibility that the archive's central directory could be lost with this method if anything goes wrong, though.
+
+     - ZIP archive support limitations:
+     No zip64 or spanning support. Extraction functions can only handle unencrypted, stored or deflated files.
+     Requires streams capable of seeking.
+
+   * This is a header file library, like stb_image.c. To get only a header file, either cut and paste the
+     below header, or create miniz.h, #define LGFX_MINIZ_HEADER_FILE_ONLY, and then include miniz.c from it.
+
+   * Important: For best perf. be sure to customize the below macros for your target platform:
+     #define MINIZ_USE_UNALIGNED_LOADS_AND_STORES 1
+     #define MINIZ_LITTLE_ENDIAN 1
+     #define MINIZ_HAS_64BIT_REGISTERS 1
+
+   * On platforms using glibc, Be sure to "#define _LARGEFILE64_SOURCE 1" before including miniz.c to ensure miniz
+     uses the 64-bit variants: fopen64(), stat64(), etc. Otherwise you won't be able to process large files
+     (i.e. 32-bit stat() fails for me on files > 0x7FFFFFFF bytes).
+*/
+
+========================================================================
+Source paths:
+  src/lgfx/utility/lgfx_miniz.c
+
+/*
+  This is free and unencumbered software released into the public domain.
+
+  Anyone is free to copy, modify, publish, use, compile, sell, or
+  distribute this software, either in source code form or as a compiled
+  binary, for any purpose, commercial or non-commercial, and by any
+  means.
+
+  In jurisdictions that recognize copyright laws, the author or authors
+  of this software dedicate any and all copyright interest in the
+  software to the public domain. We make this dedication for the benefit
+  of the public at large and to the detriment of our heirs and
+  successors. We intend this dedication to be an overt act of
+  relinquishment in perpetuity of all present and future rights to this
+  software under copyright law.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+  EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+  MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+  IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR
+  OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
+  ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+  OTHER DEALINGS IN THE SOFTWARE.
+
+  For more information, please refer to <http://unlicense.org/>
+*/
+
+========================================================================
+Source paths:
+  src/lgfx/utility/lgfx_pngle.c
+  src/lgfx/utility/lgfx_pngle.h
+
+/*-
+ * MIT License
+ *
+ * Copyright (c) 2019 kikuchan
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
+ */
+
+========================================================================
+Source paths:
+  src/lgfx/utility/lgfx_qrcode.c
+  src/lgfx/utility/lgfx_qrcode.h
+
+/**
+ * The MIT License (MIT)
+ *
+ * Copyright (c) 2017 Richard Moore
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ * THE SOFTWARE.
+ */
+
+========================================================================
+Source paths:
+  src/lgfx/utility/lgfx_tjpgd.c
+
+/*----------------------------------------------------------------------------/
+/ TJpgDec - Tiny JPEG Decompressor R0.01c                     (C)ChaN, 2019
+/-----------------------------------------------------------------------------/
+/ The TJpgDec is a generic JPEG decompressor module for tiny embedded systems.
+/ This is a free software that opened for education, research and commercial
+/  developments under license policy of following terms.
+/
+/  Copyright (C) 2019, ChaN, all right reserved.
+/
+/ * The TJpgDec module is a free software and there is NO WARRANTY.
+/ * No restriction on use. You can use, modify and redistribute it for
+/   personal, non-profit or commercial products UNDER YOUR RESPONSIBILITY.
+/ * Redistributions of source code must retain the above copyright notice.
+/
+/-----------------------------------------------------------------------------/
+/ Oct 04, 2011 R0.01  First release.
+/ Feb 19, 2012 R0.01a Fixed decompression fails when scan starts with an escape seq.
+/ Sep 03, 2012 R0.01b Added JD_TBLCLIP option.
+/ Mar 16, 2019 R0.01c Supprted stdint.h.
+/-----------------------------------------------------------------------------/
+/ original source is here : http://elm-chan.org/fsw/tjpgd/00index.html
+/
+/ Modified for LGFX  by lovyan03, 2020
+/ add support grayscale jpeg
+/ add bayer pattern
+/ tweak for 32bit processor
+/----------------------------------------------------------------------------*/
+
+========================================================================
+Source paths:
+  src/lgfx/utility/result.hpp
+
+/*
+  The MIT License (MIT)
+
+  Copyright (c) 2017-2021 Matthew Rodusek All rights reserved.
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to deal
+  in the Software without restriction, including without limitation the rights
+  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+  copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+  SOFTWARE.
+*/

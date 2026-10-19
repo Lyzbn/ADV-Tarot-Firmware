@@ -1,0 +1,62 @@
+[
+  {
+    "path": "esp-idf-4.4.7/LICENSE",
+    "upstream_url": "https://github.com/espressif/esp-idf/blob/38eeba213aa695aabfd6d89aa9f5078dbe5a94c3/LICENSE",
+    "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+  },
+  {
+    "path": "esp-idf-4.4.7/components/console/argtable3/LICENSE",
+    "upstream_url": "https://github.com/espressif/esp-idf/blob/38eeba213aa695aabfd6d89aa9f5078dbe5a94c3/components/console/argtable3/LICENSE",
+    "sha256": "a97df648b7db77f9f6f5e1ef5fe44eb6b154ecb8ae26ad39c92ea44201cce45c"
+  },
+  {
+    "path": "esp-idf-4.4.7/components/console/linenoise/LICENSE",
+    "upstream_url": "https://github.com/espressif/esp-idf/blob/38eeba213aa695aabfd6d89aa9f5078dbe5a94c3/components/console/linenoise/LICENSE",
+    "sha256": "efe1692aa5b869edaa0ac88f95eb0276c1125304ffc636a299db3ebbab47f62b"
+  },
+  {
+    "path": "esp-idf-4.4.7/components/esptool_py/LICENSE",
+    "upstream_url": "https://github.com/espressif/esp-idf/blob/38eeba213aa695aabfd6d89aa9f5078dbe5a94c3/components/esptool_py/LICENSE",
+    "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643"
+  },
+  {
+    "path": "esp-idf-4.4.7/components/freemodbus/LICENSE",
+    "upstream_url": "https://github.com/espressif/esp-idf/blob/38eeba213aa695aabfd6d89aa9f5078dbe5a94c3/components/freemodbus/LICENSE",
+    "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+  },
+  {
+    "path": "esp-idf-4.4.7/components/freertos/LICENSE.md",
+    "upstream_url": "https://github.com/espressif/esp-idf/blob/38eeba213aa695aabfd6d89aa9f5078dbe5a94c3/components/freertos/LICENSE.md",
+    "sha256": "508a77d2e7b51d98adeed32648ad124b7b30241a8e70b2e72c99f92d8e5874d1"
+  },
+  {
+    "path": "esp-idf-4.4.7/components/newlib/COPYING.NEWLIB",
+    "upstream_url": "https://github.com/espressif/esp-idf/blob/38eeba213aa695aabfd6d89aa9f5078dbe5a94c3/components/newlib/COPYING.NEWLIB",
+    "sha256": "0681089a556e93791da82718d68011ba452de245f7f59c3846936304756ac0c0"
+  },
+  {
+    "path": "esp-idf-4.4.7/components/nghttp/COPYING",
+    "upstream_url": "https://github.com/espressif/esp-idf/blob/38eeba213aa695aabfd6d89aa9f5078dbe5a94c3/components/nghttp/COPYING",
+    "sha256": "6b94f3abc1aabd0c72a7c7d92a77f79dda7c8a0cb3df839a97890b4116a2de2a"
+  },
+  {
+    "path": "esp-idf-4.4.7/components/nghttp/LICENSE",
+    "upstream_url": "https://github.com/espressif/esp-idf/blob/38eeba213aa695aabfd6d89aa9f5078dbe5a94c3/components/nghttp/LICENSE",
+    "sha256": "f0518afc0a555337bac2f0fb37d33cdee6111983da69aaa504a1876beeddfde0"
+  },
+  {
+    "path": "esp-idf-4.4.7/components/wpa_supplicant/COPYING",
+    "upstream_url": "https://github.com/espressif/esp-idf/blob/38eeba213aa695aabfd6d89aa9f5078dbe5a94c3/components/wpa_supplicant/COPYING",
+    "sha256": "e9f84e02bb9ba965464e21604014f13d0f3c9299a1b5f7882574a9b4a261abe7"
+  },
+  {
+    "path": "esp-idf-4.4.7/docs/en/COPYRIGHT.rst",
+    "upstream_url": "https://github.com/espressif/esp-idf/blob/38eeba213aa695aabfd6d89aa9f5078dbe5a94c3/docs/en/COPYRIGHT.rst",
+    "sha256": "a1db55f6af33968650e8c53553fc58386bf3d871d740ccfe464c73c60779acc7"
+  },
+  {
+    "path": "esp-idf-4.4.7/.gitmodules",
+    "upstream_url": "https://github.com/espressif/esp-idf/blob/38eeba213aa695aabfd6d89aa9f5078dbe5a94c3/.gitmodules",
+    "sha256": "f4e9f6cfabac760ecd82651624669cf130edab5aacf3d2e76704ca5ee807403a"
+  }
+]
