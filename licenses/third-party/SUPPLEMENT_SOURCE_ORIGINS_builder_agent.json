@@ -1,0 +1,1577 @@
+[
+  {
+    "component": "esp-dl",
+    "repository": "https://github.com/espressif/esp-dl",
+    "commit": "0632d2447dd49067faabe9761d88fa292589d5d9",
+    "sdk_update_source": "https://github.com/espressif/arduino-esp32/pull/9339",
+    "sdk_update_revision": "0632d24",
+    "applicable_paths": [
+      "framework/tools/sdk/esp32s3/ld/libdl.a",
+      "framework/tools/sdk/esp32s3/ld/libmfn.a",
+      "framework/tools/sdk/esp32s3/ld/libcat_face_detect.a",
+      "framework/tools/sdk/esp32s3/ld/libhuman_face_detect.a",
+      "framework/tools/sdk/esp32s3/ld/libcolor_detect.a"
+    ],
+    "files": [
+      {
+        "path": "submodules/esp-dl/LICENSE",
+        "upstream_url": "https://raw.githubusercontent.com/espressif/esp-dl/0632d2447dd49067faabe9761d88fa292589d5d9/LICENSE",
+        "sha256": "3513f1605ebcc227f7364956f6c30a303412597e232648cb3090e76697ca5aa3",
+        "bytes": 1095
+      }
+    ],
+    "scope_note": "The SDK update PR identifies this component revision. This record does not claim a complete rebuild of its precompiled archives.",
+    "header_checks": [
+      {
+        "upstream_path": "include/detect/dl_detect_define.hpp",
+        "kit_path": "framework/tools/sdk/esp32s3/include/esp-dl/include/detect/dl_detect_define.hpp",
+        "sha256": "d6c77d9ffe9ae612074466352c7b739dee066a3702006f0c189522df7aabd868",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/dl_define.hpp",
+        "kit_path": "framework/tools/sdk/esp32s3/include/esp-dl/include/dl_define.hpp",
+        "sha256": "5b7182b8d93996d948d768b9903b92c1050c43e582c7fe3abe00e91a7dbc02e2",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/image/dl_image.hpp",
+        "kit_path": "framework/tools/sdk/esp32s3/include/esp-dl/include/image/dl_image.hpp",
+        "sha256": "51a36430fe5eaf2cb1e769858be8973e0097b246c19c07250166e0de47f0988d",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/layer/dl_layer_add2d.hpp",
+        "kit_path": "framework/tools/sdk/esp32s3/include/esp-dl/include/layer/dl_layer_add2d.hpp",
+        "sha256": "2710104c98fd7eddd9e296d191eeffe9a5385cf931e0256f3a54ea205b8a7e37",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/layer/dl_layer_avg_pool2d.hpp",
+        "kit_path": "framework/tools/sdk/esp32s3/include/esp-dl/include/layer/dl_layer_avg_pool2d.hpp",
+        "sha256": "af42d8c41806644b581875fec8a3e3b4ff87fb0136de66e283917337ad2a4d8f",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/layer/dl_layer_base.hpp",
+        "kit_path": "framework/tools/sdk/esp32s3/include/esp-dl/include/layer/dl_layer_base.hpp",
+        "sha256": "782b09968955ac9d8ccf53500704c6b2d23dca22d501437d881bdb2f35f8defd",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/layer/dl_layer_concat.hpp",
+        "kit_path": "framework/tools/sdk/esp32s3/include/esp-dl/include/layer/dl_layer_concat.hpp",
+        "sha256": "a08a5140c3a2c4648961523ae587772d210440710de3c076b70ea0fdf15b44dd",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/layer/dl_layer_concat2d.hpp",
+        "kit_path": "framework/tools/sdk/esp32s3/include/esp-dl/include/layer/dl_layer_concat2d.hpp",
+        "sha256": "2b9d525d9ee5ea18de10540368c2a27f33672d547c2d7ea877c672f0f6242dc7",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/layer/dl_layer_conv2d.hpp",
+        "kit_path": "framework/tools/sdk/esp32s3/include/esp-dl/include/layer/dl_layer_conv2d.hpp",
+        "sha256": "dc3984a08d50aadd980faa71f253c74fb47e595448dbbc5110ad75f1215b5cf4",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/layer/dl_layer_depthwise_conv2d.hpp",
+        "kit_path": "framework/tools/sdk/esp32s3/include/esp-dl/include/layer/dl_layer_depthwise_conv2d.hpp",
+        "sha256": "5acc53f0e5b3db9fed2e32bb20dbf6a58acc1921f390d98cc458b5c2e09708af",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/layer/dl_layer_expand_dims.hpp",
+        "kit_path": "framework/tools/sdk/esp32s3/include/esp-dl/include/layer/dl_layer_expand_dims.hpp",
+        "sha256": "03c96f740fa659e115603be94e438bef05e5098531f7f7a54a119532f243a238",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/layer/dl_layer_flatten.hpp",
+        "kit_path": "framework/tools/sdk/esp32s3/include/esp-dl/include/layer/dl_layer_flatten.hpp",
+        "sha256": "c18ff2b1e609548610a986105a4048c012b7fe725f54919496f50da86b7780f3",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/layer/dl_layer_fullyconnected.hpp",
+        "kit_path": "framework/tools/sdk/esp32s3/include/esp-dl/include/layer/dl_layer_fullyconnected.hpp",
+        "sha256": "ed1fd246bdb3414c68fef2ca5076b883afcb08ff6a31cce5aa0116f0acc769e1",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/layer/dl_layer_global_avg_pool2d.hpp",
+        "kit_path": "framework/tools/sdk/esp32s3/include/esp-dl/include/layer/dl_layer_global_avg_pool2d.hpp",
+        "sha256": "6f299b50bd14553ab8f989a17e04360f98835b65fca41de684124239492b1f0f",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/layer/dl_layer_global_max_pool2d.hpp",
+        "kit_path": "framework/tools/sdk/esp32s3/include/esp-dl/include/layer/dl_layer_global_max_pool2d.hpp",
+        "sha256": "2cadcbcb6dcdeae62757f114d305a7bc8f07e66f7399de0953a49d97dccca003",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/layer/dl_layer_leakyrelu.hpp",
+        "kit_path": "framework/tools/sdk/esp32s3/include/esp-dl/include/layer/dl_layer_leakyrelu.hpp",
+        "sha256": "066aa935cabf4561750e8563012427d2f6b7e2c95fad658749da4f60756d19a8",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/layer/dl_layer_max2d.hpp",
+        "kit_path": "framework/tools/sdk/esp32s3/include/esp-dl/include/layer/dl_layer_max2d.hpp",
+        "sha256": "1e9fe42d0319efae2dee456066cc3a27a0450b2a2e53e3e0637bb569892a22b1",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/layer/dl_layer_max_pool2d.hpp",
+        "kit_path": "framework/tools/sdk/esp32s3/include/esp-dl/include/layer/dl_layer_max_pool2d.hpp",
+        "sha256": "ce472204d19950b5c705408bdc211e545f0af3a8143c76c04974f15e31a2a16f",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/layer/dl_layer_min2d.hpp",
+        "kit_path": "framework/tools/sdk/esp32s3/include/esp-dl/include/layer/dl_layer_min2d.hpp",
+        "sha256": "affa2e1e38af15ae72ade0fdad84d8fb0e543230d609a544e295b2897e9f2d3a",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/layer/dl_layer_model.hpp",
+        "kit_path": "framework/tools/sdk/esp32s3/include/esp-dl/include/layer/dl_layer_model.hpp",
+        "sha256": "95be3e497defa6def8ac2588b1c35a2522b54f69e988da8ba9fcdffabfec367b",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/layer/dl_layer_mul2d.hpp",
+        "kit_path": "framework/tools/sdk/esp32s3/include/esp-dl/include/layer/dl_layer_mul2d.hpp",
+        "sha256": "8a1e4237c5ba71923bd1094784d694e4914d617c8dd3ed42c153e5c78b358717",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/layer/dl_layer_pad.hpp",
+        "kit_path": "framework/tools/sdk/esp32s3/include/esp-dl/include/layer/dl_layer_pad.hpp",
+        "sha256": "9ce831b7c7b3f7bb7f3dd7a17c499a50062f35194f367ec7f13cf936c6f49c55",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/layer/dl_layer_prelu.hpp",
+        "kit_path": "framework/tools/sdk/esp32s3/include/esp-dl/include/layer/dl_layer_prelu.hpp",
+        "sha256": "2b01b235a1543193f0791c6847e992867a70c67c73b4ed2ed1a8b2aa5778f5b3",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/layer/dl_layer_relu.hpp",
+        "kit_path": "framework/tools/sdk/esp32s3/include/esp-dl/include/layer/dl_layer_relu.hpp",
+        "sha256": "a7589803f9b0b422d88443f6072ec35f53fc2d4c663617867a8f448dcbd00f37",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/layer/dl_layer_reshape.hpp",
+        "kit_path": "framework/tools/sdk/esp32s3/include/esp-dl/include/layer/dl_layer_reshape.hpp",
+        "sha256": "a561acc5d4e6f8fc0c8e4a2e6773b9f0f4b81d38321a2adf5f17462235f62347",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/layer/dl_layer_sigmoid.hpp",
+        "kit_path": "framework/tools/sdk/esp32s3/include/esp-dl/include/layer/dl_layer_sigmoid.hpp",
+        "sha256": "5fb1c944ab79daed62dafc0af7d450ba5165e45106814ffd883ef78c785b7495",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/layer/dl_layer_softmax.hpp",
+        "kit_path": "framework/tools/sdk/esp32s3/include/esp-dl/include/layer/dl_layer_softmax.hpp",
+        "sha256": "119b77c0174d9e953ad84be26bf162edf45ec897f55744d4453a7d088d270192",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/layer/dl_layer_squeeze.hpp",
+        "kit_path": "framework/tools/sdk/esp32s3/include/esp-dl/include/layer/dl_layer_squeeze.hpp",
+        "sha256": "790a156ede01aac536310b329dcc359f09a3a31c6e5ad2f6fecb50dbc4346000",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/layer/dl_layer_sub2d.hpp",
+        "kit_path": "framework/tools/sdk/esp32s3/include/esp-dl/include/layer/dl_layer_sub2d.hpp",
+        "sha256": "dd338eafa6f28e67f6fcd668c9eb51b995bbca0512bdff10da7562b920299b46",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/layer/dl_layer_tanh.hpp",
+        "kit_path": "framework/tools/sdk/esp32s3/include/esp-dl/include/layer/dl_layer_tanh.hpp",
+        "sha256": "dfcb7bdb19e8504d759a53a024d2898c9f96d87465c96b6ca9ff548d83d51515",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/layer/dl_layer_transpose.hpp",
+        "kit_path": "framework/tools/sdk/esp32s3/include/esp-dl/include/layer/dl_layer_transpose.hpp",
+        "sha256": "7c692a094d2133540b630e98b17c6d18542c5a1167af1b2b64b1dc8a68470ca7",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/math/dl_math.hpp",
+        "kit_path": "framework/tools/sdk/esp32s3/include/esp-dl/include/math/dl_math.hpp",
+        "sha256": "fe84b842108958a7718d2a5fbdcd6775fe83e4e77fcb92df80e3943d6fb04271",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/math/dl_math_matrix.hpp",
+        "kit_path": "framework/tools/sdk/esp32s3/include/esp-dl/include/math/dl_math_matrix.hpp",
+        "sha256": "27703b216f8627115117daf09fe3103e8f96ef1b23daaa4c4f5619bfbce54a2a",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/model_zoo/cat_face_detect_mn03.hpp",
+        "kit_path": "framework/tools/sdk/esp32s3/include/esp-dl/include/model_zoo/cat_face_detect_mn03.hpp",
+        "sha256": "608030450080f2eb7c89e1f1d24c4f17721cfb12beac51e5cfbe986ccf56be6e",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/model_zoo/color_detector.hpp",
+        "kit_path": "framework/tools/sdk/esp32s3/include/esp-dl/include/model_zoo/color_detector.hpp",
+        "sha256": "2570029fa6a1da78a1c6dcec8e6bb08f8a1ed101f5b46b9e4a1e68dfa6cd8951",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/model_zoo/face_recognition_112_v1_s16.hpp",
+        "kit_path": "framework/tools/sdk/esp32s3/include/esp-dl/include/model_zoo/face_recognition_112_v1_s16.hpp",
+        "sha256": "7358fbcc68a4cd64c144105d7bfe18aedf1588ea3dd8b4c3a54ca43080690543",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/model_zoo/face_recognition_112_v1_s8.hpp",
+        "kit_path": "framework/tools/sdk/esp32s3/include/esp-dl/include/model_zoo/face_recognition_112_v1_s8.hpp",
+        "sha256": "0190cff277a3c0a69b4785244abb1dcd1e99308f0e69a3e6381ddc2fceca7920",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/model_zoo/face_recognition_tool.hpp",
+        "kit_path": "framework/tools/sdk/esp32s3/include/esp-dl/include/model_zoo/face_recognition_tool.hpp",
+        "sha256": "8b7d9fd4548dc5ffe1b0065a5d4d87a059af3e25cb82c3129a84bf8bf880679f",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/model_zoo/face_recognizer.hpp",
+        "kit_path": "framework/tools/sdk/esp32s3/include/esp-dl/include/model_zoo/face_recognizer.hpp",
+        "sha256": "b8b389210810858b6be1d3bce6ddf5a399e1e75438761978ba391eb013359931",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/model_zoo/human_face_detect_mnp01.hpp",
+        "kit_path": "framework/tools/sdk/esp32s3/include/esp-dl/include/model_zoo/human_face_detect_mnp01.hpp",
+        "sha256": "2f4dab70d28f09a014e4663e999882bbe0ec6cb41f31a3fe38bd0b6423dd892a",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/model_zoo/human_face_detect_msr01.hpp",
+        "kit_path": "framework/tools/sdk/esp32s3/include/esp-dl/include/model_zoo/human_face_detect_msr01.hpp",
+        "sha256": "4f4d525a97a7cb7e68fffea39862ca9ae231be59f4cc9d496377c3a30d2e98a6",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/nn/dl_nn.hpp",
+        "kit_path": "framework/tools/sdk/esp32s3/include/esp-dl/include/nn/dl_nn.hpp",
+        "sha256": "e1eaaf53860c894312ffa70f8a396ff1369d704fdcec4446807abc6dda37df04",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/nn/dl_nn_add2d.hpp",
+        "kit_path": "framework/tools/sdk/esp32s3/include/esp-dl/include/nn/dl_nn_add2d.hpp",
+        "sha256": "c7818afc7e2a71ad2661022ea4d292d0ced0020645ca4eba1af44168da568cb4",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/nn/dl_nn_avg_pool2d.hpp",
+        "kit_path": "framework/tools/sdk/esp32s3/include/esp-dl/include/nn/dl_nn_avg_pool2d.hpp",
+        "sha256": "ad20d09a4cdb542955ad7950215b2c1da108921eb6f91c8a108feb8ed0f93fb6",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/nn/dl_nn_concat.hpp",
+        "kit_path": "framework/tools/sdk/esp32s3/include/esp-dl/include/nn/dl_nn_concat.hpp",
+        "sha256": "143074db21f65664c8fd65c683b8594469e4470ccb415367a1f8673f3f2d9bb3",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/nn/dl_nn_concat2d.hpp",
+        "kit_path": "framework/tools/sdk/esp32s3/include/esp-dl/include/nn/dl_nn_concat2d.hpp",
+        "sha256": "7a4939eb8a4451cb2899bd645636521f1a98a5418ef25957f8b56fd49d642833",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/nn/dl_nn_conv2d.hpp",
+        "kit_path": "framework/tools/sdk/esp32s3/include/esp-dl/include/nn/dl_nn_conv2d.hpp",
+        "sha256": "c9559d6877a640499fa8416fc2176964074e0550830865a7477dee9abdcbfdf7",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/nn/dl_nn_depthwise_conv2d.hpp",
+        "kit_path": "framework/tools/sdk/esp32s3/include/esp-dl/include/nn/dl_nn_depthwise_conv2d.hpp",
+        "sha256": "ad1b65710b75e3992be15de72349fccd4804c3221fd7d3fbec096cba22a228ca",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/nn/dl_nn_fully_connected.hpp",
+        "kit_path": "framework/tools/sdk/esp32s3/include/esp-dl/include/nn/dl_nn_fully_connected.hpp",
+        "sha256": "5704c92effe811461009ede74084ee5f1469667b2db3aed531d79a03373201cb",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/nn/dl_nn_global_avg_pool2d.hpp",
+        "kit_path": "framework/tools/sdk/esp32s3/include/esp-dl/include/nn/dl_nn_global_avg_pool2d.hpp",
+        "sha256": "6e697a82cdb21fc330d4b6b8f7a042d449d55975340c0e5e5d4359e8803973ea",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/nn/dl_nn_global_max_pool2d.hpp",
+        "kit_path": "framework/tools/sdk/esp32s3/include/esp-dl/include/nn/dl_nn_global_max_pool2d.hpp",
+        "sha256": "c1f1d405d646e2d7e184a897c4b81605a7289980920b8aba984de6cd325ab37b",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/nn/dl_nn_leakyrelu.hpp",
+        "kit_path": "framework/tools/sdk/esp32s3/include/esp-dl/include/nn/dl_nn_leakyrelu.hpp",
+        "sha256": "a69f7135fa7ddbcc5aa2665d998cdec672e6360853c2d3b6ffe43ea9f12e16fb",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/nn/dl_nn_max2d.hpp",
+        "kit_path": "framework/tools/sdk/esp32s3/include/esp-dl/include/nn/dl_nn_max2d.hpp",
+        "sha256": "2006c99a6ed5fa05a6b1ecde729f4d8bf508acf7b3e87b85bba87f218d94e809",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/nn/dl_nn_max_pool2d.hpp",
+        "kit_path": "framework/tools/sdk/esp32s3/include/esp-dl/include/nn/dl_nn_max_pool2d.hpp",
+        "sha256": "a78d824bbaf15122ae2e59c87a8f8af8a94808f7081e9d8e46fdab71a839925f",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/nn/dl_nn_min2d.hpp",
+        "kit_path": "framework/tools/sdk/esp32s3/include/esp-dl/include/nn/dl_nn_min2d.hpp",
+        "sha256": "bf6706cadf3d40be05387741f215e4d090630810780bf979b1460c483288a554",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/nn/dl_nn_mul2d.hpp",
+        "kit_path": "framework/tools/sdk/esp32s3/include/esp-dl/include/nn/dl_nn_mul2d.hpp",
+        "sha256": "071dd3de8e2dc04577ba371dca96765a99b94d29e2af35a1de3cf49cb2a3fb42",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/nn/dl_nn_pad.hpp",
+        "kit_path": "framework/tools/sdk/esp32s3/include/esp-dl/include/nn/dl_nn_pad.hpp",
+        "sha256": "58a050ae10186e37cd77e0eb17b5c9e88773407a82c5d83c24134228bd9561ed",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/nn/dl_nn_prelu.hpp",
+        "kit_path": "framework/tools/sdk/esp32s3/include/esp-dl/include/nn/dl_nn_prelu.hpp",
+        "sha256": "76776c7421d934373765f9ee2c3826602918d44fc599e510623b35644b66cf93",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/nn/dl_nn_relu.hpp",
+        "kit_path": "framework/tools/sdk/esp32s3/include/esp-dl/include/nn/dl_nn_relu.hpp",
+        "sha256": "645855d609e8c1a461ae48a60293f642672586801d6fb74bffa63539722a0e3b",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/nn/dl_nn_sub2d.hpp",
+        "kit_path": "framework/tools/sdk/esp32s3/include/esp-dl/include/nn/dl_nn_sub2d.hpp",
+        "sha256": "9a4befd8771cb041d61c2e3d98bd8fe97dfb8b344e145d63c8abd4c524023bf6",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/tool/dl_tool.hpp",
+        "kit_path": "framework/tools/sdk/esp32s3/include/esp-dl/include/tool/dl_tool.hpp",
+        "sha256": "2dd59770b652e5b10a7f19ce81a80f43eafaabcd0c1a90c8464b5f9c2bcafa0d",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/tool/dl_tool_cache.hpp",
+        "kit_path": "framework/tools/sdk/esp32s3/include/esp-dl/include/tool/dl_tool_cache.hpp",
+        "sha256": "549d105c7b053af1d9abb871ebf585a4c2b2b60159887b06c7795f7ddfa3fbb5",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/typedef/dl_constant.hpp",
+        "kit_path": "framework/tools/sdk/esp32s3/include/esp-dl/include/typedef/dl_constant.hpp",
+        "sha256": "f3ec06235a56191525ce5ca32b22667f61b6d31f13bc1ba142b7cf8b42d9b783",
+        "exact": true
+      },
+      {
+        "upstream_path": "include/typedef/dl_variable.hpp",
+        "kit_path": "framework/tools/sdk/esp32s3/include/esp-dl/include/typedef/dl_variable.hpp",
+        "sha256": "4b75fd2bd60bda93dd369ff2178925558910044c0ac4006f8b2d3bedf74ae79c",
+        "exact": true
+      }
+    ]
+  },
+  {
+    "component": "esp32-camera",
+    "repository": "https://github.com/espressif/esp32-camera",
+    "commit": "f0bb42917cddcfba2c32c2e2fb2875b4fea11b7a",
+    "sdk_update_source": "https://github.com/espressif/arduino-esp32/pull/9339",
+    "sdk_update_revision": "f0bb429",
+    "applicable_paths": [
+      "framework/tools/sdk/esp32s3/lib/libesp32-camera.a",
+      "framework/tools/sdk/esp32s3/lib/libfb_gfx.a"
+    ],
+    "files": [
+      {
+        "path": "submodules/esp32-camera/LICENSE",
+        "upstream_url": "https://raw.githubusercontent.com/espressif/esp32-camera/f0bb42917cddcfba2c32c2e2fb2875b4fea11b7a/LICENSE",
+        "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+        "bytes": 11358
+      }
+    ],
+    "scope_note": "The SDK update PR identifies this component revision. This record does not claim a complete rebuild of its precompiled archives.",
+    "header_checks": [
+      {
+        "upstream_path": "conversions/include/esp_jpg_decode.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/esp32-camera/conversions/include/esp_jpg_decode.h",
+        "sha256": "2367d98dc047ca986429d47f6ae15b93d713e9eb88a09958c5a444866e34041c",
+        "exact": true
+      },
+      {
+        "upstream_path": "conversions/include/img_converters.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/esp32-camera/conversions/include/img_converters.h",
+        "sha256": "011838c5a6770db964a6564ad9ec93cc5aa810868c30f7ce28b51e565cdcef2a",
+        "exact": true
+      },
+      {
+        "upstream_path": "driver/include/esp_camera.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/esp32-camera/driver/include/esp_camera.h",
+        "sha256": "fb13779551477d5e9baf2af721e3a9d5e4625ba66114b687d25ed15e3edffd23",
+        "exact": true
+      },
+      {
+        "upstream_path": "driver/include/sensor.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/esp32-camera/driver/include/sensor.h",
+        "sha256": "67e440260ef960573c2aa04f21fb081b5a20147352e195e9df7d5b4e1009eb8b",
+        "exact": true
+      }
+    ]
+  },
+  {
+    "component": "esp-rainmaker",
+    "repository": "https://github.com/espressif/esp-rainmaker",
+    "commit": "d8e93454f495bd8a414829ec5e86842b373ff555",
+    "sdk_update_source": "https://github.com/espressif/arduino-esp32/pull/9339",
+    "sdk_update_revision": "d8e9345",
+    "applicable_paths": [
+      "framework/tools/sdk/esp32s3/lib/libesp_rainmaker.a",
+      "framework/tools/sdk/esp32s3/lib/librmaker_common.a"
+    ],
+    "files": [
+      {
+        "path": "submodules/esp-rainmaker/LICENSE",
+        "upstream_url": "https://raw.githubusercontent.com/espressif/esp-rainmaker/d8e93454f495bd8a414829ec5e86842b373ff555/LICENSE",
+        "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+        "bytes": 11357
+      }
+    ],
+    "scope_note": "The SDK update PR identifies this component revision. This record does not claim a complete rebuild of its precompiled archives.",
+    "header_checks": [
+      {
+        "upstream_path": "components/esp_rainmaker/include/esp_rmaker_console.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/esp_rainmaker/include/esp_rmaker_console.h",
+        "sha256": "a187ac688065406e752da9cb7c08ddff6052d8c6859f1daa8d2e996aa2c9a61f",
+        "exact": true
+      },
+      {
+        "upstream_path": "components/esp_rainmaker/include/esp_rmaker_core.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/esp_rainmaker/include/esp_rmaker_core.h",
+        "sha256": "3d3b55802af95c3f8dd94ce762f08b497d111b4160e7bfb6481c08b277d2fd48",
+        "exact": true
+      },
+      {
+        "upstream_path": "components/esp_rainmaker/include/esp_rmaker_mqtt.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/esp_rainmaker/include/esp_rmaker_mqtt.h",
+        "sha256": "1e0b0da8083425c6cb76b40d91576b6e330ebb96c06f17ba339413d7dc442a74",
+        "exact": true
+      },
+      {
+        "upstream_path": "components/esp_rainmaker/include/esp_rmaker_ota.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/esp_rainmaker/include/esp_rmaker_ota.h",
+        "sha256": "8bd3aba36ef71ffdbaafa3df34d42a490d1e49b40849f0aff2a7320a350a7c53",
+        "exact": true
+      },
+      {
+        "upstream_path": "components/esp_rainmaker/include/esp_rmaker_scenes.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/esp_rainmaker/include/esp_rmaker_scenes.h",
+        "sha256": "c59fc2b930bd4dab8edbd0fc1c39cb8c40c504a9914237f0cf15be9a2c8f96b6",
+        "exact": true
+      },
+      {
+        "upstream_path": "components/esp_rainmaker/include/esp_rmaker_schedule.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/esp_rainmaker/include/esp_rmaker_schedule.h",
+        "sha256": "b7b94ac23f82b45d056d7fe99664c44b11d79bb3dd6af250c301c6d8cb007b93",
+        "exact": true
+      },
+      {
+        "upstream_path": "components/esp_rainmaker/include/esp_rmaker_standard_devices.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/esp_rainmaker/include/esp_rmaker_standard_devices.h",
+        "sha256": "9b9bfb4a97590540c96d475137a2cfa55e16af89ab2503ccd602f3759595fb15",
+        "exact": true
+      },
+      {
+        "upstream_path": "components/esp_rainmaker/include/esp_rmaker_standard_params.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/esp_rainmaker/include/esp_rmaker_standard_params.h",
+        "sha256": "cfb04ecb2e52fb441059e11a0955dd05045fefd4d5bf89d1e48905c0d243a357",
+        "exact": true
+      },
+      {
+        "upstream_path": "components/esp_rainmaker/include/esp_rmaker_standard_services.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/esp_rainmaker/include/esp_rmaker_standard_services.h",
+        "sha256": "8d1b14ab78e9031a98c642cf0076bca198d48e3b43974edfd9910f3b109392e1",
+        "exact": true
+      },
+      {
+        "upstream_path": "components/esp_rainmaker/include/esp_rmaker_standard_types.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/esp_rainmaker/include/esp_rmaker_standard_types.h",
+        "sha256": "3a2d42b581225220b4cc73acdce6095723e7bb90ffe7615e210f0680788691b2",
+        "exact": true
+      },
+      {
+        "upstream_path": "components/esp_rainmaker/include/esp_rmaker_user_mapping.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/esp_rainmaker/include/esp_rmaker_user_mapping.h",
+        "sha256": "305e97758e412544ce0405a0e34858f591b13831781861025d9274ea90b3ddc4",
+        "exact": true
+      },
+      {
+        "upstream_path": "components/esp_schedule/include/esp_schedule.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/esp_schedule/include/esp_schedule.h",
+        "sha256": "f2b08374e6c0951130721559b2ad11b67c84a336d43ba9e87ec3067f4dd22dea",
+        "exact": true
+      },
+      {
+        "upstream_path": "components/gpio_button/button/include/iot_button.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/gpio_button/button/include/iot_button.h",
+        "sha256": "e51669a2fbef5807e7fef1715e3b77fa341067a9ca53e47ad4b010aab31ee727",
+        "exact": true
+      },
+      {
+        "upstream_path": "components/qrcode/include/qrcode.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/qrcode/include/qrcode.h",
+        "sha256": "f0945a768d66e5afa398ef257160eaef3bbe683a71bd9724699ed833495076b6",
+        "exact": true
+      },
+      {
+        "upstream_path": "components/ws2812_led/led_strip.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/ws2812_led/led_strip.h",
+        "sha256": "c65f2a6111597cb658003bfd6bbb8b5f135ec2695a0a6517c0148854d5fb96ee",
+        "exact": true
+      },
+      {
+        "upstream_path": "components/ws2812_led/ws2812_led.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/ws2812_led/ws2812_led.h",
+        "sha256": "412b70606d8840b4b67e0176235baec2086fd8e8717391a3943b932dfbed88ce",
+        "exact": true
+      }
+    ]
+  },
+  {
+    "component": "esp-dsp",
+    "repository": "https://github.com/espressif/esp-dsp",
+    "commit": "9b4a8b42b98f2f7cd614e47bb4d159acbe500bee",
+    "sdk_update_source": "https://github.com/espressif/arduino-esp32/pull/9339",
+    "sdk_update_revision": "9b4a8b4",
+    "applicable_paths": [
+      "framework/tools/sdk/esp32s3/lib/libespressif__esp-dsp.a"
+    ],
+    "files": [
+      {
+        "path": "submodules/esp-dsp/LICENSE",
+        "upstream_url": "https://raw.githubusercontent.com/espressif/esp-dsp/9b4a8b42b98f2f7cd614e47bb4d159acbe500bee/LICENSE",
+        "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+        "bytes": 11358
+      }
+    ],
+    "scope_note": "The SDK update PR identifies this component revision. This record does not claim a complete rebuild of its precompiled archives.",
+    "header_checks": [
+      {
+        "upstream_path": "modules/common/include/dsp_common.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/espressif__esp-dsp/modules/common/include/dsp_common.h",
+        "sha256": "a15a40a9221f29d377c54435a461962efa0b6521d0761cd385fc57a3cfe79410",
+        "exact": true
+      },
+      {
+        "upstream_path": "modules/common/include/dsp_err.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/espressif__esp-dsp/modules/common/include/dsp_err.h",
+        "sha256": "ab5fadb0157ea3eecd72346402d92a6551cad03254afe31b61016c4cd2408167",
+        "exact": true
+      },
+      {
+        "upstream_path": "modules/common/include/dsp_err_codes.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/espressif__esp-dsp/modules/common/include/dsp_err_codes.h",
+        "sha256": "89f728e6733c7392e2a8aff10da8393ce87ee3b0679cb61d0f88b56ae22f7f9f",
+        "exact": true
+      },
+      {
+        "upstream_path": "modules/common/include/dsp_platform.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/espressif__esp-dsp/modules/common/include/dsp_platform.h",
+        "sha256": "37594e49cae1460f237a799fd91d49b126a2a68026f436842a1db290de5f8ccf",
+        "exact": true
+      },
+      {
+        "upstream_path": "modules/common/include/dsp_tests.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/espressif__esp-dsp/modules/common/include/dsp_tests.h",
+        "sha256": "45d83110edc8d1562684856497566ee9bd9b48225f4648e1a218911b193cad3b",
+        "exact": true
+      },
+      {
+        "upstream_path": "modules/common/include/dsp_types.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/espressif__esp-dsp/modules/common/include/dsp_types.h",
+        "sha256": "bc9d58a8f5e6232a7a7cd2d6a4a60403d5405783638eaacd7b5a9b565f8b3988",
+        "exact": true
+      },
+      {
+        "upstream_path": "modules/common/include/esp_dsp.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/espressif__esp-dsp/modules/common/include/esp_dsp.h",
+        "sha256": "530c2a8f5b872189d5632cae702cbbcf3cfccb518347e8d904df635819418ccd",
+        "exact": true
+      },
+      {
+        "upstream_path": "modules/conv/include/dsps_ccorr.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/espressif__esp-dsp/modules/conv/include/dsps_ccorr.h",
+        "sha256": "8d8a18baf2de50d7d7825f5d5f34252482eb73093e904cbf5b416f1b671e99b6",
+        "exact": true
+      },
+      {
+        "upstream_path": "modules/conv/include/dsps_conv.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/espressif__esp-dsp/modules/conv/include/dsps_conv.h",
+        "sha256": "0d56782db4f338a8c1ad73e8af259d447bc1d34de5f917c23745289319309697",
+        "exact": true
+      },
+      {
+        "upstream_path": "modules/conv/include/dsps_conv_platform.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/espressif__esp-dsp/modules/conv/include/dsps_conv_platform.h",
+        "sha256": "56fa1d05fb7349f5bff27d8887cec7afc3bde6d29904e3c879ca6ace45692ae6",
+        "exact": true
+      },
+      {
+        "upstream_path": "modules/conv/include/dsps_corr.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/espressif__esp-dsp/modules/conv/include/dsps_corr.h",
+        "sha256": "b09833081c633a21ac68cef832e22e7532ec6ad13b897e04446fce01021550fb",
+        "exact": true
+      },
+      {
+        "upstream_path": "modules/dct/include/dsps_dct.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/espressif__esp-dsp/modules/dct/include/dsps_dct.h",
+        "sha256": "95f3f8d4ddfba8f8423f248f9f48d6dd33e45341d089fec3ef44be283953d4bd",
+        "exact": true
+      },
+      {
+        "upstream_path": "modules/dotprod/include/dspi_dotprod.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/espressif__esp-dsp/modules/dotprod/include/dspi_dotprod.h",
+        "sha256": "91f930d9069803306eb40d644d8a4555a1d1641e71df8abf040338d1a80fb89c",
+        "exact": true
+      },
+      {
+        "upstream_path": "modules/dotprod/include/dspi_dotprod_platform.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/espressif__esp-dsp/modules/dotprod/include/dspi_dotprod_platform.h",
+        "sha256": "17ccc33fef01099d41ea841391941090071922e9d6c6891085157f6979c5c187",
+        "exact": true
+      },
+      {
+        "upstream_path": "modules/dotprod/include/dsps_dotprod.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/espressif__esp-dsp/modules/dotprod/include/dsps_dotprod.h",
+        "sha256": "a6bc4a937dd11235d2ab728fe815e2ba2f6dcd66d7657aec779822b411ebf93e",
+        "exact": true
+      },
+      {
+        "upstream_path": "modules/dotprod/include/dsps_dotprod_platform.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/espressif__esp-dsp/modules/dotprod/include/dsps_dotprod_platform.h",
+        "sha256": "406ea830108bead3a0ff3b0b9590a484eda77f64ec4b88bc99d523c4005c752f",
+        "exact": true
+      },
+      {
+        "upstream_path": "modules/fft/include/dsps_fft2r.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/espressif__esp-dsp/modules/fft/include/dsps_fft2r.h",
+        "sha256": "21c293c2dfa191a16be572f75ba075f842f2b2fc0281d7b66b8e8e9d3d604f13",
+        "exact": true
+      },
+      {
+        "upstream_path": "modules/fft/include/dsps_fft2r_platform.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/espressif__esp-dsp/modules/fft/include/dsps_fft2r_platform.h",
+        "sha256": "807895b936988e9b062ee5c4a34b8530b7b672f5ec8f3b4b1093fa9486ff1d11",
+        "exact": true
+      },
+      {
+        "upstream_path": "modules/fft/include/dsps_fft4r.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/espressif__esp-dsp/modules/fft/include/dsps_fft4r.h",
+        "sha256": "8bc814d14180e5f06b5521fc9980b74a284325ddafa98d2a34332f4edca5dcb0",
+        "exact": true
+      },
+      {
+        "upstream_path": "modules/fft/include/dsps_fft4r_platform.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/espressif__esp-dsp/modules/fft/include/dsps_fft4r_platform.h",
+        "sha256": "a4f125223260ccb1d5bd5d47c9cc48c738e5173bd842874cfd8b177704c6ee3c",
+        "exact": true
+      },
+      {
+        "upstream_path": "modules/fft/include/dsps_fft_tables.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/espressif__esp-dsp/modules/fft/include/dsps_fft_tables.h",
+        "sha256": "e0af3abe3d76aa6ec6728270c7e6a32d4a1ae2fd6b3bbcf8ae03f098ef7b8b1d",
+        "exact": true
+      },
+      {
+        "upstream_path": "modules/fir/include/dsps_fir.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/espressif__esp-dsp/modules/fir/include/dsps_fir.h",
+        "sha256": "cbd89312d1d20c52e198a2839220f5e83e109fa26dd68b683fd8874ac22ff15c",
+        "exact": true
+      },
+      {
+        "upstream_path": "modules/fir/include/dsps_fir_platform.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/espressif__esp-dsp/modules/fir/include/dsps_fir_platform.h",
+        "sha256": "011494b85b6f5b007b72f0a5261667963e9d90ae5181d0d667081aacaaf771a2",
+        "exact": true
+      },
+      {
+        "upstream_path": "modules/iir/include/dsps_biquad.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/espressif__esp-dsp/modules/iir/include/dsps_biquad.h",
+        "sha256": "3d5fe3974a94974fe8dd9fd11e4291d095a9d4971f319ef18eef160869a3245b",
+        "exact": true
+      },
+      {
+        "upstream_path": "modules/iir/include/dsps_biquad_gen.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/espressif__esp-dsp/modules/iir/include/dsps_biquad_gen.h",
+        "sha256": "01e36d4c9e4107142bb9228d5ba5ec7a9677050385ce133ccdafb0dd50c3c52f",
+        "exact": true
+      },
+      {
+        "upstream_path": "modules/iir/include/dsps_biquad_platform.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/espressif__esp-dsp/modules/iir/include/dsps_biquad_platform.h",
+        "sha256": "23de81f1ba94a6a994acd8a420616a095547148daaa0647a9cdab8f1bfab135e",
+        "exact": true
+      },
+      {
+        "upstream_path": "modules/kalman/ekf/include/ekf.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/espressif__esp-dsp/modules/kalman/ekf/include/ekf.h",
+        "sha256": "04cc7c5eb704014b1976ced3d4c810337a1384801a45dad7b22c3134652f57cf",
+        "exact": true
+      },
+      {
+        "upstream_path": "modules/kalman/ekf_imu13states/include/ekf_imu13states.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/espressif__esp-dsp/modules/kalman/ekf_imu13states/include/ekf_imu13states.h",
+        "sha256": "67438f81b8a788cccda4c93fda02da8d3895c23a057c082eace8d3ddacfd5020",
+        "exact": true
+      },
+      {
+        "upstream_path": "modules/math/add/include/dsps_add.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/espressif__esp-dsp/modules/math/add/include/dsps_add.h",
+        "sha256": "5a45c7455256fc1e3f85b928e56a98c44f3786b8e8fb0b57470b0624d9adaba5",
+        "exact": true
+      },
+      {
+        "upstream_path": "modules/math/add/include/dsps_add_platform.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/espressif__esp-dsp/modules/math/add/include/dsps_add_platform.h",
+        "sha256": "f73e395a70f5dcea7a40e3094cf674f58f63b61d01b9e39174cce9d7ec42aa2d",
+        "exact": true
+      },
+      {
+        "upstream_path": "modules/math/addc/include/dsps_addc.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/espressif__esp-dsp/modules/math/addc/include/dsps_addc.h",
+        "sha256": "6656f38c19e00113c6a48bc1de7c61ebe25c77d11a6382e007bc6d98b2a67ea1",
+        "exact": true
+      },
+      {
+        "upstream_path": "modules/math/addc/include/dsps_addc_platform.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/espressif__esp-dsp/modules/math/addc/include/dsps_addc_platform.h",
+        "sha256": "9d33d97151ef2d56e5f00d7a9d8302fefa859c39511e38bd230e1a253af66e96",
+        "exact": true
+      },
+      {
+        "upstream_path": "modules/math/include/dsps_math.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/espressif__esp-dsp/modules/math/include/dsps_math.h",
+        "sha256": "91597c8074f91d04163402b26da96ed554d2030d07d5f5ef75982d04055c65c5",
+        "exact": true
+      },
+      {
+        "upstream_path": "modules/math/mul/include/dsps_mul.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/espressif__esp-dsp/modules/math/mul/include/dsps_mul.h",
+        "sha256": "12e41d46328f83348f4aa34fcd2fe704002caed2268737d921477166b4d29a07",
+        "exact": true
+      },
+      {
+        "upstream_path": "modules/math/mul/include/dsps_mul_platform.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/espressif__esp-dsp/modules/math/mul/include/dsps_mul_platform.h",
+        "sha256": "b8d6948789bc3880e8768a7ef62b8671d6320a999550b44b1e6c527871eb8a22",
+        "exact": true
+      },
+      {
+        "upstream_path": "modules/math/mulc/include/dsps_mulc.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/espressif__esp-dsp/modules/math/mulc/include/dsps_mulc.h",
+        "sha256": "00b223b8aee38e3b0f9645d07f2e4adefd66b5bdedca769591170d80f8c82aab",
+        "exact": true
+      },
+      {
+        "upstream_path": "modules/math/mulc/include/dsps_mulc_platform.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/espressif__esp-dsp/modules/math/mulc/include/dsps_mulc_platform.h",
+        "sha256": "602a4096eb9bd81163f595bbd7056d510c1ebd2b341121a0418c9619c0dc1c1a",
+        "exact": true
+      },
+      {
+        "upstream_path": "modules/math/sqrt/include/dsps_sqrt.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/espressif__esp-dsp/modules/math/sqrt/include/dsps_sqrt.h",
+        "sha256": "789485dd760af4a0735a84a94a1010aca3fa3623e98b717220f11ef60fd3c1c3",
+        "exact": true
+      },
+      {
+        "upstream_path": "modules/math/sub/include/dsps_sub.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/espressif__esp-dsp/modules/math/sub/include/dsps_sub.h",
+        "sha256": "5657785ca2fe78e6e144f815ac7c3a41c0067b24f4df8d1cf68561a1a71c0e78",
+        "exact": true
+      },
+      {
+        "upstream_path": "modules/math/sub/include/dsps_sub_platform.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/espressif__esp-dsp/modules/math/sub/include/dsps_sub_platform.h",
+        "sha256": "eb9599b4a2d8a84c83dd8bd0560dfab248fdd493ff9ca9ff4526c894ebfedc83",
+        "exact": true
+      },
+      {
+        "upstream_path": "modules/matrix/add/include/dspm_add.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/espressif__esp-dsp/modules/matrix/add/include/dspm_add.h",
+        "sha256": "e99235e4e09b60977005b78d31ffa69af33b69f88116a84b6b48b35567297403",
+        "exact": true
+      },
+      {
+        "upstream_path": "modules/matrix/add/include/dspm_add_platform.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/espressif__esp-dsp/modules/matrix/add/include/dspm_add_platform.h",
+        "sha256": "0686dfd2253f6ebea4639ffc8edf1999219ef0c526b261efd5577a00ac29e4e0",
+        "exact": true
+      },
+      {
+        "upstream_path": "modules/matrix/addc/include/dspm_addc.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/espressif__esp-dsp/modules/matrix/addc/include/dspm_addc.h",
+        "sha256": "32af44a30da0352dd4e2edf8b9643381abc1caeefeb4f04996dda631e2037180",
+        "exact": true
+      },
+      {
+        "upstream_path": "modules/matrix/addc/include/dspm_addc_platform.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/espressif__esp-dsp/modules/matrix/addc/include/dspm_addc_platform.h",
+        "sha256": "d0cdd0f8bfc40e93c50aa712eccdf2dae37ec4600f5173b00404014b828a33df",
+        "exact": true
+      },
+      {
+        "upstream_path": "modules/matrix/include/dspm_matrix.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/espressif__esp-dsp/modules/matrix/include/dspm_matrix.h",
+        "sha256": "4d0df9a6bbfde0f17cef2af611e867469d836800c7ddfca41d6234a8ed775053",
+        "exact": true
+      },
+      {
+        "upstream_path": "modules/matrix/include/mat.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/espressif__esp-dsp/modules/matrix/include/mat.h",
+        "sha256": "dae394027e6d14e0a39defad521febb42ee75208a756119548df41dc7f98bb62",
+        "exact": true
+      },
+      {
+        "upstream_path": "modules/matrix/mul/include/dspm_mult.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/espressif__esp-dsp/modules/matrix/mul/include/dspm_mult.h",
+        "sha256": "acde53b101594e4b4cdafd3b09daee4db8f3b765bc67ad185ee4fa7e01ad8d6d",
+        "exact": true
+      },
+      {
+        "upstream_path": "modules/matrix/mul/include/dspm_mult_platform.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/espressif__esp-dsp/modules/matrix/mul/include/dspm_mult_platform.h",
+        "sha256": "87983083c9e82ebc4f042a9762aa46453d74c3ba1ea9b8f9b4d791ca0f0f87fb",
+        "exact": true
+      },
+      {
+        "upstream_path": "modules/matrix/mul/test/include/test_mat_common.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/espressif__esp-dsp/modules/matrix/mul/test/include/test_mat_common.h",
+        "sha256": "143911aa3767b8d4806e3f56b5e416f95761e5961807e121dc2579cc7a517fca",
+        "exact": true
+      },
+      {
+        "upstream_path": "modules/matrix/mulc/include/dspm_mulc.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/espressif__esp-dsp/modules/matrix/mulc/include/dspm_mulc.h",
+        "sha256": "cebcb5982ae98ee55433719e3c69b28b376733e9270afb63c9ac70f4a2848141",
+        "exact": true
+      },
+      {
+        "upstream_path": "modules/matrix/mulc/include/dspm_mulc_platform.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/espressif__esp-dsp/modules/matrix/mulc/include/dspm_mulc_platform.h",
+        "sha256": "40fd8dc1e1017750712652d19717da7c97433e06199be07a8eb6f1eaf54baf15",
+        "exact": true
+      },
+      {
+        "upstream_path": "modules/matrix/sub/include/dspm_sub.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/espressif__esp-dsp/modules/matrix/sub/include/dspm_sub.h",
+        "sha256": "96e6475f003b29ae18c92be5c36497859f436ec338401823370d598e0289f4f4",
+        "exact": true
+      },
+      {
+        "upstream_path": "modules/matrix/sub/include/dspm_sub_platform.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/espressif__esp-dsp/modules/matrix/sub/include/dspm_sub_platform.h",
+        "sha256": "a6874c51fc1ab406fad3e648a8a8538cfd10160dc56efa5034d01c9b49674b26",
+        "exact": true
+      },
+      {
+        "upstream_path": "modules/support/include/dsps_cplx_gen.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/espressif__esp-dsp/modules/support/include/dsps_cplx_gen.h",
+        "sha256": "0ca240bd1cd7997727313d80ad63551c61a4e7cd268705161b56c1a6c2226032",
+        "exact": true
+      },
+      {
+        "upstream_path": "modules/support/include/dsps_cplx_gen_platform.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/espressif__esp-dsp/modules/support/include/dsps_cplx_gen_platform.h",
+        "sha256": "118fb16f5b4d0d8ac7965a1e26a0cf0804117d9035113ce074ecd43f5a35b949",
+        "exact": true
+      },
+      {
+        "upstream_path": "modules/support/include/dsps_d_gen.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/espressif__esp-dsp/modules/support/include/dsps_d_gen.h",
+        "sha256": "999eb4ff1df9aa51c636e482693a49a8eb88ff1a306b8be6e0a03e23c3755e5d",
+        "exact": true
+      },
+      {
+        "upstream_path": "modules/support/include/dsps_h_gen.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/espressif__esp-dsp/modules/support/include/dsps_h_gen.h",
+        "sha256": "8c43ef35c7a2dfb5b0229e05547ce484c24c929b91c9ca6eb1ece1163c4d0d22",
+        "exact": true
+      },
+      {
+        "upstream_path": "modules/support/include/dsps_sfdr.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/espressif__esp-dsp/modules/support/include/dsps_sfdr.h",
+        "sha256": "df2d39e403b752170a6d4ea714db601b1c8974f4404b150e448006dca0cc9728",
+        "exact": true
+      },
+      {
+        "upstream_path": "modules/support/include/dsps_snr.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/espressif__esp-dsp/modules/support/include/dsps_snr.h",
+        "sha256": "b0c01a7708820f8bda30b36d330f36a1fe83fec0ec3f0a86beb0bdb366c4cc3c",
+        "exact": true
+      },
+      {
+        "upstream_path": "modules/support/include/dsps_tone_gen.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/espressif__esp-dsp/modules/support/include/dsps_tone_gen.h",
+        "sha256": "b5bc008680255443c9226a8a84e63011b17204190087e12262286bd9f7778dda",
+        "exact": true
+      },
+      {
+        "upstream_path": "modules/support/include/dsps_view.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/espressif__esp-dsp/modules/support/include/dsps_view.h",
+        "sha256": "d0f50713675ddd80d7c4a026df58e5eca463763b07d4c734c63dbb767ecd59af",
+        "exact": true
+      },
+      {
+        "upstream_path": "modules/support/mem/include/dsps_mem.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/espressif__esp-dsp/modules/support/mem/include/dsps_mem.h",
+        "sha256": "066b8a3b0c2346ee5c31cf279d6bcaa4b4a71d11f672da45ef999e34e6970063",
+        "exact": true
+      },
+      {
+        "upstream_path": "modules/support/mem/include/dsps_mem_platform.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/espressif__esp-dsp/modules/support/mem/include/dsps_mem_platform.h",
+        "sha256": "1ec97d4e7669f84c164fe9cd35ba97b7776a57416cb952a6fdc18b85ff66d09a",
+        "exact": true
+      },
+      {
+        "upstream_path": "modules/windows/blackman/include/dsps_wind_blackman.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/espressif__esp-dsp/modules/windows/blackman/include/dsps_wind_blackman.h",
+        "sha256": "b7c26b2391a77a929c50415f728cfe41903e9d3dcda778d5928d388dd9949a58",
+        "exact": true
+      },
+      {
+        "upstream_path": "modules/windows/blackman_harris/include/dsps_wind_blackman_harris.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/espressif__esp-dsp/modules/windows/blackman_harris/include/dsps_wind_blackman_harris.h",
+        "sha256": "c9ad86fa6144ecc238efff601e51dba44b542f23405abb667133e87c3165b7b8",
+        "exact": true
+      },
+      {
+        "upstream_path": "modules/windows/blackman_nuttall/include/dsps_wind_blackman_nuttall.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/espressif__esp-dsp/modules/windows/blackman_nuttall/include/dsps_wind_blackman_nuttall.h",
+        "sha256": "2636d7adf32e42c79229abc45709a0f8f06af9402f9a3c7a396dbd02ed5d7534",
+        "exact": true
+      },
+      {
+        "upstream_path": "modules/windows/flat_top/include/dsps_wind_flat_top.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/espressif__esp-dsp/modules/windows/flat_top/include/dsps_wind_flat_top.h",
+        "sha256": "23ab6606a257c2db2f04bac1e7c9917502503f130d3757af8eda5c186c5571f9",
+        "exact": true
+      },
+      {
+        "upstream_path": "modules/windows/hann/include/dsps_wind_hann.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/espressif__esp-dsp/modules/windows/hann/include/dsps_wind_hann.h",
+        "sha256": "90d213f2ac31f873954025301462e08e8e6e25c736d8ec8387857a6d3915653f",
+        "exact": true
+      },
+      {
+        "upstream_path": "modules/windows/include/dsps_wind.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/espressif__esp-dsp/modules/windows/include/dsps_wind.h",
+        "sha256": "1d4925d909da27030c3e348d49e1c30e72183bb6d7abd04e3b0b630943c0b4a1",
+        "exact": true
+      },
+      {
+        "upstream_path": "modules/windows/nuttall/include/dsps_wind_nuttall.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/espressif__esp-dsp/modules/windows/nuttall/include/dsps_wind_nuttall.h",
+        "sha256": "6f65287440d155b5dffbbcd7a92c6f1f079673648454ec160e7dd13f2f1929ae",
+        "exact": true
+      }
+    ]
+  },
+  {
+    "component": "tinyusb",
+    "repository": "https://github.com/hathach/tinyusb",
+    "commit": "a0e5626bc50d484a23f33000c48082179f0cc2dd",
+    "sdk_update_source": "https://github.com/espressif/arduino-esp32/pull/9339",
+    "sdk_update_revision": "a0e5626bc",
+    "applicable_paths": [
+      "framework/tools/sdk/esp32s3/lib/libarduino_tinyusb.a"
+    ],
+    "files": [
+      {
+        "path": "submodules/tinyusb/LICENSE",
+        "upstream_url": "https://raw.githubusercontent.com/hathach/tinyusb/a0e5626bc50d484a23f33000c48082179f0cc2dd/LICENSE",
+        "sha256": "b171720e8a442e7a3957d83c62cd3299dbb29da3db534cc626f9dded0de2ca44",
+        "bytes": 1089
+      },
+      {
+        "path": "submodules/tinyusb/lib/SEGGER_RTT/LICENSE.md",
+        "upstream_url": "https://raw.githubusercontent.com/hathach/tinyusb/a0e5626bc50d484a23f33000c48082179f0cc2dd/lib/SEGGER_RTT/LICENSE.md",
+        "sha256": "4fe88073436555f5b8403316c2c78e06a20ac591bc4a612926544ace0f26aff8",
+        "bytes": 1543
+      },
+      {
+        "path": "submodules/tinyusb/lib/fatfs/LICENSE.txt",
+        "upstream_url": "https://raw.githubusercontent.com/hathach/tinyusb/a0e5626bc50d484a23f33000c48082179f0cc2dd/lib/fatfs/LICENSE.txt",
+        "sha256": "b896e32fb2cdb3fc8b3b6fd854706fca4ac55619fbb6d5eb2429cb05ee338966",
+        "bytes": 1913
+      }
+    ],
+    "scope_note": "The SDK update PR identifies this component revision. This record does not claim a complete rebuild of its precompiled archives.",
+    "header_checks": [
+      {
+        "upstream_path": "src/class/audio/audio.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/arduino_tinyusb/tinyusb/src/class/audio/audio.h",
+        "sha256": "62cf45edd11b5579978f1f9dc97ff8b710bf15ad2ccd879f933769750d562b44",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/class/audio/audio_device.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/arduino_tinyusb/tinyusb/src/class/audio/audio_device.h",
+        "sha256": "62e2b01ddc6a614fa2a26f4b30f049071233dc04c75581caf8a50ec060505070",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/class/bth/bth_device.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/arduino_tinyusb/tinyusb/src/class/bth/bth_device.h",
+        "sha256": "9a8cf71dabf32a04aa4056171d56fce5803a810d0d5bcdce7cbc01818d7bd731",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/class/cdc/cdc.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/arduino_tinyusb/tinyusb/src/class/cdc/cdc.h",
+        "sha256": "fda9b7ef8ec0eb2cd83d59e366a928253968b823bb14b09befb6b82019353cdf",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/class/cdc/cdc_device.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/arduino_tinyusb/tinyusb/src/class/cdc/cdc_device.h",
+        "sha256": "9a30755eb32067eded3037586e50b9c7a08fd72835a2242822aed9b3a1b5ee73",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/class/cdc/cdc_host.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/arduino_tinyusb/tinyusb/src/class/cdc/cdc_host.h",
+        "sha256": "4cf89501d79a306e86788d253cbaf27a0912ac7f2004422e365fbb01a427b047",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/class/cdc/cdc_rndis.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/arduino_tinyusb/tinyusb/src/class/cdc/cdc_rndis.h",
+        "sha256": "f5fd31ee42c17b71f7459b730bde4488207ba863954318e29761538a1316e7d6",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/class/cdc/cdc_rndis_host.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/arduino_tinyusb/tinyusb/src/class/cdc/cdc_rndis_host.h",
+        "sha256": "62c8c6122ce6165640300ff0cc38fd4f3d61d18cb4c4725f4276ffe42c220ce1",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/class/cdc/serial/ch34x.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/arduino_tinyusb/tinyusb/src/class/cdc/serial/ch34x.h",
+        "sha256": "8d73509dc768adbdcb2a391d316184348738e97c35d1e4fef87fea55179d61aa",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/class/cdc/serial/cp210x.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/arduino_tinyusb/tinyusb/src/class/cdc/serial/cp210x.h",
+        "sha256": "7fd5105911a42e48e79c80fa6587c918394e9ddbda1291e508b43e2d6bd152a8",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/class/cdc/serial/ftdi_sio.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/arduino_tinyusb/tinyusb/src/class/cdc/serial/ftdi_sio.h",
+        "sha256": "fba3cfacbcdb22dbe8a6f6e7b3f3b3cfb5bac8762bf1951e8ba2d2815fc05b2a",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/class/dfu/dfu.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/arduino_tinyusb/tinyusb/src/class/dfu/dfu.h",
+        "sha256": "1f09a60bbdb856c7a2357e3aad0fed0a620fec07996991659a5885f28726650c",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/class/dfu/dfu_device.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/arduino_tinyusb/tinyusb/src/class/dfu/dfu_device.h",
+        "sha256": "2e756f038fe8677d0380dcafe48ef15995dfebebff65f80c7fcd2c68544d7ad3",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/class/dfu/dfu_rt_device.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/arduino_tinyusb/tinyusb/src/class/dfu/dfu_rt_device.h",
+        "sha256": "2e00d08ebd2b98f3906aaebf48de01a24a0a8118e105164c372ab6f6ba209ef9",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/class/hid/hid.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/arduino_tinyusb/tinyusb/src/class/hid/hid.h",
+        "sha256": "419322f5c88e2a2902d4445c79ada0b100d00636424c78e4ea8165661a0cd76a",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/class/hid/hid_device.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/arduino_tinyusb/tinyusb/src/class/hid/hid_device.h",
+        "sha256": "b76a2138062f0f45a03a6c6def8de3274444db8dc85f523fd7be20101180637c",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/class/hid/hid_host.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/arduino_tinyusb/tinyusb/src/class/hid/hid_host.h",
+        "sha256": "42e4a9288960b165dc7b2e0fd6a8ad12852cad4c82f5ce7b1ef3a54cfcad9612",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/class/midi/midi.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/arduino_tinyusb/tinyusb/src/class/midi/midi.h",
+        "sha256": "f56487c4134919af0dbaf0a2de8d4859ff045c319426e23c9bdcd683ac452086",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/class/midi/midi_device.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/arduino_tinyusb/tinyusb/src/class/midi/midi_device.h",
+        "sha256": "30f41ef43d3b77cd5e8441ccf5854a828643fad676e4024530b1a52d3534d5a0",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/class/msc/msc.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/arduino_tinyusb/tinyusb/src/class/msc/msc.h",
+        "sha256": "cc87180bef16069cca344f4f4d5d15b67474b230cfb624b24f1b351f59270865",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/class/msc/msc_device.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/arduino_tinyusb/tinyusb/src/class/msc/msc_device.h",
+        "sha256": "95187fcab5532312fe827b14051771d759f486f74794f7e7caa07b89708821c4",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/class/msc/msc_host.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/arduino_tinyusb/tinyusb/src/class/msc/msc_host.h",
+        "sha256": "b9727fb1906d90b0c8e6fac1794d55a1f6c403fb1c8835a0bf21682c18b7b31a",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/class/net/ncm.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/arduino_tinyusb/tinyusb/src/class/net/ncm.h",
+        "sha256": "4703e067cacddf2734c72e814ed7149d6bbb7737be05a8325bc68b3443ecc760",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/class/net/net_device.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/arduino_tinyusb/tinyusb/src/class/net/net_device.h",
+        "sha256": "ef9058b8381b8fe21b27cde3e4b84cf0e9689faf994f0a693922f352f83f9718",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/class/usbtmc/usbtmc.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/arduino_tinyusb/tinyusb/src/class/usbtmc/usbtmc.h",
+        "sha256": "498e1d1ebbd86f9ae234511ff113beca63c27c06078b6204901bf863798cb73f",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/class/usbtmc/usbtmc_device.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/arduino_tinyusb/tinyusb/src/class/usbtmc/usbtmc_device.h",
+        "sha256": "458c7fac56111be5e3876435a256af186b04e131b672adfd21e0df0d3b8be2f9",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/class/vendor/vendor_device.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/arduino_tinyusb/tinyusb/src/class/vendor/vendor_device.h",
+        "sha256": "5d5b252a85061bbe3a8912a086f4232719f909b1433680b2148a8a8c93e0ad02",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/class/vendor/vendor_host.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/arduino_tinyusb/tinyusb/src/class/vendor/vendor_host.h",
+        "sha256": "5fe5b0403915626b1bbae4f4ddc385c72083fb33bde4dc8af2c457c9a2b86aec",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/class/video/video.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/arduino_tinyusb/tinyusb/src/class/video/video.h",
+        "sha256": "5af293b5789afcdc2a88f0b846df68eade271a051524fd89a16dea5fbb7c8d96",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/class/video/video_device.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/arduino_tinyusb/tinyusb/src/class/video/video_device.h",
+        "sha256": "d4587e76444db45aaa0856cdd637bfa7b034ea456c6422b170ddf10e3473d29e",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/common/tusb_common.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/arduino_tinyusb/tinyusb/src/common/tusb_common.h",
+        "sha256": "6195e892216321c8fee1fecbce1c5a3ba4f853aae8ae75ed9c4480b0b896f148",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/common/tusb_compiler.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/arduino_tinyusb/tinyusb/src/common/tusb_compiler.h",
+        "sha256": "ca4c05df6cae506956bc0b212561e7eb3ae9ee209f963bb4e6879f70cb7ca5b6",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/common/tusb_debug.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/arduino_tinyusb/tinyusb/src/common/tusb_debug.h",
+        "sha256": "8b7524672bfd66d0074ddebf7580c6c38d1fcc66aab35f7839f55f80de1b0b6f",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/common/tusb_fifo.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/arduino_tinyusb/tinyusb/src/common/tusb_fifo.h",
+        "sha256": "70781aae4c33f9b3da4a6621e4cf921fe761e7d54c8910bf472d8571b76e0e54",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/common/tusb_mcu.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/arduino_tinyusb/tinyusb/src/common/tusb_mcu.h",
+        "sha256": "f0b2b95e04ce9086c060927aff19fd94c8d4652d11776090a66116559e0a8baa",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/common/tusb_private.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/arduino_tinyusb/tinyusb/src/common/tusb_private.h",
+        "sha256": "f854e0cb847da249a8c75c3aa1a996d6a579a0d6dcf83a87bc566802beb3e830",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/common/tusb_types.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/arduino_tinyusb/tinyusb/src/common/tusb_types.h",
+        "sha256": "ffb87921288e180f66afb00fa1c306b13e44eb044f22471a88b9d4b9a1f08a9b",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/common/tusb_verify.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/arduino_tinyusb/tinyusb/src/common/tusb_verify.h",
+        "sha256": "a71cba113ee02d68afab33d0d287a7715c403619e611d9c12532229e97cd2648",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/device/dcd.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/arduino_tinyusb/tinyusb/src/device/dcd.h",
+        "sha256": "5db690e07b6003e2a00fb646f4a8a71c6b378c1023e298a9fadff6b588a74b9e",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/device/usbd.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/arduino_tinyusb/tinyusb/src/device/usbd.h",
+        "sha256": "f2a8776fb685c082b8ead9df106f791a60e5d49387cea767bd3b318fe67e6bdf",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/device/usbd_pvt.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/arduino_tinyusb/tinyusb/src/device/usbd_pvt.h",
+        "sha256": "e151ac1d7a5db66fd1f4a187503e18a41dc90773032fb386688e9aa2207bb193",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/host/hcd.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/arduino_tinyusb/tinyusb/src/host/hcd.h",
+        "sha256": "bc9ce1f40c936c4461bedb79d1c7806f356304584cf5a4c0bb7bec6af299f0d3",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/host/hub.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/arduino_tinyusb/tinyusb/src/host/hub.h",
+        "sha256": "7434c0a12d32cb19dc9749967c0bf2547ee92fa849a45be666cb342ebfee0b71",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/host/usbh.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/arduino_tinyusb/tinyusb/src/host/usbh.h",
+        "sha256": "11cbe8ae2817495a18d25a33e3ed2637ca430ab412fc977beda00528124f96b6",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/host/usbh_pvt.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/arduino_tinyusb/tinyusb/src/host/usbh_pvt.h",
+        "sha256": "6b6ce77558f5dad436769ad2248cf1f7d84e3e057e46bc0376b1e1ddd0e52de6",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/osal/osal.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/arduino_tinyusb/tinyusb/src/osal/osal.h",
+        "sha256": "16064a85abd4721d1f105e2f31927690cc7b635f6b3e34610d6d0b6969f3eb17",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/osal/osal_freertos.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/arduino_tinyusb/tinyusb/src/osal/osal_freertos.h",
+        "sha256": "a1b5f1672d2f8e52faec4969afaca9b5bac91d54149ffcc72f48d12669d5c6f9",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/osal/osal_mynewt.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/arduino_tinyusb/tinyusb/src/osal/osal_mynewt.h",
+        "sha256": "d283796ce3974aca0adc1b612914e84d75ff53b48d1a989aa331688047a8b3c5",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/osal/osal_none.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/arduino_tinyusb/tinyusb/src/osal/osal_none.h",
+        "sha256": "fb00aee8f793563ccf70ae7c8890e7eccf92945b749a3d5a377716e5cfbb6f00",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/osal/osal_pico.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/arduino_tinyusb/tinyusb/src/osal/osal_pico.h",
+        "sha256": "fa0878c06399c7191d36cd0cf503879af2a7afcb4523e36b8fe0ab97e675519f",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/osal/osal_rtthread.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/arduino_tinyusb/tinyusb/src/osal/osal_rtthread.h",
+        "sha256": "f6d9d24fdcaf1d9c005ab3da43c6129a773cd1a98efe516e7e9e734d3c4da03f",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/osal/osal_rtx4.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/arduino_tinyusb/tinyusb/src/osal/osal_rtx4.h",
+        "sha256": "992120b09433c7d9cf16907001a3ee6d7d80e0b3cdbeee0c7991b5032af7729b",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/portable/chipidea/ci_fs/ci_fs_kinetis.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/arduino_tinyusb/tinyusb/src/portable/chipidea/ci_fs/ci_fs_kinetis.h",
+        "sha256": "4c8c7b292b9c63f9407405686988feebfe4109483be1e5de5a918e2502c685f3",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/portable/chipidea/ci_fs/ci_fs_mcx.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/arduino_tinyusb/tinyusb/src/portable/chipidea/ci_fs/ci_fs_mcx.h",
+        "sha256": "61cec345f51991cf48846ed5efbefb3bfceb7fa45dff8b1e2f4cbb04e349664a",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/portable/chipidea/ci_fs/ci_fs_type.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/arduino_tinyusb/tinyusb/src/portable/chipidea/ci_fs/ci_fs_type.h",
+        "sha256": "f91c9b56ffb54ea8c7fcc01a96930e988c7abddb029da9bf3e52f4267025d2d4",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/portable/chipidea/ci_hs/ci_hs_imxrt.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/arduino_tinyusb/tinyusb/src/portable/chipidea/ci_hs/ci_hs_imxrt.h",
+        "sha256": "648fe9966b307f7a6b04ead8a6362c284deecdd058701db0fdc57700f29ae11e",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/portable/chipidea/ci_hs/ci_hs_lpc18_43.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/arduino_tinyusb/tinyusb/src/portable/chipidea/ci_hs/ci_hs_lpc18_43.h",
+        "sha256": "471b458b1e63be47d61662ec457aa64d27a88dcb21febf13509cb357ee9f42f0",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/portable/chipidea/ci_hs/ci_hs_mcx.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/arduino_tinyusb/tinyusb/src/portable/chipidea/ci_hs/ci_hs_mcx.h",
+        "sha256": "8ccd45a7dbfbb1ce2d73648beae0de8b7a0511c555495e4187471cc42a26bea1",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/portable/chipidea/ci_hs/ci_hs_type.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/arduino_tinyusb/tinyusb/src/portable/chipidea/ci_hs/ci_hs_type.h",
+        "sha256": "390a264b7a0fef8499fce2b2ac9f0ac73c357b99e057d06f65afdc6fb0f804fc",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/portable/ehci/ehci.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/arduino_tinyusb/tinyusb/src/portable/ehci/ehci.h",
+        "sha256": "152723156a26ee2ca603aac19283e2b9b1e1cff109c9b38e2488577c388dd33d",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/portable/ehci/ehci_api.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/arduino_tinyusb/tinyusb/src/portable/ehci/ehci_api.h",
+        "sha256": "b442d236a1e49d5c5512be55b3d648434b289d305ee835fbee25d551e84e3c5f",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/portable/mentor/musb/musb_msp432e.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/arduino_tinyusb/tinyusb/src/portable/mentor/musb/musb_msp432e.h",
+        "sha256": "48972e15f4bdee17007db656e6b0e454c3865dbd8e8452f9186d01a4edea1788",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/portable/mentor/musb/musb_tm4c.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/arduino_tinyusb/tinyusb/src/portable/mentor/musb/musb_tm4c.h",
+        "sha256": "a1d5ebe283dc9aa6ddb57ef78079dc8ca2318ccb7a500a5babef033df425ef19",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/portable/mentor/musb/musb_type.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/arduino_tinyusb/tinyusb/src/portable/mentor/musb/musb_type.h",
+        "sha256": "17a3f9c207fc50a05b58323a53042b636fc2b3f55b8b529dabf49bd5233b5574",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/portable/microchip/pic32mz/usbhs_registers.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/arduino_tinyusb/tinyusb/src/portable/microchip/pic32mz/usbhs_registers.h",
+        "sha256": "5cbcb70874f287878f5a7ad6a1c274eaf5a1bf41f28940852496650d6d321e3a",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/portable/microchip/samx7x/common_usb_regs.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/arduino_tinyusb/tinyusb/src/portable/microchip/samx7x/common_usb_regs.h",
+        "sha256": "bef4d0f1c4319e4b9630040d28ef5edbc86cba03000ae659f0361a47fee52f48",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/portable/nxp/lpc17_40/dcd_lpc17_40.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/arduino_tinyusb/tinyusb/src/portable/nxp/lpc17_40/dcd_lpc17_40.h",
+        "sha256": "650ecb5e463879fd33a997840291603996d14d9e687d7400502421fc0115c469",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/portable/ohci/ohci.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/arduino_tinyusb/tinyusb/src/portable/ohci/ohci.h",
+        "sha256": "1765a8c6247fdb301e38cfda91c827161f72c4c5d965f1915ea7a040e7133042",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/portable/raspberrypi/rp2040/rp2040_usb.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/arduino_tinyusb/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.h",
+        "sha256": "ad7cbc741c43207b79d1747b276cc0e178e4b5898b188e6cd9372e3ba4f5363e",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/portable/renesas/rusb2/rusb2_ra.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/arduino_tinyusb/tinyusb/src/portable/renesas/rusb2/rusb2_ra.h",
+        "sha256": "fb0bd142bca9b9cf5ec2a596f4aca9e6b6d9a7a3139a6a5164b99a46c476bc3c",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/portable/renesas/rusb2/rusb2_rx.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/arduino_tinyusb/tinyusb/src/portable/renesas/rusb2/rusb2_rx.h",
+        "sha256": "613b58a62bc40ba82a292b05937457bef32602e76200c477efd7e933f727580e",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/portable/renesas/rusb2/rusb2_type.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/arduino_tinyusb/tinyusb/src/portable/renesas/rusb2/rusb2_type.h",
+        "sha256": "633d4f4dad470f4d284b767f30d7c91c0d8115a039739171e2c108c43542a05f",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/portable/st/stm32_fsdev/dcd_stm32_fsdev_pvt_st.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/arduino_tinyusb/tinyusb/src/portable/st/stm32_fsdev/dcd_stm32_fsdev_pvt_st.h",
+        "sha256": "eb0d1b20be23d0d135145e97c4806056d8e6aa86ce89079ad6b97d163a872052",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/portable/sunxi/musb_def.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/arduino_tinyusb/tinyusb/src/portable/sunxi/musb_def.h",
+        "sha256": "5b9614ba59cb435788e560637283b7d04d9e4686fa26285d474e3d5fa75a74e9",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/portable/synopsys/dwc2/dwc2_bcm.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/arduino_tinyusb/tinyusb/src/portable/synopsys/dwc2/dwc2_bcm.h",
+        "sha256": "f06995e800ce5bd6c0f7a0d04439bd7e9bf92a8c22fb4da58a001a716e8d08ec",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/portable/synopsys/dwc2/dwc2_efm32.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/arduino_tinyusb/tinyusb/src/portable/synopsys/dwc2/dwc2_efm32.h",
+        "sha256": "47761cf637edae8ef22f6f896df84ee6f5cc0b8db952beb441a7b0ee06e4e49f",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/portable/synopsys/dwc2/dwc2_esp32.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/arduino_tinyusb/tinyusb/src/portable/synopsys/dwc2/dwc2_esp32.h",
+        "sha256": "c684b31b5e80d025962773e2325fcfdc5ece0ce08d40f7f00650040e75aa362e",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/portable/synopsys/dwc2/dwc2_gd32.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/arduino_tinyusb/tinyusb/src/portable/synopsys/dwc2/dwc2_gd32.h",
+        "sha256": "00faa8aff582273f754e5e5c29c227a42a45776c4b75de19ccf6faa818c2f9d8",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/portable/synopsys/dwc2/dwc2_stm32.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/arduino_tinyusb/tinyusb/src/portable/synopsys/dwc2/dwc2_stm32.h",
+        "sha256": "2e453176ff0a62fdd8563301fac88ba3f362e7cbeffbb041e843f19408ddb4b5",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/portable/synopsys/dwc2/dwc2_type.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/arduino_tinyusb/tinyusb/src/portable/synopsys/dwc2/dwc2_type.h",
+        "sha256": "28647e1a5c98e5fa48256ebc63b1dd461f9759c3496ce02c7f7a665db4240d22",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/portable/synopsys/dwc2/dwc2_xmc.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/arduino_tinyusb/tinyusb/src/portable/synopsys/dwc2/dwc2_xmc.h",
+        "sha256": "7f567545ccfeb8c6b12c9690387fe4def7e5b69f16de8837dfa30b460e76eb2f",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/portable/valentyusb/eptri/dcd_eptri.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/arduino_tinyusb/tinyusb/src/portable/valentyusb/eptri/dcd_eptri.h",
+        "sha256": "7210f3c578ccb5bdb583238ad4f68a2ff88d497818224f112d7b5939d0c87ecc",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/portable/wch/ch32_usbhs_reg.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/arduino_tinyusb/tinyusb/src/portable/wch/ch32_usbhs_reg.h",
+        "sha256": "761d6232a02395438f094b9e59bd9d500c69f152408880acb986ef56a75c9b30",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/tusb.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/arduino_tinyusb/tinyusb/src/tusb.h",
+        "sha256": "628d390159bae0e8151f6cb9180014cc0b01c1825a188d370101ed70748d68a4",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/tusb_option.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/arduino_tinyusb/tinyusb/src/tusb_option.h",
+        "sha256": "076d253c4448788ef877da28942346cdd7520322c988e9f9608e023a27d17509",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/typec/pd_types.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/arduino_tinyusb/tinyusb/src/typec/pd_types.h",
+        "sha256": "d102f799cf285d6ee6aaf8ca4b2a8448c420b787038035878cc332956db43738",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/typec/tcd.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/arduino_tinyusb/tinyusb/src/typec/tcd.h",
+        "sha256": "0082e2ae4906218848627cc65eda48d8cceeaf2bbef3c6324a3b2d2244c82733",
+        "exact": true
+      },
+      {
+        "upstream_path": "src/typec/usbc.h",
+        "kit_path": "framework/tools/sdk/esp32s3/include/arduino_tinyusb/tinyusb/src/typec/usbc.h",
+        "sha256": "8b774b9133badf8859cc0c5903e62f844fe2ce062c70bc3a9e06b4e8ce66f57f",
+        "exact": true
+      }
+    ]
+  }
+]

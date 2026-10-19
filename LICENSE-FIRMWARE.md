@@ -48,6 +48,11 @@ right granted directly by a third-party licensor or applicable law.
 See `THIRD_PARTY_NOTICES.md` for the material currently included in the
 distributed firmware.
 
+The accompanying `LICENSE-RELINK.md` grants additional library replacement,
+modification and relinking rights, including reverse engineering to debug
+those modifications. That supplement takes precedence over conflicting
+restrictions above for the activities it permits.
+
 ## No professional advice
 
 ADV Tarot is an educational, journaling, and personal-reflection tool. Its

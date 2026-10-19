@@ -1,0 +1,112 @@
+Copyright and license comments copied without changing their text from the supplied m5unified dependency files.
+Files sharing an identical comment are grouped. Per-file notices remain in the supplied source/headers.
+These are declarations, not application implementation source.
+
+========================================================================
+Source paths:
+  src/M5Unified.cpp
+  src/M5Unified.hpp
+  src/utility/Button_Class.cpp
+  src/utility/Button_Class.hpp
+  src/utility/I2C_Class.cpp
+  src/utility/I2C_Class.hpp
+  src/utility/IMU_Class.cpp
+  src/utility/IMU_Class.hpp
+  src/utility/IOExpander_Base.hpp
+  src/utility/LED_Class.cpp
+  src/utility/LED_Class.hpp
+  src/utility/Log_Class.cpp
+  src/utility/Log_Class.hpp
+  src/utility/M5Timer.cpp
+  src/utility/M5Timer.h
+  src/utility/Mic_Class.cpp
+  src/utility/Mic_Class.hpp
+  src/utility/Power_Class.cpp
+  src/utility/Power_Class.hpp
+  src/utility/RTC_Class.cpp
+  src/utility/RTC_Class.hpp
+  src/utility/Speaker_Class.cpp
+  src/utility/Speaker_Class.hpp
+  src/utility/Touch_Class.cpp
+  src/utility/Touch_Class.hpp
+  src/utility/imu/AK8963_Class.cpp
+  src/utility/imu/AK8963_Class.hpp
+  src/utility/imu/BMI270_Class.cpp
+  src/utility/imu/BMI270_Class.hpp
+  src/utility/imu/BMM150_Class.cpp
+  src/utility/imu/BMM150_Class.hpp
+  src/utility/imu/IMU_Base.cpp
+  src/utility/imu/IMU_Base.hpp
+  src/utility/imu/MPU6886_Class.cpp
+  src/utility/imu/MPU6886_Class.hpp
+  src/utility/imu/SH200Q_Class.cpp
+  src/utility/imu/SH200Q_Class.hpp
+  src/utility/led/LED_Base.hpp
+  src/utility/led/LED_PMIC_Class.cpp
+  src/utility/led/LED_PMIC_Class.hpp
+  src/utility/led/LED_PaperMono_Class.cpp
+  src/utility/led/LED_PaperMono_Class.hpp
+  src/utility/led/LED_PowerHub_Class.cpp
+  src/utility/led/LED_PowerHub_Class.hpp
+  src/utility/led/LED_Strip_Class.cpp
+  src/utility/led/LED_Strip_Class.hpp
+  src/utility/m5unified_common.h
+  src/utility/power/AW32001_Class.cpp
+  src/utility/power/AW32001_Class.hpp
+  src/utility/power/AXP192_Class.cpp
+  src/utility/power/AXP192_Class.hpp
+  src/utility/power/AXP2101_Class.cpp
+  src/utility/power/AXP2101_Class.hpp
+  src/utility/power/BQ27220_Class.cpp
+  src/utility/power/BQ27220_Class.hpp
+  src/utility/power/INA226_Class.cpp
+  src/utility/power/INA226_Class.hpp
+  src/utility/power/INA3221_Class.cpp
+  src/utility/power/INA3221_Class.hpp
+  src/utility/power/IP5306_Class.cpp
+  src/utility/power/IP5306_Class.hpp
+  src/utility/power/M5PM1_Class.cpp
+  src/utility/power/M5PM1_Class.hpp
+  src/utility/power/PY32PMIC_Class.hpp
+  src/utility/rtc/PCF8563_Class.cpp
+  src/utility/rtc/PCF8563_Class.hpp
+  src/utility/rtc/RTC_Base.cpp
+  src/utility/rtc/RTC_Base.hpp
+  src/utility/rtc/RTC_PowerHub_Class.cpp
+  src/utility/rtc/RTC_PowerHub_Class.hpp
+  src/utility/rtc/RX8130_Class.cpp
+  src/utility/rtc/RX8130_Class.hpp
+
+// Copyright (c) M5Stack. All rights reserved.
+// Licensed under the MIT license. See LICENSE file in the project root for full license information.
+
+
+========================================================================
+Source paths:
+  src/utility/PI4IOE5V6408_Class.cpp
+
+/**
+ * @file pi4ioe5v6408.cpp
+ * @author Forairaaaaa, lovyan03
+ * @brief
+ * @version 0.2
+ * @date 2025-06-11
+ *
+ * @copyright Copyright (c) 2024
+ *
+ */
+
+========================================================================
+Source paths:
+  src/utility/PI4IOE5V6408_Class.hpp
+
+/**
+ * @file pi4ioe5v6408.h
+ * @author Forairaaaaa, lovyan03
+ * @brief
+ * @version 0.2
+ * @date 2025-06-11
+ *
+ * @copyright Copyright (c) 2024
+ *
+ */

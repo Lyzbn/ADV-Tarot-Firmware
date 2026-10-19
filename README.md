@@ -7,10 +7,11 @@
 
 ## 中文
 
-**v1.1.3 修复发布镜像的 DIO 启动头。** 如旧版烧录成功后黑屏，请下载新版，
-以 `0x0` 完整烧录；如需选择 Flash mode，使用 DIO。合并镜像会清除 NVS
-设置与记录。本轮已通过构建和镜像校验，USB/电池冷启动实机验证仍待完成。
-详见 [更新说明](RELEASE_NOTES_v1.1.3.md)。
+**v1.1.4 发布已完成基础实机验收的可靠性维护版。** 修复普通与二择翻牌的计时问题，
+并完善历史、设置和学习进度保存失败时的状态保留及提示。无卡 USB／电池冷启动、
+两种牌阵和新历史保留已获用户确认。发布包保留当时实测的原始应用字节。
+完整镜像从 `0x0` 写入，使用 DIO，会清除 NVS 设置与记录。
+详见 [更新说明](RELEASE_NOTES_v1.1.4.md)。
 
 实机验收项目、当前结果和 M5Burner 分发核对步骤见 [发布与验收记录](VALIDATION.md)。
 
@@ -36,7 +37,7 @@ ADV Tarot 不是“按一下按钮就吐出一张随机牌”。每次占卜开�
 
 ### microSD 说明
 
-v1.1.3 是完整的 No-SD 版本，并同时提供可选 SD 资源包。
+v1.1.4 是完整的 No-SD 版本，并同时提供可选 SD 资源包。
 
 - 没有 microSD：78 张正位 JPEG 与牌背全部内嵌，逆位实时旋转；所有学习、
   牌意、体感选牌、牌阵和最近 12 次记录均可使用。
@@ -49,10 +50,13 @@ v1.1.3 是完整的 No-SD 版本，并同时提供可选 SD 资源包。
 请从 [最新 Release](https://github.com/Lyzbn/ADV-Tarot-Firmware/releases/latest)
 下载：
 
-- `ADV-Tarot-Cardputer-ADV-v1.1.3-NoSD-M5Burner.bin`：完整合并镜像，
+- `ADV-Tarot-Cardputer-ADV-v1.1.4-NoSD-M5Burner.bin`：完整合并镜像，
   可直接用于 M5Burner，写入地址 `0x0`；会清除原有设置、学习进度和占卜记录。
-- `ADV-Tarot-v1.1.3-Optional-SD-Assets.zip`：可选透明 PNG/JPEG 资源包；
+- `ADV-Tarot-v1.1.4-Optional-SD-Assets.zip`：可选透明 PNG/JPEG 资源包；
   解压后把 `tarot` 文件夹复制到 FAT32 microSD 根目录。
+- `ADV-Tarot-v1.1.4-Relink.zip`：第三方框架源码、应用对象与重链接说明；普通安装无需下载。
+- `PROVENANCE.json`、`VALIDATION.md`：固定源码、镜像摘要与验收范围。
+- `LICENSE-FIRMWARE.md`、`LICENSE-RELINK.md`、`THIRD_PARTY_NOTICES.md`：许可与第三方来源；完整条款同时收录于两个 ZIP 包。
 - `SHA256SUMS.txt`：文件完整性校验。
 
 安装命令和进入下载模式的方法见
@@ -60,10 +64,12 @@ v1.1.3 是完整的 No-SD 版本，并同时提供可选 SD 资源包。
 
 ## English
 
-**v1.1.3 fixes the merged image's DIO boot header.** If an older release flashes
-but does not boot, flash the new image at `0x0` using DIO if a mode is requested.
-This clears NVS settings and history. Build and image checks passed; USB/battery
-cold-boot hardware verification is pending. See [release notes](RELEASE_NOTES_v1.1.3.md).
+**v1.1.4 publishes the reliability-maintenance build that passed basic device acceptance.**
+It fixes ordinary and simultaneous card-reveal timing and preserves state when
+history, settings or study-progress writes fail. The user confirmed both reading
+flows, one new history entry per reading, and USB/battery cold starts without SD.
+The original accepted application bytes are retained. Flash the full image at
+`0x0` using DIO; this clears NVS settings and history. See [release notes](RELEASE_NOTES_v1.1.4.md).
 
 The [release validation checklist](VALIDATION.md) tracks device checks and the separate M5Burner distribution verification. A successful build or website deployment does not complete those checks.
 
@@ -93,7 +99,7 @@ cards leave the ring and the remaining deck is not rerolled.
 
 ### microSD
 
-v1.1.3 is a complete No-SD build and also offers an optional SD asset pack.
+v1.1.4 is a complete No-SD build and also offers an optional SD asset pack.
 
 - Without microSD: all 78 upright JPEG faces and the card back are embedded;
   reversed cards are rotated at render time. Study, interpretations, motion
@@ -107,11 +113,14 @@ v1.1.3 is a complete No-SD build and also offers an optional SD asset pack.
 Download the files from the
 [latest Release](https://github.com/Lyzbn/ADV-Tarot-Firmware/releases/latest):
 
-- `ADV-Tarot-Cardputer-ADV-v1.1.3-NoSD-M5Burner.bin`: complete merged image for
+- `ADV-Tarot-Cardputer-ADV-v1.1.4-NoSD-M5Burner.bin`: complete merged image for
   M5Burner or flashing at `0x0`; existing settings, learning progress, and
   reading history are erased.
-- `ADV-Tarot-v1.1.3-Optional-SD-Assets.zip`: optional transparent PNG/JPEG
+- `ADV-Tarot-v1.1.4-Optional-SD-Assets.zip`: optional transparent PNG/JPEG
   assets; extract the `tarot` folder to the root of a FAT32 microSD card.
+- `ADV-Tarot-v1.1.4-Relink.zip`: framework sources, application objects and relinking instructions; not required for installation.
+- `PROVENANCE.json` and `VALIDATION.md`: source identity, digests and validation scope.
+- `LICENSE-FIRMWARE.md`, `LICENSE-RELINK.md` and `THIRD_PARTY_NOTICES.md`: permissions and attribution; full third-party texts are also included in both ZIPs.
 - `SHA256SUMS.txt`: file integrity checks.
 
 See the [English installation guide](https://lyzbn.github.io/ADV-Tarot-Firmware/en/#install).

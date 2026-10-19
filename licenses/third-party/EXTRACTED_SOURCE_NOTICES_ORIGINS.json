@@ -1,0 +1,52 @@
+[
+  {
+    "component": "sdk",
+    "saved_path": "extracted-notices/SDK_SOURCE_NOTICES.txt",
+    "sha256": "aa9bf1a315248442eb0e7e8b908c0327dca7d70bd0d40deb4d39d4d0b0104d99",
+    "unique_comment_blocks": 781,
+    "source_file_count": 2012,
+    "source_scope": "Actual installed dependency files; comments only; private application source excluded"
+  },
+  {
+    "component": "arduino",
+    "saved_path": "extracted-notices/ARDUINO_SOURCE_NOTICES.txt",
+    "sha256": "664449cec8eea7bc249c08b8387e486880e78eb600186887f0d40bb34ea14656",
+    "unique_comment_blocks": 109,
+    "source_file_count": 218,
+    "source_scope": "Actual installed dependency files; comments only; private application source excluded"
+  },
+  {
+    "component": "m5gfx",
+    "saved_path": "extracted-notices/M5GFX_SOURCE_NOTICES.txt",
+    "sha256": "4c048ab0948f09becd02af0bf24e6db8d343b91c0e208c05ab6f8d0720264199",
+    "unique_comment_blocks": 15,
+    "source_file_count": 25,
+    "source_scope": "Actual installed dependency files; comments only; private application source excluded"
+  },
+  {
+    "component": "m5unified",
+    "saved_path": "extracted-notices/M5UNIFIED_SOURCE_NOTICES.txt",
+    "sha256": "18b6b2ab302b2278ae80f507d41d55666a8b97aa65b384f5cdf4b19196cc7e69",
+    "unique_comment_blocks": 3,
+    "source_file_count": 74,
+    "source_scope": "Actual installed dependency files; comments only; private application source excluded"
+  },
+  {
+    "component": "libb64",
+    "saved_path": "libb64-LICENSE.txt",
+    "sha256": "834b7afa1b3c40289a3be775d3625016be1c0d7ea7a4a26c1eb207f53dc961d8",
+    "source_path": "framework/cores/esp32/libb64/LICENSE"
+  },
+  {
+    "component": "M5GFX fonts",
+    "saved_path": "vendor-fonts/IPA_Font_License_Agreement_v1.0.txt",
+    "sha256": "272f7f805dfafd3cd9b7c5d99f38133664caacdf5b6ae1ed059f1b051ecad3c2",
+    "source_path": "M5GFX@src-5281197a6f3fba28e639f1e7f31a35cb/src/lgfx/Fonts/IPA/IPA_Font_License_Agreement_v1.0.txt"
+  },
+  {
+    "component": "M5GFX fonts",
+    "saved_path": "vendor-fonts/Adafruit-GFXFF-BSD.txt",
+    "sha256": "3e7bede50526352926c2283e640f2823d9f9f2165d1852044c4fb1bbac283106",
+    "source_path": "M5GFX@src-5281197a6f3fba28e639f1e7f31a35cb/src/lgfx/Fonts/GFXFF/license.txt"
+  }
+]

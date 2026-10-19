@@ -1,0 +1,2928 @@
+[
+  {
+    "component": "asio",
+    "repository": "https://github.com/espressif/asio",
+    "commit": "f31694c9f1746ba189a4bcae2e34db15135ddb22",
+    "idf_submodule_path": "components/asio/asio",
+    "idf_parent_commit": "38eeba213aa695aabfd6d89aa9f5078dbe5a94c3",
+    "files": [
+      {
+        "path": "submodules/asio/asio/COPYING",
+        "upstream_url": "https://raw.githubusercontent.com/espressif/asio/f31694c9f1746ba189a4bcae2e34db15135ddb22/asio/COPYING",
+        "sha256": "3b50d6b2605a7b83c76223c483502ae4b46b1b432f13be6b00f8a91de061f188"
+      },
+      {
+        "path": "submodules/asio/asio/LICENSE_1_0.txt",
+        "upstream_url": "https://raw.githubusercontent.com/espressif/asio/f31694c9f1746ba189a4bcae2e34db15135ddb22/asio/LICENSE_1_0.txt",
+        "sha256": "c9bff75738922193e67fa726fa225535870d2aa1059f91452c411736284ad566"
+      }
+    ],
+    "sdk_check": {
+      "upstream_path": "asio/include/asio/version.hpp",
+      "local_sdk_path": "include/asio/asio/asio/include/asio/version.hpp",
+      "upstream_sha256": "fdf3af0d80112bbb50de58fc14aa76d037e0485f62eec4f45df1505b19f3c639",
+      "local_sha256": "fdf3af0d80112bbb50de58fc14aa76d037e0485f62eec4f45df1505b19f3c639",
+      "exact_match": true
+    },
+    "license": "BSL-1.0",
+    "applicable_paths": [
+      "framework/tools/sdk/esp32s3/include/asio/asio/**",
+      "framework/tools/sdk/esp32s3/lib/libasio.a"
+    ],
+    "tree_byte_comparison": {
+      "matched_count": 412,
+      "mismatched": [],
+      "matched": [
+        {
+          "upstream_path": "asio/include/asio.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio.hpp",
+          "git_blob_sha1": "4d0ea107fb0b9c04e1b9b13382bcdb23e0e438ab",
+          "local_sha256": "08bdeec44e622912dea80b9a0c08141196b0b933fe10fdfa7bc6a1b9dd550fb9"
+        },
+        {
+          "upstream_path": "asio/include/asio/associated_allocator.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/associated_allocator.hpp",
+          "git_blob_sha1": "02d6538e50174226adeb501cf1757ad23b66a1b3",
+          "local_sha256": "a220031f8324809f69b04782253a86c3c4041ce1d7d921b59b1e7e0ada9e3bc9"
+        },
+        {
+          "upstream_path": "asio/include/asio/associated_executor.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/associated_executor.hpp",
+          "git_blob_sha1": "7fe6af5b02e0cd074e8628081fb77feec0213f17",
+          "local_sha256": "df10f31681426a3a738adc076a727e734b77f4767455d187f86a5a7a78f71c25"
+        },
+        {
+          "upstream_path": "asio/include/asio/async_result.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/async_result.hpp",
+          "git_blob_sha1": "a75f9e4a3488ec3c2690ecad400208a1c3864be2",
+          "local_sha256": "0ca57b220a54c03956ee73598681a6a531e18b854aeace813bc047584b6d6a0e"
+        },
+        {
+          "upstream_path": "asio/include/asio/awaitable.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/awaitable.hpp",
+          "git_blob_sha1": "890fb67e4073700e41d9e489e25df8ff2c9bf8a0",
+          "local_sha256": "c30a530025f68d852a0250d0627f366b6d8fedd0d6623001b8cd82f27681875e"
+        },
+        {
+          "upstream_path": "asio/include/asio/basic_datagram_socket.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/basic_datagram_socket.hpp",
+          "git_blob_sha1": "2d5cba39ccb7cc3bfc458af86bdd0fcc34ab2261",
+          "local_sha256": "fd6ae3d307c36601a86d3a202e7ffe0883240437815d868005f98771a155e717"
+        },
+        {
+          "upstream_path": "asio/include/asio/basic_deadline_timer.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/basic_deadline_timer.hpp",
+          "git_blob_sha1": "01adaf517273853cbf249e427c4ee65a608a517c",
+          "local_sha256": "660d33ff9e964ee590cc3b369abab8d18c293e2d25aa88b3618b375e89730c13"
+        },
+        {
+          "upstream_path": "asio/include/asio/basic_io_object.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/basic_io_object.hpp",
+          "git_blob_sha1": "faf20034422b9f82eb1d9ef457ccec27b0bffb78",
+          "local_sha256": "cd9ce6d43453795b70694a6b4fc5fa73acfeeb6367f2d766880987a6efdb5935"
+        },
+        {
+          "upstream_path": "asio/include/asio/basic_raw_socket.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/basic_raw_socket.hpp",
+          "git_blob_sha1": "64ee351cf6bbac9cca273b3ca118457fd701aa48",
+          "local_sha256": "9e77202a6f001dc7adff28e09b88ef2db48ca90452ec2a6a431fe9e80a525385"
+        },
+        {
+          "upstream_path": "asio/include/asio/basic_seq_packet_socket.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/basic_seq_packet_socket.hpp",
+          "git_blob_sha1": "11ec3542c0365aa0edc70f7e3eba9813b87d094a",
+          "local_sha256": "344da137db0afedfd32f2d0fc3f17d8f9b3683ff588c3a110b44f7d287491218"
+        },
+        {
+          "upstream_path": "asio/include/asio/basic_serial_port.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/basic_serial_port.hpp",
+          "git_blob_sha1": "b1d9c4a2de3dfae1c423832b4c30ccc8bab76c99",
+          "local_sha256": "f2510f723a0bab9527df18f8cc4175e4f7eaa0c8424b20ced32d454cd5c21081"
+        },
+        {
+          "upstream_path": "asio/include/asio/basic_signal_set.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/basic_signal_set.hpp",
+          "git_blob_sha1": "63515ae5afb06046029ee0fd9bbb3e6d807a688f",
+          "local_sha256": "7aa15bbddfbc637fd2c4c00a67757867072fc30c57ca59c16a2bb659fdaf0586"
+        },
+        {
+          "upstream_path": "asio/include/asio/basic_socket.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/basic_socket.hpp",
+          "git_blob_sha1": "665ba29fbfff3cad65d76db6e9cbd8a5b36b96d3",
+          "local_sha256": "aa8f5a1cf05a8e299a4813051abe2330c3078d177d749b69290ae8456baf5d74"
+        },
+        {
+          "upstream_path": "asio/include/asio/basic_socket_acceptor.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/basic_socket_acceptor.hpp",
+          "git_blob_sha1": "06af2619d0b30dbc6a4cfe05e9b085f82a503542",
+          "local_sha256": "ee09d4d5191e485a74deb9981b90e64f1b627c732c98fb9087ef4bab25e20c6a"
+        },
+        {
+          "upstream_path": "asio/include/asio/basic_socket_iostream.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/basic_socket_iostream.hpp",
+          "git_blob_sha1": "135f23d7ce542076d78200020149a36776a049c6",
+          "local_sha256": "1bfa4b9d3affb6b8a58956fad9d423f4a3190f0033c62d3a06c23eefb6a7d4ea"
+        },
+        {
+          "upstream_path": "asio/include/asio/basic_socket_streambuf.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/basic_socket_streambuf.hpp",
+          "git_blob_sha1": "bf36bac111cb12b693a4b1c1696d8f4a748fde7d",
+          "local_sha256": "b193c000658294083d62edfd648bf946f4a1b1b3630782fa310248b2d7f5ca2a"
+        },
+        {
+          "upstream_path": "asio/include/asio/basic_stream_socket.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/basic_stream_socket.hpp",
+          "git_blob_sha1": "f7b03c23956cc93c011d3a2b7618547e9be70aa2",
+          "local_sha256": "1e69b2f30dca40a8bb9d957442611918228f80791dc9d94c1efbc47dc2a9b85f"
+        },
+        {
+          "upstream_path": "asio/include/asio/basic_streambuf.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/basic_streambuf.hpp",
+          "git_blob_sha1": "7a106721bf7b71a6e88711c6e93a6850eeeaed60",
+          "local_sha256": "7d947067b14660de7e01df0bd75d5a488f17f78fac441207fd9d5ba4af8f6638"
+        },
+        {
+          "upstream_path": "asio/include/asio/basic_streambuf_fwd.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/basic_streambuf_fwd.hpp",
+          "git_blob_sha1": "31a4303df6c12c7c663edeecb68bbfbe59266efe",
+          "local_sha256": "0549c7c61162bcbf9e5f97b26874a4543bc428c44438d45e4c27d6cbe06ec4ed"
+        },
+        {
+          "upstream_path": "asio/include/asio/basic_waitable_timer.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/basic_waitable_timer.hpp",
+          "git_blob_sha1": "635b6687ffa9d472bcc4885a45d5cb2ae62cb63a",
+          "local_sha256": "4212206f5b76646ea2f22a501bc2344a0b3377fba87afa8bc081670333484604"
+        },
+        {
+          "upstream_path": "asio/include/asio/bind_executor.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/bind_executor.hpp",
+          "git_blob_sha1": "fbcf6588df9002479c21c3afc33da14d8198d516",
+          "local_sha256": "08e9c10340606ebdcf23ac5c9a11d6dc21221648c13309c0bd4066094531ac37"
+        },
+        {
+          "upstream_path": "asio/include/asio/buffer.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/buffer.hpp",
+          "git_blob_sha1": "b8a367503855039d53294173de794efb927b8f06",
+          "local_sha256": "2e4541ad123f86b6dc45d48ccf9e06e8adccf33d93fe602a1b73becd121a15f3"
+        },
+        {
+          "upstream_path": "asio/include/asio/buffered_read_stream.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/buffered_read_stream.hpp",
+          "git_blob_sha1": "a1cece6236d167cee5b718dad6da66d836d5b474",
+          "local_sha256": "ab04285c93ee913b0bad8528616afc02b47cf5d651d6374fe01e1294a2eee167"
+        },
+        {
+          "upstream_path": "asio/include/asio/buffered_read_stream_fwd.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/buffered_read_stream_fwd.hpp",
+          "git_blob_sha1": "666c18fa43e9e21981c3870af92e0d1e55b0cca0",
+          "local_sha256": "b28f99ae833efb0e7c9e0baccd831c08c0ea576c14ded1b483a9ed604622c8ac"
+        },
+        {
+          "upstream_path": "asio/include/asio/buffered_stream.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/buffered_stream.hpp",
+          "git_blob_sha1": "6643ff83bee1d471e741f606d970ff68f9d112da",
+          "local_sha256": "304ff8dc84fb5956ffec5f5cea4b31c91020df11c38759e8a8c77e849db47801"
+        },
+        {
+          "upstream_path": "asio/include/asio/buffered_stream_fwd.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/buffered_stream_fwd.hpp",
+          "git_blob_sha1": "86dfcbc149760a1c6a1da2b29c003f01755b5676",
+          "local_sha256": "37686fc3fae6a9d34bdeae772cac7388f15d5315642ac90c150660510df51571"
+        },
+        {
+          "upstream_path": "asio/include/asio/buffered_write_stream.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/buffered_write_stream.hpp",
+          "git_blob_sha1": "66401b443c96480956529af740bcdacf0a96e780",
+          "local_sha256": "18d165bf34acec4c2e0e61a113bfa54b6ce79091542b11881f96dc23169e008a"
+        },
+        {
+          "upstream_path": "asio/include/asio/buffered_write_stream_fwd.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/buffered_write_stream_fwd.hpp",
+          "git_blob_sha1": "370273ce1ab1a1d93f25bebc25aa653a38f02185",
+          "local_sha256": "640f0797b0bdbf4c6e26352e13aee22160b076eb8c6a0ea01aa8dd27f194b54f"
+        },
+        {
+          "upstream_path": "asio/include/asio/buffers_iterator.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/buffers_iterator.hpp",
+          "git_blob_sha1": "57aeadd683dbcac69e440139138b57b1082770d0",
+          "local_sha256": "900e2cfe8f73a1e0bcc47b3b8ccfde1279529f94d2cf6c193521bd88e2d4f5d9"
+        },
+        {
+          "upstream_path": "asio/include/asio/co_spawn.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/co_spawn.hpp",
+          "git_blob_sha1": "7afd8ea88bdacc08c302aee5dcfbadc3cd9200c4",
+          "local_sha256": "7e69597896e585d96febdb3fa452f796b45ba3c4a3d46b09496bc33cde0d3491"
+        },
+        {
+          "upstream_path": "asio/include/asio/completion_condition.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/completion_condition.hpp",
+          "git_blob_sha1": "526c034f40c4a76f299e44b48cedf01cf589d0b7",
+          "local_sha256": "69855448402b259c6b1b27d1013f104d402ec4d466496e9f64a9f02e7fa3efd1"
+        },
+        {
+          "upstream_path": "asio/include/asio/compose.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/compose.hpp",
+          "git_blob_sha1": "9d7b67224c45cfc8839509d135c0ad8802fabb3f",
+          "local_sha256": "342b76974ac3ede15aa5ce7895cea89c7894b7c82b65f09cf4399011cf817d6e"
+        },
+        {
+          "upstream_path": "asio/include/asio/connect.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/connect.hpp",
+          "git_blob_sha1": "7175f4b5f22f952760417267bf355049b357498a",
+          "local_sha256": "ac11aeab57af2d2915ac159cb2bc6b8c673679e5f66fb89654470842ad536a34"
+        },
+        {
+          "upstream_path": "asio/include/asio/coroutine.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/coroutine.hpp",
+          "git_blob_sha1": "7c8e5799aa291a4e5d0f492d0f07be24f81f91a9",
+          "local_sha256": "4476d7ade6e5f062e4455e62aa46c21c4c6374371ba202afe0cc3727a22a818d"
+        },
+        {
+          "upstream_path": "asio/include/asio/deadline_timer.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/deadline_timer.hpp",
+          "git_blob_sha1": "3f837da471a8266272ccf4ce1dcc6eb36f11d222",
+          "local_sha256": "933cc05989ed4ff976442cda0df05a2d6e0ec12c1d09fecd6700601f013cdf03"
+        },
+        {
+          "upstream_path": "asio/include/asio/defer.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/defer.hpp",
+          "git_blob_sha1": "dd5275e40d548e2bc266805efec3355554eea5a1",
+          "local_sha256": "374523c76a2a537f3590bf1493e9c336126c31eb56ffa14a4351470286dd6a7a"
+        },
+        {
+          "upstream_path": "asio/include/asio/detached.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detached.hpp",
+          "git_blob_sha1": "332ed24ff29437ec5dcfd2720033d76d98d65c02",
+          "local_sha256": "723e8e5671b867f53bf7cdd05148b253b17a44b4ae1883ce75b485b9586884cf"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/array.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/array.hpp",
+          "git_blob_sha1": "4c63f9814a9bc7a84f2ebb9655006524f662270a",
+          "local_sha256": "4546e0279f2c465fc25d7e2c91ccb8830c675c7b5f7e5ad081bd16d8780bc437"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/array_fwd.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/array_fwd.hpp",
+          "git_blob_sha1": "e44b001df7a46caf93f2689b7763d62529ea4fe6",
+          "local_sha256": "29b3fa963e0c7fb5761f047db192e07cf463f65cc6d7673a1370dd6ee9b9e417"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/assert.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/assert.hpp",
+          "git_blob_sha1": "72a96bb9664d130435d67f878250d7a8049e9a8a",
+          "local_sha256": "16d20bc01ba3f96a95744ddaaafb8c57bedc3790842e98a70d71f1a771b3cedd"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/atomic_count.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/atomic_count.hpp",
+          "git_blob_sha1": "be7b151a3812179dd6d25581672050992967ee3e",
+          "local_sha256": "e628017119cb544825f592eb18f1003ccaf0893262cb3a587e01669ecd958ee7"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/base_from_completion_cond.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/base_from_completion_cond.hpp",
+          "git_blob_sha1": "9f695f10791b3f5f75a4df46013d6e73c7b39fe9",
+          "local_sha256": "1d122fddecd73cdf897c93bd433ddfe391f98d1e9a7b98e712971ce24ee9cffe"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/bind_handler.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/bind_handler.hpp",
+          "git_blob_sha1": "feb333c2b3b8884eeafbf3accbb2c4de30e981c7",
+          "local_sha256": "8559772c2afb9e15743e75a70122b5fca86591b3d034309ef5951ae29c14f589"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/buffer_resize_guard.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/buffer_resize_guard.hpp",
+          "git_blob_sha1": "c0bb949deee0498e0ddb8c1b8f69e344a6dd09be",
+          "local_sha256": "9397bef5456ae8584f80c27512c3c0259e626be396904433ecb61dc79b8ec1af"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/buffer_sequence_adapter.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/buffer_sequence_adapter.hpp",
+          "git_blob_sha1": "d979726a31d718c3576f27212c26367cfd80bc31",
+          "local_sha256": "01d555586b2f8c4173720b59fdc9c83b86a5f2911eb95395c223816ce6de8c7f"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/buffered_stream_storage.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/buffered_stream_storage.hpp",
+          "git_blob_sha1": "9223434dbc90a6fd3225e600270f9826fc911d2c",
+          "local_sha256": "a64693d0e4e9a31daf21d67507ce9952634ab1b0046299703e0edbe90a61deaf"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/call_stack.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/call_stack.hpp",
+          "git_blob_sha1": "fae9ce64757f6297bedbf6803b3ccb66ebfe8000",
+          "local_sha256": "8fdc52690cdcb08240d388fc4fcc4d7ff94158363c8a22d2010949acece9dea5"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/chrono.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/chrono.hpp",
+          "git_blob_sha1": "7e30b0dab88ae49dd9b70e267415fc5214295da3",
+          "local_sha256": "138f55f5a5f8a2dd9c30b084d14ca80ce17fb600b1546e5c89c6aedfee9e4b5e"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/chrono_time_traits.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/chrono_time_traits.hpp",
+          "git_blob_sha1": "bd421a476f0445a53d021de132877f6c2139a575",
+          "local_sha256": "d6e655289e53ad6071d53289d6f937623c9955e27c2844e9df541e754f428564"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/completion_handler.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/completion_handler.hpp",
+          "git_blob_sha1": "fef3e767c50858206cb783e2d79620fc3c97ce73",
+          "local_sha256": "2d52bcdc898264318c325bed4739e28a93d8ecdc1235bd1ca9147f8d607d267a"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/concurrency_hint.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/concurrency_hint.hpp",
+          "git_blob_sha1": "31cfeb07289c43e40848d48257d534314fbca5e1",
+          "local_sha256": "e1d9effa835bbe7a6f6ab8de5c1f66dae724669a9fa08e606f8727c0dd560cb5"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/conditionally_enabled_event.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/conditionally_enabled_event.hpp",
+          "git_blob_sha1": "7b9c924abd6a8df527569b4d4e2711d9b7b21f25",
+          "local_sha256": "dc29e5183434600e1bcbfe3e5d71bc448a4d4671eebcab338251723997e3cc8b"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/conditionally_enabled_mutex.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/conditionally_enabled_mutex.hpp",
+          "git_blob_sha1": "a3c3ee7422842cce2390f891f756b0164c3b8a5e",
+          "local_sha256": "cc1a4acea77df21600ad525b36139b994f7ca2344cd7024fdc7e0fcc5de8801b"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/config.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/config.hpp",
+          "git_blob_sha1": "530e7666be8fd9d47eba0d1f6e57d7301aef10eb",
+          "local_sha256": "e32959dd2f41fce69a48f04393c99d27b9028042631e6e57bc1f3e52a7c1412c"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/consuming_buffers.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/consuming_buffers.hpp",
+          "git_blob_sha1": "1f6040192987eaef58daf03d7d2a51bd7439c600",
+          "local_sha256": "92154d871551c168028959a26c087b5769ed724b045ef38a948bab6fa25efea1"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/cstddef.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/cstddef.hpp",
+          "git_blob_sha1": "b34dae50c8d52c7af46d615bafe13056ba7fc7ce",
+          "local_sha256": "f62a897c5c27086440981b63e7f9eaf4071148288b368c4998e8aa3dc29c4d6c"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/cstdint.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/cstdint.hpp",
+          "git_blob_sha1": "1f6ac447c52a4fe89432a087ee52701ad601583f",
+          "local_sha256": "d4aa4ab360e94fffbab679478b87074cea00ae086081b315448342a3fc0774bb"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/date_time_fwd.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/date_time_fwd.hpp",
+          "git_blob_sha1": "3a2af4d8052949a8bd800deb2fe1aec7a253ab7e",
+          "local_sha256": "417694d7779fd84dcbeb67f7e95399095e4207b48574443916168ce573d386ec"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/deadline_timer_service.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/deadline_timer_service.hpp",
+          "git_blob_sha1": "28ee3e498268db1ffae7f1fb381b1a8e787796c8",
+          "local_sha256": "20d9809f6edb3d755e708147feb27f0ab0992de069292bed1654780b3fbba71b"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/dependent_type.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/dependent_type.hpp",
+          "git_blob_sha1": "c7b4866f1e62f2b2308aa878907fcb097b7c530e",
+          "local_sha256": "fc5cffc0c69540b7b1ecb7ce7950670cae9d34f1353b8dab24ecc46ba831aee6"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/descriptor_ops.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/descriptor_ops.hpp",
+          "git_blob_sha1": "3a14288254aa9c89ec65cd774dd42c27e9d5b2a7",
+          "local_sha256": "b537c2d111d027e269a0f31e1fe1df718ee28255da6d9dcd63fa7ec34fbf4637"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/descriptor_read_op.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/descriptor_read_op.hpp",
+          "git_blob_sha1": "c14362e5bc494b3eb87d9998847bdb7033ad941f",
+          "local_sha256": "19db9d6d6247c7f88bdaaf1e9c9616aa02a1e83b50e8bdd7af42b878a776f05d"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/descriptor_write_op.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/descriptor_write_op.hpp",
+          "git_blob_sha1": "0ba32822737a20f508c2985003d43d7783d575f5",
+          "local_sha256": "ed4d56860d21af5d515e5f91e2e9189cdb46a81b0328b32a9668e3a7cf57de39"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/dev_poll_reactor.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/dev_poll_reactor.hpp",
+          "git_blob_sha1": "41c2330b1988cb5a5e87c18e43ca121814ed6a94",
+          "local_sha256": "906580df02bc0ff8ad0da7d968b0a2356bee56d00345488463ba608f2536636e"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/epoll_reactor.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/epoll_reactor.hpp",
+          "git_blob_sha1": "248eb8a31d5ff7f06717c6908e3acc0c6b4eb414",
+          "local_sha256": "c32d16f9b1ef0d1e68fa7de8a1f65178bfa8b6fe89f2042243a2fd2ac4f9497d"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/event.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/event.hpp",
+          "git_blob_sha1": "d1c7a5750554f8749f025b0053a37253f1c9f2be",
+          "local_sha256": "e14cba1b5e854961ba12860bb77f11f9dc56cefd4d7f12094b17b3a6e0d00813"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/eventfd_select_interrupter.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/eventfd_select_interrupter.hpp",
+          "git_blob_sha1": "4dcf69817767550444e55c5031131310af1f3987",
+          "local_sha256": "fc3646f2c6466f408cefb3d43c332ea4b322b839515998eb6ac154da9b3fd343"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/executor_function.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/executor_function.hpp",
+          "git_blob_sha1": "9b3f581d67a8b8786a585bf495400f17b22d420f",
+          "local_sha256": "d61a4e9dc66ac3eff5a59f3256d1a5bc8e6d7d60d8f45b33573ec12424de80ff"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/executor_op.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/executor_op.hpp",
+          "git_blob_sha1": "7c7b253fcb968c70aee880c8a0ad896ed2c19cda",
+          "local_sha256": "0a715b43991b428280c7a10b797607b58b8161ea2550d9832cd1869de66e493b"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/fd_set_adapter.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/fd_set_adapter.hpp",
+          "git_blob_sha1": "a239ec70a3997f56e283614ce733e1f596e89971",
+          "local_sha256": "c75761bf492ae315ed9d2edabd954b312ebd21646a98e55ca3606c38b6e2b60e"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/fenced_block.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/fenced_block.hpp",
+          "git_blob_sha1": "1404837f8a77acfaf1177d39782cf9ead675c360",
+          "local_sha256": "08f322070de29ffca1e68992e72ecb5bfa9f7f6ec140930bdb19ea4b3e7967ce"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/functional.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/functional.hpp",
+          "git_blob_sha1": "ef2e4e435cc0a6e3aa956acbaf69a5cc0131c381",
+          "local_sha256": "c8869ea5fd41ce49653b587dd98a23f0363700d8a4a98376046d574cb37f60bf"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/future.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/future.hpp",
+          "git_blob_sha1": "00c22d1fd7b99979b519b1db221301687d3d9527",
+          "local_sha256": "5b1c6b453753a8c5feddb2990cd565b0fda99d10130a73bb507b457877ac8ac0"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/gcc_arm_fenced_block.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/gcc_arm_fenced_block.hpp",
+          "git_blob_sha1": "a8911315898082785b01e027f6bbd26e6c4dbbe8",
+          "local_sha256": "622ba4c7f39e93f4b0788d0d77e3796e507bb44476dee5a7b8c3c50058ef4acb"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/gcc_hppa_fenced_block.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/gcc_hppa_fenced_block.hpp",
+          "git_blob_sha1": "30376712655432ca1e5416394a695bd98804734c",
+          "local_sha256": "8418f3e66c9231d6ddba369dbda29032fa07e8641ab0caff7dfc3791aa4529d6"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/gcc_sync_fenced_block.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/gcc_sync_fenced_block.hpp",
+          "git_blob_sha1": "340db21d48d4edb63b51e840800442518a650656",
+          "local_sha256": "2c545d40aeacb14e92095bd9fe4d4dc7c68faba3bae997ef42c769b295208687"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/gcc_x86_fenced_block.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/gcc_x86_fenced_block.hpp",
+          "git_blob_sha1": "1398b2a064218f4df7b3d3e0627a8f8b064b5a4a",
+          "local_sha256": "4e6aa11920988e23f965a367226e5f4b29cf68f4be190cb163f8779253f776e7"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/global.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/global.hpp",
+          "git_blob_sha1": "9d1b58dbdfaf4d6caf9f9bd998b0a5bf68cd4340",
+          "local_sha256": "ba9718c19b61bbff932ec59629fc6e8d9aa66d9c32f05371125a96bfcb3085ce"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/handler_alloc_helpers.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/handler_alloc_helpers.hpp",
+          "git_blob_sha1": "ef3ff87ffaebab0acacb6c403ca3365b86dab7fb",
+          "local_sha256": "c1be3ccd1082658a347cd7752c04dd2e7ec1c1f93814e57b15e4db81038a1b96"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/handler_cont_helpers.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/handler_cont_helpers.hpp",
+          "git_blob_sha1": "0abefbe5a2c59bb3b08967c96ee4046444258165",
+          "local_sha256": "f7957b734bd0380921fd4f58f46a09bbe9c0415c908deaee98b3d81bd83a5d27"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/handler_invoke_helpers.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/handler_invoke_helpers.hpp",
+          "git_blob_sha1": "5bab1b0824c6a0df744a8478cca612898f344317",
+          "local_sha256": "b650f52bff76d5f93a8ea13bf565cb708d63a895f42f4a9437dbd3885dd6f605"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/handler_tracking.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/handler_tracking.hpp",
+          "git_blob_sha1": "d8276de275125acaf38d9287fda50b4375d71876",
+          "local_sha256": "b1733ecdc8b4809fa38eadb887f74b3939855798e190de650adf1d1135fb7d93"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/handler_type_requirements.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/handler_type_requirements.hpp",
+          "git_blob_sha1": "1b941ff39820239022d0c86243cb845609375ce5",
+          "local_sha256": "c722e3e1ba8abecaf9d044bb53091d9d7a42798416141d4de2f6784be7985d90"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/handler_work.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/handler_work.hpp",
+          "git_blob_sha1": "02528a71fb2b7b7901fccc4a5c60a817d23983f8",
+          "local_sha256": "6e3c70637846e6c5eee3a148c06865f7fcf0cba9ee19cf55ba7be882e9245c15"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/hash_map.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/hash_map.hpp",
+          "git_blob_sha1": "b9f9325a7b922f67a40462a84249134383e0be4c",
+          "local_sha256": "7671c9a6d4c3f879480072bbecb14e635a1f66de95525ba878530b87cb84555c"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/impl/dev_poll_reactor.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/impl/dev_poll_reactor.hpp",
+          "git_blob_sha1": "6cee8e21994fb8331f4f68d1ca84652f30f4598c",
+          "local_sha256": "986c4d4788a34bf7580e22c46962fe852050101cf726b591fd21aa1baa878fc0"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/impl/epoll_reactor.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/impl/epoll_reactor.hpp",
+          "git_blob_sha1": "ddfcb5e2b34b3941a75a59907ee4bfb0db2a157b",
+          "local_sha256": "883fc6a5fc2e07b3248efff49bc054d5cb403b1b4db187fe2a31b6b7ab07ab47"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/impl/kqueue_reactor.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/impl/kqueue_reactor.hpp",
+          "git_blob_sha1": "3028ebb22d04a83455e2277ddb69dcd106298bd0",
+          "local_sha256": "e6b7d0745c08a320971c1656959ca27cf585a9df5844b121b3b332397b832b93"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/impl/select_reactor.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/impl/select_reactor.hpp",
+          "git_blob_sha1": "46f9cef5a0640d2bdba0238c8dbfed43d91fa6cd",
+          "local_sha256": "958861b1dd2a6942f4cf4313afcea9af197a5ed47605c53615175d323a812381"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/impl/service_registry.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/impl/service_registry.hpp",
+          "git_blob_sha1": "2fac89dd9dfc35627435e0cc654b290dbf1457f7",
+          "local_sha256": "91b500017d86ffe0835579e4b63ec411ca9e92f47a3e1ab87a9c1c597344e34a"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/impl/strand_executor_service.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/impl/strand_executor_service.hpp",
+          "git_blob_sha1": "3282f20158197fff1296d246844ecb28415d9ece",
+          "local_sha256": "80fbe77e3777a1a3d4e40fd0116eddcb782f511c86211ed66045b0c293d31237"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/impl/strand_service.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/impl/strand_service.hpp",
+          "git_blob_sha1": "e873698bbe90737268addc412ef25e84891ab673",
+          "local_sha256": "d4f72d7db4579355fc20b965bce91dc9036e1ae64df5c9c31283543ce26f2ca5"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/impl/win_iocp_io_context.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/impl/win_iocp_io_context.hpp",
+          "git_blob_sha1": "1a60c6c4677dc069e63dd5e76c829f9ddb5af734",
+          "local_sha256": "563cd14a7db9779ce1f72f8999b91817616c80f9f06d9aac751ccfef0d108858"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/impl/winrt_timer_scheduler.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/impl/winrt_timer_scheduler.hpp",
+          "git_blob_sha1": "9805e2fd4466859bc639d15e8c5a575b4364840e",
+          "local_sha256": "bb48b3779383d83a7d15b537445184914dc930c5f2ac88300000843caaf8868c"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/io_control.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/io_control.hpp",
+          "git_blob_sha1": "95b5fedab6a197b373aae38ee983790603588511",
+          "local_sha256": "b655e9f42fe972f426d387e0f340b3106ef4b307e91c602e4392d2dd0d09f1f9"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/io_object_executor.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/io_object_executor.hpp",
+          "git_blob_sha1": "6ddadf23c977d35e823c94651793c152baf7b710",
+          "local_sha256": "1f1ef686d49c1bfe07c21086ba1eafa6086487ca18edbebd7193331fd3278574"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/io_object_impl.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/io_object_impl.hpp",
+          "git_blob_sha1": "6f57b669fb527301fbb368ce529ff2ab4614c24a",
+          "local_sha256": "78ebb8c26691f49faf21cc9794a8ff94454196e63384139d62b95910acc3ec88"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/is_buffer_sequence.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/is_buffer_sequence.hpp",
+          "git_blob_sha1": "330137676b35630afb856cb5f04c5d983ccef2d3",
+          "local_sha256": "3d7c9b90c9e90c09bfeeed357567b4c06860f92ff0377b85a7718802893b8556"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/is_executor.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/is_executor.hpp",
+          "git_blob_sha1": "ee11b37c6b71c1d00f7fb25b21586614a06c42a5",
+          "local_sha256": "fa279f0653cc99939d8f6a11cb5bc0511b7f577469b576a594f4e7d4518cb6fc"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/keyword_tss_ptr.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/keyword_tss_ptr.hpp",
+          "git_blob_sha1": "8812e602c1baac0ed09b82cea1c09978b39e8f67",
+          "local_sha256": "368aa3b136e9fc31ab3a1dc30b777016a654b7479c4b3172b425d4b6660d9fc0"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/kqueue_reactor.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/kqueue_reactor.hpp",
+          "git_blob_sha1": "fb3811549b29a4ee3e33adf208bb1b905096bcf0",
+          "local_sha256": "8153604b30d3ea5535898fc28a61f2cdc6d82f58e4e0b9056967395e974fb8e5"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/limits.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/limits.hpp",
+          "git_blob_sha1": "d32470d2d3505e88394cfe8e928e34f606ba62b1",
+          "local_sha256": "f9ec68ddd720db18fa4315fdd24263463944c075157f17c9b08a80949c741dfd"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/local_free_on_block_exit.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/local_free_on_block_exit.hpp",
+          "git_blob_sha1": "2b601b96d9b3cb52c5fbfb6fded16d48e8d5a662",
+          "local_sha256": "91e5831479e2d809f0477d81321bc2db112967549feb8a857819875e3c3b020b"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/macos_fenced_block.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/macos_fenced_block.hpp",
+          "git_blob_sha1": "f123384bc376a48c305b205a0053af724d86e785",
+          "local_sha256": "b8e49f3f1d8c316e973405c58c53ff593dd402381b760e88c797db07091b34ed"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/memory.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/memory.hpp",
+          "git_blob_sha1": "a11ceb9b831fe18fe9a595ed8200044e776d2c06",
+          "local_sha256": "31d2192b1e103dc74dc07acfd8e03fd4f8dff0544f0d49221c2e4e13607995ea"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/mutex.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/mutex.hpp",
+          "git_blob_sha1": "4e01cca257800391d1cdee7a249f16b2c5f93536",
+          "local_sha256": "ceb680cec992e15d82247fe4d04be4d73923d804c3f7c04b408b3cf185d1cafc"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/non_const_lvalue.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/non_const_lvalue.hpp",
+          "git_blob_sha1": "6d9afc88cb700f3cbe477feaccf52ed713617f1d",
+          "local_sha256": "49e74c56c66f63261b0e64b5ee98a7549158dfd1a84b32595e548e3db788c73c"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/noncopyable.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/noncopyable.hpp",
+          "git_blob_sha1": "2266e6717dc2741a41b225026bcdfa1a020bc509",
+          "local_sha256": "4bd74728d4bbc8420a7e2f8ab2eb0466e5de97699f430fe8c6d2c1acdfe4c909"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/null_event.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/null_event.hpp",
+          "git_blob_sha1": "507de9483d100d84582f2d329a2e1660290ee3c4",
+          "local_sha256": "b8b1bddd2fadc7570b07d85dc438384125e33294988c36185a621a8b63c5faf3"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/null_fenced_block.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/null_fenced_block.hpp",
+          "git_blob_sha1": "b136ea37925f4edf8f0ef8632d68f0c051fddd53",
+          "local_sha256": "5847bff0a03eb8921fb28528582cbe698b1b49a679dd944c3f9ead7e1024e4aa"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/null_global.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/null_global.hpp",
+          "git_blob_sha1": "1d70bea355d3a0425ab3cffacf72176dd9a9c7ba",
+          "local_sha256": "b311703106f387abe4bfc49ef72406962e126c47e2b036fb8696c50c7378f443"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/null_mutex.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/null_mutex.hpp",
+          "git_blob_sha1": "8f9666b6ab088d1e95f94c2e899a8aa945fc4f0c",
+          "local_sha256": "ffae5bc77099846fdf22373b3006faedb5b1574e22bdf89c8d117f965ef2c699"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/null_reactor.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/null_reactor.hpp",
+          "git_blob_sha1": "07b2b96ecb65837e672a984940d66c3ea5330600",
+          "local_sha256": "fc5f2605ee1801e42c19466f47746783083483ca88c18fd3729e75cebb36621e"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/null_signal_blocker.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/null_signal_blocker.hpp",
+          "git_blob_sha1": "f2f2ff2bddeeed0a926c073fdfad88f45e894a63",
+          "local_sha256": "097f850e56d4c9769ea982a0ee9d006099ac1d37b358a5b582e1d958e36048db"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/null_socket_service.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/null_socket_service.hpp",
+          "git_blob_sha1": "752819f846bc555b2eb6fcccae5a937e814dda07",
+          "local_sha256": "5729de93e7a05b25ffe80b1dc60e62da7565ad1486c5dbaeb7241f2fa37e36a7"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/null_static_mutex.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/null_static_mutex.hpp",
+          "git_blob_sha1": "231cce38ea3a380d1669847080bc4fbad41e41e9",
+          "local_sha256": "130d7405919460f4e6b4da64a638edae2699261d35f1036a682d7922c709dd09"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/null_thread.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/null_thread.hpp",
+          "git_blob_sha1": "3a4e2c0f227c03b55882a1e4b468cc36e353d08c",
+          "local_sha256": "2be7f220b13956327136730cc376f654b713349d791125d01810e725b2ca6a47"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/null_tss_ptr.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/null_tss_ptr.hpp",
+          "git_blob_sha1": "9257c3c9d3c5d2cae21ac3ebea991bf9eca6b49e",
+          "local_sha256": "c44542a7ee41ac1e5fd9581b46c0ee9bac2dd419c7e7d6898847cdea2ca889c8"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/object_pool.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/object_pool.hpp",
+          "git_blob_sha1": "3fc9cafde521c8b0a60a866b04d20a1229064a3d",
+          "local_sha256": "41046589aeb08944d068b994a6143c19674aa7c42a631f44bd22f475ffd8d0c6"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/old_win_sdk_compat.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/old_win_sdk_compat.hpp",
+          "git_blob_sha1": "b0cd2cb11b15bb68007c523c50fc3dcf635b05ad",
+          "local_sha256": "47d19f6805a294826dd51eda92022582c2207bf146c3324b4c6254bbefd09f36"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/op_queue.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/op_queue.hpp",
+          "git_blob_sha1": "de059ebef31940f32394d338fcb003d96ff62e22",
+          "local_sha256": "8d315ad266801187b37c17180a5842ad5708606ec007bad973424e82c9a01a63"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/operation.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/operation.hpp",
+          "git_blob_sha1": "aa4064b8b9534294de1811f0f3ec84f5bafc4300",
+          "local_sha256": "6b4b0482b8ee0d49d133ed5501b7abe41917795e6797f0022218cdc4c181f6f6"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/pipe_select_interrupter.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/pipe_select_interrupter.hpp",
+          "git_blob_sha1": "40173ba1b9011e6445d7d17f41affe15aabad5d9",
+          "local_sha256": "d3b70a9662d917c6f4003bfb205df738f3e7cde6d015cf8af7cc5078a0e56b29"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/pop_options.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/pop_options.hpp",
+          "git_blob_sha1": "7df258d4f297eebf24396628018df4644d99ae93",
+          "local_sha256": "7190bc395133188be3818036701d6f22032b40517686f5ba97d3b00b942ec26d"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/posix_event.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/posix_event.hpp",
+          "git_blob_sha1": "ea4132e5a98c6cb84b051163b5e0ebf64da0f2fa",
+          "local_sha256": "1046d0636a35e3adf02d5906c147ae926512739455509f3d6988fbfc139f9899"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/posix_fd_set_adapter.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/posix_fd_set_adapter.hpp",
+          "git_blob_sha1": "6ce97c0d30cc8b63872c26aaf73b1f1f6d22ad94",
+          "local_sha256": "bef790c6661aee782bb6352ba9370c571589286e92000989c4e7dd1e6a83b7ed"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/posix_global.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/posix_global.hpp",
+          "git_blob_sha1": "352eb228d3b51c877473b06e449d690bfa0f2e67",
+          "local_sha256": "877a4a6a53b44e58399d1ec9d1e7bc47bab611da4f56fcdc08e6c95f23e4c902"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/posix_mutex.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/posix_mutex.hpp",
+          "git_blob_sha1": "9849408d842eadc76a1331035b9f1c6806094f41",
+          "local_sha256": "a70dbae4d7598eaf371b407a4b3e4c083a8a3f55a1958a17a4b702b34e122954"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/posix_signal_blocker.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/posix_signal_blocker.hpp",
+          "git_blob_sha1": "6a947639148908a79b333e60686751afc61984d0",
+          "local_sha256": "7f766c6f2cf33adfe5c13947f934aab8301358357cf45df1a0e0f59cbeffce6d"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/posix_static_mutex.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/posix_static_mutex.hpp",
+          "git_blob_sha1": "7ac67ad92c040ceeb282db8e7568695c13516b5e",
+          "local_sha256": "2173cf5bf871cf8a4d0079107e35102ed6b48e4ce8fa878bf3491ee526cd8542"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/posix_thread.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/posix_thread.hpp",
+          "git_blob_sha1": "02d01b3aac89189d2e549671bba33e2967e0aa60",
+          "local_sha256": "55a9b6e93358d55e0e40366b7a2579848f7cf4e58301a9834a582b73ed910a11"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/posix_tss_ptr.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/posix_tss_ptr.hpp",
+          "git_blob_sha1": "f760c59ca92ed271d022d2b631304f707945c318",
+          "local_sha256": "e598f272e1ea28d346ccbc9885b6a63ce9be07b3e48106a5e405699a908e70f4"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/push_options.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/push_options.hpp",
+          "git_blob_sha1": "fa8725d4a3477115f08665d1c47f03587337de1e",
+          "local_sha256": "0f83eb61b79e6898971142f3dd9c351c455ead347c75a19e67118c5bc5e30d0e"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/reactive_descriptor_service.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/reactive_descriptor_service.hpp",
+          "git_blob_sha1": "7894dc7aee7ba480599b28160d18d3f0706c0dcf",
+          "local_sha256": "64af5a69fbc1662b41368889346cce26b0eeeb5970ddef788eb0d6c1e67dc458"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/reactive_null_buffers_op.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/reactive_null_buffers_op.hpp",
+          "git_blob_sha1": "9013f5766eb261ac9609183b0b7d3ed98666afd0",
+          "local_sha256": "ba43185beba47e78abc9fa25beecd073cb3707f5bcfdb75033979fb3b378a9a9"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/reactive_serial_port_service.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/reactive_serial_port_service.hpp",
+          "git_blob_sha1": "10d80738c9dc529b962f0ca9f81e338334624980",
+          "local_sha256": "937913fec9eea06fe80be75990780586a4d8c73e4a15a693b16959fdddbbec25"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/reactive_socket_accept_op.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/reactive_socket_accept_op.hpp",
+          "git_blob_sha1": "e4e5fd77bd624819584a459cdfa42db28b86958c",
+          "local_sha256": "7450fcbb15b10cd747b533f93be26f58bb3f816268fae4715f805a8424a3df8f"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/reactive_socket_connect_op.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/reactive_socket_connect_op.hpp",
+          "git_blob_sha1": "59c0fdc584d91417e39d53d372aa7253677472de",
+          "local_sha256": "a3527f6d9c451bb157bcad14ad9de95d5c4135b01e90c6a3f1d77e37e24f45d1"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/reactive_socket_recv_op.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/reactive_socket_recv_op.hpp",
+          "git_blob_sha1": "02e566ee3ab8506b4ad36bd59e2fb404dad74123",
+          "local_sha256": "80740adb42d37ea01b2a7dc4fdf306d1788d5da2421bc8b157664918b0d9fbc4"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/reactive_socket_recvfrom_op.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/reactive_socket_recvfrom_op.hpp",
+          "git_blob_sha1": "2e584681c4fb50bda565d5006926aed3f88eb2d4",
+          "local_sha256": "0a673a2da37b15245e1ad8c83d30366185679842116d4bd0221a4750cbdb7e0d"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/reactive_socket_recvmsg_op.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/reactive_socket_recvmsg_op.hpp",
+          "git_blob_sha1": "0a703b3b055f23d6d1ed5e418c89dd96467502a8",
+          "local_sha256": "36faecd741f812366267f94e7da5a0f952f062fea242503e78fca7fa7d7f76c6"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/reactive_socket_send_op.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/reactive_socket_send_op.hpp",
+          "git_blob_sha1": "4eab8165ad7c469d7bbcf52ae6a5814a6a9474f0",
+          "local_sha256": "04f3c8b24ae85e8c56b960d6ec0e162b5905c9d85e1a8741b30bcee4a6d5f0e1"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/reactive_socket_sendto_op.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/reactive_socket_sendto_op.hpp",
+          "git_blob_sha1": "55fd1c817bd98175d35aed5e94c4710637bf8e7e",
+          "local_sha256": "1389536b5a7f01a9941643da67228ae0af6aad60dd573450600681e66ba61ebb"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/reactive_socket_service.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/reactive_socket_service.hpp",
+          "git_blob_sha1": "52029674d32d96015ab367fbe320c622fca5926a",
+          "local_sha256": "08ea5696f63d7c64a604a9796c25203f4244eb8d5b72537dffd74b1bb04ae229"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/reactive_socket_service_base.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/reactive_socket_service_base.hpp",
+          "git_blob_sha1": "f9683283105e61b2d49425a3db384f30ea023161",
+          "local_sha256": "d3327664c2cb7fbc2cb5461c49ecf85f76bc014745c506e9f1960ec50ab3023c"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/reactive_wait_op.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/reactive_wait_op.hpp",
+          "git_blob_sha1": "eebcfd1da6dd45dd2902999b1d074216e092215d",
+          "local_sha256": "cb3bd4212a2e84078e0731a9c2e0a70ca61888cf6eca5491b053776d1619e181"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/reactor.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/reactor.hpp",
+          "git_blob_sha1": "441fc473f0665e278c5d7f4f376cc282a8e8f033",
+          "local_sha256": "8a8fa17d65701ee04d1b419b7ff0d87744a74140e740c77618225105b22c63b1"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/reactor_fwd.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/reactor_fwd.hpp",
+          "git_blob_sha1": "ac678294f612db6529283ca85f8bb3a68dfad133",
+          "local_sha256": "1ef409c01a2ef02c6648a4c77c0030670b365c7e5fd1f9ce0e50f414460f8cc5"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/reactor_op.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/reactor_op.hpp",
+          "git_blob_sha1": "d2442481fbe3892cf5b20fd1f3ae0266a3df94de",
+          "local_sha256": "081cc7d4b8c103dc2750f6ca0ee6031aeb9688fe7f95272cb4bb60ee0ccf8ac3"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/reactor_op_queue.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/reactor_op_queue.hpp",
+          "git_blob_sha1": "2ecc3809d32b0ecdd256b563a8fe61a69748c0ee",
+          "local_sha256": "72e9ea9c7b0aad22966d3f1b7872ff07580c67b679a2d69503006379a8b11ea5"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/recycling_allocator.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/recycling_allocator.hpp",
+          "git_blob_sha1": "243dc9bc6695f367e10a25744a9cfad3edb2e3be",
+          "local_sha256": "206b1d069d7998e61e1256f3c1744ffe3099989b25b7f44b852f75a7533960d3"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/regex_fwd.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/regex_fwd.hpp",
+          "git_blob_sha1": "e0d0ce590f868640df0ca9eae056a343d24dd7dd",
+          "local_sha256": "8a8ee1826dacdd631721afc404e0ea6c5e8f8064894e34f95fed53a549eb5f06"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/resolve_endpoint_op.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/resolve_endpoint_op.hpp",
+          "git_blob_sha1": "34cb7f7993b6a9a701f1924e28936a82f06950d9",
+          "local_sha256": "34e44d6b95abc6576f06143496bbd4b070d5521b892e2bd4af4633dd2b435776"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/resolve_op.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/resolve_op.hpp",
+          "git_blob_sha1": "445cf561fd7695df20841183453bfa7f10292226",
+          "local_sha256": "b23b35d849c913f822f170f7e32303a776d7aeaa2dcb55fa9615ad7f135b224d"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/resolve_query_op.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/resolve_query_op.hpp",
+          "git_blob_sha1": "e5f768f4e05145b37a8d1e1c6af43cc998899136",
+          "local_sha256": "429a1b212253d8549a3384d4c71670a29f3fa6a6041715ba63324159378c1946"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/resolver_service.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/resolver_service.hpp",
+          "git_blob_sha1": "c856cf89bc67c21d0aae2a5e8a6c41e9f6390e65",
+          "local_sha256": "1ab6b17654b549723c5279726eedf48bd5ea0b7d2840e023d468053edede18a2"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/resolver_service_base.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/resolver_service_base.hpp",
+          "git_blob_sha1": "5b1f23c64ee948800c89826cc30db7f9be2f15bc",
+          "local_sha256": "4b665269ab3dbb1179423387e85f14a67dfd19659b999bba9e2ee6ec45db8d62"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/scheduler.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/scheduler.hpp",
+          "git_blob_sha1": "0d721e80762bc1cfdb0d6dc16d3059322208b69d",
+          "local_sha256": "debf11a80e472c52ff8098246adcdb105fc54d05739ad965da8d9a3e7f6b887d"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/scheduler_operation.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/scheduler_operation.hpp",
+          "git_blob_sha1": "6f4c5df64c2d341ea6d0ddff182e107a9234b3d6",
+          "local_sha256": "adeb2ed30e815ba641edffa06977057ae3d2788ed45fbac1584352b08ed6b4ce"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/scheduler_thread_info.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/scheduler_thread_info.hpp",
+          "git_blob_sha1": "202ac0a77fad8503c1a6bffe976d522b7c095411",
+          "local_sha256": "4118ffe5cedfe635f3cecfde986ccc56d58fc631ff67f4520cc6fb0358b80294"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/scoped_lock.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/scoped_lock.hpp",
+          "git_blob_sha1": "94d49666abff8facb1c21d78906a538f37343349",
+          "local_sha256": "4c06b70a5de8e3fe1dc4e9ec02c65f4a06e612a1b9389d3dd7fd30f6089b390b"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/scoped_ptr.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/scoped_ptr.hpp",
+          "git_blob_sha1": "1fff74182d2914b893244c6a6dbfbae0497b27be",
+          "local_sha256": "59d0619676227c9f45fef0d8d1aa9e572db8599b018ad6dc0a9d377a83774f42"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/select_interrupter.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/select_interrupter.hpp",
+          "git_blob_sha1": "e77e29726eed79bde21a36ee97d76f20504b23af",
+          "local_sha256": "030cc96024f0485d0d6a43a417671d08385aa04fbe5728a069db100f151b1f05"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/select_reactor.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/select_reactor.hpp",
+          "git_blob_sha1": "be4d02cb5b7bb44dc72183bf3fdb3ffc06b4dd4e",
+          "local_sha256": "74c17734e5ad4a57e875fb48389fb01e799d532a14c5b7730c1f2835a6626e62"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/service_registry.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/service_registry.hpp",
+          "git_blob_sha1": "edced4039482e99f7f76fa90640a9f18a1437efe",
+          "local_sha256": "f83aae143ef32c65c34923838c979b190638479d940375575090134d21c2f951"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/signal_blocker.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/signal_blocker.hpp",
+          "git_blob_sha1": "4fdfc6a8a27b6a5a6adb15af5439403da49546bd",
+          "local_sha256": "6698a9fd484031c09b8189fd5dc29b21c31b4dbe6855a6236f37b649280136f8"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/signal_handler.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/signal_handler.hpp",
+          "git_blob_sha1": "e5176f009cc089b2a380f3ef3aafa3a545e43f3d",
+          "local_sha256": "e3ba57941eb0d513666958524237839daba7dd99126fbe210114419f7ae5e37b"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/signal_init.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/signal_init.hpp",
+          "git_blob_sha1": "8d99197dcfbdc401002782f4aa8e5624bee7e9a0",
+          "local_sha256": "11c46209cf4012954539ec1830edf0543f6bcb2ac404e1402e74262b4268f768"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/signal_op.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/signal_op.hpp",
+          "git_blob_sha1": "7ca5cbd53b013cf9514ba9863b7d625fe6fa3961",
+          "local_sha256": "27639903499d8fe3e993fd6781e4e28bbccdb4541f158e8c2b9fb0f83e22bb6d"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/signal_set_service.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/signal_set_service.hpp",
+          "git_blob_sha1": "d4efe9c5f9036a369622e561302d5c3933a3e5b0",
+          "local_sha256": "0dad8182162e968ed5d0b0864506306702ccb6d0f2d318979756c768190384ad"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/socket_holder.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/socket_holder.hpp",
+          "git_blob_sha1": "aaa6e2d605e0a861c60e8e2186e1b63b20030274",
+          "local_sha256": "8e74065e59efa2c4e0cfc8ace98aed72924319eb07ccd8f7599f05bdbd72d85d"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/socket_ops.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/socket_ops.hpp",
+          "git_blob_sha1": "4b94e1f066f7c25c932d3436b145eaa13826a669",
+          "local_sha256": "2dbf844cf3877c6a2592590374752499b795e9c088d829cd31861648401f6244"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/socket_option.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/socket_option.hpp",
+          "git_blob_sha1": "682c9aad46037b85fde94dc6ca000a160879e2e9",
+          "local_sha256": "6b23dba3c49228305ce9d31a8108fe46e9885607100a3979526ad3e4fca8995f"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/socket_select_interrupter.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/socket_select_interrupter.hpp",
+          "git_blob_sha1": "92ad167df55871d1f634d4f1aeca8e61047ae227",
+          "local_sha256": "bd24d0626f3f220a53d47d7185893979c4a4f16e151bd2d808907c080cce9059"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/socket_types.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/socket_types.hpp",
+          "git_blob_sha1": "1e387070c9b9d0340f815152e0ee062d4aca748e",
+          "local_sha256": "a28a56e784a8027b6e27464752b28044cd70e8b3d2d1b01ab1f3afea68eacdc7"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/solaris_fenced_block.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/solaris_fenced_block.hpp",
+          "git_blob_sha1": "f7b9f94fbae06ac929962169d8766c683f59d2f8",
+          "local_sha256": "83a6f44985e8f86bfbbae840e7d37f205ccf441425d3ae9bfa3892686b2886f8"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/static_mutex.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/static_mutex.hpp",
+          "git_blob_sha1": "6e598e6b6e380e843243ae331677d95101fd5bcf",
+          "local_sha256": "eefbb9a0e5c0e02acebbade58d4a0e0662b548c28fdaada7c3634ddd50693c3c"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/std_event.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/std_event.hpp",
+          "git_blob_sha1": "4252a9e7c5e78a7a788e68905a687e09f1aaa2e0",
+          "local_sha256": "c040b8cefb40b1b908c19297b4fe3c60629b6a6aabd5aed74b255b318cba6860"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/std_fenced_block.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/std_fenced_block.hpp",
+          "git_blob_sha1": "a6ddbc81f16ed1576307c427a46428198d890081",
+          "local_sha256": "ed2ef41d110519400acce600e6e2bbb14bc1ac131319eab84f4e3b74821a9a59"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/std_global.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/std_global.hpp",
+          "git_blob_sha1": "0b7eec0f014683994f00b1f89ef5f63830c8100f",
+          "local_sha256": "a147d8c62f992878d0b04aafe27611f8f74121507626cb822441ef53192bcf08"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/std_mutex.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/std_mutex.hpp",
+          "git_blob_sha1": "69509a3923fbd21f09a6fd6b2f0f1669fa63cdfe",
+          "local_sha256": "6d36e6aae57e6354bbf19c55e42b90bd4f6e427c4a82620cff5c5517432f2321"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/std_static_mutex.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/std_static_mutex.hpp",
+          "git_blob_sha1": "c92acf985e439998156b76b1e0a534b350b686bf",
+          "local_sha256": "d8febbd1aba1d263a5b6a5549ea747add22f208b597004be85d9336c87733a05"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/std_thread.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/std_thread.hpp",
+          "git_blob_sha1": "a73a6f924aefe4288208e7322995bbb590a74c2f",
+          "local_sha256": "fa7eaeca9aaacb6c561954eb879a0bbc4f34ce66de37cbda012549825bf8a57d"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/strand_executor_service.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/strand_executor_service.hpp",
+          "git_blob_sha1": "dd513cbe8ecb5b95fe768e71abe75afa7499cac6",
+          "local_sha256": "65e7cace9974767415d47b214ec515cff1bc36b3c069be7a667a9f19d599f36d"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/strand_service.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/strand_service.hpp",
+          "git_blob_sha1": "2c9c7c9d66cd49418d3651aaf699ccd7f97f8b4c",
+          "local_sha256": "fdaac90d3c280e0fce50123e6646ca71e9493bc062050d7fcddb8a595dd11857"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/string_view.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/string_view.hpp",
+          "git_blob_sha1": "d59bf8a63a982bd7062dcc0da304335046c93710",
+          "local_sha256": "f2cef43895bfdba679a39f2c495ab0f8c3f6964b3c64b317544ed9014e256dfd"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/thread.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/thread.hpp",
+          "git_blob_sha1": "fe0980468f250409b01b6d74df06074353802ae4",
+          "local_sha256": "4a8a4bfcd09d48aded4cd63a8cae3388f286b86ba91a46f50e24a542990d7af0"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/thread_context.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/thread_context.hpp",
+          "git_blob_sha1": "be3e8390353eb4cc4b74c21ae0084cfbdf978679",
+          "local_sha256": "a2642abf80105ae5eabbbb7cfa385dd19fde087bf966bf6ea9c920c94d400f37"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/thread_group.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/thread_group.hpp",
+          "git_blob_sha1": "11bc14cd2996d734956a1e55cfc201df23bdff68",
+          "local_sha256": "70f66c4dc9a975ebd8b9ad9439070a61cb73192759d59ce1353a48dab74b5328"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/thread_info_base.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/thread_info_base.hpp",
+          "git_blob_sha1": "8bc809b6381c1a9b5a2fdec49f8da239c678c863",
+          "local_sha256": "6f702a0a896e5747f50318ef26ae92f2d4d501a6370a340912bd6fdc427f3b0f"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/throw_error.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/throw_error.hpp",
+          "git_blob_sha1": "cbeb77aee962f3593c23a796348f73beb409c225",
+          "local_sha256": "a4234dc1bb3009c7065356902b6c3ddf3b1443ab74031572000c88e90dd67e80"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/throw_exception.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/throw_exception.hpp",
+          "git_blob_sha1": "1680aeebf7c0d55a19776fb1815b7314d8578180",
+          "local_sha256": "b68cc6e992b0106cfde3588b15d2895efc6dfa044434d7ee78fa82f9c3ae698c"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/timer_queue.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/timer_queue.hpp",
+          "git_blob_sha1": "015d0cd577f4b45d0e9b4f35b0f5ad7366807a4f",
+          "local_sha256": "66c3702072487e666fc97b00b1acadf9347779dbe0068d220ef7ce1410fecf62"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/timer_queue_base.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/timer_queue_base.hpp",
+          "git_blob_sha1": "f0ea3598c00f35dc5c90d32a8f67652da2773597",
+          "local_sha256": "32e53b26c9093a4d7d1cee03227865d12535360ddd1d2644b5190a13d389a990"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/timer_queue_ptime.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/timer_queue_ptime.hpp",
+          "git_blob_sha1": "a67adeb8e3c98e6bc9f29eb186e843dd81feafa1",
+          "local_sha256": "9d76754339e0f5742b4510ff62e28c86693c915edf1a42f20e9056efb8cd7084"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/timer_queue_set.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/timer_queue_set.hpp",
+          "git_blob_sha1": "51a507c8bc730f3bcb318f530f35738fe4a64867",
+          "local_sha256": "ae5f2df59f1a16aeb7f869c9858b2af351ee38de16087bff127a3c0bec7eea47"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/timer_scheduler.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/timer_scheduler.hpp",
+          "git_blob_sha1": "471e7386415a3475274e048f57f4c541948e5596",
+          "local_sha256": "14ad447ca482b6c7edea94ae3ed5f63e6f851ab1e9c65a31cc28b3328b8dd0aa"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/timer_scheduler_fwd.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/timer_scheduler_fwd.hpp",
+          "git_blob_sha1": "eaf07df9b49b3590728b773c534fd42dc10cb07e",
+          "local_sha256": "a90061663492427508bf09e3fdf12ac0f14cd5589ae33a5aa1bd577d8d599ae7"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/tss_ptr.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/tss_ptr.hpp",
+          "git_blob_sha1": "d9903dc57476c3a0786fc2dc2124d811f484a608",
+          "local_sha256": "3d3552eb54ce2b9a446c9aabd53a1b7b1db60ab973f9997bc3fef075e245b916"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/type_traits.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/type_traits.hpp",
+          "git_blob_sha1": "0f7ee6e3e73075ebf9e77797c39ec0c5b90bdff5",
+          "local_sha256": "c62dcf56989ae22eeeea5bebc4c515a2331f73e5ea678df6017ddfc24d015f95"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/variadic_templates.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/variadic_templates.hpp",
+          "git_blob_sha1": "cd52c04fc6b7d4ee9908a756a2174ad86720260b",
+          "local_sha256": "dbcbc371020724c60bd0f102b4109fe9c17c8cc04c585f0557d5643714cce9f5"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/wait_handler.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/wait_handler.hpp",
+          "git_blob_sha1": "be49a966c29705e4546527f8e067feab7fea6ed5",
+          "local_sha256": "83aecd727f8e7940b36eb58bb68bc4008786d25e8c64787e9cf162cb4e49c752"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/wait_op.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/wait_op.hpp",
+          "git_blob_sha1": "a443cebd2f8bf657fda38c898d09d50d692f2feb",
+          "local_sha256": "d775647c6c981617f52ef120d7ce27bc305a296cc0c213a260b6ac110acc1208"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/win_event.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/win_event.hpp",
+          "git_blob_sha1": "678b290ffe667b1660e69d56dd4f96920d87db5f",
+          "local_sha256": "bce12b41f24c57bd50986d4469cce2cb8a8bdcd7a9a4bdeb604152b6f610c906"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/win_fd_set_adapter.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/win_fd_set_adapter.hpp",
+          "git_blob_sha1": "cc8bde9c76c37acc215ef100386138714a5459b7",
+          "local_sha256": "b38c6667f2ce278c65576013bbe71c25d2d5d58d3844c55ac1122665b165d636"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/win_fenced_block.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/win_fenced_block.hpp",
+          "git_blob_sha1": "9fa84653f5b59d019a94f0327bc66e01b1c50046",
+          "local_sha256": "2a61af5dc72b0551e270008da92b009896f9fdf6b8523263d21200a4ce703fc4"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/win_global.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/win_global.hpp",
+          "git_blob_sha1": "2d5ce754e211734974e02f0a6176fb9128a35232",
+          "local_sha256": "ee1f1573e2b0a59fa52b38cffde971c30a9c5f5582bd9c9e33e5fe1aeae05ef7"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/win_iocp_handle_read_op.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/win_iocp_handle_read_op.hpp",
+          "git_blob_sha1": "a54e360847c7ad3732dd671d9e22ada6b58ec51c",
+          "local_sha256": "7b8b4e007276da33a0d4a014d8ec8eabd52af66ab162b9520297f0c9f821ba83"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/win_iocp_handle_service.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/win_iocp_handle_service.hpp",
+          "git_blob_sha1": "632745492955ba91740b0ca25aad20e69ad9b38d",
+          "local_sha256": "fd5d6783f4d4ec7fa34780da99687163dd9719d33a45c189d5b9244f9f6915c5"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/win_iocp_handle_write_op.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/win_iocp_handle_write_op.hpp",
+          "git_blob_sha1": "9bb88141c3303797c533e045d0b2f06747b9a891",
+          "local_sha256": "61df7eab68ed6ee3f113e120c449aca2d224cfcb4c9377709eadfa1bfd62d2b3"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/win_iocp_io_context.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/win_iocp_io_context.hpp",
+          "git_blob_sha1": "e20941648033656324012998ca5ca480de280a8e",
+          "local_sha256": "5c12118782cb065a3b5783c19f103f34d680a678b324adb79a81cf5291f8577c"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/win_iocp_null_buffers_op.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/win_iocp_null_buffers_op.hpp",
+          "git_blob_sha1": "99a31665732de0276ebb7b46cb2de9f6a7e346b2",
+          "local_sha256": "59d9a9d98cdae971cb820c60c320905135d3ba81605264b7c95c56519d6960b1"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/win_iocp_operation.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/win_iocp_operation.hpp",
+          "git_blob_sha1": "34d31987f27d2fe4463d6deed1e4a960c7752eb1",
+          "local_sha256": "f4a9051d75486b2d6f8f10bb1be2f95df6eeae11561a2c2c18946cf5c9972dca"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/win_iocp_overlapped_op.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/win_iocp_overlapped_op.hpp",
+          "git_blob_sha1": "5a28acf019cdd61a6765f7067c480095e980c291",
+          "local_sha256": "f0e7905fa277c2c630b7786a4be7a284fb51b74f5bd254b0692b559016a5e425"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/win_iocp_overlapped_ptr.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/win_iocp_overlapped_ptr.hpp",
+          "git_blob_sha1": "e1ee5b02190e469ce8ea34297b51cc78b9a2a2a0",
+          "local_sha256": "63d8a21d50f3142ea4ae91be6577aa9e4e6c0f11fd1385e09dc4c8b8247e0ea9"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/win_iocp_serial_port_service.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/win_iocp_serial_port_service.hpp",
+          "git_blob_sha1": "06ef407b003577257913d075915738fa0c048cf7",
+          "local_sha256": "445b2b122f04504b1be2481cb6399da894de9a8d901e29d0bf1adf1a45ae829e"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/win_iocp_socket_accept_op.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/win_iocp_socket_accept_op.hpp",
+          "git_blob_sha1": "c7da5c1dc0101bfa89dcad854b8351e58dc014e5",
+          "local_sha256": "28774b3c56f3211c7b513c8c7460c14210ee159733730cb431dd5f406e40a870"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/win_iocp_socket_connect_op.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/win_iocp_socket_connect_op.hpp",
+          "git_blob_sha1": "a836351d3e92d97c32c0c7239e375fe3fcf4ab47",
+          "local_sha256": "7b403cae6c50075f0dca976ea915bb0492d2042f3b731cd9f08bfc94a04aa105"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/win_iocp_socket_recv_op.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/win_iocp_socket_recv_op.hpp",
+          "git_blob_sha1": "72817052e4b230c19cc60aa6d86be4452592f476",
+          "local_sha256": "5e4e525894331b31ba31b29a895e433423589bebab007db134df56db7a1a8c90"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/win_iocp_socket_recvfrom_op.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/win_iocp_socket_recvfrom_op.hpp",
+          "git_blob_sha1": "551a8825c5da49a28438819c4085eb6eb88c8a6d",
+          "local_sha256": "aee7f910886bc53ade56b71a484ee85cf370462c9dfb8a1eb19565acf3da0163"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/win_iocp_socket_recvmsg_op.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/win_iocp_socket_recvmsg_op.hpp",
+          "git_blob_sha1": "8fb5d14c3b9b5e19fb84136695dbb99e4099d2a6",
+          "local_sha256": "973d14ca62f2058c8531a5aa083e4caa2f976081777855fdb6818f2d1a991a86"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/win_iocp_socket_send_op.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/win_iocp_socket_send_op.hpp",
+          "git_blob_sha1": "45d7117c874ce202804330ef55da31ba74a40d31",
+          "local_sha256": "4f356984081b477acf398a60d1fa9760e967e1bba534bc4a850c789b741ef69f"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/win_iocp_socket_service.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/win_iocp_socket_service.hpp",
+          "git_blob_sha1": "efbad6f68050869343e10d866d068e5d7b6d92b4",
+          "local_sha256": "37afeed7bd223cf5bee543fcecbfaf777fcd906c6d944267c0071f887d594c6b"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/win_iocp_socket_service_base.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/win_iocp_socket_service_base.hpp",
+          "git_blob_sha1": "0f35c81fa4f39fb46b5a3add91b6f6003bc93f33",
+          "local_sha256": "43a7bbfe989544175867a557d323c305bc55c7d5f19c7457d9dfe5e2006f55a8"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/win_iocp_thread_info.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/win_iocp_thread_info.hpp",
+          "git_blob_sha1": "ccb63a5525ded0bc6a5396cbef79d3b90ada2124",
+          "local_sha256": "970f5dd47c8e5fdbdb8b4d74cf2e43929c48218c2c49209ba5d5a13493120d1f"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/win_iocp_wait_op.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/win_iocp_wait_op.hpp",
+          "git_blob_sha1": "528dc3c058de9b3388f86aff63f88bd8a2112623",
+          "local_sha256": "44aef7dff1c85e3eaac118e782c621b5c39137595633dc38aec7db8239e7bf78"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/win_mutex.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/win_mutex.hpp",
+          "git_blob_sha1": "769e60aa8d8b3638220808542841277832c89fe7",
+          "local_sha256": "a86a2b60894fee64e2871c0a1318802a3ea76a804c6556b91617e3007c3926f1"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/win_object_handle_service.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/win_object_handle_service.hpp",
+          "git_blob_sha1": "3decb0dbc2ba019c6f4e75cd1b0e4ce877a3641c",
+          "local_sha256": "215d5b9bfd05566b145694347bbf9499747a1a60b051ac4424498429e11de855"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/win_static_mutex.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/win_static_mutex.hpp",
+          "git_blob_sha1": "81eda8224c35162db121f5c151f079c244c9fddc",
+          "local_sha256": "dfaec2fa0e639b64c59178e9e1b5f6be760ca27df074062dd1fd8d0799d74aa5"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/win_thread.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/win_thread.hpp",
+          "git_blob_sha1": "ddba812ccc2a2fce495e71979fc204c25afd4d12",
+          "local_sha256": "4bcd604a663e7466c759e3a6a10595542307bd61f4bc6f8253fe136567bbb4ef"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/win_tss_ptr.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/win_tss_ptr.hpp",
+          "git_blob_sha1": "dbe8b78e9bafc379863c31bfd0b1df61efc47449",
+          "local_sha256": "f4f57d85f9a515b0025e6add05dad33b382e888c0aa33cabd765f2205573abd3"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/winapp_thread.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/winapp_thread.hpp",
+          "git_blob_sha1": "aac44cde971c5880d165c34e0db99d22b062f042",
+          "local_sha256": "4e5f118decb13471408a9057ea236a98c9c5017dddb87a41af2fa5446fd16a73"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/wince_thread.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/wince_thread.hpp",
+          "git_blob_sha1": "c23866441a0ab6fd351af8e170429614cd13fa91",
+          "local_sha256": "03c4f7542d6581d835ac99bab3dc5b2ba0148efe9aebc51da9e5c9d4bf65f58d"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/winrt_async_manager.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/winrt_async_manager.hpp",
+          "git_blob_sha1": "cf624bafb6958f6d365c6453f80233e213124c8a",
+          "local_sha256": "fe787eaac8fb5d17a2b2fb8547218972e542f7e2c04d03a9b66f50013ceeca4e"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/winrt_async_op.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/winrt_async_op.hpp",
+          "git_blob_sha1": "f90f26f9f11b67013fb54e97918073c0977c698d",
+          "local_sha256": "43fcb469274e92a296ce5690a9268b366d4905e5adca9ec0618dcc0faa4e680b"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/winrt_resolve_op.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/winrt_resolve_op.hpp",
+          "git_blob_sha1": "c6e9bc7b3d6a580b8ce99f7ef93bd58b6cf180a9",
+          "local_sha256": "74066fc588fc1b224e8de0bf03793029b8de7d78dd30cb9112093eace31aeb01"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/winrt_resolver_service.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/winrt_resolver_service.hpp",
+          "git_blob_sha1": "1f4b70a28e155624ed14535216b06454a48b1439",
+          "local_sha256": "2843380486d5369ae0e115c959d1cb3f0b97d2cdb1a3aa1e490cdcbdde728dd6"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/winrt_socket_connect_op.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/winrt_socket_connect_op.hpp",
+          "git_blob_sha1": "c5ef90f8edce95ce7e5b9b41c3e2a73c9814ab54",
+          "local_sha256": "3e48c83e04fe74b675f5bd6a23c5b87de8571dfc0d8cbeb170979217e5a4573c"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/winrt_socket_recv_op.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/winrt_socket_recv_op.hpp",
+          "git_blob_sha1": "613edab0c6e450ff3cb32fc08bd5245fa44c1f8a",
+          "local_sha256": "36dc4822e163e95e4b95995acc02c798ae5b01581638d8468b4d8e82d6d90b28"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/winrt_socket_send_op.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/winrt_socket_send_op.hpp",
+          "git_blob_sha1": "c19254a29a8c8f732b9e0525edbba740052a56dc",
+          "local_sha256": "4b2749fdf4942761794dab08d15d0345afbbfeb0a682be31538be42456138f7e"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/winrt_ssocket_service.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/winrt_ssocket_service.hpp",
+          "git_blob_sha1": "2b3163dc9ee56dbe12607190a81ff853bb68b7e3",
+          "local_sha256": "8e96b26218615d00f948512606c9fb199fb7c2ba141aec94732f53a5e860ec94"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/winrt_ssocket_service_base.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/winrt_ssocket_service_base.hpp",
+          "git_blob_sha1": "3c9be6ed000e249e2833a1b2921abcb18af24719",
+          "local_sha256": "6d98b2e80161792be1c305a3eaea4f145b231ee72e9723fb5ab191729dbbd9ab"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/winrt_timer_scheduler.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/winrt_timer_scheduler.hpp",
+          "git_blob_sha1": "9f1bb8f34234cad9ffc0196f6b3b44365a4ddf51",
+          "local_sha256": "2530a892b70bf823fe382ceb7e1b4ffcdd47ef83707a9442cbf8b8fe6f61eaac"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/winrt_utils.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/winrt_utils.hpp",
+          "git_blob_sha1": "bfdccb4dbf98a6f47e7fb4a34031d158250c9148",
+          "local_sha256": "941626c00474a9242c7560732f92ebd3c555bd0dcb747c68e24e4be94d8d1d5e"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/winsock_init.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/winsock_init.hpp",
+          "git_blob_sha1": "f95b98435f6a0a8608428a4de6a762ca0389c5af",
+          "local_sha256": "bf6a30c29c324e81f41643b9053abf9eeede750d58b58c3ebc0714c529aa5885"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/work_dispatcher.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/work_dispatcher.hpp",
+          "git_blob_sha1": "243b8e4832713fe66e2dae3955e7d1b98e2edad5",
+          "local_sha256": "f86d8ede1046f26525c5099f065e27af543eadb0a693c9def3d0ded6be30d201"
+        },
+        {
+          "upstream_path": "asio/include/asio/detail/wrapped_handler.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/detail/wrapped_handler.hpp",
+          "git_blob_sha1": "c9387d244f01732934acb06b94eb1e7046852efc",
+          "local_sha256": "1091c8b07ce5e019ee5830cdd712e6f4fc5a3f4361416f201fd3420971f53540"
+        },
+        {
+          "upstream_path": "asio/include/asio/dispatch.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/dispatch.hpp",
+          "git_blob_sha1": "27244ee7323b57b4872efadd34737696413d1cf4",
+          "local_sha256": "91ea958a939028fbdaec05c30dc0dbe879802b456c040e92a472ed87daf442d1"
+        },
+        {
+          "upstream_path": "asio/include/asio/error.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/error.hpp",
+          "git_blob_sha1": "c70c52fe75714ef74114cff939189052ff020a74",
+          "local_sha256": "322aefd88936a3e7fe3e7258a14fcaf76d0063a46a4962b03522382a7730b1ac"
+        },
+        {
+          "upstream_path": "asio/include/asio/error_code.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/error_code.hpp",
+          "git_blob_sha1": "4b22ecb0306d19a5d08c1ea775a6cf70e31ac30c",
+          "local_sha256": "77f516cb5dc0df14aa5c4650485972d6e5ee9abffa297331fdab07e034c0d866"
+        },
+        {
+          "upstream_path": "asio/include/asio/execution_context.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/execution_context.hpp",
+          "git_blob_sha1": "7e7f70acd837e25f342af77bf44823108ad860dd",
+          "local_sha256": "c3fd4ed0a40f9d7a3ef2e783dbc2214e7a8d80802bba82b147318e9a29965b13"
+        },
+        {
+          "upstream_path": "asio/include/asio/executor.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/executor.hpp",
+          "git_blob_sha1": "d372c067a8602f1854cb4855f9f2138d799f658b",
+          "local_sha256": "6dee46b70c4b31822468cbbb5abc27e09984ff55229df6dece8b46cc34b5add7"
+        },
+        {
+          "upstream_path": "asio/include/asio/executor_work_guard.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/executor_work_guard.hpp",
+          "git_blob_sha1": "3923d28eef88051de95083e29e343df398552333",
+          "local_sha256": "06292c7ad253269831c8d768b42cbde7d0f1840a9dbc1182209e663621db898b"
+        },
+        {
+          "upstream_path": "asio/include/asio/generic/basic_endpoint.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/generic/basic_endpoint.hpp",
+          "git_blob_sha1": "ddedbdee96c55e12d11b30a4c86143324b08e425",
+          "local_sha256": "08a82afa2cedcb52ec6e028ccf519786836a5de39f2e889f66ad1564ef584605"
+        },
+        {
+          "upstream_path": "asio/include/asio/generic/datagram_protocol.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/generic/datagram_protocol.hpp",
+          "git_blob_sha1": "99cf8472daab59dd26347397279e4c0b763484a1",
+          "local_sha256": "d3d9a4b6584fc58b738505daadf1967a5296c0ff23600f7df170e5c0e695d9d5"
+        },
+        {
+          "upstream_path": "asio/include/asio/generic/detail/endpoint.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/generic/detail/endpoint.hpp",
+          "git_blob_sha1": "6556cc37e152c2c0c01db0b7a66c1a64b0bde44d",
+          "local_sha256": "31f854963d2f62f4609af2f279f927631aaf2a26d51793d92384d87d6797e2a5"
+        },
+        {
+          "upstream_path": "asio/include/asio/generic/raw_protocol.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/generic/raw_protocol.hpp",
+          "git_blob_sha1": "e94e97a816d19dadbf4637abb7e210eb5a5ebef3",
+          "local_sha256": "ce6bb8ac715566bf2cc8a6d7349ab1d2f5352d50b75e4a984a06a5fe915ca310"
+        },
+        {
+          "upstream_path": "asio/include/asio/generic/seq_packet_protocol.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/generic/seq_packet_protocol.hpp",
+          "git_blob_sha1": "8ef566b4994ebc508d6704473e982e1642fcad03",
+          "local_sha256": "e498ce661ea1ba9d4a18ee38313667a85384ad411e302a57ded4099e2c4f6b28"
+        },
+        {
+          "upstream_path": "asio/include/asio/generic/stream_protocol.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/generic/stream_protocol.hpp",
+          "git_blob_sha1": "a44afc059a4bbef5be8551bb8832bf969472297b",
+          "local_sha256": "c346ee294c97ab84783598489ce9ba59d99ce015a1c7c85b88f673d240568dba"
+        },
+        {
+          "upstream_path": "asio/include/asio/handler_alloc_hook.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/handler_alloc_hook.hpp",
+          "git_blob_sha1": "68ab9091563e0efb8b30a330b4e410051bb6e2d1",
+          "local_sha256": "90a2cfcdba419ccd02883fd4cee962bec6e3a8c03f16190d0311cadff8fd1f9a"
+        },
+        {
+          "upstream_path": "asio/include/asio/handler_continuation_hook.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/handler_continuation_hook.hpp",
+          "git_blob_sha1": "46eccda6248ba4be33d373f9959755c50bb3bc43",
+          "local_sha256": "76807c33eef3e2e9c89e095168ada40fc7c1319313b16419b38e7075d04f0dbb"
+        },
+        {
+          "upstream_path": "asio/include/asio/handler_invoke_hook.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/handler_invoke_hook.hpp",
+          "git_blob_sha1": "013a94f637c2f50c5d7c75a56624ff0db715fe5a",
+          "local_sha256": "0babf1ca9b39e8eccceb4fcfef1d42709dde7b30eb026a8436de110d016754c8"
+        },
+        {
+          "upstream_path": "asio/include/asio/high_resolution_timer.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/high_resolution_timer.hpp",
+          "git_blob_sha1": "bde0ba10ea1845e0c5e50a80f10c205e226a246c",
+          "local_sha256": "b555546c2abc4097d3e894383f6db3fc886ea80a557819b1d7f47ca84b2672db"
+        },
+        {
+          "upstream_path": "asio/include/asio/impl/awaitable.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/impl/awaitable.hpp",
+          "git_blob_sha1": "9bd139d16025f2b085b96d660e49a40df9d6994d",
+          "local_sha256": "aeddabcf02833ef7760f5258c53f68721770360a81e58aee2853d29e1a2961f4"
+        },
+        {
+          "upstream_path": "asio/include/asio/impl/buffered_read_stream.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/impl/buffered_read_stream.hpp",
+          "git_blob_sha1": "d4e0cacf9deca421c0bbb26819b4848543af58e3",
+          "local_sha256": "59f90725f5a4d35a6c13e5ba32e20cdd72fc99870ce2a1c011c260694b595d16"
+        },
+        {
+          "upstream_path": "asio/include/asio/impl/buffered_write_stream.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/impl/buffered_write_stream.hpp",
+          "git_blob_sha1": "c2c9755a855f8dc02acbcdecdca5dcedfdcd1df5",
+          "local_sha256": "fb4666d8b139e9df4128865ecf2b8f9e614b804d7046d01c3c337dccf022bb81"
+        },
+        {
+          "upstream_path": "asio/include/asio/impl/co_spawn.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/impl/co_spawn.hpp",
+          "git_blob_sha1": "7360ab0c6c8c54d00e9af90525e1c16af83046cf",
+          "local_sha256": "5b6015a7e3bb200e5289737e7fdf4a257dab7ad6677001864f499ac0a658799e"
+        },
+        {
+          "upstream_path": "asio/include/asio/impl/compose.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/impl/compose.hpp",
+          "git_blob_sha1": "0896e9c56a8faf4d658b5d4c5bd0a505c54e609f",
+          "local_sha256": "d8b00b69cf55408f35787029eb99939a8703682583c7fb6107c381ae5b9d8676"
+        },
+        {
+          "upstream_path": "asio/include/asio/impl/connect.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/impl/connect.hpp",
+          "git_blob_sha1": "34c5e798d42c844d743263ecee3d114410c9b10f",
+          "local_sha256": "51c07322d2bd152af28cc5cdd938e6dcab949ad08e8209fd4a4e674cb0abe038"
+        },
+        {
+          "upstream_path": "asio/include/asio/impl/defer.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/impl/defer.hpp",
+          "git_blob_sha1": "5676aa7202c7b4cd86e37889bb1668a34a193448",
+          "local_sha256": "0049c3bbee1416b604a1e97df9bd125b5ca88580f8d675b7bfbfad818e55b888"
+        },
+        {
+          "upstream_path": "asio/include/asio/impl/detached.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/impl/detached.hpp",
+          "git_blob_sha1": "8817ba95a93d8ca57376d2fe98ce5f430c01cca3",
+          "local_sha256": "beeb469b8495d2b5b724c558486c799497533c84e6f1e9fb1908a60b3463ee48"
+        },
+        {
+          "upstream_path": "asio/include/asio/impl/dispatch.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/impl/dispatch.hpp",
+          "git_blob_sha1": "2242ad71329f4f729990fffcefd5e79e6f0d1888",
+          "local_sha256": "40e6595e7d3d2cff8ef49bf1a7ebcf521fb26c3f4a6ac3881c76fff98495bfc5"
+        },
+        {
+          "upstream_path": "asio/include/asio/impl/execution_context.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/impl/execution_context.hpp",
+          "git_blob_sha1": "d31e41da13b614ff73198f96140febe810197782",
+          "local_sha256": "6dd488b3a1e5631981f92fc0c27de835d1d688055babe4a2565ad0ade5acd097"
+        },
+        {
+          "upstream_path": "asio/include/asio/impl/executor.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/impl/executor.hpp",
+          "git_blob_sha1": "43ba5f6d2c65de85ab6ba3152e243160640cf41b",
+          "local_sha256": "3c8c997ef3965d8d19dc22bec29857dbf0d970ae9073bb90b8b93c31c6f67be7"
+        },
+        {
+          "upstream_path": "asio/include/asio/impl/io_context.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/impl/io_context.hpp",
+          "git_blob_sha1": "2db6f15a10d04fd098b4ea0bcb6bbbc6bf124836",
+          "local_sha256": "07917e8e15207a5ca2acdc480e38d7f8a177671cbb9f06e22f278f4131d22cb2"
+        },
+        {
+          "upstream_path": "asio/include/asio/impl/post.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/impl/post.hpp",
+          "git_blob_sha1": "1e7d589a6211343200bef49e06961d2bbb687fb7",
+          "local_sha256": "be2eb36b120ce2e4ad473933b5feb20cb31924e13f145187b080fbd7f4da95a0"
+        },
+        {
+          "upstream_path": "asio/include/asio/impl/read.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/impl/read.hpp",
+          "git_blob_sha1": "d349b39b30a9b673ef27e4033a16b8cab13fa879",
+          "local_sha256": "c095159555bbc4ce960ead9da50f8011ca467a119041292156af6e3b6ab71b56"
+        },
+        {
+          "upstream_path": "asio/include/asio/impl/read_at.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/impl/read_at.hpp",
+          "git_blob_sha1": "bee6be75eac52de0f142ece27c801d14809de2b9",
+          "local_sha256": "adafa3293601d1d89e15b3f86bb98d8c2847a9920403be3a33e8764c45728115"
+        },
+        {
+          "upstream_path": "asio/include/asio/impl/read_until.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/impl/read_until.hpp",
+          "git_blob_sha1": "08b8677ca5f9cc74e7f7e84c00c334238ed7910f",
+          "local_sha256": "bd3558b415a8481365c707b348751809d617a5fba813d0c1aed4acd3acba1b6b"
+        },
+        {
+          "upstream_path": "asio/include/asio/impl/redirect_error.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/impl/redirect_error.hpp",
+          "git_blob_sha1": "ca1e5e5235ec97f7274f397a1fdf58b31bdeeed5",
+          "local_sha256": "c56cb391ec908cf1bf92adbd32bd8b054361d314c683cad806607214b0fa17e8"
+        },
+        {
+          "upstream_path": "asio/include/asio/impl/serial_port_base.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/impl/serial_port_base.hpp",
+          "git_blob_sha1": "d34dd5b1a94b25eec8737bad3b542e516abc8623",
+          "local_sha256": "f186b5ac03fd42faae3339b1c715a7cfd1b2b92e1262c8a63144d97b5ad9472d"
+        },
+        {
+          "upstream_path": "asio/include/asio/impl/spawn.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/impl/spawn.hpp",
+          "git_blob_sha1": "5235d3ff5197549f7bfed948ac2d8f4f6198c829",
+          "local_sha256": "fb61a3f76ca5be2872078ec3fe657cbf591972705a1d004588eeda136ca9968d"
+        },
+        {
+          "upstream_path": "asio/include/asio/impl/src.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/impl/src.hpp",
+          "git_blob_sha1": "a1ee55d67bb60c73515f6679d060144a92fd5702",
+          "local_sha256": "e223045e98d7603c6ec21485693613e2da01034b0655842a52ffee267f6cf2b9"
+        },
+        {
+          "upstream_path": "asio/include/asio/impl/system_context.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/impl/system_context.hpp",
+          "git_blob_sha1": "daffd555bd4d4c514d3686cb0380dac2a7ae53d8",
+          "local_sha256": "d91e971af28481f6c7ec0b1fa3170a4cbac14f7d7be6327ead2338590a93033c"
+        },
+        {
+          "upstream_path": "asio/include/asio/impl/system_executor.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/impl/system_executor.hpp",
+          "git_blob_sha1": "d7dc2c80d77b0ba3b434c2299713e701cfff48a1",
+          "local_sha256": "18545e8153acb3ac5c6a7c8bd98d16a1a8a844061bb059a0efe58dc3be8a200f"
+        },
+        {
+          "upstream_path": "asio/include/asio/impl/thread_pool.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/impl/thread_pool.hpp",
+          "git_blob_sha1": "033cb76c65a81b72584d04e9fcfe879c624a440a",
+          "local_sha256": "d54fcb14c3d9e9167b7b3d8850f6e9809218fb59b24da8f7d47ea00e14026717"
+        },
+        {
+          "upstream_path": "asio/include/asio/impl/use_awaitable.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/impl/use_awaitable.hpp",
+          "git_blob_sha1": "c607d10c588c52155ed96d0fb5b4d49439db987f",
+          "local_sha256": "035a2415cd7042bd810b1efdd248b2fce8d20daa6193103c645a64af5e5f59e9"
+        },
+        {
+          "upstream_path": "asio/include/asio/impl/use_future.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/impl/use_future.hpp",
+          "git_blob_sha1": "64ed4a515d32b04708bb3579496ba23a6af1e824",
+          "local_sha256": "178cc7fedf2d476985e53895ff8cdacae7d24d6a5ea12feee6ad7e6bc6610e99"
+        },
+        {
+          "upstream_path": "asio/include/asio/impl/write.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/impl/write.hpp",
+          "git_blob_sha1": "aae18add20898416ae092d48bf3b196c2456fdb8",
+          "local_sha256": "bd97e2cc22c0834b24c241ff47517c6104f8861b8c3ab6a6cb76e40d7f86b7e9"
+        },
+        {
+          "upstream_path": "asio/include/asio/impl/write_at.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/impl/write_at.hpp",
+          "git_blob_sha1": "4fa9fce09d71e1240e127129894faa0e2844b424",
+          "local_sha256": "c1bab144b29726d6834d7f8bdbd157802c5f50b9a6fde97c7ad4e1a9eace5065"
+        },
+        {
+          "upstream_path": "asio/include/asio/io_context.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/io_context.hpp",
+          "git_blob_sha1": "d9bd4f6c3ac0a27c287b7c9286037440ee22fcfb",
+          "local_sha256": "f599a7d7da350fcb7d2aa98096e9adbadfea356d91775fa3677e65702b53326a"
+        },
+        {
+          "upstream_path": "asio/include/asio/io_context_strand.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/io_context_strand.hpp",
+          "git_blob_sha1": "54ad7f5ac0dee5c6a7d3a90a9ba9149522e6f594",
+          "local_sha256": "400af2c618ca766f01a9ef07952f9068707a5989dfef4da0f0a8411db9b72dbf"
+        },
+        {
+          "upstream_path": "asio/include/asio/io_service.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/io_service.hpp",
+          "git_blob_sha1": "2916aff169587bedeb55c6f4d7bad86240d28741",
+          "local_sha256": "6d02fb213fa8e921c58aa60845504b20848e50b8d3f240887fcb8ae30a3f33e1"
+        },
+        {
+          "upstream_path": "asio/include/asio/io_service_strand.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/io_service_strand.hpp",
+          "git_blob_sha1": "5d35ee35442be36890ef2dc9f3c6b8649d8a0312",
+          "local_sha256": "838dffb8954747b7a1bea8f11286b22f99a8fd7455185978da64d071821ef75a"
+        },
+        {
+          "upstream_path": "asio/include/asio/ip/address.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/ip/address.hpp",
+          "git_blob_sha1": "d493981a7e510e1957af8dc051544d144c032f2e",
+          "local_sha256": "eab416796ba82b53d3de4f4ea3964e2892af64b596a565ef2ac723e4ee32dc90"
+        },
+        {
+          "upstream_path": "asio/include/asio/ip/address_v4.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/ip/address_v4.hpp",
+          "git_blob_sha1": "4d6af7fd59abe35f2e901831dfcd407ca6b1abde",
+          "local_sha256": "edb8fcaba99e2c595c1c59309fb01d1826cfb356291ffbd85f4e0639457a1154"
+        },
+        {
+          "upstream_path": "asio/include/asio/ip/address_v4_iterator.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/ip/address_v4_iterator.hpp",
+          "git_blob_sha1": "3702d93eb35c042fe912a98ec476eaaca1d68ba2",
+          "local_sha256": "1cbb6257c5c9ed3e3635e7d1427c0ee0a01f40ce7a4266b9cec81d88e96331cf"
+        },
+        {
+          "upstream_path": "asio/include/asio/ip/address_v4_range.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/ip/address_v4_range.hpp",
+          "git_blob_sha1": "369e395b16d039115bcfd68538b300cc86b20e59",
+          "local_sha256": "71cf89b03a4901e3aa2b1e3bd10e5a5b415500a45434f3c31db295cc5bf37ba2"
+        },
+        {
+          "upstream_path": "asio/include/asio/ip/address_v6.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/ip/address_v6.hpp",
+          "git_blob_sha1": "db3af3c4b1ab934ccf384a17f6ad2cb0c021f06f",
+          "local_sha256": "0832393ce2fc929094721abc1f1cc02c15e3bc75718bb9ad94decd05beb3c204"
+        },
+        {
+          "upstream_path": "asio/include/asio/ip/address_v6_iterator.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/ip/address_v6_iterator.hpp",
+          "git_blob_sha1": "ba127961f344e9c6ebd0d9de927f01d86d9c12ac",
+          "local_sha256": "20c32952bc5aa3604a0b58bb0720a7663066d274c2a58a17dd316ddb86d1eaa0"
+        },
+        {
+          "upstream_path": "asio/include/asio/ip/address_v6_range.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/ip/address_v6_range.hpp",
+          "git_blob_sha1": "7a461dd9a3c62cbf71bf9f5dbd5d145bdb12541e",
+          "local_sha256": "a051ca064f8ffed8cb4fa7fbc5f62c505ff0eacf08af81f77560da6459ac5a30"
+        },
+        {
+          "upstream_path": "asio/include/asio/ip/bad_address_cast.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/ip/bad_address_cast.hpp",
+          "git_blob_sha1": "32fda742aded5e53783b2df58d1ea8767178930b",
+          "local_sha256": "faadcff2cdb70bd31169e2ba48c870d60a5e17d59f45df579b1cf562c8ad0762"
+        },
+        {
+          "upstream_path": "asio/include/asio/ip/basic_endpoint.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/ip/basic_endpoint.hpp",
+          "git_blob_sha1": "92e02a91ff3db37551a65c91842b8d700d595e3c",
+          "local_sha256": "7cc579004f40d7b531704cbe6cdd055a7abe08884e96d31ce56398b250094359"
+        },
+        {
+          "upstream_path": "asio/include/asio/ip/basic_resolver.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/ip/basic_resolver.hpp",
+          "git_blob_sha1": "c5a9229b74a8f2483b1f2269b95d525621fc13ba",
+          "local_sha256": "47ac7d46e13f51c9ecc88785b95e2225dacfb8c39df3678b5fdab35220c831a3"
+        },
+        {
+          "upstream_path": "asio/include/asio/ip/basic_resolver_entry.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/ip/basic_resolver_entry.hpp",
+          "git_blob_sha1": "a5a14589048252a1a23c6a05b9223d4c55b9b704",
+          "local_sha256": "b8575f36ff7bd8ecafc1751fd3a63e4317de6af8704af5089f1270be90791392"
+        },
+        {
+          "upstream_path": "asio/include/asio/ip/basic_resolver_iterator.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/ip/basic_resolver_iterator.hpp",
+          "git_blob_sha1": "aa9f8fd76c6821a95202b6bed500b34eb7b89af9",
+          "local_sha256": "f10f7776a842562c35d6f9d44122679486c8a17628d3149ad058091dbbc50421"
+        },
+        {
+          "upstream_path": "asio/include/asio/ip/basic_resolver_query.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/ip/basic_resolver_query.hpp",
+          "git_blob_sha1": "c8c49d639af80b7978c7eb72c3bc27aebb10b577",
+          "local_sha256": "48ab1e886c77cbb1bb72d742a7b72b3618011483b29fa8d7c26d6a46ae6731b6"
+        },
+        {
+          "upstream_path": "asio/include/asio/ip/basic_resolver_results.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/ip/basic_resolver_results.hpp",
+          "git_blob_sha1": "3b3fad49ac58182ad70b17dd2636cde486d63d48",
+          "local_sha256": "241e813caa6bd728ca3aafafc6a38047887bfc42f66b3e6deb654f25c86f2566"
+        },
+        {
+          "upstream_path": "asio/include/asio/ip/detail/endpoint.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/ip/detail/endpoint.hpp",
+          "git_blob_sha1": "a422373b5c1ac5c77cfdb3692840ae74fc48ca31",
+          "local_sha256": "dd006842e7dd1f11fc23f18072b0d62ab28d16df458ba91bd29b9ca387147c2a"
+        },
+        {
+          "upstream_path": "asio/include/asio/ip/detail/socket_option.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/ip/detail/socket_option.hpp",
+          "git_blob_sha1": "e45996607908d066114baf0b6e3c5334bbae6779",
+          "local_sha256": "cda80551cd837a69b7e585a4bf6764df30a723183d22c90745f4c8e850656e25"
+        },
+        {
+          "upstream_path": "asio/include/asio/ip/host_name.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/ip/host_name.hpp",
+          "git_blob_sha1": "2a660a930d43c6f20c781d84d135a79f515c19e9",
+          "local_sha256": "cc1d5501d7a626c7a843f01d9fa0cae8bc99713f01552137473bac4196d2026a"
+        },
+        {
+          "upstream_path": "asio/include/asio/ip/icmp.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/ip/icmp.hpp",
+          "git_blob_sha1": "fe05141270fc39a65588210cf768b645e3b4459d",
+          "local_sha256": "06ab2d95b6d9cc7e561b3b02ef481998775c18249336e9d2063c87b7e3b259e6"
+        },
+        {
+          "upstream_path": "asio/include/asio/ip/impl/address.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/ip/impl/address.hpp",
+          "git_blob_sha1": "8944c507be2ec37d8b8a385a9d2c649f09bee335",
+          "local_sha256": "1cf26ddb61f369aa5ac8325067da29cddb6bc2096adda994f54ed55ffecd3d84"
+        },
+        {
+          "upstream_path": "asio/include/asio/ip/impl/address_v4.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/ip/impl/address_v4.hpp",
+          "git_blob_sha1": "f8139b87b00125a87b393e3bacb32b2363964fc5",
+          "local_sha256": "6aea4e595bc6ea57e6c37f7e1b1735b71f64cf33fe5a01294b8724e35663bd29"
+        },
+        {
+          "upstream_path": "asio/include/asio/ip/impl/address_v6.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/ip/impl/address_v6.hpp",
+          "git_blob_sha1": "985203d2cea35fcaf00072aba84aed18ab313883",
+          "local_sha256": "d9d9c0f322eebc32436e9ff67be148b33ac08d1750949aec1b9fa5e903ade4b4"
+        },
+        {
+          "upstream_path": "asio/include/asio/ip/impl/basic_endpoint.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/ip/impl/basic_endpoint.hpp",
+          "git_blob_sha1": "f589e511e2d2311d5ba731546152e205252c22cc",
+          "local_sha256": "ba030b41a686f804dab900299512fb27f20d2f810365413ff52eb48d9025485e"
+        },
+        {
+          "upstream_path": "asio/include/asio/ip/impl/network_v4.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/ip/impl/network_v4.hpp",
+          "git_blob_sha1": "8912fa0d7c8e5f3eb924843a958dd54c5bb3f25e",
+          "local_sha256": "7b9ec874a24aff3816a3c37f9990cc99aa1e57333cb457d8c463f8bb32f91ce1"
+        },
+        {
+          "upstream_path": "asio/include/asio/ip/impl/network_v6.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/ip/impl/network_v6.hpp",
+          "git_blob_sha1": "381b838d0f11ec6201e6b801eab70f6795b59627",
+          "local_sha256": "e0eb647ab76aba96233061f2219b1ed6553ad3dc30ab60169a68db21664dc9e7"
+        },
+        {
+          "upstream_path": "asio/include/asio/ip/multicast.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/ip/multicast.hpp",
+          "git_blob_sha1": "0f711fb10216804ec8b2286c664ea5cd1556aca5",
+          "local_sha256": "68bf9b465dd1c3518d09d670040d1cebc36717f42701522f871c9d4f3ddc7a49"
+        },
+        {
+          "upstream_path": "asio/include/asio/ip/network_v4.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/ip/network_v4.hpp",
+          "git_blob_sha1": "1239b9f70c75ef1237a372321e5793a431db3853",
+          "local_sha256": "cf497851b03c12190516d84159639be9e9d60312264e532173d50ef5ae2feee5"
+        },
+        {
+          "upstream_path": "asio/include/asio/ip/network_v6.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/ip/network_v6.hpp",
+          "git_blob_sha1": "ad5604a5e52ce27f5c363d832c5d4fcc24be91b1",
+          "local_sha256": "52c0fdf0da08ace7508d6e0650cb8a6fb9ba17cb8010101c45cf20f2efb4ee02"
+        },
+        {
+          "upstream_path": "asio/include/asio/ip/resolver_base.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/ip/resolver_base.hpp",
+          "git_blob_sha1": "6edd7624af1705a5473916cfdaae189c1e5a9233",
+          "local_sha256": "94127f438d1a79b369445f4a3149fc3f533405446eb73feaa8cf965b9f774090"
+        },
+        {
+          "upstream_path": "asio/include/asio/ip/resolver_query_base.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/ip/resolver_query_base.hpp",
+          "git_blob_sha1": "b60ce5aad140fed2819833da2ab1362d35786633",
+          "local_sha256": "79a2182d6a85869bd0eea3951b4fad40f8de8c26ec3e08315e1011a0bdd87f83"
+        },
+        {
+          "upstream_path": "asio/include/asio/ip/tcp.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/ip/tcp.hpp",
+          "git_blob_sha1": "9507ba63f7346def60c6359eac16be1882525784",
+          "local_sha256": "62012dad0f42203a5bbf21150879b278346decc9c54adf9987743b41af97ef74"
+        },
+        {
+          "upstream_path": "asio/include/asio/ip/udp.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/ip/udp.hpp",
+          "git_blob_sha1": "379ee59cffb76afc4dbeaf6bb7fa0218f2e498c9",
+          "local_sha256": "4c226b580516978af61fc0f8319986c23c3978d27ed71ce1ba8c41dfc8ce813a"
+        },
+        {
+          "upstream_path": "asio/include/asio/ip/unicast.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/ip/unicast.hpp",
+          "git_blob_sha1": "0bc64c8efd469d6e6669fdcd029c9502a8aa2878",
+          "local_sha256": "81f53c7224079c3ab3e3320e2f1f0a7b01b38bec142b454c4e04b27b32d95484"
+        },
+        {
+          "upstream_path": "asio/include/asio/ip/v6_only.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/ip/v6_only.hpp",
+          "git_blob_sha1": "ff9dac4d02e89a0470d1c5957e6b0db2050e1b03",
+          "local_sha256": "0d82d817eaa7ddbcd6221ad650a4ff0b635ef9a6a6cb93036468d631629e196c"
+        },
+        {
+          "upstream_path": "asio/include/asio/is_executor.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/is_executor.hpp",
+          "git_blob_sha1": "8497da34caf7387c70a2f2ba2e33739f4e743b98",
+          "local_sha256": "f191b569c73c2a0d7b07f09053772a0fffd3073bff0dcbe8a639038672f7ab48"
+        },
+        {
+          "upstream_path": "asio/include/asio/is_read_buffered.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/is_read_buffered.hpp",
+          "git_blob_sha1": "c75b4892f9c27f059117f592c4f53b2d6cfb4119",
+          "local_sha256": "86f961c16d4695a36bfb1cb641afa0575ceb3a1abf0f94b9f1fc6135a3e19c98"
+        },
+        {
+          "upstream_path": "asio/include/asio/is_write_buffered.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/is_write_buffered.hpp",
+          "git_blob_sha1": "fd37f3a34faa9b7d17a19bd7243e0f715e9d4bd2",
+          "local_sha256": "0fc6939b71b9441aed054263f1e63d51c858b84182e9274d8e6b2430ce9d8d99"
+        },
+        {
+          "upstream_path": "asio/include/asio/local/basic_endpoint.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/local/basic_endpoint.hpp",
+          "git_blob_sha1": "1b1b299f06b662cba29483990ada17bd3ab7cc57",
+          "local_sha256": "6cbe9d8c397508fed54770bb098986b01188969ebaedd940abe1254384c74a01"
+        },
+        {
+          "upstream_path": "asio/include/asio/local/connect_pair.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/local/connect_pair.hpp",
+          "git_blob_sha1": "ed48b61b2a37281f39ee284b9ad5ec17345a7718",
+          "local_sha256": "1d27b3e61f6e67b428d25decdcba0f03b87b356d2c800d57b324670484bb1727"
+        },
+        {
+          "upstream_path": "asio/include/asio/local/datagram_protocol.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/local/datagram_protocol.hpp",
+          "git_blob_sha1": "a2bf5149a7e1df480787c66fd7e7b99ada7421f3",
+          "local_sha256": "aa7f0ea330da5058f0c1a2ad7cbe5c6d2c30816f59f27573bf220baaf07f2176"
+        },
+        {
+          "upstream_path": "asio/include/asio/local/detail/endpoint.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/local/detail/endpoint.hpp",
+          "git_blob_sha1": "042b21a97b99c765da4f9445c0e1ca03494e0d00",
+          "local_sha256": "9dae5fa99eb71cbdf557d383edb201f5625e941f78cf271d7794d26a36a2f9ce"
+        },
+        {
+          "upstream_path": "asio/include/asio/local/stream_protocol.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/local/stream_protocol.hpp",
+          "git_blob_sha1": "276e71d35b88c420692a5728880deb6c47c2cd5d",
+          "local_sha256": "5eeddc909bc46a9d13d3e0b1fd031e4c6d5482c502241dc5ccdb2fd67e975785"
+        },
+        {
+          "upstream_path": "asio/include/asio/packaged_task.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/packaged_task.hpp",
+          "git_blob_sha1": "49e97712e740dc285903ff1b9ce11502a1ec959b",
+          "local_sha256": "dd479994dc86c210f81388d1efdf99d157cfc26a0302f9088ab826744021cd09"
+        },
+        {
+          "upstream_path": "asio/include/asio/placeholders.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/placeholders.hpp",
+          "git_blob_sha1": "7c89753c50a61c803326746ed82f546ca170869f",
+          "local_sha256": "a2580aa4df0b0237ab2204a837e50a4b0c23f4f5fd77a91a8e8236e1f3c4462d"
+        },
+        {
+          "upstream_path": "asio/include/asio/posix/basic_descriptor.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/posix/basic_descriptor.hpp",
+          "git_blob_sha1": "6164adfd1e3b694f18a0a00881736eeddb2c97d2",
+          "local_sha256": "946eb3e8ad190da4dfa57794ccc8a8fe846b281b67848da67766fdd243e6cd6a"
+        },
+        {
+          "upstream_path": "asio/include/asio/posix/basic_stream_descriptor.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/posix/basic_stream_descriptor.hpp",
+          "git_blob_sha1": "95c7f2a58d684a840a3ece9cce69b14edaffd093",
+          "local_sha256": "59fd8e8780504c93fc46bd95ded7358567982672ed7ed46e8f62a5e174811291"
+        },
+        {
+          "upstream_path": "asio/include/asio/posix/descriptor.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/posix/descriptor.hpp",
+          "git_blob_sha1": "baefa136e8c2a558157522d126297f973669380f",
+          "local_sha256": "a401c64e97cc0ee364c5f973a3ab56ef235610dd79bb2e12595f978cb72d3d02"
+        },
+        {
+          "upstream_path": "asio/include/asio/posix/descriptor_base.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/posix/descriptor_base.hpp",
+          "git_blob_sha1": "feb001797585d2e4f23cbed44bc92e4c5c8b8562",
+          "local_sha256": "9e2f89e4f2d22168e948b3204ed84adde757a35444e612ea8573f5536c0b0471"
+        },
+        {
+          "upstream_path": "asio/include/asio/posix/stream_descriptor.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/posix/stream_descriptor.hpp",
+          "git_blob_sha1": "cd68b603f8b71da82183e602e9c50b0f85b6ddd2",
+          "local_sha256": "d9471a77f76a3b723216ca7815b14cb34ea7838e884659b7c7376b29591dca71"
+        },
+        {
+          "upstream_path": "asio/include/asio/post.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/post.hpp",
+          "git_blob_sha1": "bc19d80820b1b8efd7d5e04ba6d96ba48f9be36e",
+          "local_sha256": "f4f584431d54013f0a125de69298e26a9a8a6deab26c67b10e343943a22ce303"
+        },
+        {
+          "upstream_path": "asio/include/asio/read.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/read.hpp",
+          "git_blob_sha1": "f06b01ea8fc714d3b5bbc718ddd314b61df0e993",
+          "local_sha256": "b9a957e7710302501118956a039c53e0ca0b5b2256e617c542b0c59e3450ef90"
+        },
+        {
+          "upstream_path": "asio/include/asio/read_at.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/read_at.hpp",
+          "git_blob_sha1": "b729d10159e69780a9e76939d9025a5b52352966",
+          "local_sha256": "fabf73f37b8be0fe23c08e9ba4085ad269532a6ddc048c92f66e0f292890eddb"
+        },
+        {
+          "upstream_path": "asio/include/asio/read_until.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/read_until.hpp",
+          "git_blob_sha1": "6d09d1ce4109e7f42506a165e2f8694de2d44d80",
+          "local_sha256": "5c07a457e37cd018b289afe6dd38a9afffb78eb09bb4c299570820c981ac3432"
+        },
+        {
+          "upstream_path": "asio/include/asio/redirect_error.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/redirect_error.hpp",
+          "git_blob_sha1": "d7740b9b1b9c5576ea693c0e85d4ed5885bd1952",
+          "local_sha256": "f0c5323b9f68db6e0169c778f4c7f5f4d2cde94f53617316fc8bcd53afaf580e"
+        },
+        {
+          "upstream_path": "asio/include/asio/serial_port.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/serial_port.hpp",
+          "git_blob_sha1": "4551f77d59680ff17db9ac7d23c8e18a75ea3050",
+          "local_sha256": "5cc8affe1a894ba2d42f810003e389de0e834f0282b14257a6ce22a0dfc311b2"
+        },
+        {
+          "upstream_path": "asio/include/asio/serial_port_base.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/serial_port_base.hpp",
+          "git_blob_sha1": "f0a9ca6d990685a64b7df18d8610bd90b85ae3fa",
+          "local_sha256": "54cfc7e2b369fbf6bf6e8b67c1ddd41ca016f5f91efc51c472c7738c8f96ec32"
+        },
+        {
+          "upstream_path": "asio/include/asio/signal_set.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/signal_set.hpp",
+          "git_blob_sha1": "6a27689a9690a9cfeb772a3d89eb1b085b260af6",
+          "local_sha256": "bd7f23aef9b3acf284e15825f1904779f97059c8e5dd84eacbacae5d9c4bf606"
+        },
+        {
+          "upstream_path": "asio/include/asio/socket_base.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/socket_base.hpp",
+          "git_blob_sha1": "bf06c8c8575d7b6c511571d52c1c3f8c01b393de",
+          "local_sha256": "43119695d99d57c4e8319490f456a2d3133e162aa2e65822bfb2f951196e5435"
+        },
+        {
+          "upstream_path": "asio/include/asio/spawn.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/spawn.hpp",
+          "git_blob_sha1": "4f8b8905a6c75997014b2096cdbdaa886542a1e5",
+          "local_sha256": "2bf83b26cca0eec8e454325d4acb8f598465593dbc9d27825bc52854839e0401"
+        },
+        {
+          "upstream_path": "asio/include/asio/ssl.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/ssl.hpp",
+          "git_blob_sha1": "19b1da47642a01ac21a25533ef47cb62f1a961f4",
+          "local_sha256": "74265e594699556d6cc2da497148ca46b41af1bb06769f62c8b802e54eef89c7"
+        },
+        {
+          "upstream_path": "asio/include/asio/ssl/context.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/ssl/context.hpp",
+          "git_blob_sha1": "9657d774b7b875a930bcdd601798b925c1be5d72",
+          "local_sha256": "f0a5c8a188fd4cd198a291683e17ac672b2fdce83c77acfd044c8f4a788ccdef"
+        },
+        {
+          "upstream_path": "asio/include/asio/ssl/context_base.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/ssl/context_base.hpp",
+          "git_blob_sha1": "fd103e7b99a90870cba79f95beba8874ec10249a",
+          "local_sha256": "eff0275d39c8c149824b5baa7361009ae4d1a9b78c7c59cf1c1db2c61327f236"
+        },
+        {
+          "upstream_path": "asio/include/asio/ssl/detail/buffered_handshake_op.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/ssl/detail/buffered_handshake_op.hpp",
+          "git_blob_sha1": "97deb1de0132e3a681d8515399349983eadbb7ec",
+          "local_sha256": "5caac627f2884c9baa44cca6a8df0a3aff41e8307b8184cd16757fe7b70c95a2"
+        },
+        {
+          "upstream_path": "asio/include/asio/ssl/detail/engine.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/ssl/detail/engine.hpp",
+          "git_blob_sha1": "8a798c13fddf2525a1774cb5af1e84a7a338de59",
+          "local_sha256": "f650bc3adf980af078ca0dc65fe1290295a9f717b62d7d5c82b2385bc2ebfe6b"
+        },
+        {
+          "upstream_path": "asio/include/asio/ssl/detail/handshake_op.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/ssl/detail/handshake_op.hpp",
+          "git_blob_sha1": "d070c06697711c75c906f90b3e16b64bf6892d2d",
+          "local_sha256": "88e98f88f37dd2120aca5aaa370e07becd9f0f8ef1269a90056fc952c84ccdd3"
+        },
+        {
+          "upstream_path": "asio/include/asio/ssl/detail/io.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/ssl/detail/io.hpp",
+          "git_blob_sha1": "b3848cd9be53d33612922234c87ae313582fbb9d",
+          "local_sha256": "605415bc28f1d5e7462ece85a6e9fb43766bb60ead6a11a005569e0937b936aa"
+        },
+        {
+          "upstream_path": "asio/include/asio/ssl/detail/openssl_init.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/ssl/detail/openssl_init.hpp",
+          "git_blob_sha1": "1ee3b576acf6920fef724b8971f5580b1affd26f",
+          "local_sha256": "2f6830d88719a7713d47514b642ffb905079c4b938332d063afa5f6620b51846"
+        },
+        {
+          "upstream_path": "asio/include/asio/ssl/detail/openssl_types.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/ssl/detail/openssl_types.hpp",
+          "git_blob_sha1": "eb3359eec8227de03529c25f3c613f82b0f4eacd",
+          "local_sha256": "3fca6af4f3f60ae4736aa1a69d2a8bf3337eb50dc62252f79e67dad02cf46201"
+        },
+        {
+          "upstream_path": "asio/include/asio/ssl/detail/password_callback.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/ssl/detail/password_callback.hpp",
+          "git_blob_sha1": "82466253c7637b9427bb5891484bd1db8a917600",
+          "local_sha256": "ccba7d5e7b194558d55da9abeecfee3bcf2f9daae11f033548f3d5c6e651bde3"
+        },
+        {
+          "upstream_path": "asio/include/asio/ssl/detail/read_op.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/ssl/detail/read_op.hpp",
+          "git_blob_sha1": "b73070e2a93074f94d0d6cabb9c70524021dcc2d",
+          "local_sha256": "12cb8f6d5a982b364785e44f607c92f6c02bce073a3808095d165772d69d9a08"
+        },
+        {
+          "upstream_path": "asio/include/asio/ssl/detail/shutdown_op.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/ssl/detail/shutdown_op.hpp",
+          "git_blob_sha1": "b8c6994887ccde32ed299588427c035ed8b7caf9",
+          "local_sha256": "56331ab131e0989522c9f29782ce19346cb4d873e00af068dce80b85ee9c506f"
+        },
+        {
+          "upstream_path": "asio/include/asio/ssl/detail/stream_core.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/ssl/detail/stream_core.hpp",
+          "git_blob_sha1": "9533c66fe4f4b45844b03ee6107c7d041cb1934f",
+          "local_sha256": "0ed6f2ee4d65baaf1955e1430ce3ee66988601df24b3e7667ed357733764267e"
+        },
+        {
+          "upstream_path": "asio/include/asio/ssl/detail/verify_callback.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/ssl/detail/verify_callback.hpp",
+          "git_blob_sha1": "c26d28c433be29b902f23f88c9e9da825a772b1d",
+          "local_sha256": "a0b907f39ddbebca05346add7034ab8ff26fd51eb952b2c7d659f7542481fbe6"
+        },
+        {
+          "upstream_path": "asio/include/asio/ssl/detail/write_op.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/ssl/detail/write_op.hpp",
+          "git_blob_sha1": "a180014a183bb41a90bc45d97b8774198431ab9f",
+          "local_sha256": "289d3fc43e868ac69bf5e94a5cb02ce07d4c6583d83f7b323d2297b206bde309"
+        },
+        {
+          "upstream_path": "asio/include/asio/ssl/error.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/ssl/error.hpp",
+          "git_blob_sha1": "71599e7b18d957710ef3ff0e694fc46515ed87fc",
+          "local_sha256": "bb2d3dd04063700be9879de7c160be8961175759ac0d6ac3a344ed9e0b9f3ea0"
+        },
+        {
+          "upstream_path": "asio/include/asio/ssl/impl/context.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/ssl/impl/context.hpp",
+          "git_blob_sha1": "2831e2b4483c0a3eb6788ed5ac07f98a8d106bfc",
+          "local_sha256": "12c9019b8e23af344a8a0aeef8e47f2a5b0098552fee855729fdc0bc38bd9809"
+        },
+        {
+          "upstream_path": "asio/include/asio/ssl/impl/src.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/ssl/impl/src.hpp",
+          "git_blob_sha1": "0c092cf045b2e720bc9828c36bbeac23803723e3",
+          "local_sha256": "c8f518b8f85dc33095b1a7ffed7d6307d69c538890c12639728dbe39b34c68cd"
+        },
+        {
+          "upstream_path": "asio/include/asio/ssl/rfc2818_verification.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/ssl/rfc2818_verification.hpp",
+          "git_blob_sha1": "a8bd8d9dc0f2e37b591d74e06df48cb822f21ce3",
+          "local_sha256": "facc4f1c0c35a69099a43d09b5dbf7c737816ae04d6aeb1896a43e11791e8431"
+        },
+        {
+          "upstream_path": "asio/include/asio/ssl/stream.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/ssl/stream.hpp",
+          "git_blob_sha1": "6a2a31c84f2af04fc3f12d814e0f4e9e8d057206",
+          "local_sha256": "de28be2e085327cf202ab56dfde692ca511249f830c2da3927a91d17588572f0"
+        },
+        {
+          "upstream_path": "asio/include/asio/ssl/stream_base.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/ssl/stream_base.hpp",
+          "git_blob_sha1": "7960e99d9ae238e432cb403182b1e28beabd0997",
+          "local_sha256": "819a368cc0d2531d5d8431dc53b463b9ff00500c84817103138047b7f3ecea85"
+        },
+        {
+          "upstream_path": "asio/include/asio/ssl/verify_context.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/ssl/verify_context.hpp",
+          "git_blob_sha1": "bfb608dbbcaaeb178469f3fa0015e634146961b2",
+          "local_sha256": "33726f7cf89431f493dd538fcf37261f381113c9cb3c5c5fc9d79d1226a81b86"
+        },
+        {
+          "upstream_path": "asio/include/asio/ssl/verify_mode.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/ssl/verify_mode.hpp",
+          "git_blob_sha1": "bcd6f8ea6334f795d010001e2f2529615902598d",
+          "local_sha256": "97bd8b5cef8e0e1816b311e5cab58938c188f07f7c52ce6878769e434e69220a"
+        },
+        {
+          "upstream_path": "asio/include/asio/steady_timer.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/steady_timer.hpp",
+          "git_blob_sha1": "22317405a492baa17c72faf203cec8ab703cff45",
+          "local_sha256": "3ea61888e1e6e7f21380c825369a2f7abb158d06991e9d7fbcb5e750fd1a5d69"
+        },
+        {
+          "upstream_path": "asio/include/asio/strand.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/strand.hpp",
+          "git_blob_sha1": "b807e4bffb10857da3e352d973d05f278a19caa8",
+          "local_sha256": "2460d1acfca75a6eb8b462288728c4fdf79f77a7cea09176c8d9f4efb2b37462"
+        },
+        {
+          "upstream_path": "asio/include/asio/streambuf.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/streambuf.hpp",
+          "git_blob_sha1": "0b9bbad3c505cde736934c3d5b82924593affcf6",
+          "local_sha256": "8e006b0d966577ba96e608edd65c5d871eac54d3f4934bfc785a3f1db538c9b4"
+        },
+        {
+          "upstream_path": "asio/include/asio/system_context.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/system_context.hpp",
+          "git_blob_sha1": "c6e2d61ad73b2df83eb467ba391e7b2913650af6",
+          "local_sha256": "ed6a50bf08b95a3c1708ec710f09d400ab315c54cc5c1004c2537eeb459c1178"
+        },
+        {
+          "upstream_path": "asio/include/asio/system_error.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/system_error.hpp",
+          "git_blob_sha1": "272fc599312e76174a18f95ac13d34b51d69f98b",
+          "local_sha256": "62b36eb2044e4321aa2a11b643560e29ac0e27db2018ca228e8f76447a45a557"
+        },
+        {
+          "upstream_path": "asio/include/asio/system_executor.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/system_executor.hpp",
+          "git_blob_sha1": "51c61603ca4cfc382b4b5b797accf7868f1ee6d9",
+          "local_sha256": "3cfb8a5c98e7468aed85322d712fe391771adcb388765ed7e605d464632f7606"
+        },
+        {
+          "upstream_path": "asio/include/asio/system_timer.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/system_timer.hpp",
+          "git_blob_sha1": "5a79bf1761f7b15f5677972a025e6b8623bffb28",
+          "local_sha256": "de2f5d5aebec4b30cb33ed5650976c91951298cd102131689f22572c442457e9"
+        },
+        {
+          "upstream_path": "asio/include/asio/this_coro.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/this_coro.hpp",
+          "git_blob_sha1": "02374e1048cd7afd89aff0ce77f80df153ea5b67",
+          "local_sha256": "c82da6f63776707a96ebd12e0ccb9b581ab32ffa4f20213be2365bf2a7cd3997"
+        },
+        {
+          "upstream_path": "asio/include/asio/thread.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/thread.hpp",
+          "git_blob_sha1": "f4df4129fe93e026083a7bf80859ec8e43b66d1c",
+          "local_sha256": "e7591ffe6efbb984787d5166e8d1abd3acdc434a64b9f4c462deef0779a132a0"
+        },
+        {
+          "upstream_path": "asio/include/asio/thread_pool.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/thread_pool.hpp",
+          "git_blob_sha1": "20abe6782e2cc309fce90543076795b45a5f4118",
+          "local_sha256": "4dc6a72b687ae87d75d4dbaa0837b060cdf7c52b17055344d09eab90f4c844c6"
+        },
+        {
+          "upstream_path": "asio/include/asio/time_traits.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/time_traits.hpp",
+          "git_blob_sha1": "8e47511959672aa235d0620d81db347ba41cfec4",
+          "local_sha256": "e8824aa2f32aec89c820036b58ebc173a44c068711f167dc18ae787542832e3f"
+        },
+        {
+          "upstream_path": "asio/include/asio/ts/buffer.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/ts/buffer.hpp",
+          "git_blob_sha1": "465897f7d4cc549ac6580b8f5a7ee85188e530f9",
+          "local_sha256": "30d14488b4d3cec932cb45bddc8603bef06a4f706e03ffc0a178266fd933690f"
+        },
+        {
+          "upstream_path": "asio/include/asio/ts/executor.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/ts/executor.hpp",
+          "git_blob_sha1": "cb4fc715cde71688e433b883d450c72b0098795a",
+          "local_sha256": "46f15f55e59864963fdf18a53367b0808a4be4e78651e125ddf10aecd034f0b2"
+        },
+        {
+          "upstream_path": "asio/include/asio/ts/internet.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/ts/internet.hpp",
+          "git_blob_sha1": "5b9e231c11e78ca41c20ca326939a216dddaa734",
+          "local_sha256": "55ec2a38d999604366bb751bdce19e6ce5cf28263f2214a63c36cbde17f6c3e6"
+        },
+        {
+          "upstream_path": "asio/include/asio/ts/io_context.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/ts/io_context.hpp",
+          "git_blob_sha1": "f293b63e0bab63f44950fc34e6bac1c53b7aab33",
+          "local_sha256": "371aab27fef94b4bf90c5fe651452cd944480f374296cd0718bffd5415ac7e59"
+        },
+        {
+          "upstream_path": "asio/include/asio/ts/net.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/ts/net.hpp",
+          "git_blob_sha1": "1d0237bbca03b56adcc0b014c283707a560dd293",
+          "local_sha256": "c7242e564604276c33a52bf921bf142e381cced2cf25ebf71f3bf3686bfd23e7"
+        },
+        {
+          "upstream_path": "asio/include/asio/ts/netfwd.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/ts/netfwd.hpp",
+          "git_blob_sha1": "b7482acded862252a408d954b9799a684f07b464",
+          "local_sha256": "9e8a4cd3ffe250d1988b8bd7d393b4254ccc3e5e0cf96c8008ff21c4b1d379a6"
+        },
+        {
+          "upstream_path": "asio/include/asio/ts/socket.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/ts/socket.hpp",
+          "git_blob_sha1": "5084eb569f97c927676028e55f319c6fc66f0413",
+          "local_sha256": "1e8833126b4b61564837825c44c7f4df8699f8e173e5fbff33c924256c6efbc3"
+        },
+        {
+          "upstream_path": "asio/include/asio/ts/timer.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/ts/timer.hpp",
+          "git_blob_sha1": "4567dbf3182eafa9fd6f6eeb71de476218c0556a",
+          "local_sha256": "589a3a913d513557214216e87169f450b383e7aea509a05310520937957e31a5"
+        },
+        {
+          "upstream_path": "asio/include/asio/unyield.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/unyield.hpp",
+          "git_blob_sha1": "c6874d5cf33f9b750987f2128ff1982a7e765945",
+          "local_sha256": "352dda479387f9db9984398300c1aeebef77a05883d72b2ab72d79cf556ddedf"
+        },
+        {
+          "upstream_path": "asio/include/asio/use_awaitable.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/use_awaitable.hpp",
+          "git_blob_sha1": "c76913cda93568f2a8d1c659af2ed6aad5918734",
+          "local_sha256": "4175fb42df1141f1e9924fbfa8a274cf81d478c40450d5ce8ba536886d280eec"
+        },
+        {
+          "upstream_path": "asio/include/asio/use_future.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/use_future.hpp",
+          "git_blob_sha1": "79d9c566d959b92f13d8a298b1d2d6914bee3684",
+          "local_sha256": "bc1ea917e43555239c1c1577a11d6b8662c8a09d9da37acb1af36d292a3e95a8"
+        },
+        {
+          "upstream_path": "asio/include/asio/uses_executor.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/uses_executor.hpp",
+          "git_blob_sha1": "9a23a1a441cc5c6ceafade16cbd0a140c314c1ce",
+          "local_sha256": "4a07db5d34f08190a4617edebb071915857e366897d54e5e46ebf4f70be56e54"
+        },
+        {
+          "upstream_path": "asio/include/asio/version.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/version.hpp",
+          "git_blob_sha1": "f7c25309a1ab0c934580b7c751cad4ce6eebade0",
+          "local_sha256": "fdf3af0d80112bbb50de58fc14aa76d037e0485f62eec4f45df1505b19f3c639"
+        },
+        {
+          "upstream_path": "asio/include/asio/wait_traits.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/wait_traits.hpp",
+          "git_blob_sha1": "5e64abfa222af6399ca8f04f9d8268c3853ec17b",
+          "local_sha256": "e06770f336650f1fc5b0ac6c6e06efabff6c70efa69ce8c823224c389dd17969"
+        },
+        {
+          "upstream_path": "asio/include/asio/windows/basic_object_handle.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/windows/basic_object_handle.hpp",
+          "git_blob_sha1": "26a03e920855637d09e98c1f1172ed57cfad8069",
+          "local_sha256": "c4e2da3ee6f30dcea78b436714a6887ea6cfcc21190ecea6f80a343a61a0724a"
+        },
+        {
+          "upstream_path": "asio/include/asio/windows/basic_overlapped_handle.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/windows/basic_overlapped_handle.hpp",
+          "git_blob_sha1": "69966e97a0dd1591073286af09e2085d247de377",
+          "local_sha256": "c14854d358d3166d9e23dffab2bc58a5cce03ffdc88b5b08a13c8170dbaf6680"
+        },
+        {
+          "upstream_path": "asio/include/asio/windows/basic_random_access_handle.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/windows/basic_random_access_handle.hpp",
+          "git_blob_sha1": "ca2d741444f0136ddd8a9c5bbd7c0569c5a3c7cd",
+          "local_sha256": "665005ab601f0b2c4deaf6e4dec0fe94d8528eeae9e1ad26d23d5c855a5ba991"
+        },
+        {
+          "upstream_path": "asio/include/asio/windows/basic_stream_handle.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/windows/basic_stream_handle.hpp",
+          "git_blob_sha1": "a335b5b2d9d29d2b6d9f758e5b2bdc512a126bc2",
+          "local_sha256": "6e589f2fa12e24539b813c569a6b9c007a3eb174858eb8dda457f9454451ce9d"
+        },
+        {
+          "upstream_path": "asio/include/asio/windows/object_handle.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/windows/object_handle.hpp",
+          "git_blob_sha1": "9403ed66d89b4813ad7aafd3e0e30e824542704f",
+          "local_sha256": "5dd86ca6c9dd974388873acd25dad4ab6a6bebf17ea1d24d43ae18d4a585197a"
+        },
+        {
+          "upstream_path": "asio/include/asio/windows/overlapped_handle.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/windows/overlapped_handle.hpp",
+          "git_blob_sha1": "4819fa2f48463c5acdfece030483837c42a6b3f2",
+          "local_sha256": "2d96f043845a34c920ea518f1c90f71575edcde956717cd6dc07620b0955a691"
+        },
+        {
+          "upstream_path": "asio/include/asio/windows/overlapped_ptr.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/windows/overlapped_ptr.hpp",
+          "git_blob_sha1": "5dd6f14ee7e3f94ca7e8424e83c82e746b66a071",
+          "local_sha256": "aa02c10a172dc806d4f2aae5904075da9b680974f2876ed2d398a7c51207f0af"
+        },
+        {
+          "upstream_path": "asio/include/asio/windows/random_access_handle.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/windows/random_access_handle.hpp",
+          "git_blob_sha1": "dbfa91fe1ea7d5eb20ef33de5080b29fe6f4f6e7",
+          "local_sha256": "03ef65802289ff61ed0e6c26b5abc7d778923c25a1d9af6cd50826193ade7cab"
+        },
+        {
+          "upstream_path": "asio/include/asio/windows/stream_handle.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/windows/stream_handle.hpp",
+          "git_blob_sha1": "c597aadd53a1561e60063eaf1102680543f621d6",
+          "local_sha256": "5365029957d6806a5cec29ccba8a388d0cabb8cf9a0808e27b66c943b040dd61"
+        },
+        {
+          "upstream_path": "asio/include/asio/write.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/write.hpp",
+          "git_blob_sha1": "86cf2a2ab2d0ef9fe6bbe1ac1569e98f235f1821",
+          "local_sha256": "da0fbc3f406d5e6497c994609ca2822d565ace52fa0dd73237805973b44544f0"
+        },
+        {
+          "upstream_path": "asio/include/asio/write_at.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/write_at.hpp",
+          "git_blob_sha1": "d7b1858fc3014b0de43caaf46ae6ceef9942d318",
+          "local_sha256": "7c3e02205f11984a3af7c1c1cbac1d010361035557113d8e95dba2bb7ca363af"
+        },
+        {
+          "upstream_path": "asio/include/asio/yield.hpp",
+          "sdk_path": "include/asio/asio/asio/include/asio/yield.hpp",
+          "git_blob_sha1": "d37d146e9373ecaf41d7e1958a3b58d19916efa5",
+          "local_sha256": "825650e8005054043430d591d6c320571788cdf1df1064c92853e55bc88cd30e"
+        }
+      ]
+    },
+    "scope_note": "Exact checked bytes only; the identity of a precompiled archive is not inferred from a matching public header."
+  },
+  {
+    "component": "libcoap",
+    "repository": "https://github.com/obgm/libcoap",
+    "commit": "3aa11612c143c9734d72022720f33e12506f7a2c",
+    "idf_submodule_path": "components/coap/libcoap",
+    "idf_parent_commit": "38eeba213aa695aabfd6d89aa9f5078dbe5a94c3",
+    "files": [
+      {
+        "path": "submodules/libcoap/COPYING",
+        "upstream_url": "https://raw.githubusercontent.com/obgm/libcoap/3aa11612c143c9734d72022720f33e12506f7a2c/COPYING",
+        "sha256": "09dd86a017bad210527085008cbf706609c58210897b69845af14099577e7eb7"
+      },
+      {
+        "path": "submodules/libcoap/LICENSE",
+        "upstream_url": "https://raw.githubusercontent.com/obgm/libcoap/3aa11612c143c9734d72022720f33e12506f7a2c/LICENSE",
+        "sha256": "c5625e704d52deade1c9b2d7931ac8593be147ba63af62b53b8c7e309b7eaeb9"
+      }
+    ],
+    "sdk_check": {
+      "upstream_path": "include/coap3/uri.h",
+      "local_sdk_path": "include/coap/libcoap/include/coap3/uri.h",
+      "upstream_sha256": "097f2dadf903afd0e5d29660330272ad458c4dbd7d748cca4120d7adf757aac2",
+      "local_sha256": "097f2dadf903afd0e5d29660330272ad458c4dbd7d748cca4120d7adf757aac2",
+      "exact_match": true
+    },
+    "license": "BSD-2-Clause and retained file-specific notices",
+    "applicable_paths": [
+      "framework/tools/sdk/esp32s3/include/coap/libcoap/**",
+      "framework/tools/sdk/esp32s3/lib/libcoap.a"
+    ],
+    "tree_byte_comparison": {
+      "matched_count": 41,
+      "mismatched": [],
+      "matched": [
+        {
+          "upstream_path": "include/coap3/address.h",
+          "sdk_path": "include/coap/libcoap/include/coap3/address.h",
+          "git_blob_sha1": "8b8d9a24fae0256452cdc08a7b088355fae2fce9",
+          "local_sha256": "2060e6a4ce3574d353a248327891435029e1df7213219d945bb0eaac8b19d8a3"
+        },
+        {
+          "upstream_path": "include/coap3/async.h",
+          "sdk_path": "include/coap/libcoap/include/coap3/async.h",
+          "git_blob_sha1": "a61e0c0982887a2d6212fd97eb3db2ae047fe2d5",
+          "local_sha256": "b4543f30f7eb7c5dfe07f5fe774283380523574d69b801dec51595149d2e2fb6"
+        },
+        {
+          "upstream_path": "include/coap3/block.h",
+          "sdk_path": "include/coap/libcoap/include/coap3/block.h",
+          "git_blob_sha1": "a2aac00fdc67a1490c79d19f5ae305a0aaa8f110",
+          "local_sha256": "f01338c2019ad7bde35e02132ff38e1400580e0f1799b0f84a9b85e251472454"
+        },
+        {
+          "upstream_path": "include/coap3/coap_asn1_internal.h",
+          "sdk_path": "include/coap/libcoap/include/coap3/coap_asn1_internal.h",
+          "git_blob_sha1": "5bb4e2a8dbe9e71b87015ea120dee29ada59a2b6",
+          "local_sha256": "208f61650586b6c1b9a69c35a8efca11e445683292898a5bc306e6d953365760"
+        },
+        {
+          "upstream_path": "include/coap3/coap_async_internal.h",
+          "sdk_path": "include/coap/libcoap/include/coap3/coap_async_internal.h",
+          "git_blob_sha1": "a23b1c8e6971f5643fb9d5ea5cd11129c4b0270b",
+          "local_sha256": "a763ec063425ce48f84ac2fdc7ca52f0535d40cdc77b4e5f6b0693f4a99642e6"
+        },
+        {
+          "upstream_path": "include/coap3/coap_block_internal.h",
+          "sdk_path": "include/coap/libcoap/include/coap3/coap_block_internal.h",
+          "git_blob_sha1": "b7ad0a554ccaf82c4dc87e3fc1016f500dcc956f",
+          "local_sha256": "bee3e4143bda31c393e6b018df67c7e57d5ee687d7cd5945599764eb3abaf03e"
+        },
+        {
+          "upstream_path": "include/coap3/coap_cache.h",
+          "sdk_path": "include/coap/libcoap/include/coap3/coap_cache.h",
+          "git_blob_sha1": "a8d2fd7a84e05450dbb1b9a1f8f7a49c6bf57f85",
+          "local_sha256": "23c1e7278e53b5c55c5548800b68087d27c10947d8f471913074c6bb09efa8c2"
+        },
+        {
+          "upstream_path": "include/coap3/coap_cache_internal.h",
+          "sdk_path": "include/coap/libcoap/include/coap3/coap_cache_internal.h",
+          "git_blob_sha1": "29c0756875c03c3cc3ec711fd89e560906ece21f",
+          "local_sha256": "76a797ad3eda87541161a07bc4f5e43f05ccb27b6cc1bd928156c140af139ba4"
+        },
+        {
+          "upstream_path": "include/coap3/coap_debug.h",
+          "sdk_path": "include/coap/libcoap/include/coap3/coap_debug.h",
+          "git_blob_sha1": "f8f70f64495b9184e4d99363bcd2e2c488496c21",
+          "local_sha256": "8ae5cb9f12aee3e87532c0b2740c9eee17b8e6b9b64bdba3d92abae32a40fa1f"
+        },
+        {
+          "upstream_path": "include/coap3/coap_dtls.h",
+          "sdk_path": "include/coap/libcoap/include/coap3/coap_dtls.h",
+          "git_blob_sha1": "fc30445431d81914cc9aeb5727acff56796552f3",
+          "local_sha256": "48737d0ead7129a098c756573cf92b16d91896e78a5a571517eee62e0f85951f"
+        },
+        {
+          "upstream_path": "include/coap3/coap_dtls_internal.h",
+          "sdk_path": "include/coap/libcoap/include/coap3/coap_dtls_internal.h",
+          "git_blob_sha1": "8ea09a4eb3eb1c7f1eee7cc3ce47e1933504ee40",
+          "local_sha256": "bcf30e6ddf46b7cae1dc5c9d7b376b9607cd346ab4c46a013cab00cad034f2e4"
+        },
+        {
+          "upstream_path": "include/coap3/coap_event.h",
+          "sdk_path": "include/coap/libcoap/include/coap3/coap_event.h",
+          "git_blob_sha1": "b6ea60524a288e9675a78a297156ed016344f856",
+          "local_sha256": "e69b490c48306bf7e86e55fabc2eadd000859d51270db007b137ded7646b65d0"
+        },
+        {
+          "upstream_path": "include/coap3/coap_forward_decls.h",
+          "sdk_path": "include/coap/libcoap/include/coap3/coap_forward_decls.h",
+          "git_blob_sha1": "3bedbf7899a604a3e558052660587dd23567111a",
+          "local_sha256": "00a71e1bd86bf44b93b962671055bd7148192b1a3995c6a56ed36fcae6e619fa"
+        },
+        {
+          "upstream_path": "include/coap3/coap_hashkey.h",
+          "sdk_path": "include/coap/libcoap/include/coap3/coap_hashkey.h",
+          "git_blob_sha1": "11a797bde7a0ffff430ab3cc7e20a0181c15f06f",
+          "local_sha256": "8b8e36f228e5135a5f99c7320d4eda764f1609e1531046318a3e066f036b1f97"
+        },
+        {
+          "upstream_path": "include/coap3/coap_internal.h",
+          "sdk_path": "include/coap/libcoap/include/coap3/coap_internal.h",
+          "git_blob_sha1": "5eee5c12867fe9b8c8c361606079394ef1853c23",
+          "local_sha256": "71ea018280824b371a3d9d330a4be32f21f353560fced8b7a8406bbc07e6fb3a"
+        },
+        {
+          "upstream_path": "include/coap3/coap_io.h",
+          "sdk_path": "include/coap/libcoap/include/coap3/coap_io.h",
+          "git_blob_sha1": "b27921f8be1b5fb082b8cb94d88c407b476c0afa",
+          "local_sha256": "60b873575e20e92d84cea904e9eea28d6564612722a9812cbab8229387e84a6c"
+        },
+        {
+          "upstream_path": "include/coap3/coap_io_internal.h",
+          "sdk_path": "include/coap/libcoap/include/coap3/coap_io_internal.h",
+          "git_blob_sha1": "241ef7f99558fb95cff6ee82139843e4e0c9d92d",
+          "local_sha256": "7fe2cb73b73b8964e6b3aac6cfcf131ea068eeb0a3b320e0de7382458753b57b"
+        },
+        {
+          "upstream_path": "include/coap3/coap_mutex.h",
+          "sdk_path": "include/coap/libcoap/include/coap3/coap_mutex.h",
+          "git_blob_sha1": "44084fecb1cf678a3e5299748c70efaf86391880",
+          "local_sha256": "0be75b36f9048ee511695bf3ce261681ed0c6f8c65e1a27893aaa59cf5ebf759"
+        },
+        {
+          "upstream_path": "include/coap3/coap_net_internal.h",
+          "sdk_path": "include/coap/libcoap/include/coap3/coap_net_internal.h",
+          "git_blob_sha1": "bf243f3d022a9dcff792cd3f6f331b41f3018700",
+          "local_sha256": "2fe397da01f56b408ad8d5453108851555ad82986ccab4b6baddff6aa21fe58e"
+        },
+        {
+          "upstream_path": "include/coap3/coap_pdu_internal.h",
+          "sdk_path": "include/coap/libcoap/include/coap3/coap_pdu_internal.h",
+          "git_blob_sha1": "0d8446c0d4c730540169d8cff1345cd30f6eee25",
+          "local_sha256": "860ee209943014c1c70758b7101f2894f4afe94df2c05f46ff836247e64f812f"
+        },
+        {
+          "upstream_path": "include/coap3/coap_prng.h",
+          "sdk_path": "include/coap/libcoap/include/coap3/coap_prng.h",
+          "git_blob_sha1": "6d297afaec3f22e8fca9cc49d620495cf8f73de8",
+          "local_sha256": "7cfd45e47926941495622f45395e9cff55fdff7074c3deaa7753ce8422739209"
+        },
+        {
+          "upstream_path": "include/coap3/coap_resource_internal.h",
+          "sdk_path": "include/coap/libcoap/include/coap3/coap_resource_internal.h",
+          "git_blob_sha1": "cbcc36a664c31fd8799cd2ef8305b73a44cd289d",
+          "local_sha256": "d659b6c63211b063cde88699e85023982ce4afb1926e0bc8b8e1c206267a8f92"
+        },
+        {
+          "upstream_path": "include/coap3/coap_riot.h",
+          "sdk_path": "include/coap/libcoap/include/coap3/coap_riot.h",
+          "git_blob_sha1": "fc4bfa2e655736ab325f86c9826c538470ce7afe",
+          "local_sha256": "e0dceae405082145c4f6a45bebb6718fbf21e79f992e818c7ba7cf74bf932f5b"
+        },
+        {
+          "upstream_path": "include/coap3/coap_session.h",
+          "sdk_path": "include/coap/libcoap/include/coap3/coap_session.h",
+          "git_blob_sha1": "6c49b78e97d59dbad244ee2be282facd2e11abac",
+          "local_sha256": "4139b5ceb8da8ad1698cd019d8a887a875c3ffd975c82079fcba456f970bf271"
+        },
+        {
+          "upstream_path": "include/coap3/coap_session_internal.h",
+          "sdk_path": "include/coap/libcoap/include/coap3/coap_session_internal.h",
+          "git_blob_sha1": "1fd2de9ecf16f8b72a14e0e1d9ba8c8a10701ea1",
+          "local_sha256": "fb2935efa6ca5ede65640638673f199ce882cb92c726ce8911bbaff9d1445922"
+        },
+        {
+          "upstream_path": "include/coap3/coap_subscribe_internal.h",
+          "sdk_path": "include/coap/libcoap/include/coap3/coap_subscribe_internal.h",
+          "git_blob_sha1": "b7702362bee16d9ca13b3aefc12cfc8bb9119902",
+          "local_sha256": "5caf21154b9e9ad8df73c32ea215ab1f391a10355aa2c1c0c530d7a076d76fa5"
+        },
+        {
+          "upstream_path": "include/coap3/coap_tcp_internal.h",
+          "sdk_path": "include/coap/libcoap/include/coap3/coap_tcp_internal.h",
+          "git_blob_sha1": "4fd31b38d0110c2fa0ab1905c406544275547784",
+          "local_sha256": "c546fc4af682eea277a22b1a8e456bbed1c1866568c9f5c5a699546f9b6780af"
+        },
+        {
+          "upstream_path": "include/coap3/coap_time.h",
+          "sdk_path": "include/coap/libcoap/include/coap3/coap_time.h",
+          "git_blob_sha1": "99d117a4eb7ab835f69bc3182334ad4d5496845c",
+          "local_sha256": "080298c15b66d6e95fc9c103a4eece64bb0b21d731311383c0c56cb7a829d13b"
+        },
+        {
+          "upstream_path": "include/coap3/encode.h",
+          "sdk_path": "include/coap/libcoap/include/coap3/encode.h",
+          "git_blob_sha1": "a79146fc862761a1d8d794f77d678766f4a1c7aa",
+          "local_sha256": "482211068cf0189e91601557cb180b973221b90f4fa73fe6940e48e42bd96490"
+        },
+        {
+          "upstream_path": "include/coap3/libcoap.h",
+          "sdk_path": "include/coap/libcoap/include/coap3/libcoap.h",
+          "git_blob_sha1": "60ca3b64b900e1b52edb1615e19021df15f0ead2",
+          "local_sha256": "dcc1697a7cf577f06adef37ae2eeebabbe789b3ed9a479194c89c5fc96212e03"
+        },
+        {
+          "upstream_path": "include/coap3/lwippools.h",
+          "sdk_path": "include/coap/libcoap/include/coap3/lwippools.h",
+          "git_blob_sha1": "445bce4a94a0428d146ffe8727fd77ad275a6243",
+          "local_sha256": "d5003885829dafb9ae458e6657471fd8a3025ca732ac865139f46d7402a1c2e8"
+        },
+        {
+          "upstream_path": "include/coap3/mem.h",
+          "sdk_path": "include/coap/libcoap/include/coap3/mem.h",
+          "git_blob_sha1": "c42008963daba3d2657df745c9e535f717e5d58a",
+          "local_sha256": "67a92a377fde2e9ac46d736342f0630618ad54bf987ffc291ef692fb337e1ea3"
+        },
+        {
+          "upstream_path": "include/coap3/net.h",
+          "sdk_path": "include/coap/libcoap/include/coap3/net.h",
+          "git_blob_sha1": "ea5a2cba1bb7f2e6b6e676837d55f909cbac2c55",
+          "local_sha256": "e0eeb781c8cee440d215388719f6a0dc84b780d2375d8db1a0a00f818c4eaa1a"
+        },
+        {
+          "upstream_path": "include/coap3/option.h",
+          "sdk_path": "include/coap/libcoap/include/coap3/option.h",
+          "git_blob_sha1": "c01e8f6688b91bcd143447d3a501ab344358011d",
+          "local_sha256": "dbe610d7a9043d2218faf94876a3429d617cc7ec8e1ff9cefe19c4a0da76ba59"
+        },
+        {
+          "upstream_path": "include/coap3/pdu.h",
+          "sdk_path": "include/coap/libcoap/include/coap3/pdu.h",
+          "git_blob_sha1": "8031a1c2c405001d39e1e0f1a2a7db6470c1b3e9",
+          "local_sha256": "e26fdb111e3aca73de08e459a02d0ee38103c7f15115fda223d9d259a81df023"
+        },
+        {
+          "upstream_path": "include/coap3/resource.h",
+          "sdk_path": "include/coap/libcoap/include/coap3/resource.h",
+          "git_blob_sha1": "5cf7751f67ed9e83edda75f23ca3a2806992f626",
+          "local_sha256": "8eb92f46807521f764aaf501e9b6715b698066eb8112c98d787ffe70c6db7cc9"
+        },
+        {
+          "upstream_path": "include/coap3/str.h",
+          "sdk_path": "include/coap/libcoap/include/coap3/str.h",
+          "git_blob_sha1": "dbf53d0c4756ae1780e05f361aa64d018e6cd0d0",
+          "local_sha256": "f9a1a7975675a84110e78936b13173f08ea40fb16ceea7b076c2935c2c0bfa5a"
+        },
+        {
+          "upstream_path": "include/coap3/subscribe.h",
+          "sdk_path": "include/coap/libcoap/include/coap3/subscribe.h",
+          "git_blob_sha1": "c3aabc2db04324f2e9b7d89e90e954d2a432ee2c",
+          "local_sha256": "3280852b5fd37cd319ebf7202eb176b6e6f25f6ba6cdbb7da0cf4e05444f6c41"
+        },
+        {
+          "upstream_path": "include/coap3/uri.h",
+          "sdk_path": "include/coap/libcoap/include/coap3/uri.h",
+          "git_blob_sha1": "8084483b5007b55dc69e0023fbe666c02e3ed3df",
+          "local_sha256": "097f2dadf903afd0e5d29660330272ad458c4dbd7d748cca4120d7adf757aac2"
+        },
+        {
+          "upstream_path": "include/coap3/uthash.h",
+          "sdk_path": "include/coap/libcoap/include/coap3/uthash.h",
+          "git_blob_sha1": "9a396b6179fc3cd3dbf45afd86b17d60d6942742",
+          "local_sha256": "f7b019cc0b3a47b95250587325af446d6356bf12b2f5da2a59522e436bf665ce"
+        },
+        {
+          "upstream_path": "include/coap3/utlist.h",
+          "sdk_path": "include/coap/libcoap/include/coap3/utlist.h",
+          "git_blob_sha1": "1979448a7b9c727aacfcb9ff24ae251abce193cf",
+          "local_sha256": "3de22a7f570177d621031f898a5dd66e3ad01acd654463324226233f5730839d"
+        }
+      ]
+    },
+    "scope_note": "Exact checked bytes only; the identity of a precompiled archive is not inferred from a matching public header."
+  },
+  {
+    "component": "esp32-wifi-lib",
+    "repository": "https://github.com/espressif/esp32-wifi-lib",
+    "commit": "f2aae4d44ec7908013066e69d29b9948846c335c",
+    "idf_submodule_path": "components/esp_wifi/lib",
+    "idf_parent_commit": "38eeba213aa695aabfd6d89aa9f5078dbe5a94c3",
+    "files": [
+      {
+        "path": "submodules/esp32-wifi-lib/LICENSE",
+        "upstream_url": "https://raw.githubusercontent.com/espressif/esp32-wifi-lib/f2aae4d44ec7908013066e69d29b9948846c335c/LICENSE",
+        "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+      }
+    ],
+    "sdk_check": {
+      "upstream_path": "esp32s3/libnet80211.a",
+      "local_sdk_path": "lib/libnet80211.a",
+      "upstream_sha256": "6aae206c85e9009a24cd1f28ce535e2a2d578d9687fe2dc77d4697d45ebc8d0f",
+      "local_sha256": "6aae206c85e9009a24cd1f28ce535e2a2d578d9687fe2dc77d4697d45ebc8d0f",
+      "exact_match": true
+    },
+    "license": "Apache-2.0",
+    "applicable_paths": [
+      "framework/tools/sdk/esp32s3/lib/libcoexist.a",
+      "framework/tools/sdk/esp32s3/lib/libcore.a",
+      "framework/tools/sdk/esp32s3/lib/libespnow.a",
+      "framework/tools/sdk/esp32s3/lib/libmesh.a",
+      "framework/tools/sdk/esp32s3/lib/libnet80211.a",
+      "framework/tools/sdk/esp32s3/lib/libpp.a",
+      "framework/tools/sdk/esp32s3/lib/libsmartconfig.a",
+      "framework/tools/sdk/esp32s3/lib/libwapi.a"
+    ],
+    "tree_byte_comparison": {
+      "matched_count": 8,
+      "mismatched": [],
+      "matched": [
+        {
+          "upstream_path": "esp32s3/libcoexist.a",
+          "sdk_path": "lib/libcoexist.a",
+          "git_blob_sha1": "6960f1da37edd39927c5c0cf965f6bdce1b418d5",
+          "local_sha256": "0c61713a461511973e0d4270bcf6c75587fb5da361f0636c8346c960516ef05a"
+        },
+        {
+          "upstream_path": "esp32s3/libcore.a",
+          "sdk_path": "lib/libcore.a",
+          "git_blob_sha1": "40d12ece09214d3497cf9e717851920ff709ea83",
+          "local_sha256": "193092d7be420934e1a865fccfa50f223e6829cd0f47ebbc6b0d4940c7bfb981"
+        },
+        {
+          "upstream_path": "esp32s3/libespnow.a",
+          "sdk_path": "lib/libespnow.a",
+          "git_blob_sha1": "5814dbe9045cb6e09ffa751a8079fee6a7a96bde",
+          "local_sha256": "777d201cccc11571dee48956ed74efe70593d1e6f7024b2c3411f967d82da99c"
+        },
+        {
+          "upstream_path": "esp32s3/libmesh.a",
+          "sdk_path": "lib/libmesh.a",
+          "git_blob_sha1": "adb9f2226310272f913cc58ad7b43502ed447256",
+          "local_sha256": "48a17163c2234af955f7d93f21ad219baf11c1353ecb41ca36323db34e3164a6"
+        },
+        {
+          "upstream_path": "esp32s3/libnet80211.a",
+          "sdk_path": "lib/libnet80211.a",
+          "git_blob_sha1": "f9950825e7a6806133d16162b207be262c85886c",
+          "local_sha256": "6aae206c85e9009a24cd1f28ce535e2a2d578d9687fe2dc77d4697d45ebc8d0f"
+        },
+        {
+          "upstream_path": "esp32s3/libpp.a",
+          "sdk_path": "lib/libpp.a",
+          "git_blob_sha1": "19526baca9393b30a865390c050d00c918a2c510",
+          "local_sha256": "369fa64aefd5d147062fd11288f3933b192dc5d9adfbefcafdd94ae9ac9de32e"
+        },
+        {
+          "upstream_path": "esp32s3/libsmartconfig.a",
+          "sdk_path": "lib/libsmartconfig.a",
+          "git_blob_sha1": "6455b8db956c6f8d0724ada99eb06b4a9c1712e6",
+          "local_sha256": "abd9da8b00c3440452c0386f3cee1a16886d9ece3bbecc7cf7e8eea2b94a355c"
+        },
+        {
+          "upstream_path": "esp32s3/libwapi.a",
+          "sdk_path": "lib/libwapi.a",
+          "git_blob_sha1": "ea42fcd4d8cf2179b1501cd5c1eca9f312e0a131",
+          "local_sha256": "a4503f69700c00d17303334ec3ea786dc289f3c3f0bd5af707f4952728e56af7"
+        }
+      ]
+    },
+    "scope_note": "These precompiled ESP32-S3 archive bytes match the immutable upstream tree; esp_phy/esp_wifi wrapper code belongs to ESP-IDF separately."
+  },
+  {
+    "component": "esp-phy-lib",
+    "repository": "https://github.com/espressif/esp-phy-lib",
+    "commit": "dcfdccf6cc2fc02d0886624b7998c890d1a19b28",
+    "idf_submodule_path": "components/esp_phy/lib",
+    "idf_parent_commit": "38eeba213aa695aabfd6d89aa9f5078dbe5a94c3",
+    "files": [
+      {
+        "path": "submodules/esp-phy-lib/LICENSE",
+        "upstream_url": "https://raw.githubusercontent.com/espressif/esp-phy-lib/dcfdccf6cc2fc02d0886624b7998c890d1a19b28/LICENSE",
+        "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+      }
+    ],
+    "sdk_check": {
+      "upstream_path": "esp32s3/libphy.a",
+      "local_sdk_path": "ld/libphy.a",
+      "upstream_sha256": "c8f6c6821c7e8e28c97f3a797e322d9987a0f3fd5f5da5e971ab0111ba513160",
+      "local_sha256": "c8f6c6821c7e8e28c97f3a797e322d9987a0f3fd5f5da5e971ab0111ba513160",
+      "exact_match": true
+    },
+    "license": "Apache-2.0",
+    "applicable_paths": [
+      "framework/tools/sdk/esp32s3/ld/libbtbb.a",
+      "framework/tools/sdk/esp32s3/ld/libphy.a"
+    ],
+    "tree_byte_comparison": {
+      "matched_count": 2,
+      "mismatched": [],
+      "matched": [
+        {
+          "upstream_path": "esp32s3/libbtbb.a",
+          "sdk_path": "ld/libbtbb.a",
+          "git_blob_sha1": "591b374667c2d143b3c536e36e8b847300a41ca5",
+          "local_sha256": "9ce018fb5d7753318ccf1e8386ced5d45a0b0d90f07352946a03c8689539073f"
+        },
+        {
+          "upstream_path": "esp32s3/libphy.a",
+          "sdk_path": "ld/libphy.a",
+          "git_blob_sha1": "3456589ba86f6093f818ac186894d01d488acfdf",
+          "local_sha256": "c8f6c6821c7e8e28c97f3a797e322d9987a0f3fd5f5da5e971ab0111ba513160"
+        }
+      ]
+    },
+    "scope_note": "These precompiled ESP32-S3 archive bytes match the immutable upstream tree; esp_phy/esp_wifi wrapper code belongs to ESP-IDF separately."
+  }
+]

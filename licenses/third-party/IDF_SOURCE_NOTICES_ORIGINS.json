@@ -1,0 +1,26 @@
+[
+  {
+    "component": "SDMMC",
+    "source_url": "https://raw.githubusercontent.com/espressif/esp-idf/38eeba213aa695aabfd6d89aa9f5078dbe5a94c3/components/sdmmc/sdmmc_cmd.c",
+    "source_sha256": "769121ce26693c25ebf7ee3df3baecd2ca820998a04ce01a2f14bf9890e78c04",
+    "saved_path": "extracted-notices/SDMMC_SOURCE_NOTICES.txt",
+    "sha256": "2e2e1aaabbcba17504e3959a053d1d457795f0c3f59a78f0d708f388b2d84429",
+    "notice_blocks": 1
+  },
+  {
+    "component": "UBSAN",
+    "source_url": "https://raw.githubusercontent.com/espressif/esp-idf/38eeba213aa695aabfd6d89aa9f5078dbe5a94c3/components/esp_system/ubsan.c",
+    "source_sha256": "d66b60862f7299f01055c52809ed764a9f0158b9a43cc1ff49bd1fb453cb4aa5",
+    "saved_path": "extracted-notices/UBSAN_SOURCE_NOTICES.txt",
+    "sha256": "901fa14e581979ec1b6a7e1ccf49ea5e47ea313681bef81422599aa963ad30d2",
+    "notice_blocks": 1
+  },
+  {
+    "component": "QRCODE",
+    "source_url": "https://raw.githubusercontent.com/espressif/esp-idf/38eeba213aa695aabfd6d89aa9f5078dbe5a94c3/examples/common_components/qrcode/qrcodegen.c",
+    "source_sha256": "02caec2e4ed8eb17662fee24b0358f8df79cc2d1d6f0d9a0c6b8e2506c946693",
+    "saved_path": "extracted-notices/QRCODE_SOURCE_NOTICES.txt",
+    "sha256": "1f54baa3623fa6b5c1b66174254959aaee1c4f1dc96194cc1d9aaf91c2d1a9cf",
+    "notice_blocks": 1
+  }
+]
